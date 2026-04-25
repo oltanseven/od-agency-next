@@ -14,19 +14,61 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: { default: 'OD Agency — Web Tasarım & AI Otomasyon', template: '%s | OD Agency' },
   description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
-  keywords: ['web tasarım', 'web sitesi', 'dijital ajans', 'AI otomasyon', 'e-ticaret', 'Antalya'],
+  keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'AI otomasyon', 'e-ticaret', 'web tasarım Antalya', 'kurumsal web sitesi'],
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
     siteName: 'OD Agency',
+    url: 'https://odagency.com',
   },
   robots: { index: true, follow: true },
+  metadataBase: new URL('https://odagency.com'),
+}
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'OD Agency',
+  description: 'Antalya merkezli web tasarım, e-ticaret ve AI otomasyon ajansı. Türkiye geneli profesyonel dijital çözümler.',
+  url: 'https://odagency.com',
+  telephone: '+905324652031',
+  email: 'merhaba@odagency.com',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Antalya',
+    addressRegion: 'Antalya',
+    addressCountry: 'TR',
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Antalya' },
+    { '@type': 'City', name: 'İstanbul' },
+    { '@type': 'City', name: 'Ankara' },
+    { '@type': 'Country', name: 'Türkiye' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Web Tasarım & Dijital Hizmetler',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kurumsal Web Tasarım' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Ticaret Sitesi' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Otomasyon' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landing Page Tasarımı' } },
+    ],
+  },
+  sameAs: [
+    'https://www.instagram.com/odagency',
+    'https://www.linkedin.com/company/odagency',
+  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr" className={montserrat.variable}>
       <body className="bg-cream text-ink font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />

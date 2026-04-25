@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Projeler & Portföy',
-  description: 'OD Agency tarafından hayata geçirilen web tasarım ve dijital projeler.',
+  title: 'Web Tasarım Portföy & Projeler | OD Agency',
+  description: 'OD Agency tarafından hayata geçirilen kurumsal web sitesi, e-ticaret ve AI otomasyon projeleri. Gerçek müşteri çalışmalarını inceleyin.',
+  keywords: ['web tasarım portföy', 'web sitesi örnekleri', 'e-ticaret projeleri', 'kurumsal web tasarım örnekleri'],
+  alternates: { canonical: 'https://odagency.com/projeler' },
 }
 
 // Projeler Cloudinary'den gelecek. Şimdilik placeholder.

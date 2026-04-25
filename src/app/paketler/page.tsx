@@ -3,8 +3,15 @@ import Link from 'next/link'
 import PricingFAQ from '@/components/PricingFAQ'
 
 export const metadata: Metadata = {
-  title: 'Paketler & Fiyatlandırma — OD Agency',
-  description: 'OD Agency web tasarım ve AI otomasyon paketleri. Şeffaf fiyatlandırma, net hizmet kapsamları.',
+  title: 'Web Sitesi Fiyatları 2026 — Paketler & Ücretler | OD Agency',
+  description: '2026 web sitesi fiyatları: Kurumsal web sitesi ₺15.000\'den, e-ticaret ₺35.000\'den başlıyor. Şeffaf paket fiyatları, sürpriz fatura yok. Web tasarım fiyatları için hemen inceleyin.',
+  keywords: ['web sitesi fiyatları 2026', 'web tasarım fiyatları', 'kurumsal web sitesi fiyatı', 'e-ticaret sitesi kurma maliyeti', 'landing page tasarım fiyatı', 'web sitesi yenileme ücreti', 'profesyonel web sitesi fiyatları'],
+  alternates: { canonical: 'https://odagency.com/paketler' },
+  openGraph: {
+    title: 'Web Sitesi Fiyatları 2026 | OD Agency',
+    description: 'Kurumsal web sitesi ₺15.000\'den, e-ticaret ₺35.000\'den. Şeffaf paket fiyatları.',
+    url: 'https://odagency.com/paketler',
+  },
 }
 
 function ClockIcon() {
