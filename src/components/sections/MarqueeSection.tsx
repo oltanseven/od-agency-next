@@ -8,7 +8,7 @@ export default function MarqueeSection() {
   const doubled = [...items, ...items]
 
   return (
-    <div className="py-8 border-t border-b border-black/[0.09] overflow-hidden bg-cream-soft">
+    <div className="py-8 border-t border-b border-black/[0.09] bg-cream-soft" style={{ overflow: 'hidden', overflowX: 'clip' }}>
       <div className="flex gap-12 w-max animate-[slideLeft_22s_linear_infinite]">
         {doubled.map((item, i) => (
           <span key={i} className="flex items-center gap-12 shrink-0">

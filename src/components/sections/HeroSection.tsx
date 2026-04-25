@@ -36,7 +36,7 @@ export default function HeroSection() {
     <section className="min-h-screen flex items-center pt-32 pb-24 bg-cream relative overflow-hidden">
 
       {/* Kayan kart arka planı */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.15]">
+      <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.15] overflow-hidden" style={{ overflowX: 'clip' }}>
         <div className="flex flex-col gap-4 justify-center h-full">
           {/* Satır 1 — sola */}
           <div className="flex gap-4 w-max animate-[slideLeft_38s_linear_infinite]">
