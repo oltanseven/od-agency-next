@@ -225,11 +225,12 @@ export default function BlogPage() {
             </div>
             <form className="flex gap-2 flex-wrap" action="#">
               <input type="email" placeholder="E-posta adresiniz"
-                className="px-5 py-3 rounded-full text-[0.88rem] text-white w-[240px] outline-none
-                  transition-colors focus:border-accent"
+                className="px-5 rounded-full text-[0.88rem] text-white w-[240px]
+                  outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(255,82,27,0.2)]"
                 style={{
                   background: 'rgba(255,255,255,0.06)',
                   border: '1.5px solid rgba(255,255,255,0.15)',
+                  minHeight: '44px',
                 }} />
               <button type="submit"
                 className="bg-accent text-white px-6 py-3 rounded-full font-bold text-[0.88rem]

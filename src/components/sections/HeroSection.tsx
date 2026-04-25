@@ -82,15 +82,19 @@ export default function HeroSection() {
 
             <div className="flex gap-4 flex-wrap">
               <Link href="/iletisim"
-                className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
-                  no-underline transition-all duration-200 hover:bg-coral hover:-translate-y-0.5
-                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1">
+                className="bg-accent text-white px-8 rounded-full font-bold text-[0.95rem]
+                  no-underline hover:bg-coral hover:-translate-y-0.5
+                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1
+                  focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
+                style={{ minHeight: '48px' }}>
                 Ücretsiz Keşif Görüşmesi →
               </Link>
               <Link href="#referanslar"
-                className="bg-transparent text-ink px-8 py-3.5 rounded-full font-semibold text-[0.95rem]
-                  no-underline border border-black/[0.09] transition-all duration-200
-                  hover:border-accent hover:text-accent inline-flex items-center gap-1">
+                className="bg-transparent text-ink px-8 rounded-full font-semibold text-[0.95rem]
+                  no-underline border border-black/[0.09] hover:border-accent hover:text-accent
+                  inline-flex items-center gap-1
+                  focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
+                style={{ minHeight: '48px' }}>
                 Çalışmalarımıza Bak
               </Link>
             </div>

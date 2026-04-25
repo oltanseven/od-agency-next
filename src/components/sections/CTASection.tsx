@@ -27,15 +27,20 @@ export default function CTASection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="mailto:merhaba@odagency.com"
-                className="bg-white text-accent px-9 py-4 rounded-full font-bold text-[0.95rem]
-                  no-underline transition-all duration-200 hover:-translate-y-0.5
-                  hover:shadow-[0_16px_36px_rgba(0,0,0,0.2)]">
+                className="inline-flex items-center justify-center bg-white text-accent px-9 rounded-full
+                  font-bold text-[0.95rem] no-underline hover:-translate-y-0.5
+                  hover:shadow-[0_16px_36px_rgba(0,0,0,0.2)]
+                  focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2
+                  focus-visible:ring-offset-night"
+                style={{ minHeight: '52px' }}>
                 merhaba@odagency.com
               </Link>
               <a href="https://wa.me/905324652031" target="_blank" rel="noreferrer"
-                className="bg-white/10 text-white/80 border border-white/25 px-9 py-4 rounded-full
-                  font-semibold text-[0.95rem] no-underline transition-all duration-200
-                  hover:border-white/60 hover:text-white">
+                className="inline-flex items-center justify-center bg-white/10 text-white/80
+                  border border-white/25 px-9 rounded-full font-semibold text-[0.95rem]
+                  no-underline hover:border-white/60 hover:text-white
+                  focus-visible:ring-2 focus-visible:ring-white/50"
+                style={{ minHeight: '52px' }}>
                 WhatsApp&apos;tan Yaz →
               </a>
             </div>

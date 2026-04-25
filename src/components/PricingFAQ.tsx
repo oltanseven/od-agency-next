@@ -20,7 +20,9 @@ export default function PricingFAQ() {
             onClick={() => setOpen(open === i ? null : i)}
             className="w-full flex items-center justify-between gap-4 px-7 py-5
               text-left font-semibold text-[0.95rem] text-ink cursor-pointer
-              hover:text-accent transition-colors"
+              hover:text-accent focus-visible:text-accent focus-visible:bg-black/[0.02]
+              rounded-[18px]"
+            style={{ minHeight: '56px' }}
           >
             {q}
             <span className="text-[1.2rem] text-accent shrink-0 transition-transform duration-300 inline-block"

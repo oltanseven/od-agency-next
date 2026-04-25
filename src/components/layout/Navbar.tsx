@@ -46,7 +46,8 @@ export default function Navbar() {
             <li key={href}>
               <Link
                 href={href}
-                className={`text-[0.88rem] font-medium no-underline transition-colors duration-200
+                className={`text-[0.88rem] font-medium no-underline px-1 py-1 rounded
+                  focus-visible:outline-2 focus-visible:outline-accent/50
                   ${isActive(href) ? 'text-accent' : 'text-ink/50 hover:text-accent'}`}
               >
                 {label}
@@ -55,14 +56,16 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
+        {/* CTA — min 44px touch target */}
         <Link
           href="/iletisim"
-          className={`px-[1.4rem] py-[0.6rem] rounded-full text-[0.88rem] font-semibold
-            no-underline whitespace-nowrap transition-all duration-200
+          className={`px-[1.4rem] rounded-full text-[0.88rem] font-semibold
+            no-underline whitespace-nowrap inline-flex items-center
+            focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2
             ${pathname === '/iletisim'
-              ? 'bg-night text-white'
+              ? 'bg-night text-white hover:opacity-90'
               : 'bg-accent text-white hover:bg-coral hover:-translate-y-px'}`}
+          style={{ minHeight: '44px' }}
         >
           Proje Başlat →
         </Link>
