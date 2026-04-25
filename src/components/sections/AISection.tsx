@@ -1,31 +1,47 @@
+import Link from 'next/link'
+
 const cards = [
   {
-    tag: 'İletişim',
-    title: 'Akıllı Chatbot',
-    desc: '7/24 müşteri sorularını yanıtlar, lead toplar, randevu alır.',
-    color: 'from-orange-50 to-amber-50',
-    border: 'border-orange-100',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#ff521b" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-accent/10',
+    title: 'AI Chatbot',
+    desc: 'Ziyaretçilerin sorularını anında yanıtlar, ürün önerir ve potansiyel müşteriyi sıcak tutar. Gece 3\'te bile.',
+    tag: '7/24 Destek', tagColor: 'text-accent bg-accent/10 border-accent/20',
   },
   {
-    tag: 'Süreç',
-    title: 'İş Akışı Otomasyonu',
-    desc: 'Teklif, fatura, bildirim — tekrarlayan adımları otomatize edin.',
-    color: 'from-blue-50 to-indigo-50',
-    border: 'border-blue-100',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M22 6l-10 7L2 6" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-[rgba(232,136,26,0.1)]',
+    title: 'E-posta Otomasyonu',
+    desc: 'Karşılama, terk sepeti, doğum günü kampanyaları — doğru kişiye doğru anda otomatik gönderilir.',
+    tag: 'Dönüşüm Artırır', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
   },
   {
-    tag: 'Veri',
-    title: 'CRM Entegrasyonu',
-    desc: 'Müşteri verilerini merkeze alın, segmentlere ayrılmış kampanyalar gönderin.',
-    color: 'from-purple-50 to-violet-50',
-    border: 'border-purple-100',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 3H2l8 9.46V19l4 2V12.46z" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M2 3h20" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-[#D1FAE5]',
+    title: 'Lead Yakalama & CRM',
+    desc: 'Form dolduran ziyaretçi anında CRM\'e kaydedilir, otomatik takip e-postası gider, satış ekibine bildirim düşer.',
+    tag: 'Satış Hattı', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
   },
   {
-    tag: 'Analiz',
-    title: 'AI Raporlama',
-    desc: 'GA4, Search Console ve satış verilerini birleştiren otomatik haftalık raporlar.',
-    color: 'from-emerald-50 to-teal-50',
-    border: 'border-emerald-100',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2.5" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/><path d="M9 8h6M9 12h4" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/><path d="M15 17l2 2 3-3" stroke="#ff521b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    iconBg: 'bg-accent/10',
+    title: 'WhatsApp Botu',
+    desc: 'WhatsApp\'tan gelen mesajlara anında AI yanıtı, randevu alma, sipariş takibi ve yönlendirme.',
+    tag: 'Anlık Yanıt', tagColor: 'text-accent bg-accent/10 border-accent/20',
+  },
+  {
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#e8881a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M14 2v6h6M12 13v4M10 15h4" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-[rgba(232,136,26,0.1)]',
+    title: 'SEO İçerik Üretimi',
+    desc: 'Belirlenen anahtar kelimelere göre AI her hafta yeni blog yazısı üretir, sitede yayınlar, Google\'a bildirir.',
+    tag: 'Organik Büyüme', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
+  },
+  {
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" opacity="0.38"/><path d="M3 20h18M6 14l6-6 4 4 5-5" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    iconBg: 'bg-[#D1FAE5]',
+    title: 'Haftalık Analiz Raporu',
+    desc: 'Ziyaretçi, dönüşüm ve gelir verileri her hafta düzenli rapor olarak e-posta ile iletilir. Siz sadece okuyun.',
+    tag: 'Otomatik Raporlama', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
   },
 ]
 
@@ -34,61 +50,112 @@ export default function AISection() {
     <section id="otomasyon" className="py-28 bg-cream-soft border-t border-black/[0.07]">
       <div className="max-w-[1260px] mx-auto px-8">
 
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-14">
-          <div>
-            <span className="inline-block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3">
-              AI Otomasyon
-            </span>
-            <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-              Çalışırken siz <span className="gradient-text">uyuyun.</span>
-            </h2>
-            <p className="text-ink/50 mt-3 max-w-[440px] leading-[1.7] text-[0.95rem]">
-              Müşteri iletişiminden iç operasyonlara kadar iş süreçlerinizi yapay zekayla otomatize ediyoruz.
-            </p>
+        {/* Header — centered */}
+        <div className="text-center mb-14">
+          <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
+            // AI Otomasyon
+          </span>
+          <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
+            Siteniz <span className="gradient-text">7/24 çalışsın</span>
+          </h2>
+          <p className="text-ink/50 mt-3 max-w-[500px] mx-auto leading-[1.7]">
+            Web sitenize yapay zeka otomasyonları entegre ediyoruz. İnsan müdahalesi olmadan müşterilerinize anında yanıt verin, lead&apos;leri yakalayın, satışlarınızı artırın.
+          </p>
+        </div>
+
+        {/* AI Flow Diagram */}
+        <div className="flex items-center max-w-[720px] mx-auto bg-cream border border-black/[0.09]
+          rounded-[20px] px-10 py-8 gap-0 mb-14">
+
+          {/* Step 1 */}
+          <div className="flex-1 flex flex-col items-center gap-2 text-center">
+            <div className="w-[54px] h-[54px] rounded-[14px] bg-accent/10 border border-accent/20
+              flex items-center justify-center mb-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" stroke="#ff521b" strokeWidth="1.5" strokeLinecap="round" opacity="0.38"/>
+                <circle cx="12" cy="7" r="4" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
+                <path d="M8 11l4 4 4-4" stroke="#ff521b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <span className="text-[0.8rem] font-bold text-ink">Müşteri Aksiyonu</span>
+            <span className="text-[0.7rem] text-ink/50">Form, mesaj, ziyaret...</span>
           </div>
 
-          {/* Flow indicators */}
-          <div className="flex items-center gap-2 shrink-0">
-            {['Tetikleyici', 'İşlem', 'Aksiyon', 'Sonuç'].map((step, i) => (
-              <div key={step} className="flex items-center gap-2">
-                <div className="flex flex-col items-center">
-                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold
-                    ${i === 1
-                      ? 'bg-accent text-white shadow-[0_0_20px_rgba(255,82,27,0.35)]'
-                      : i < 1
-                        ? 'bg-night text-white'
-                        : 'bg-black/[0.06] text-ink/50 border border-black/[0.09]'
-                    }`}>
-                    {i + 1}
-                  </div>
-                  <span className="text-[0.62rem] text-ink/40 mt-1 whitespace-nowrap">{step}</span>
-                </div>
-                {i < 3 && (
-                  <div className="relative w-6 h-px bg-black/10 mb-4">
-                    <div className="absolute -top-[3px] w-1.5 h-1.5 rounded-full bg-accent animate-[flowDot_2s_linear_infinite]" />
-                  </div>
-                )}
-              </div>
-            ))}
+          {/* Connector 1 */}
+          <div className="flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
+            <div className="absolute -top-[3px] w-2 h-2 rounded-full bg-accent
+              shadow-[0_0_6px_rgba(255,82,27,0.6)] animate-[flowDot_2s_linear_infinite]" />
+          </div>
+
+          {/* Step 2 — center (AI) */}
+          <div className="flex-1 flex flex-col items-center gap-2 text-center">
+            <div className="w-[54px] h-[54px] rounded-[14px] flex items-center justify-center mb-1
+              border border-accent/30 shadow-[0_0_24px_rgba(255,82,27,0.15)]"
+              style={{background:'linear-gradient(135deg,rgba(255,82,27,0.12),rgba(232,136,26,0.12))'}}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2a7 7 0 017 7c0 2.5-1.3 4.7-3.3 6L15 19H9l-.3-4.1A7 7 0 0112 2z" stroke="#ff521b" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/>
+                <path d="M9 21h6M8 9h.01M12 7v4M16 9h.01" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </div>
+            <span className="text-[0.8rem] font-bold text-accent">AI Motor</span>
+            <span className="text-[0.7rem] text-ink/50">Analiz & karar</span>
+          </div>
+
+          {/* Connector 2 */}
+          <div className="flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
+            <div className="absolute -top-[3px] w-2 h-2 rounded-full bg-accent
+              shadow-[0_0_6px_rgba(255,82,27,0.6)] animate-[flowDot_2s_linear_infinite_1s]" />
+          </div>
+
+          {/* Step 3 */}
+          <div className="flex-1 flex flex-col items-center gap-2 text-center">
+            <div className="w-[54px] h-[54px] rounded-[14px] bg-accent/10 border border-accent/20
+              flex items-center justify-center mb-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#ff521b" strokeWidth="1.5" strokeLinecap="round" opacity="0.38"/>
+                <path d="M22 4L12 14.01l-3-3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <span className="text-[0.8rem] font-bold text-ink">Otomatik Aksiyon</span>
+            <span className="text-[0.7rem] text-ink/50">E-posta, yanıt, kayıt...</span>
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {cards.map(({ tag, title, desc, color, border }) => (
-            <div
-              key={title}
-              className={`bg-gradient-to-br ${color} ${border} border rounded-[18px] p-6
-                transition-all duration-300 hover:-translate-y-1
-                hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)]`}
-            >
-              <span className="text-[0.7rem] font-bold tracking-wider uppercase text-accent/70 mb-3 block">
+        {/* 6 AI Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {cards.map(({ icon, iconBg, title, desc, tag, tagColor }) => (
+            <div key={title}
+              className="bg-cream border border-black/[0.09] rounded-[18px] p-8
+                transition-all duration-300 hover:-translate-y-1 hover:border-accent/30
+                hover:shadow-[0_16px_40px_rgba(255,82,27,0.10)]">
+              <div className={`w-11 h-11 rounded-xl ${iconBg} flex items-center justify-center mb-4`}>
+                {icon}
+              </div>
+              <h3 className="text-[1.05rem] font-bold text-ink mb-2">{title}</h3>
+              <p className="text-ink/50 text-[0.88rem] leading-[1.65]">{desc}</p>
+              <span className={`inline-block mt-4 text-[0.68rem] font-bold px-3 py-1 rounded-full border ${tagColor}`}>
                 {tag}
               </span>
-              <h3 className="text-[1rem] font-bold text-ink mb-2">{title}</h3>
-              <p className="text-ink/50 text-[0.85rem] leading-[1.7]">{desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Alt CTA şeridi */}
+        <div className="mt-8 bg-cream border border-black/[0.09] rounded-[20px] px-10 py-8
+          flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h3 className="text-[1.05rem] font-bold text-ink mb-1">
+              Hangi otomasyonun size uygun olduğundan emin değil misiniz?
+            </h3>
+            <p className="text-ink/50 text-[0.9rem] max-w-[480px]">
+              İşletmenizin iş akışını anlatalım, size en hızlı ROI getirecek otomasyon setini birlikte belirleyelim.
+            </p>
+          </div>
+          <Link href="/iletisim"
+            className="shrink-0 bg-accent text-white px-7 py-3 rounded-full font-bold text-[0.9rem]
+              no-underline hover:bg-coral transition-colors whitespace-nowrap">
+            Ücretsiz Analiz Al →
+          </Link>
         </div>
 
       </div>

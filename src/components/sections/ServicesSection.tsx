@@ -1,72 +1,4 @@
-const services = [
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="3" width="20" height="14" rx="3" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-        <path d="M8 21h8M12 17v4" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: 'Web Tasarım & Geliştirme',
-    desc: 'Marka kimliğinize uygun, mobil öncelikli ve yüksek dönüşüm oranına sahip kurumsal siteler.',
-    tags: ['Kurumsal', 'Landing Page', 'Portföy'],
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-        <path d="M3 6h18M16 10a4 4 0 01-8 0" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: 'E-Ticaret Çözümleri',
-    desc: 'Satışlarınızı artıracak, kolay yönetilebilir ve hızlı e-ticaret altyapısı.',
-    tags: ['Ödeme Entegrasyonu', 'Stok Yönetimi', 'Mobil'],
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-        <path d="M12 8v4l3 3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M9.5 3.5C6 5 3.5 8.5 3.5 12" stroke="#ff521b" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-      </svg>
-    ),
-    title: 'AI Otomasyon',
-    desc: 'Tekrarlayan iş süreçlerinizi yapay zeka ile otomatize edin, zamandan ve maliyetten tasarruf edin.',
-    tags: ['Chatbot', 'İş Akışı', 'Entegrasyon'],
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-        <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-    title: 'UI/UX Tasarım',
-    desc: 'Wireframe, prototip ve kullanıcı testi ile dönüşümü maksimize eden arayüz tasarımı.',
-    tags: ['Wireframe', 'Prototip', 'Kullanıcı Testi'],
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#ff521b" strokeWidth="1.5" opacity="0.38" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M18 8l2 2-2 2" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-    title: 'SEO & Performans',
-    desc: 'Core Web Vitals optimizasyonu, teknik SEO ve içerik stratejisiyle organik büyüme.',
-    tags: ['Teknik SEO', 'Core Web Vitals', 'İçerik'],
-  },
-  {
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="8" r="4" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    title: 'Marka & Kurumsal Kimlik',
-    desc: 'Logo, renk paleti, tipografi ve stil rehberiyle tutarlı ve güçlü marka kimliği.',
-    tags: ['Logo', 'Design System', 'Stil Rehberi'],
-  },
-]
+import Link from 'next/link'
 
 export default function ServicesSection() {
   return (
@@ -74,45 +6,115 @@ export default function ServicesSection() {
       <div className="max-w-[1260px] mx-auto px-8">
 
         <div className="mb-14">
-          <span className="inline-block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3">
-            Hizmetler
+          <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
+            // Hizmetler
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            İşinizi büyütmek için<br />ihtiyacınız olan her şey
+            Size özel <span className="gradient-text">dijital çözümler</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            Stratejiden uygulamaya, tasarımdan geliştirmeye — tek çatı altında eksiksiz dijital çözümler.
+            İşletmenizin ihtiyacına göre şekillenen, sonuç odaklı web çözümleri sunuyoruz.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map(({ icon, title, desc, tags }) => (
-            <div
-              key={title}
-              className="bg-white border border-black/[0.08] rounded-[18px] p-8
-                transition-all duration-300 hover:-translate-y-1
-                hover:border-accent/30 hover:shadow-[0_12px_40px_rgba(255,82,27,0.10)]
-                group"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5
-                transition-colors group-hover:bg-accent/15">
-                {icon}
-              </div>
-              <h3 className="text-[1.1rem] font-bold text-ink mb-2">{title}</h3>
-              <p className="text-ink/50 text-[0.9rem] leading-[1.7] mb-4">{desc}</p>
-              <div className="flex flex-wrap gap-2">
-                {tags.map(tag => (
-                  <span key={tag}
-                    className="text-[0.72rem] font-semibold text-accent/80 bg-accent/8
-                      px-2.5 py-1 rounded-full">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Bento Grid */}
+        <div className="grid grid-cols-12 gap-4">
 
+          {/* b1 — büyük turuncu kart (7 kolon) */}
+          <div className="col-span-12 lg:col-span-7 bg-accent text-white rounded-[18px] p-9
+            border border-transparent transition-all duration-300
+            hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(255,82,27,0.4)] cursor-default">
+            <div className="text-[5rem] font-black leading-none tracking-tight opacity-[0.18] mb-3 select-none">01</div>
+            <h3 className="text-[1.15rem] font-bold mb-3">Web Tasarımı & Geliştirme</h3>
+            <p className="text-white/80 text-[0.9rem] leading-[1.65]">
+              Modern, hızlı ve dönüşüm odaklı web siteleri tasarlıyoruz. Her proje markanızın DNA&apos;sıyla uyumlu, kullanıcı deneyimini ön planda tutan özel bir çalışmadır.
+            </p>
+            <span className="inline-block mt-5 bg-white/20 text-white text-[0.72rem] font-bold px-3 py-1 rounded-full">
+              ⭐ En Çok Tercih Edilen
+            </span>
+          </div>
+
+          {/* b2 — e-ticaret (5 kolon) */}
+          <div className="col-span-12 lg:col-span-5 bg-[rgba(232,136,26,0.1)] border border-[#FFD5C2] rounded-[18px] p-9
+            transition-all duration-300 hover:-translate-y-1 hover:border-coral hover:shadow-[0_20px_50px_rgba(255,107,53,0.12)] cursor-default">
+            <div className="w-11 h-11 rounded-xl bg-[rgba(232,136,26,0.15)] flex items-center justify-center mb-5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M6 2L3 7v13a2 2 0 002 2h14a2 2 0 002-2V7l-3-5H6z" stroke="#e8881a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/>
+                <path d="M3 7h18M16 11a4 4 0 01-8 0" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </div>
+            <h3 className="text-[1.1rem] font-bold text-coral mb-2">E-Ticaret Çözümleri</h3>
+            <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
+              Satışlarınızı artıracak, yönetimi kolay e-ticaret altyapıları. Shopify, WooCommerce ve özel çözümler.
+            </p>
+            <span className="inline-block mt-5 bg-[rgba(232,136,26,0.1)] text-coral border border-[rgba(232,136,26,0.25)] text-[0.72rem] font-bold px-3 py-1 rounded-full">
+              Shopify & WooCommerce
+            </span>
+          </div>
+
+          {/* b3 — Mobil (4 kolon) */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-black/[0.025] border border-black/[0.09] rounded-[18px] p-9
+            transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_20px_50px_rgba(255,82,27,0.12)] cursor-default">
+            <div className="w-11 h-11 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="2" width="14" height="20" rx="2.5" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
+                <path d="M9 6h6M12 18h.01" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </div>
+            <h3 className="text-[1.1rem] font-bold text-ink mb-2">Mobil Uyumluluk</h3>
+            <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
+              Her cihazda mükemmel görünen responsive tasarımlar. Telefonda da, tablette de.
+            </p>
+          </div>
+
+          {/* b4 — SEO (4 kolon) */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-black/[0.025] border border-black/[0.09] rounded-[18px] p-9
+            transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_20px_50px_rgba(255,82,27,0.12)] cursor-default">
+            <div className="w-11 h-11 rounded-xl bg-[#D1FAE5] flex items-center justify-center mb-5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L4 13.5h7L9.5 22 20 10.5h-7z" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/>
+                <path d="M13 2L7.5 11H13" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <h3 className="text-[1.1rem] font-bold text-ink mb-2">Performans & SEO</h3>
+            <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
+              Hızlı yükleme süreleri ve Google&apos;da üst sıra görünürlüğü için teknik optimizasyon.
+            </p>
+          </div>
+
+          {/* b5 — Marka (4 kolon) */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-black/[0.025] border border-black/[0.09] rounded-[18px] p-9
+            transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-[0_20px_50px_rgba(255,82,27,0.12)] cursor-default">
+            <div className="w-11 h-11 rounded-xl bg-accent/10 flex items-center justify-center mb-5">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="#ff521b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.38"/>
+                <path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="#ff521b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <h3 className="text-[1.1rem] font-bold text-ink mb-2">Marka Kimliği</h3>
+            <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
+              Logo, renk paleti ve görsel dil tasarımıyla markanızı güçlendiriyoruz.
+            </p>
+          </div>
+
+          {/* b6 — Bakım & Destek (tam genişlik) */}
+          <div className="col-span-12 bg-cream-soft border border-black/[0.09] rounded-[18px] p-9
+            flex flex-col md:flex-row items-start md:items-center justify-between gap-6
+            transition-all duration-300 hover:border-accent/20">
+            <div>
+              <h3 className="text-[1.1rem] font-bold text-ink mb-1">Bakım & Teknik Destek</h3>
+              <p className="text-ink/50 text-[0.9rem] max-w-[500px] leading-[1.65]">
+                Siteniz yayına girdikten sonra da yanınızdayız. Güncelleme, güvenlik ve teknik destek hizmetleriyle kesintisiz çalışmanızı sağlıyoruz.
+              </p>
+            </div>
+            <Link href="/iletisim"
+              className="shrink-0 bg-accent text-white px-7 py-3 rounded-full font-bold text-[0.9rem]
+                no-underline hover:bg-coral transition-colors">
+              Teklif Al →
+            </Link>
+          </div>
+
+        </div>
       </div>
     </section>
   )

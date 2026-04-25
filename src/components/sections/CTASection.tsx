@@ -2,42 +2,49 @@ import Link from 'next/link'
 
 export default function CTASection() {
   return (
-    <section className="py-28 bg-night relative overflow-hidden">
+    <section className="py-20 bg-cream-soft border-t border-black/[0.07]">
+      <div className="max-w-[1260px] mx-auto px-8">
+        <div className="relative bg-night rounded-3xl px-16 py-20 text-center overflow-hidden
+          border border-white/[0.06]">
 
-      {/* bg glow */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-          w-[600px] h-[300px] bg-accent/10 rounded-full blur-3xl" />
-      </div>
+          {/* Glow efektleri */}
+          <div aria-hidden className="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] rounded-full pointer-events-none"
+            style={{background:'radial-gradient(circle,rgba(255,82,27,0.25),transparent 65%)'}} />
+          <div aria-hidden className="absolute bottom-[-100px] left-[-100px] w-[350px] h-[350px] rounded-full pointer-events-none"
+            style={{background:'radial-gradient(circle,rgba(252,158,79,0.18),transparent 65%)'}} />
 
-      <div className="max-w-[1260px] mx-auto px-8 relative z-10 text-center">
+          <div className="relative z-10">
+            <span className="text-coral text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4 block">
+              // Hazır mısınız?
+            </span>
+            <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.08] tracking-[-0.03em]
+              text-white mb-4 max-w-[700px] mx-auto">
+              İşletmenizi <span className="gradient-text">birlikte büyütelim</span>
+            </h2>
+            <p className="text-white/60 text-[1.05rem] max-w-[400px] mx-auto leading-[1.75] mb-10">
+              Ücretsiz keşif görüşmesiyle başlayın. Taahhüt yok, baskı yok.
+            </p>
 
-        <span className="inline-block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">
-          Başlayalım
-        </span>
-        <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-black leading-[1.08] tracking-[-0.03em]
-          text-white mb-4 max-w-[700px] mx-auto">
-          Projenizi hayata geçirmeye hazır mısınız?
-        </h2>
-        <p className="text-white/40 text-[1.05rem] max-w-[480px] mx-auto leading-[1.75] mb-10">
-          Ücretsiz keşif görüşmesiyle başlayın. Projenizi anlatalım, birlikte en doğru çözümü belirleyelim.
-        </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="mailto:merhaba@odagency.com"
+                className="bg-white text-accent px-9 py-4 rounded-full font-bold text-[0.95rem]
+                  no-underline transition-all duration-200 hover:-translate-y-0.5
+                  hover:shadow-[0_16px_36px_rgba(0,0,0,0.2)]">
+                merhaba@odagency.com
+              </Link>
+              <a href="https://wa.me/905324652031" target="_blank" rel="noreferrer"
+                className="bg-white/10 text-white/80 border border-white/25 px-9 py-4 rounded-full
+                  font-semibold text-[0.95rem] no-underline transition-all duration-200
+                  hover:border-white/60 hover:text-white">
+                WhatsApp&apos;tan Yaz →
+              </a>
+            </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/iletisim"
-            className="bg-white text-night px-9 py-4 rounded-full font-bold text-[0.95rem]
-              no-underline transition-all duration-200 hover:-translate-y-0.5
-              hover:shadow-[0_16px_40px_rgba(255,255,255,0.15)]">
-            merhaba@odagency.com
-          </Link>
-          <a href="https://wa.me/905324652031" target="_blank" rel="noreferrer"
-            className="bg-white/10 text-white/80 border border-white/15 px-9 py-4 rounded-full
-              font-semibold text-[0.95rem] no-underline transition-all duration-200
-              hover:bg-white/15 hover:text-white">
-            WhatsApp&apos;tan Yaz →
-          </a>
+            <p className="mt-8 text-white/45 text-[0.82rem]">
+              ⚡ Genellikle 2 saat içinde yanıt veriyoruz.
+            </p>
+          </div>
         </div>
-
       </div>
     </section>
   )

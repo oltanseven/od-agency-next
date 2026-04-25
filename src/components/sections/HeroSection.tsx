@@ -1,30 +1,75 @@
 import Link from 'next/link'
 
+/* Mini site renk temaları */
+const siteStyles: Record<string, string> = {
+  ecom:   'bg-gradient-to-br from-[#F5F3FF] to-[#EDE9FE]',
+  rest:   'bg-gradient-to-br from-[#FFF7ED] to-[#FFEDD5]',
+  law:    'bg-gradient-to-br from-[#EFF6FF] to-[#DBEAFE]',
+  saas:   'bg-gradient-to-br from-[#0F1A2E] to-[#1E2D47]',
+  health: 'bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7]',
+  real:   'bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7]',
+  port:   'bg-gradient-to-br from-[#FDF2F8] to-[#FCE7F3]',
+  fin:    'bg-gradient-to-br from-[#F0FDFA] to-[#CCFBF1]',
+  edu:    'bg-gradient-to-br from-[#FEFCE8] to-[#FEF9C3]',
+}
+
+function MiniCard({ type }: { type: string }) {
+  return (
+    <div className="w-[200px] h-[138px] shrink-0 rounded-[12px] overflow-hidden border border-white/10 shadow-[0_4px_16px_rgba(0,0,0,0.15)] bg-white">
+      <div className="h-[22px] bg-[#F4F4F6] border-b border-black/5 flex items-center gap-1 px-2">
+        <span className="w-[6px] h-[6px] rounded-full bg-[#FF5F57]" />
+        <span className="w-[6px] h-[6px] rounded-full bg-[#FEBC2E]" />
+        <span className="w-[6px] h-[6px] rounded-full bg-[#28C840]" />
+        <div className="flex-1 h-[10px] bg-[#E2E2E6] rounded-sm ml-1" />
+      </div>
+      <div className={`h-[calc(100%-22px)] ${siteStyles[type] || siteStyles.ecom} relative`} />
+    </div>
+  )
+}
+
+const row1 = ['ecom','rest','law','saas','health','real','port']
+const row2 = ['fin','edu','port','saas','rest','ecom','real']
+const row3 = ['health','law','fin','edu','ecom','port','rest']
+
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center pt-32 pb-24 bg-cream relative overflow-hidden">
 
-      {/* Background blur blobs */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-coral/5 rounded-full blur-3xl" />
+      {/* Kayan kart arka planı */}
+      <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.15]">
+        <div className="flex flex-col gap-4 justify-center h-full">
+          {/* Satır 1 — sola */}
+          <div className="flex gap-4 w-max animate-[slideLeft_38s_linear_infinite]">
+            {[...row1,...row1].map((t,i) => <MiniCard key={i} type={t} />)}
+          </div>
+          {/* Satır 2 — sağa */}
+          <div className="flex gap-4 w-max animate-[slideRight_44s_linear_infinite]">
+            {[...row2,...row2].map((t,i) => <MiniCard key={i} type={t} />)}
+          </div>
+          {/* Satır 3 — sola */}
+          <div className="flex gap-4 w-max animate-[slideLeft_30s_linear_infinite]">
+            {[...row3,...row3].map((t,i) => <MiniCard key={i} type={t} />)}
+          </div>
+        </div>
       </div>
+
+      {/* Gradient örtü */}
+      <div aria-hidden className="absolute inset-0 pointer-events-none"
+        style={{background:'linear-gradient(to bottom,#FFFEF8 0%,transparent 18%,transparent 82%,#FFFEF8 100%), linear-gradient(to right,#FFFEF8 0%,transparent 20%,transparent 80%,#FFFEF8 100%)'}} />
 
       <div className="max-w-[1260px] mx-auto px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* SOL: metin kartı */}
-          <div className="bg-cream/88 backdrop-blur-xl border border-black/10
+          <div className="bg-[rgba(255,254,248,0.88)] backdrop-blur-xl border border-black/10
             shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-12">
 
-            {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
               px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-7">
               <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
               2026&apos;nın en iyi web deneyimleri için buradayız
             </div>
 
-            {/* Headline */}
             <h1 className="text-[clamp(1.8rem,2.8vw,2.8rem)] font-black leading-[1.08] tracking-[-0.03em] mb-4 text-ink">
               Markanızı<br />
               <span className="gradient-text">dijitalde</span><br />
@@ -42,7 +87,7 @@ export default function HeroSection() {
                   hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1">
                 Ücretsiz Keşif Görüşmesi →
               </Link>
-              <Link href="/#referanslar"
+              <Link href="#referanslar"
                 className="bg-transparent text-ink px-8 py-3.5 rounded-full font-semibold text-[0.95rem]
                   no-underline border border-black/[0.09] transition-all duration-200
                   hover:border-accent hover:text-accent inline-flex items-center gap-1">
@@ -53,39 +98,29 @@ export default function HeroSection() {
 
           {/* SAĞ: browser mockup + metric pills */}
           <div className="hidden lg:block relative h-[400px]">
-
             {/* Browser mockup */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
               w-[360px] bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.13)]
               border border-black/[0.07] overflow-hidden">
-
-              {/* Bar */}
               <div className="bg-[#F2F2F2] border-b border-black/[0.06] px-3 py-2 flex items-center gap-2.5">
                 <div className="flex gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
                   <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
                 </div>
-                <div className="flex-1 bg-[#E5E5E5] rounded-full h-[22px] px-2.5 flex items-center
-                  text-[0.62rem] text-gray-400">
+                <div className="flex-1 bg-[#E5E5E5] rounded-full h-[22px] px-2.5 flex items-center text-[0.62rem] text-gray-400">
                   od-agency.com/proje
                 </div>
               </div>
-
-              {/* Screen */}
               <div className="p-3.5 bg-[#FAFAFA]">
                 <div className="h-7 bg-white rounded-lg mb-3 border border-black/5" />
-                <div className="bg-gradient-to-br from-orange-50 to-white rounded-xl p-4 mb-3 border border-accent/8">
+                <div className="bg-gradient-to-br from-orange-50 to-white rounded-xl p-4 mb-3 border border-orange-100/50">
                   <div className="h-3 w-[70%] bg-ink/80 rounded-md mb-2" />
                   <div className="h-2 w-[55%] bg-ink/30 rounded mb-3.5" />
                   <div className="h-5 w-28 bg-accent rounded-full" />
                 </div>
                 <div className="flex gap-2">
-                  {[
-                    'from-orange-50 to-red-50',
-                    'from-blue-50 to-indigo-50',
-                    'from-green-50 to-emerald-50',
-                  ].map((g) => (
+                  {['from-orange-50 to-red-50','from-blue-50 to-indigo-50','from-green-50 to-emerald-50'].map(g => (
                     <div key={g} className={`flex-1 h-14 rounded-lg bg-gradient-to-br ${g} border border-black/5`} />
                   ))}
                 </div>
@@ -95,8 +130,7 @@ export default function HeroSection() {
             {/* Pill 1 — sol üst */}
             <div className="absolute top-2.5 left-[-20px] bg-white border border-black/[0.08]
               shadow-[0_8px_28px_rgba(0,0,0,0.1)] rounded-2xl px-4 py-3
-              flex items-center gap-3 whitespace-nowrap
-              animate-[floatA_4s_ease-in-out_infinite]">
+              flex items-center gap-3 whitespace-nowrap animate-[floatA_4s_ease-in-out_infinite]">
               <div className="w-9 h-9 rounded-[10px] bg-accent/10 flex items-center justify-center shrink-0">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <rect x="2" y="2" width="20" height="20" rx="6" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
@@ -112,8 +146,7 @@ export default function HeroSection() {
             {/* Pill 2 — sağ alt */}
             <div className="absolute bottom-7 right-[-10px] bg-white border border-black/[0.08]
               shadow-[0_8px_28px_rgba(0,0,0,0.1)] rounded-2xl px-4 py-3
-              flex items-center gap-3 whitespace-nowrap
-              animate-[floatB_5s_ease-in-out_infinite]">
+              flex items-center gap-3 whitespace-nowrap animate-[floatB_5s_ease-in-out_infinite]">
               <div className="w-9 h-9 rounded-[10px] bg-accent/10 flex items-center justify-center shrink-0">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                   <circle cx="12" cy="12" r="10" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
@@ -133,13 +166,11 @@ export default function HeroSection() {
               <div className="text-[1.5rem] font-black text-[#28C840] leading-none">100</div>
               <div className="text-[0.7rem] text-ink/50 font-medium mt-1">Performance</div>
               <div className="flex gap-1 justify-center mt-1.5">
-                {[0,1,2].map(i => (
-                  <span key={i} className="w-2 h-2 rounded-full bg-[#28C840]" />
-                ))}
+                {[0,1,2].map(i => <span key={i} className="w-2 h-2 rounded-full bg-[#28C840]" />)}
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
     </section>
