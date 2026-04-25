@@ -114,13 +114,13 @@ export default function BlogPage() {
           {/* Category filter */}
           <div className="flex flex-wrap gap-2 mb-14">
             {cats.map((cat, i) => (
-              <button key={cat}
-                className={`px-4 py-2 rounded-full text-[0.8rem] font-semibold border-[1.5px] transition-all
+              <span key={cat}
+                className={`px-4 py-2 rounded-full text-[0.8rem] font-semibold border-[1.5px]
                   ${i === 0
                     ? 'bg-accent border-accent text-white'
-                    : 'bg-cream border-black/[0.09] text-ink/50 hover:border-accent hover:text-accent'}`}>
+                    : 'bg-cream border-black/[0.09] text-ink/50'}`}>
                 {cat}
-              </button>
+              </span>
             ))}
           </div>
 
@@ -204,14 +204,14 @@ export default function BlogPage() {
           {/* Pagination */}
           <div className="flex justify-center gap-2 mt-14">
             {['1', '2', '3', '→'].map((p, i) => (
-              <button key={p}
+              <span key={p}
                 className={`w-10 h-10 rounded-[10px] border-[1.5px] text-[0.88rem] font-semibold
-                  transition-all duration-200
+                  flex items-center justify-center cursor-pointer
                   ${i === 0
                     ? 'bg-accent border-accent text-white'
-                    : 'bg-cream border-black/[0.09] text-ink/50 hover:bg-accent hover:border-accent hover:text-white'}`}>
+                    : 'bg-cream border-black/[0.09] text-ink/50'}`}>
                 {p}
-              </button>
+              </span>
             ))}
           </div>
 
@@ -223,7 +223,7 @@ export default function BlogPage() {
               <h3 className="text-white font-black text-[1.4rem] mb-1">Yeni yazıları kaçırmayın</h3>
               <p className="text-[0.9rem]" style={{ color: 'rgba(255,255,255,0.5)' }}>Haftada bir, işinize yarayacak içerikler. Spam yok.</p>
             </div>
-            <form className="flex gap-2 flex-wrap" onSubmit={e => e.preventDefault()}>
+            <form className="flex gap-2 flex-wrap" action="#">
               <input type="email" placeholder="E-posta adresiniz"
                 className="px-5 py-3 rounded-full text-[0.88rem] text-white w-[240px] outline-none
                   transition-colors focus:border-accent"
