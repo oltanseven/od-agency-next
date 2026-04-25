@@ -31,29 +31,28 @@ const cards = [
 
 export default function AISection() {
   return (
-    <section id="otomasyon" className="py-28 bg-cream-soft">
+    <section id="otomasyon" className="py-28 bg-cream-soft border-t border-black/[0.07]">
       <div className="max-w-[1260px] mx-auto px-8">
 
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-14">
           <div>
             <span className="inline-block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3">
               AI Otomasyon
             </span>
-            <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-              Çalışırken siz<br />
-              <span className="gradient-text">uyuyun.</span>
+            <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
+              Çalışırken siz <span className="gradient-text">uyuyun.</span>
             </h2>
-            <p className="text-ink/50 mt-3 max-w-[480px] leading-[1.7]">
+            <p className="text-ink/50 mt-3 max-w-[440px] leading-[1.7] text-[0.95rem]">
               Müşteri iletişiminden iç operasyonlara kadar iş süreçlerinizi yapay zekayla otomatize ediyoruz.
             </p>
           </div>
 
           {/* Flow indicators */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="flex items-center gap-2 shrink-0">
             {['Tetikleyici', 'İşlem', 'Aksiyon', 'Sonuç'].map((step, i) => (
-              <div key={step} className="flex items-center gap-3">
+              <div key={step} className="flex items-center gap-2">
                 <div className="flex flex-col items-center">
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xs font-bold
+                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold
                     ${i === 1
                       ? 'bg-accent text-white shadow-[0_0_20px_rgba(255,82,27,0.35)]'
                       : i < 1
@@ -62,11 +61,11 @@ export default function AISection() {
                     }`}>
                     {i + 1}
                   </div>
-                  <span className="text-[0.65rem] text-ink/40 mt-1 whitespace-nowrap">{step}</span>
+                  <span className="text-[0.62rem] text-ink/40 mt-1 whitespace-nowrap">{step}</span>
                 </div>
                 {i < 3 && (
-                  <div className="relative w-8 h-px bg-black/10 mb-4">
-                    <div className="absolute -top-[3px] left-1/2 w-1.5 h-1.5 rounded-full bg-accent animate-[flowDot_2s_linear_infinite]" />
+                  <div className="relative w-6 h-px bg-black/10 mb-4">
+                    <div className="absolute -top-[3px] w-1.5 h-1.5 rounded-full bg-accent animate-[flowDot_2s_linear_infinite]" />
                   </div>
                 )}
               </div>

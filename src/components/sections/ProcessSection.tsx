@@ -64,7 +64,7 @@ export default function ProcessSection() {
               )}
 
               <div className={`rounded-[18px] border p-6 h-full transition-all duration-300 ${statusStyle[status]}`}>
-                <div className="text-[0.72rem] font-bold tracking-widest opacity-60 mb-4">{num}</div>
+                <div className="text-[0.72rem] font-bold tracking-widest opacity-90 mb-4">{num}</div>
                 <h3 className="text-[1rem] font-bold mb-2">{title}</h3>
                 <p className="text-[0.85rem] leading-[1.7] opacity-70">{desc}</p>
               </div>

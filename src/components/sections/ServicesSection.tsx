@@ -70,7 +70,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="hizmetler" className="py-28 bg-cream">
+    <section id="hizmetler" className="py-28 bg-cream border-t border-black/[0.07]">
       <div className="max-w-[1260px] mx-auto px-8">
 
         <div className="mb-14">
@@ -89,9 +89,9 @@ export default function ServicesSection() {
           {services.map(({ icon, title, desc, tags }) => (
             <div
               key={title}
-              className="bg-black/[0.03] border border-black/[0.09] rounded-[18px] p-8
+              className="bg-white border border-black/[0.08] rounded-[18px] p-8
                 transition-all duration-300 hover:-translate-y-1
-                hover:border-accent/30 hover:shadow-[0_8px_32px_rgba(255,82,27,0.08)]
+                hover:border-accent/30 hover:shadow-[0_12px_40px_rgba(255,82,27,0.10)]
                 group"
             >
               <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5
