@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-montserrat), -apple-system, sans-serif;
+
+  --color-accent:     #ff521b;
+  --color-coral:      #e8881a;
+  --color-cream:      #FFFEF8;
+  --color-cream-soft: #F6F2E8;
+  --color-night:      #0D0B1E;
+  --color-ink:        #1C1207;
+  --color-ink2:       #5a3a00;
+}
+
+:root {
+  --accent-lt:  rgba(255,82,27,0.1);
+  --coral-lt:   rgba(232,136,26,0.1);
+  --border:     rgba(0,0,0,0.09);
+  --bg-card:    rgba(0,0,0,0.03);
+  --text-muted: rgba(28,18,7,0.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #F6F2E8; }
+::-webkit-scrollbar-thumb { background: #e8881a; border-radius: 3px; }
+
+/* ── Utilities ── */
+.gradient-text {
+  background: linear-gradient(135deg, #fc9e4f 0%, #ff521b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Animations ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .4; transform: scale(1.4); }
+}
+@keyframes slideLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes floatA { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-8px) } }
+@keyframes floatB { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-6px) } }
+@keyframes floatC { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-10px) } }
+@keyframes flowDot {
+  0%   { left:-8px; opacity:0 }
+  10%  { opacity:1 }
+  90%  { opacity:1 }
+  100% { left:calc(100% + 8px); opacity:0 }
+}
+@keyframes nodePulse {
+  0%,100% { box-shadow:0 0 0 0 rgba(255,82,27,0); }
+  50%     { box-shadow:0 0 0 8px rgba(255,82,27,0.15); }
+}
+@keyframes fillBar {
+  from { width:0 }
+  to   { width:var(--fill) }
+}

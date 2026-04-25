@@ -1,0 +1,147 @@
+import Link from 'next/link'
+
+export default function HeroSection() {
+  return (
+    <section className="min-h-screen flex items-center pt-32 pb-24 bg-cream relative overflow-hidden">
+
+      {/* Background blur blobs */}
+      <div aria-hidden className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-coral/5 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-[1260px] mx-auto px-8 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+          {/* SOL: metin kartı */}
+          <div className="bg-cream/88 backdrop-blur-xl border border-black/10
+            shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-12">
+
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
+              px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-7">
+              <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
+              2026&apos;nın en iyi web deneyimleri için buradayız
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-[clamp(1.8rem,2.8vw,2.8rem)] font-black leading-[1.08] tracking-[-0.03em] mb-4 text-ink">
+              Markanızı<br />
+              <span className="gradient-text">dijitalde</span><br />
+              konumlandırıyoruz.
+            </h1>
+
+            <p className="text-ink/50 text-[0.95rem] leading-[1.75] mb-8 max-w-[420px]">
+              OD Agency olarak işletmenize özel, yüksek performanslı web siteleri ve dijital deneyimler tasarlıyoruz. Rakiplerinizden bir adım önde olun.
+            </p>
+
+            <div className="flex gap-4 flex-wrap">
+              <Link href="/iletisim"
+                className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
+                  no-underline transition-all duration-200 hover:bg-coral hover:-translate-y-0.5
+                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1">
+                Ücretsiz Keşif Görüşmesi →
+              </Link>
+              <Link href="/#referanslar"
+                className="bg-transparent text-ink px-8 py-3.5 rounded-full font-semibold text-[0.95rem]
+                  no-underline border border-black/[0.09] transition-all duration-200
+                  hover:border-accent hover:text-accent inline-flex items-center gap-1">
+                Çalışmalarımıza Bak
+              </Link>
+            </div>
+          </div>
+
+          {/* SAĞ: browser mockup + metric pills */}
+          <div className="hidden lg:block relative h-[400px]">
+
+            {/* Browser mockup */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+              w-[360px] bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.13)]
+              border border-black/[0.07] overflow-hidden">
+
+              {/* Bar */}
+              <div className="bg-[#F2F2F2] border-b border-black/[0.06] px-3 py-2 flex items-center gap-2.5">
+                <div className="flex gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
+                </div>
+                <div className="flex-1 bg-[#E5E5E5] rounded-full h-[22px] px-2.5 flex items-center
+                  text-[0.62rem] text-gray-400">
+                  od-agency.com/proje
+                </div>
+              </div>
+
+              {/* Screen */}
+              <div className="p-3.5 bg-[#FAFAFA]">
+                <div className="h-7 bg-white rounded-lg mb-3 border border-black/5" />
+                <div className="bg-gradient-to-br from-orange-50 to-white rounded-xl p-4 mb-3 border border-accent/8">
+                  <div className="h-3 w-[70%] bg-ink/80 rounded-md mb-2" />
+                  <div className="h-2 w-[55%] bg-ink/30 rounded mb-3.5" />
+                  <div className="h-5 w-28 bg-accent rounded-full" />
+                </div>
+                <div className="flex gap-2">
+                  {[
+                    'from-orange-50 to-red-50',
+                    'from-blue-50 to-indigo-50',
+                    'from-green-50 to-emerald-50',
+                  ].map((g) => (
+                    <div key={g} className={`flex-1 h-14 rounded-lg bg-gradient-to-br ${g} border border-black/5`} />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Pill 1 — sol üst */}
+            <div className="absolute top-2.5 left-[-20px] bg-white border border-black/[0.08]
+              shadow-[0_8px_28px_rgba(0,0,0,0.1)] rounded-2xl px-4 py-3
+              flex items-center gap-3 whitespace-nowrap
+              animate-[floatA_4s_ease-in-out_infinite]">
+              <div className="w-9 h-9 rounded-[10px] bg-accent/10 flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="20" height="20" rx="6" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
+                  <path d="M8 12l3 3 5-5" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <div className="text-[1.15rem] font-black text-ink leading-none">42+</div>
+                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Tamamlanan Proje</div>
+              </div>
+            </div>
+
+            {/* Pill 2 — sağ alt */}
+            <div className="absolute bottom-7 right-[-10px] bg-white border border-black/[0.08]
+              shadow-[0_8px_28px_rgba(0,0,0,0.1)] rounded-2xl px-4 py-3
+              flex items-center gap-3 whitespace-nowrap
+              animate-[floatB_5s_ease-in-out_infinite]">
+              <div className="w-9 h-9 rounded-[10px] bg-accent/10 flex items-center justify-center shrink-0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
+                  <path d="M12 6v6l4 2" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <div className="text-[1.15rem] font-black text-ink leading-none">98%</div>
+                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Müşteri Memnuniyeti</div>
+              </div>
+            </div>
+
+            {/* Score badge — sağ üst */}
+            <div className="absolute top-3.5 right-0 bg-white border border-black/[0.08]
+              shadow-[0_8px_28px_rgba(0,0,0,0.1)] rounded-2xl px-4 py-3 text-center
+              animate-[floatC_4.5s_ease-in-out_infinite]">
+              <div className="text-[1.5rem] font-black text-[#28C840] leading-none">100</div>
+              <div className="text-[0.7rem] text-ink/50 font-medium mt-1">Performance</div>
+              <div className="flex gap-1 justify-center mt-1.5">
+                {[0,1,2].map(i => (
+                  <span key={i} className="w-2 h-2 rounded-full bg-[#28C840]" />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
