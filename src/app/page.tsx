@@ -22,17 +22,26 @@ import PortfolioSection    from '@/components/sections/PortfolioSection'
 import StatsSection        from '@/components/sections/StatsSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import CTASection          from '@/components/sections/CTASection'
+import WaveDivider         from '@/components/WaveDivider'
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <WaveDivider topColor="#FFFEF8" bottomColor="#0D0B1E" variant="wave" />
       <MarqueeSection />
+      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="curve" flip />
       <ServicesSection />
+      {/* Services → AI: çok yakın renkler, slope yeter */}
+      <WaveDivider topColor="#FFFEF8" bottomColor="#F6F2E8" variant="slope" />
       <AISection />
+      <WaveDivider topColor="#F6F2E8" bottomColor="#0D0B1E" variant="wave" flip />
       <ProcessSection />
+      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="curve" />
       <PortfolioSection />
+      <WaveDivider topColor="#FFFEF8" bottomColor="#ff521b" variant="wave" flip />
       <StatsSection />
+      <WaveDivider topColor="#ff521b" bottomColor="#FFFEF8" variant="slope" />
       <TestimonialsSection />
       <CTASection />
     </>
