@@ -4,7 +4,7 @@ import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
   title: 'E-Ticaret Sitesi Kurma | Online Mağazanızı Açın | OD Agency',
-  description: 'Ödeme, stok, kargo entegrasyonu dahil e-ticaret sitesi. Terk sepeti otomasyonu ile kaçan satışları yakalayın. 35.000₺\'den başlayan fiyatlar.',
+  description: 'Ödeme, stok, kargo entegrasyonu dahil e-ticaret sitesi. Terk sepeti otomasyonu dahil. 35.000₺\'den başlayan fiyatlar.',
   keywords: ['e-ticaret sitesi', 'online mağaza', 'e-ticaret kurma', 'shopify', 'woocommerce', 'iyzico entegrasyonu', 'e-ticaret fiyatları'],
   alternates: { canonical: 'https://odagency.com/e-ticaret' },
 }

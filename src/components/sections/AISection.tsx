@@ -5,7 +5,7 @@ const cards = [
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#ff521b" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/></svg>,
     iconBg: 'bg-accent/10',
     title: 'AI Chatbot',
-    desc: 'Ziyaretçilerin sorularını anında yanıtlar, ürün önerir ve potansiyel müşteriyi sıcak tutar. Gece 3\'te bile.',
+    desc: 'Ziyaretçilerin sorularını anında yanıtlar, ürün önerir ve potansiyel müşteriyi sıcak tutar. 7/24 aktif.',
     tag: '7/24 Destek', tagColor: 'text-accent bg-accent/10 border-accent/20',
   },
   {
@@ -59,10 +59,10 @@ export default function AISection() {
             // AI Otomasyon
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            Gece 3&apos;te bile <span className="gradient-text">müşterinize yanıt verin</span>
+            7/24 kesintisiz <span className="gradient-text">müşteri iletişimi</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] mx-auto leading-[1.7]">
-            Siz uyurken chatbot müşteri sorularını yanıtlasın, lead&apos;ler otomatik kayıt olsun, terk sepeti e-postaları gönderilsin.
+            AI destekli chatbot müşteri sorularını yanıtlar, lead&apos;ler otomatik kayıt olur, terk sepeti e-postaları iletilir.
           </p>
         </div>
 

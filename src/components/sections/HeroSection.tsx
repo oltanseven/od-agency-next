@@ -107,7 +107,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-ink/50 text-[0.95rem] leading-[1.75] mb-8 max-w-[420px]">
-              Telefondan da mükemmel görünen, Google&apos;da üst sıralarda çıkan web siteniz ile dijitalde fark yaratın. Hemen başlayalım.
+              Telefondan da mükemmel görünen, Google&apos;da üst sıralarda çıkan web siteniz ile dijitalde fark yaratın.
             </p>
 
             <div className="flex gap-4 flex-wrap">

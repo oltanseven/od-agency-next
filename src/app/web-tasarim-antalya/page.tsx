@@ -239,7 +239,7 @@ export default function AntalyaPage() {
                 Projenizi <span className="gradient-text">birlikte başlatalım</span>
               </h2>
               <p className="text-white/60 max-w-[380px] mx-auto leading-[1.75] mb-8">
-                Ücretsiz keşif görüşmesiyle ihtiyaçlarınızı anlayalım. Taahhüt yok, baskı yok.
+                Ücretsiz keşif görüşmesiyle ihtiyaçlarınızı anlayalım. Hiçbir taahhüt gerektirmez.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/iletisim"

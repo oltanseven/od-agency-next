@@ -27,7 +27,7 @@ export default function ServicesSection() {
             <div className="text-[5rem] font-black leading-none tracking-tight opacity-[0.18] mb-3 select-none">01</div>
             <h3 className="text-[1.15rem] font-bold mb-3">Web Tasarımı & Geliştirme</h3>
             <p className="text-white/80 text-[0.9rem] leading-[1.65]">
-              Müşterileriniz sitenize girdiğinde 3 saniyede ne yaptığınızı anlasın, güvensin ve iletişime geçsin. Google&apos;da ilk sayfada çıkın.
+              Ziyaretçileriniz sitenize girdiğinde 3 saniyede ne yaptığınızı anlar, güvenir ve iletişime geçer. Google&apos;da ilk sayfada yer alırsınız.
             </p>
             <span className="inline-block mt-5 bg-white/20 text-white text-[0.72rem] font-bold px-3 py-1 rounded-full">
               ⭐ En Çok Tercih Edilen
@@ -45,7 +45,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-coral mb-2">E-Ticaret Çözümleri</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Ürünlerinizi online satışa açın. Ödeme, stok, kargo tek panelden yönetin. Sepet terk eden müşterilere otomatik hatırlatma gönderilsin.
+              Ürünlerinizi online satışa açın. Ödeme, stok, kargo tek panelden yönetilir. Sepet terk eden müşterilere otomatik hatırlatma iletilir.
             </p>
             <span className="inline-block mt-5 bg-[rgba(232,136,26,0.1)] text-coral border border-[rgba(232,136,26,0.25)] text-[0.72rem] font-bold px-3 py-1 rounded-full">
               Shopify & WooCommerce
@@ -63,7 +63,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-2">Mobil Uyumluluk</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Müşterilerinizin %70&apos;i telefondan geliyor. Siteniz telefonda da mükemmel çalışsın, satış kaçırmayın.
+              Ziyaretçilerinizin %70&apos;i mobil cihazlardan geliyor. Siteniz her ekran boyutunda kusursuz çalışır.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-2">Performans & SEO</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Siteniz 1 saniyede açılsın, Google&apos;da ilk sayfada çıksın. Rakipleriniz reklam verirken siz organik trafik kazanın.
+              Siteniz 1 saniyede yüklenir, Google&apos;da ilk sayfada yer alır. Organik trafik ile sürdürülebilir büyüme sağlarsınız.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-2">Marka Kimliği</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Müşterileriniz sizi bir bakışta tanısın. Logo, renk paleti ve görsel diliniz profesyonel bir bütün oluştursun.
+              Tutarlı görsel kimlik ile markanız akılda kalır. Logo, renk paleti ve görsel diliniz profesyonel bir bütün oluşturur.
             </p>
           </div>
 

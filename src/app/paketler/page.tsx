@@ -191,7 +191,7 @@ export default function PaketlerPage() {
                 style={{ color: '#fc9e4f' }}>AI Pro</div>
               <div className="text-[1.3rem] font-extrabold mb-3 text-white">Tam Otomasyon</div>
               <p className="text-[0.85rem] leading-[1.65] mb-7" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                Web siteniz + yapay zeka otomasyonları. Siz uyurken bile müşterilerinizle iletişimde kalın.
+                Web siteniz + yapay zeka otomasyonları. İşletmeniz 7/24 müşterilerinizle iletişimde kalır.
               </p>
               <div className="mb-7 pb-7" style={{ borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                 <div className="text-[2.4rem] font-black tracking-tight text-white leading-none">

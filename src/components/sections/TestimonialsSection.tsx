@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
               İlk adımı atın, ücretsiz web sitesi analizi alın
             </h3>
             <p className="text-ink/50 text-[0.9rem] max-w-[480px]">
-              Mevcut sitenizi veya projenizi birlikte değerlendirelim. Taahhüt yok, baskı yok.
+              Mevcut sitenizi veya projenizi profesyonelce değerlendirelim. Hiçbir taahhüt gerektirmez.
             </p>
           </div>
           <Link href="/iletisim"

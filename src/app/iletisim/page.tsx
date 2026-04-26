@@ -297,7 +297,7 @@ export default function IletisimPage() {
                 color: '#ff521b',
                 icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#ff521b" strokeWidth="1.5" opacity="0.35"/><path d="M9 12l2 2 4-4" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
                 title: '14 Gün Memnuniyet Garantisi',
-                desc: 'Memnun kalmazsanız ücretinizi iade ediyoruz. Türkiye\'de bunu yapan kaç ajans var?',
+                desc: 'Projeniz teslim edildikten sonra memnun kalmazsanız 14 gün içinde ücretinizi iade ediyoruz.',
               },
               {
                 color: '#e8881a',

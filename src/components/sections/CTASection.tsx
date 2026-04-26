@@ -25,7 +25,7 @@ export default function CTASection() {
               Ücretsiz web analizi alın. Sitenizin güçlü ve zayıf yönlerini birlikte görelim.
             </p>
             <p className="text-white/35 text-[0.82rem] mb-10">
-              Taahhüt yok, baskı yok, 5 dakikada tamamlanır.
+              Hiçbir taahhüt gerektirmez. 5 dakikada tamamlanır.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

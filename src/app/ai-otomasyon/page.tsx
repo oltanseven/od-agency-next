@@ -5,7 +5,7 @@ import NeuralBackground from '@/components/NeuralBackground'
 
 export const metadata: Metadata = {
   title: 'AI Otomasyon Hizmetleri | Chatbot, E-posta, CRM | OD Agency',
-  description: 'Yapay zeka ile müşterilerinize 7/24 yanıt verin. AI chatbot, e-posta otomasyonu, WhatsApp botu ve lead yakalama. 15.000₺\'den başlayan fiyatlar.',
+  description: '7/24 kesintisiz müşteri iletişimi. AI chatbot, e-posta otomasyonu, WhatsApp botu ve lead yakalama çözümleri. 15.000₺\'den başlayan fiyatlar.',
   keywords: ['AI otomasyon', 'chatbot', 'e-posta otomasyonu', 'whatsapp botu', 'lead yakalama', 'CRM entegrasyonu', 'yapay zeka'],
   alternates: { canonical: 'https://odagency.com/ai-otomasyon' },
 }

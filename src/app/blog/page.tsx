@@ -143,7 +143,7 @@ export default async function BlogPage() {
             justify-between gap-8 flex-wrap"
             style={{ background: '#0D0B1E' }}>
             <div>
-              <h3 className="text-white font-black text-[1.4rem] mb-1">Yeni yazıları kaçırmayın</h3>
+              <h3 className="text-white font-black text-[1.4rem] mb-1">Yeni içeriklerden haberdar olun</h3>
               <p className="text-[0.9rem]" style={{ color: 'rgba(255,255,255,0.5)' }}>Haftada bir, işinize yarayacak içerikler. Spam yok.</p>
             </div>
             <NewsletterForm />
