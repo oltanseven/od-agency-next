@@ -49,7 +49,7 @@ export default function CTASection() {
             </div>
 
             <p className="mt-8 text-white/45 text-[0.82rem]">
-              ⚡ Genellikle 2 saat içinde yanıt veriyoruz.
+              Pzt-Cmt 09:00-18:00 arasında hizmetinizdeyiz.
             </p>
           </div>
         </div>

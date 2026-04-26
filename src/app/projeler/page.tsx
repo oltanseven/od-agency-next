@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
   title: 'Web Tasarım Portföy & Projeler | OD Agency',
@@ -43,9 +44,10 @@ export default function ProjelerPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
-          <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">Portföy</span>
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
+        <ServiceHeroBg theme="projects" />
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
+          <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Portföy</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Hayata geçirdiğimiz<br /><span className="gradient-text">projeler.</span>
           </h1>

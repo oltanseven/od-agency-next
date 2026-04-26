@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || ''
 const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
@@ -41,14 +42,15 @@ export default function IletisimPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
+        <ServiceHeroBg theme="contact" />
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// İletişim</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Bir adım atın, <span className="gradient-text">gerisini konuşalım</span>
           </h1>
           <p className="text-ink/50 text-[1.05rem] max-w-[540px] leading-[1.75]">
-            Projenizi anlatın, 2 saat içinde size dönelim. Ücretsiz, bağlayıcı değil.
+            Projenizi anlatın, en kısa sürede size dönelim. Ücretsiz, bağlayıcı değil.
           </p>
         </div>
       </div>
@@ -64,7 +66,7 @@ export default function IletisimPage() {
                 Nasıl <span className="gradient-text">ulaşabilirsiniz?</span>
               </h2>
               <p className="text-ink/50 leading-[1.75] mb-10">
-                Formu doldurun veya direkt iletişim kanallarımızdan ulaşın. Genellikle 2 saat içinde yanıt veriyoruz.
+                Formu doldurun veya direkt iletişim kanallarımızdan ulaşın.
               </p>
 
               {/* İletişim bilgileri */}
@@ -106,7 +108,7 @@ export default function IletisimPage() {
                   {
                     href: undefined,
                     label: 'Çalışma Saatleri',
-                    value: 'Pzt–Cum, 09:00–18:00',
+                    value: 'Pzt–Cmt, 09:00–18:00',
                     icon: (
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="1.5" opacity="0.4"/>
@@ -135,7 +137,7 @@ export default function IletisimPage() {
                 <div className="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[0.75rem] font-semibold text-ink/50"
                   style={{ background: '#F6F2E8', border: '1.5px solid rgba(0,0,0,0.09)', minHeight: '36px' }}>
                   <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]" />
-                  2 saat içinde yanıt
+                  Pzt-Cmt 09:00-18:00
                 </div>
                 <div className="px-3.5 py-2 rounded-full text-[0.75rem] font-semibold text-ink/50"
                   style={{ background: '#F6F2E8', border: '1.5px solid rgba(0,0,0,0.09)', minHeight: '36px' }}>
@@ -173,7 +175,7 @@ export default function IletisimPage() {
                     </svg>
                   </div>
                   <h3 className="text-[1.2rem] font-bold text-ink mb-2">Mesajınız alındı!</h3>
-                  <p className="text-ink/50 text-[0.9rem]">En kısa sürede size dönüş yapacağız. Genellikle 2 saat içinde.</p>
+                  <p className="text-ink/50 text-[0.9rem]">Mesajınız bize ulaştı. En kısa sürede size dönüş yapacağız.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>

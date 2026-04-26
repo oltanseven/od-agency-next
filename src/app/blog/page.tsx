@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import NewsletterForm from '@/components/NewsletterForm'
 import { getPublishedPosts } from '@/lib/supabase'
+import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
   title: 'Web Tasarım Blog | Fiyatlar, Trendler & Rehberler | OD Agency',
@@ -35,8 +36,9 @@ export default async function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
+        <ServiceHeroBg theme="blog" />
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Blog & İçerikler</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Dijitalde <span className="gradient-text">bilgi</span> paylaşıyoruz

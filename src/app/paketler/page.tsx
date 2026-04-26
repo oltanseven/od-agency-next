@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PricingFAQ from '@/components/PricingFAQ'
+import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
   title: 'Web Sitesi Fiyatları 2026 | Paketler & Ücretler | OD Agency',
@@ -48,8 +49,9 @@ export default function PaketlerPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
+        <ServiceHeroBg theme="pricing" />
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Fiyatlandırma</span>
           <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40 px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-5">
             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
@@ -272,7 +274,7 @@ export default function PaketlerPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-0">
             {[
-              { num: '1', title: 'Teklif İsteyin', desc: 'Formu doldurun, ihtiyaçlarınızı paylaşın. 2 saat içinde geri dönelim.' },
+              { num: '1', title: 'Teklif İsteyin', desc: 'Formu doldurun, ihtiyaçlarınızı paylaşın. En kısa sürede size dönelim.' },
               { num: '2', title: 'Keşif Görüşmesi', desc: 'Projenizi birlikte konuşalım, en uygun paketi belirleyelim.' },
               { num: '3', title: 'Tasarım & Geliştirme', desc: 'Şeffaf süreçle çalışıyoruz. Her adımda ne olduğunu bilirsiniz.' },
               { num: '4', title: 'Yayın & Destek', desc: 'Siteniz canlıya alınır. Sonrasında da yanınızdayız.' },
