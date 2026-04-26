@@ -41,8 +41,8 @@ export default function IletisimPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-36 pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// İletişim</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Projenizi <span className="gradient-text">konuşalım</span>
@@ -54,9 +54,9 @@ export default function IletisimPage() {
       </div>
 
       {/* Contact */}
-      <section className="py-28 bg-cream">
-        <div className="max-w-[1260px] mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-20 items-start">
+      <section className="py-16 sm:py-28 bg-cream">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20 items-start">
 
             {/* Sol: Bilgi (sticky) */}
             <div className="lg:sticky lg:top-28">
@@ -160,7 +160,7 @@ export default function IletisimPage() {
             </div>
 
             {/* Sağ: Form */}
-            <div className="bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[24px] p-10 md:p-12">
+            <div className="bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[24px] p-6 sm:p-10 md:p-12">
               <div className="text-[1.2rem] font-extrabold text-ink mb-1">Projenizi Anlatın</div>
               <p className="text-ink/50 text-[0.88rem] mb-8">Formu doldurun, en kısa sürede size dönelim.</p>
 
@@ -281,8 +281,8 @@ export default function IletisimPage() {
       </section>
 
       {/* Neden OD Agency */}
-      <section className="py-28 bg-cream-soft border-t border-black/[0.07]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <section className="py-16 sm:py-28 bg-cream-soft border-t border-black/[0.07]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="text-center mb-14">
             <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Neden Biz?</span>
             <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">

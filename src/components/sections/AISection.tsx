@@ -47,8 +47,8 @@ const cards = [
 
 export default function AISection() {
   return (
-    <section id="otomasyon" className="py-28 bg-cream-soft border-t border-black/[0.07]">
-      <div className="max-w-[1260px] mx-auto px-8">
+    <section id="otomasyon" className="py-16 sm:py-28 bg-cream-soft border-t border-black/[0.07]">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         {/* Header — centered */}
         <div className="text-center mb-14">
@@ -64,8 +64,8 @@ export default function AISection() {
         </div>
 
         {/* AI Flow Diagram */}
-        <div className="flex items-center max-w-[720px] mx-auto bg-cream border border-black/[0.09]
-          rounded-[20px] px-10 py-8 gap-0 mb-14">
+        <div className="flex flex-col sm:flex-row items-center max-w-[720px] mx-auto bg-cream border border-black/[0.09]
+          rounded-[20px] px-5 sm:px-10 py-8 gap-4 sm:gap-0 mb-14">
 
           {/* Step 1 */}
           <div className="flex-1 flex flex-col items-center gap-2 text-center">
@@ -82,9 +82,12 @@ export default function AISection() {
           </div>
 
           {/* Connector 1 */}
-          <div className="flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
+          <div className="hidden sm:block flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
             <div className="absolute -top-[3px] w-2 h-2 rounded-full bg-accent
               shadow-[0_0_6px_rgba(255,82,27,0.6)] animate-[flowDot_2s_linear_infinite]" />
+          </div>
+          <div className="sm:hidden w-[2px] h-8 bg-black/[0.09] relative">
+            <div className="absolute -left-[3px] w-2 h-2 rounded-full bg-accent shadow-[0_0_6px_rgba(255,82,27,0.6)]" />
           </div>
 
           {/* Step 2 — center (AI) */}
@@ -141,7 +144,7 @@ export default function AISection() {
         </div>
 
         {/* Alt CTA şeridi */}
-        <div className="mt-8 bg-cream border border-black/[0.09] rounded-[20px] px-10 py-8
+        <div className="mt-8 bg-cream border border-black/[0.09] rounded-[20px] px-5 sm:px-10 py-8
           flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.05rem] font-bold text-ink mb-1">

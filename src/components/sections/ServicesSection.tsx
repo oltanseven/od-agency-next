@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function ServicesSection() {
   return (
-    <section id="hizmetler" className="py-28 bg-cream border-t border-black/[0.07]">
-      <div className="max-w-[1260px] mx-auto px-8">
+    <section id="hizmetler" className="py-16 sm:py-28 bg-cream border-t border-black/[0.07]">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">
           <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">

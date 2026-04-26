@@ -57,12 +57,12 @@ export default function HeroSection() {
       <div aria-hidden className="absolute inset-0 pointer-events-none"
         style={{background:'linear-gradient(to bottom,#FFFEF8 0%,transparent 18%,transparent 82%,#FFFEF8 100%), linear-gradient(to right,#FFFEF8 0%,transparent 20%,transparent 80%,#FFFEF8 100%)'}} />
 
-      <div className="max-w-[1260px] mx-auto px-8 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* SOL: metin kartı */}
           <div className="bg-[rgba(255,254,248,0.88)] backdrop-blur-xl border border-black/10
-            shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-12">
+            shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-6 sm:p-9 md:p-12">
 
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
               px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-7">
@@ -80,19 +80,19 @@ export default function HeroSection() {
               Dönüşüm odaklı web siteleri, e-ticaret altyapıları ve AI otomasyonları ile işletmenizi dijitalde büyütüyoruz. 14 gün memnuniyet garantisi.
             </p>
 
-            <div className="flex gap-4 flex-wrap">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link href="/iletisim"
-                className="bg-accent text-white px-8 rounded-full font-bold text-[0.95rem]
+                className="bg-accent text-white px-6 sm:px-8 rounded-full font-bold text-[0.9rem] sm:text-[0.95rem]
                   no-underline hover:bg-coral hover:-translate-y-0.5
-                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1
+                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center justify-center gap-1
                   focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>
                 Ücretsiz Web Analizi Al →
               </Link>
               <a href="https://wa.me/905324652031?text=Merhaba%2C%20web%20sitesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer"
-                className="bg-[#25D366] text-white px-8 rounded-full font-semibold text-[0.95rem]
+                className="bg-[#25D366] text-white px-6 sm:px-8 rounded-full font-semibold text-[0.9rem] sm:text-[0.95rem]
                   no-underline hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(37,211,102,0.3)]
-                  inline-flex items-center gap-2
+                  inline-flex items-center justify-center gap-2
                   focus-visible:ring-2 focus-visible:ring-[#25D366]/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

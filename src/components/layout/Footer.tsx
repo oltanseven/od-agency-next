@@ -23,14 +23,14 @@ const LiIcon = () => (
 
 export default function Footer() {
   return (
-    <footer className="bg-cream border-t border-black/[0.09] pt-20 pb-10">
-      <div className="max-w-[1260px] mx-auto px-8">
+    <footer className="bg-cream border-t border-black/[0.09] pt-14 sm:pt-20 pb-10">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 sm:gap-12 mb-12">
 
           {/* Brand */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <div className="text-[1.4rem] font-black tracking-[-0.05em] mb-3 text-ink">
               OD<span className="text-accent">.</span>Agency
             </div>

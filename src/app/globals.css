@@ -76,6 +76,11 @@ body { overflow-x: hidden; }
 ::-webkit-scrollbar-track { background: #F6F2E8; }
 ::-webkit-scrollbar-thumb { background: #e8881a; border-radius: 3px; }
 
+/* ── Safe Area — prevent horizontal overflow on any device ── */
+@media (max-width: 380px) {
+  .max-w-\[1260px\] { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
 /* ── Utilities ── */
 .gradient-text {
   background: linear-gradient(135deg, #fc9e4f 0%, #ff521b 100%);

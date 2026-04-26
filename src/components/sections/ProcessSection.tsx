@@ -63,7 +63,7 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section id="surec" className="py-28 bg-night relative overflow-hidden">
+    <section id="surec" className="py-16 sm:py-28 bg-night relative overflow-hidden">
 
       {/* Glow efektleri */}
       <div aria-hidden className="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] rounded-full pointer-events-none"
@@ -71,7 +71,7 @@ export default function ProcessSection() {
       <div aria-hidden className="absolute bottom-[-100px] left-[-100px] w-[350px] h-[350px] rounded-full pointer-events-none"
         style={{background:'radial-gradient(circle,rgba(252,158,79,0.2),transparent 65%)'}} />
 
-      <div className="max-w-[1260px] mx-auto px-8 relative z-10">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
 
         <div className="text-center mb-14">
           <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
@@ -88,15 +88,15 @@ export default function ProcessSection() {
         {/* Vertical Pipeline */}
         <div className="relative">
           {/* Sol dikey çizgi */}
-          <div className="absolute top-0 bottom-0 left-[31px] w-[2px] rounded-full"
+          <div className="absolute top-0 bottom-0 left-[23px] sm:left-[31px] w-[2px] rounded-full"
             style={{background:'linear-gradient(180deg,#ff521b 0%,#e8881a 50%,#edd382 100%)',boxShadow:'0 0 12px rgba(255,82,27,0.4)'}} />
 
           {steps.map(({ nodeColor, icon, title, badge, desc, checks, progress, meta }) => (
-            <div key={title} className="grid grid-cols-[64px_1fr] gap-8 py-10 border-b border-white/[0.06] last:border-b-0 relative">
+            <div key={title} className="grid grid-cols-[48px_1fr] sm:grid-cols-[64px_1fr] gap-4 sm:gap-8 py-8 sm:py-10 border-b border-white/[0.06] last:border-b-0 relative">
 
               {/* Sol — node */}
               <div className="flex flex-col items-center">
-                <div className={`w-16 h-16 rounded-full bg-night border-2 flex items-center justify-center shrink-0 relative z-10 ${nodeColor}`}>
+                <div className={`w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-night border-2 flex items-center justify-center shrink-0 relative z-10 ${nodeColor}`}>
                   {icon}
                 </div>
               </div>

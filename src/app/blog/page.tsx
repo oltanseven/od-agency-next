@@ -35,8 +35,8 @@ export default async function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-36 pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Blog & İçerikler</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Dijitalde <span className="gradient-text">bilgi</span> paylaşıyoruz
@@ -47,8 +47,8 @@ export default async function BlogPage() {
         </div>
       </div>
 
-      <section className="py-28 bg-cream">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <section className="py-16 sm:py-28 bg-cream">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
           {posts.length === 0 && (
             <p className="text-ink/50 text-center py-20">Henüz yayınlanmış yazı yok. Yakında burada olacak!</p>
@@ -137,7 +137,7 @@ export default async function BlogPage() {
           )}
 
           {/* Newsletter */}
-          <div className="mt-16 rounded-[20px] px-14 py-14 flex flex-col md:flex-row items-center
+          <div className="mt-16 rounded-[20px] px-6 sm:px-14 py-10 sm:py-14 flex flex-col md:flex-row items-center
             justify-between gap-8 flex-wrap"
             style={{ background: '#0D0B1E' }}>
             <div>

@@ -28,8 +28,8 @@ const techBadges = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="yorumlar" className="py-28 bg-cream border-t border-black/[0.07]">
-      <div className="max-w-[1260px] mx-auto px-8">
+    <section id="yorumlar" className="py-16 sm:py-28 bg-cream border-t border-black/[0.07]">
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">
           <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
@@ -75,7 +75,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* CTA strip */}
-        <div className="mt-12 bg-cream-soft border border-black/[0.09] rounded-[20px] px-10 py-8
+        <div className="mt-12 bg-cream-soft border border-black/[0.09] rounded-[20px] px-5 sm:px-10 py-8
           flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.05rem] font-bold text-ink mb-1">

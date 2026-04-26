@@ -48,8 +48,8 @@ export default function PaketlerPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-36 pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Fiyatlandırma</span>
           <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40 px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-5">
             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
@@ -65,13 +65,13 @@ export default function PaketlerPage() {
       </div>
 
       {/* Pricing Cards */}
-      <section className="py-28 bg-cream">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <section className="py-16 sm:py-28 bg-cream">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-start">
 
             {/* Lansman */}
-            <div className="bg-cream border-[1.5px] border-black/[0.09] rounded-[24px] p-9 relative
+            <div className="bg-cream border-[1.5px] border-black/[0.09] rounded-[24px] p-6 sm:p-9 relative
               transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(255,82,27,0.1)]
               hover:border-[rgba(255,82,27,0.25)]">
               <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-accent mb-2">Başlangıç</div>
@@ -107,7 +107,7 @@ export default function PaketlerPage() {
             </div>
 
             {/* Profesyonel (popular) */}
-            <div className="bg-cream border-[1.5px] border-accent rounded-[24px] p-9 relative
+            <div className="bg-cream border-[1.5px] border-accent rounded-[24px] p-6 sm:p-9 relative
               shadow-[0_8px_40px_rgba(255,82,27,0.12)]
               transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(255,82,27,0.2)]">
               <div className="absolute -top-[14px] left-1/2 -translate-x-1/2 bg-accent text-white
@@ -146,7 +146,7 @@ export default function PaketlerPage() {
             </div>
 
             {/* Mağaza */}
-            <div className="bg-cream border-[1.5px] border-black/[0.09] rounded-[24px] p-9 relative
+            <div className="bg-cream border-[1.5px] border-black/[0.09] rounded-[24px] p-6 sm:p-9 relative
               transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(255,82,27,0.1)]
               hover:border-[rgba(255,82,27,0.25)]">
               <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-accent mb-2">E-Ticaret</div>
@@ -182,7 +182,7 @@ export default function PaketlerPage() {
             </div>
 
             {/* AI Pro (dark) */}
-            <div className="rounded-[24px] p-9 relative border-[1.5px]
+            <div className="rounded-[24px] p-6 sm:p-9 relative border-[1.5px]
               transition-all duration-300 hover:-translate-y-1.5"
               style={{ background: '#0D0B1E', borderColor: 'rgba(255,82,27,0.2)' }}>
               <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase mb-2"
@@ -221,7 +221,7 @@ export default function PaketlerPage() {
           </div>
 
           {/* Bakım add-on strip */}
-          <div className="mt-8 bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[20px] px-10 py-8
+          <div className="mt-8 bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[20px] px-5 sm:px-10 py-6 sm:py-8
             flex flex-col md:flex-row items-center justify-between gap-6 flex-wrap">
             <div>
               <h3 className="text-[1.1rem] font-bold text-ink mb-1.5">Yıllık Bakım & Destek Paketi</h3>
@@ -270,16 +270,16 @@ export default function PaketlerPage() {
               Başlamak <span className="gradient-text">çok kolay</span>
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-0">
             {[
               { num: '1', title: 'Teklif İsteyin', desc: 'Formu doldurun, ihtiyaçlarınızı paylaşın. 2 saat içinde geri dönelim.' },
               { num: '2', title: 'Keşif Görüşmesi', desc: 'Projenizi birlikte konuşalım, en uygun paketi belirleyelim.' },
               { num: '3', title: 'Tasarım & Geliştirme', desc: 'Şeffaf süreçle çalışıyoruz. Her adımda ne olduğunu bilirsiniz.' },
               { num: '4', title: 'Yayın & Destek', desc: 'Siteniz canlıya alınır. Sonrasında da yanınızdayız.' },
             ].map(({ num, title, desc }, i) => (
-              <div key={num} className="px-8 text-center relative">
+              <div key={num} className="px-4 md:px-8 text-center relative">
                 {i < 3 && (
-                  <span className="absolute right-[-0.5rem] top-6 text-[1.2rem]"
+                  <span className="absolute right-[-0.5rem] top-6 text-[1.2rem] hidden md:block"
                     style={{ color: 'rgba(255,82,27,0.4)' }}>→</span>
                 )}
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4
@@ -296,7 +296,7 @@ export default function PaketlerPage() {
       </div>
 
       {/* FAQ */}
-      <section className="py-28 bg-cream-soft">
+      <section className="py-16 sm:py-28 bg-cream-soft">
         <div className="max-w-[1260px] mx-auto px-8">
           <div className="mb-12">
             <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">

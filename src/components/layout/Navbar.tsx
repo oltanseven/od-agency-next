@@ -37,7 +37,7 @@ export default function Navbar() {
         transition-shadow duration-300
         ${scrolled ? 'shadow-[0_4px_30px_rgba(255,82,27,0.08)]' : ''}`}
     >
-      <div className="max-w-[1260px] w-full mx-auto px-8 py-4 flex items-center justify-between">
+      <div className="max-w-[1260px] w-full mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/" className="text-[1.4rem] font-black tracking-[-0.06em] text-ink no-underline">
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-black/[0.09] bg-cream/98 backdrop-blur-xl px-8 pb-6 pt-4">
+        <div className="md:hidden border-t border-black/[0.09] bg-cream/98 backdrop-blur-xl px-5 sm:px-8 pb-6 pt-4">
           <ul className="flex flex-col gap-1 list-none mb-4">
             {links.map(({ label, href }) => (
               <li key={href}>

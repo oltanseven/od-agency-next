@@ -43,8 +43,8 @@ export default function ProjelerPage() {
   return (
     <>
       {/* Hero */}
-      <div className="pt-36 pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">Portföy</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             Hayata geçirdiğimiz<br /><span className="gradient-text">projeler.</span>
@@ -55,8 +55,8 @@ export default function ProjelerPage() {
         </div>
       </div>
 
-      <section className="py-24 bg-cream">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <section className="py-16 sm:py-24 bg-cream">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map(({ slug, title, cat, desc, tags, color, year }) => (
               <div key={slug}
