@@ -21,15 +21,13 @@ export default function MarqueeSection() {
   const t3 = [...items3, ...items3, ...items3]
 
   return (
-    <div className="relative bg-night" style={{ padding: '3.5rem 0 4.5rem', overflowX: 'clip' }}>
+    <div className="relative bg-night overflow-hidden" style={{ padding: '3.5rem 0 4.5rem' }}>
 
-      {/* Glow efektleri */}
-      <div aria-hidden className="absolute top-[-40px] right-[-40px] w-[350px] h-[350px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(255,82,27,0.18), transparent 70%)' }} />
-      <div aria-hidden className="absolute bottom-[-40px] left-[-40px] w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(252,158,79,0.12), transparent 70%)' }} />
-      <div aria-hidden className="absolute top-[40%] left-[50%] w-[200px] h-[200px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(255,82,27,0.08), transparent 70%)' }} />
+      {/* Glow efektleri — tamamen section içinde, kenardan uzak */}
+      <div aria-hidden className="absolute top-[10%] right-[-5%] w-[60%] h-[80%] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(255,82,27,0.15), transparent 65%)' }} />
+      <div aria-hidden className="absolute bottom-[10%] left-[-5%] w-[50%] h-[80%] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(252,158,79,0.10), transparent 65%)' }} />
 
       {/* Döndürülmüş container — eğimli */}
       <div className="relative flex flex-col gap-3" style={{ transform: 'rotate(-6deg)', margin: '-1.5rem -6rem' }}>
