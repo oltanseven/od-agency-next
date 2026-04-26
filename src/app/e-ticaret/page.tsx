@@ -79,10 +79,10 @@ export default function EticaretPage() {
               35.000₺&apos;den başlayan fiyatlarla. 15 iş gününde teslim, 14 gün para iade garantisi.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Link href="/iletisim" className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem] no-underline hover:opacity-90 transition-opacity">
+              <Link href="/iletisim" className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem] no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200">
                 Ücretsiz Analiz Al →
               </Link>
-              <Link href="/paketler" className="border-[1.5px] border-black/[0.09] text-ink px-8 py-3.5 rounded-full font-semibold text-[0.95rem] no-underline hover:border-accent hover:text-accent transition-colors">
+              <Link href="/paketler" className="border-[1.5px] border-black/[0.09] text-ink px-8 py-3.5 rounded-full font-semibold text-[0.95rem] no-underline hover:border-accent hover:text-accent hover:-translate-y-0.5 transition-all duration-200">
                 Paketleri İncele
               </Link>
             </div>

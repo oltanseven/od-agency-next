@@ -68,7 +68,7 @@ export default function LandingPagePage() {
             </div>
             <Link href="/iletisim"
               className="shrink-0 bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
-                no-underline hover:opacity-90 transition-opacity whitespace-nowrap">
+                no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 whitespace-nowrap">
               Projeni Başlat →
             </Link>
           </div>

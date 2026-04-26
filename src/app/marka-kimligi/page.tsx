@@ -85,7 +85,7 @@ export default function MarkaKimligiPage() {
             <p className="text-ink/50 max-w-[440px] mx-auto mb-8 leading-[1.75]">
               Mevcut logonuzu ve görsel kimliğinizi birlikte değerlendirelim. Ücretsiz, bağlayıcı değil.
             </p>
-            <Link href="/iletisim" className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem] no-underline hover:opacity-90 transition-opacity inline-block">
+            <Link href="/iletisim" className="bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem] no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 inline-block">
               Ücretsiz Marka Analizi Al →
             </Link>
           </div>
