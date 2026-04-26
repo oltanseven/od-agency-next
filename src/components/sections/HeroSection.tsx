@@ -65,8 +65,8 @@ export default function HeroSection() {
             shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-6 sm:p-9 md:p-12">
 
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
-              px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-7">
-              <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
+              px-3 sm:px-4 py-1.5 rounded-full text-accent text-[0.7rem] sm:text-[0.8rem] font-semibold mb-7">
+              <span className="w-1.5 h-1.5 bg-accent rounded-full shrink-0 animate-[blink_2s_ease-in-out_infinite]" />
               2026&apos;nın en iyi web deneyimleri için buradayız
             </div>
 

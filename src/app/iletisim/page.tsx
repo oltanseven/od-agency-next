@@ -58,8 +58,8 @@ export default function IletisimPage() {
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20 items-start">
 
-            {/* Sol: Bilgi (sticky) */}
-            <div className="lg:sticky lg:top-28">
+            {/* Sol: Bilgi (sticky) — mobilde form altına düşer */}
+            <div className="lg:sticky lg:top-28 order-2 lg:order-1">
               <h2 className="text-[clamp(1.5rem,2.5vw,2rem)] font-black text-ink mb-4 leading-[1.1] tracking-[-0.02em]">
                 Nasıl <span className="gradient-text">ulaşabilirsiniz?</span>
               </h2>
@@ -160,7 +160,7 @@ export default function IletisimPage() {
             </div>
 
             {/* Sağ: Form */}
-            <div className="bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[24px] p-6 sm:p-10 md:p-12">
+            <div className="bg-cream-soft border-[1.5px] border-black/[0.09] rounded-[24px] p-6 sm:p-10 md:p-12 order-1 lg:order-2">
               <div className="text-[1.2rem] font-extrabold text-ink mb-1">Projenizi Anlatın</div>
               <p className="text-ink/50 text-[0.88rem] mb-8">Formu doldurun, en kısa sürede size dönelim.</p>
 

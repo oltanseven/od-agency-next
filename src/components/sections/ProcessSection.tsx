@@ -88,7 +88,7 @@ export default function ProcessSection() {
         {/* Vertical Pipeline */}
         <div className="relative">
           {/* Sol dikey çizgi */}
-          <div className="absolute top-0 bottom-0 left-[23px] sm:left-[31px] w-[2px] rounded-full"
+          <div className="absolute top-0 bottom-0 left-[24px] sm:left-[31px] w-[2px] rounded-full"
             style={{background:'linear-gradient(180deg,#ff521b 0%,#e8881a 50%,#edd382 100%)',boxShadow:'0 0 12px rgba(255,82,27,0.4)'}} />
 
           {steps.map(({ nodeColor, icon, title, badge, desc, checks, progress, meta }) => (
@@ -111,7 +111,7 @@ export default function ProcessSection() {
                   </span>
                 </div>
 
-                <p className="text-white/55 text-[0.95rem] leading-[1.75] max-w-[680px] mb-5">{desc}</p>
+                <p className="text-white/55 text-[0.85rem] sm:text-[0.95rem] leading-[1.75] max-w-[680px] mb-5">{desc}</p>
 
                 <div className="flex flex-col gap-2 mb-5">
                   {checks.map(({ done, text }) => (

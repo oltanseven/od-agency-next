@@ -40,7 +40,8 @@ export default function NeuralBackground() {
     let time = 0
 
     const isMobile = window.innerWidth < 768
-    const nodeCount = isMobile ? 55 : 100
+    const isSmall = window.innerWidth < 400
+    const nodeCount = isSmall ? 35 : isMobile ? 50 : 100
     const connectionDist = isMobile ? 130 : 170
 
     function resize() {
@@ -57,8 +58,8 @@ export default function NeuralBackground() {
     }
 
     // Kenarlardan iç boşluk — dalga efektiyle kesişmesin
-    const padX = isMobile ? 30 : 60
-    const padY = isMobile ? 50 : 80
+    const padX = isSmall ? 15 : isMobile ? 25 : 60
+    const padY = isSmall ? 30 : isMobile ? 40 : 80
 
     function createNodes() {
       nodes = []
