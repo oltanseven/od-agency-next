@@ -59,7 +59,7 @@ export default function AISection() {
             Siteniz <span className="gradient-text">7/24 çalışsın</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] mx-auto leading-[1.7]">
-            Web sitenize yapay zeka otomasyonları entegre ediyoruz. İnsan müdahalesi olmadan müşterilerinize anında yanıt verin, lead&apos;leri yakalayın, satışlarınızı artırın.
+            Siz uyurken bile müşterilerinize yanıt verin. AI chatbot, e-posta otomasyonu ve lead yakalama ile satışlarınızı artırın.
           </p>
         </div>
 

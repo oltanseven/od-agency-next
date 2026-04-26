@@ -139,11 +139,11 @@ export default function IletisimPage() {
                 </div>
                 <div className="px-3.5 py-2 rounded-full text-[0.75rem] font-semibold text-ink/50"
                   style={{ background: '#F6F2E8', border: '1.5px solid rgba(0,0,0,0.09)', minHeight: '36px' }}>
-                  Ücretsiz keşif görüşmesi
+                  Ücretsiz web analizi
                 </div>
                 <div className="px-3.5 py-2 rounded-full text-[0.75rem] font-semibold text-ink/50"
                   style={{ background: '#F6F2E8', border: '1.5px solid rgba(0,0,0,0.09)', minHeight: '36px' }}>
-                  Sürpriz ücret yok
+                  14 gün memnuniyet garantisi
                 </div>
               </div>
 
@@ -293,21 +293,21 @@ export default function IletisimPage() {
             {[
               {
                 color: '#ff521b',
-                icon: <><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#ff521b" strokeWidth="1.5" opacity="0.35"/><path d="M7 13l3 3 7-7" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
-                title: 'Şeffaf Süreç',
-                desc: 'Her aşamada ne yapıldığını bilirsiniz. Sürpriz ek ücret veya gizli maliyetler olmaz.',
+                icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#ff521b" strokeWidth="1.5" opacity="0.35"/><path d="M9 12l2 2 4-4" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
+                title: '14 Gün Memnuniyet Garantisi',
+                desc: 'Memnun kalmazsanız ücretinizi iade ediyoruz. Türkiye\'de bunu yapan kaç ajans var?',
               },
               {
                 color: '#e8881a',
                 icon: <><path d="M13 2L3 14h9l-1 8 10-12h-9z" stroke="#e8881a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.35"/><path d="M13 2L7 11h6" stroke="#e8881a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
-                title: 'Hızlı Teslim',
-                desc: 'Lansman paketi 5 iş günü. Kurumsal projeler 10 iş gününde tamamlanır. Söz verdiğimiz tarihi tutarız.',
+                title: 'Süre Garantisi',
+                desc: 'Gecikme = %10 indirim. Landing page 5 günde, kurumsal site 10 günde. Söz verdiğimiz tarihi tutarız.',
               },
               {
                 color: '#16a34a',
                 icon: <><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.35"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round"/></>,
-                title: 'Sürekli Destek',
-                desc: 'Teslim sonrası da yanınızdayız. Teknik destek, güncelleme ve geliştirmeler için buradayız.',
+                title: 'Şeffaf & Sürekli Destek',
+                desc: 'Her adımda ne yapıldığını bilirsiniz. Teslim sonrası da yanınızdayız, yıllık bakım sadece ₺2.500.',
               },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="bg-cream border-[1.5px] border-black/[0.09] rounded-[18px] p-8

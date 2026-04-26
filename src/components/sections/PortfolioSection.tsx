@@ -1,8 +1,8 @@
 const projects = [
-  { bg: 'from-[#1e1060] via-[#4338ca] to-[#1e3a5f]', chip: 'E-Ticaret', title: 'ModaShop', result: '%240 satış artışı' },
-  { bg: 'from-[#0c1a2e] via-[#1e3a5f] to-[#0f4c75]', chip: 'Kurumsal',  title: 'LexHukuk', result: '3x daha fazla müvekkil' },
-  { bg: 'from-[#2d0a00] via-[#7c2d12] to-[#431407]', chip: 'Restoran',  title: 'Bella Cucina', result: 'Rezervasyonlar 3x arttı' },
-  { bg: 'from-[#052e16] via-[#14532d] to-[#1a3d2b]', chip: 'SaaS',      title: 'AnalyticsPro', result: '%180 dönüşüm artışı' },
+  { bg: 'from-[#3b1060] via-[#6d28d9] to-[#4338ca]', chip: 'Pilates Stüdyo', title: 'Cosmos Pilates', result: 'Online randevu sistemi' },
+  { bg: 'from-[#0c1a2e] via-[#1e3a5f] to-[#0f4c75]', chip: 'Kurumsal',  title: 'B2B Konsept', result: 'Dönüşüm odaklı kurumsal site' },
+  { bg: 'from-[#2d0a00] via-[#7c2d12] to-[#431407]', chip: 'E-Ticaret',  title: 'E-Ticaret Konsept', result: 'Ödeme & kargo entegrasyonu' },
+  { bg: 'from-[#052e16] via-[#14532d] to-[#1a3d2b]', chip: 'AI Otomasyon', title: 'AI Chatbot Demo', result: '7/24 müşteri desteği' },
 ]
 
 function BrowserMock() {
@@ -36,7 +36,7 @@ export default function PortfolioSection() {
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
             Öne çıkan <span className="gradient-text">projelerimiz</span>
           </h2>
-          <p className="text-ink/50 mt-3 leading-[1.7]">Her sektörden, her ölçekten işletme için çalışmalar ürettik.</p>
+          <p className="text-ink/50 mt-3 leading-[1.7]">Farklı sektörlerden projeler. Her biri özenle tasarlanmış, dönüşüm odaklı.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

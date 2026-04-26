@@ -1,8 +1,8 @@
 const stats = [
-  { val: '50+',    label: 'Tamamlanan Proje' },
-  { val: '98%',    label: 'Müşteri Memnuniyeti' },
-  { val: '14 gün', label: 'Ortalama Teslimat' },
-  { val: '3x',     label: 'Dönüşüm Artışı' },
+  { val: '100',    label: 'Performance Score' },
+  { val: '14 gün', label: 'Memnuniyet Garantisi' },
+  { val: '5 gün',  label: 'En Hızlı Teslimat' },
+  { val: 'Next.js', label: 'Premium Teknoloji' },
 ]
 
 export default function StatsSection() {

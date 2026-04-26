@@ -3,7 +3,7 @@ import HeroSection         from '@/components/sections/HeroSection'
 
 export const metadata: Metadata = {
   title: 'Web Tasarım Ajansı & Dijital Çözümler | OD Agency',
-  description: 'Web sitesi yaptırmak mı istiyorsunuz? OD Agency ile profesyonel web tasarım, e-ticaret ve AI otomasyon hizmetleri. Antalya merkezli, Türkiye geneli. Ücretsiz keşif görüşmesi.',
+  description: 'Web sitesi yaptırmak mı istiyorsunuz? OD Agency ile dönüşüm odaklı web tasarım, e-ticaret ve AI otomasyon hizmetleri. ₺7.500\'den başlayan fiyatlar, 14 gün memnuniyet garantisi. Ücretsiz web analizi alın.',
   keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'web tasarım ajansı', 'e-ticaret sitesi', 'AI otomasyon', 'web tasarım Antalya', 'profesyonel web sitesi'],
   alternates: { canonical: 'https://odagency.com' },
   openGraph: {

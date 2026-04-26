@@ -71,13 +71,13 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-[clamp(1.8rem,2.8vw,2.8rem)] font-black leading-[1.08] tracking-[-0.03em] mb-4 text-ink">
-              Markanızı<br />
-              <span className="gradient-text">dijitalde</span><br />
-              konumlandırıyoruz.
+              Ziyaretçilerinizi<br />
+              <span className="gradient-text">müşteriye</span><br />
+              çeviriyoruz.
             </h1>
 
             <p className="text-ink/50 text-[0.95rem] leading-[1.75] mb-8 max-w-[420px]">
-              OD Agency olarak işletmenize özel, yüksek performanslı web siteleri ve dijital deneyimler tasarlıyoruz. Rakiplerinizden bir adım önde olun.
+              Dönüşüm odaklı web siteleri, e-ticaret altyapıları ve AI otomasyonları ile işletmenizi dijitalde büyütüyoruz. 14 gün memnuniyet garantisi.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -87,7 +87,7 @@ export default function HeroSection() {
                   hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1
                   focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>
-                Ücretsiz Keşif Görüşmesi →
+                Ücretsiz Web Analizi Al →
               </Link>
               <a href="https://wa.me/905324652031?text=Merhaba%2C%20web%20sitesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer"
                 className="bg-[#25D366] text-white px-8 rounded-full font-semibold text-[0.95rem]
@@ -145,8 +145,8 @@ export default function HeroSection() {
                 </svg>
               </div>
               <div>
-                <div className="text-[1.15rem] font-black text-ink leading-none">42+</div>
-                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Tamamlanan Proje</div>
+                <div className="text-[1.15rem] font-black text-ink leading-none">14 gün</div>
+                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Memnuniyet Garantisi</div>
               </div>
             </div>
 
@@ -161,8 +161,8 @@ export default function HeroSection() {
                 </svg>
               </div>
               <div>
-                <div className="text-[1.15rem] font-black text-ink leading-none">98%</div>
-                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Müşteri Memnuniyeti</div>
+                <div className="text-[1.15rem] font-black text-ink leading-none">5 gün</div>
+                <div className="text-[0.72rem] text-ink/50 font-medium mt-0.5">Hızlı Teslimat</div>
               </div>
             </div>
 

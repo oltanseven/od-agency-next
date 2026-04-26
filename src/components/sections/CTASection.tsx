@@ -19,10 +19,10 @@ export default function CTASection() {
             </span>
             <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.08] tracking-[-0.03em]
               text-white mb-4 max-w-[700px] mx-auto">
-              İşletmenizi <span className="gradient-text">birlikte büyütelim</span>
+              Projenizi <span className="gradient-text">birlikte konuşalım</span>
             </h2>
-            <p className="text-white/60 text-[1.05rem] max-w-[400px] mx-auto leading-[1.75] mb-10">
-              Ücretsiz keşif görüşmesiyle başlayın. Taahhüt yok, baskı yok.
+            <p className="text-white/60 text-[1.05rem] max-w-[440px] mx-auto leading-[1.75] mb-10">
+              Ücretsiz web sitesi analizi ile başlayın. Taahhüt yok, baskı yok. 14 gün memnuniyet garantisi.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

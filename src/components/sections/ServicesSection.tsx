@@ -10,10 +10,10 @@ export default function ServicesSection() {
             // Hizmetler
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            Size özel <span className="gradient-text">dijital çözümler</span>
+            İşletmenizi <span className="gradient-text">dijitalde büyütün</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            İşletmenizin ihtiyacına göre şekillenen, sonuç odaklı web çözümleri sunuyoruz.
+            Sadece güzel görünen değil, satış yapan web siteleri. Her proje markanızın DNA&apos;sıyla uyumlu, dönüşüm odaklı.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export default function ServicesSection() {
             <div className="text-[5rem] font-black leading-none tracking-tight opacity-[0.18] mb-3 select-none">01</div>
             <h3 className="text-[1.15rem] font-bold mb-3">Web Tasarımı & Geliştirme</h3>
             <p className="text-white/80 text-[0.9rem] leading-[1.65]">
-              Modern, hızlı ve dönüşüm odaklı web siteleri tasarlıyoruz. Her proje markanızın DNA&apos;sıyla uyumlu, kullanıcı deneyimini ön planda tutan özel bir çalışmadır.
+              Ziyaretçileri müşteriye çeviren, Google&apos;da üst sıralarda yer alan web siteleri. Next.js altyapısıyla 100 Performance Score garantisi.
             </p>
             <span className="inline-block mt-5 bg-white/20 text-white text-[0.72rem] font-bold px-3 py-1 rounded-full">
               ⭐ En Çok Tercih Edilen
@@ -45,7 +45,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-coral mb-2">E-Ticaret Çözümleri</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Satışlarınızı artıracak, yönetimi kolay e-ticaret altyapıları. Shopify, WooCommerce ve özel çözümler.
+              Online satışa hemen başlayın. Ödeme, stok, kargo tek panelde. Terk sepeti otomasyonu ile kaçan satışları yakalayın.
             </p>
             <span className="inline-block mt-5 bg-[rgba(232,136,26,0.1)] text-coral border border-[rgba(232,136,26,0.25)] text-[0.72rem] font-bold px-3 py-1 rounded-full">
               Shopify & WooCommerce
@@ -78,7 +78,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-2">Performans & SEO</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Hızlı yükleme süreleri ve Google&apos;da üst sıra görünürlüğü için teknik optimizasyon.
+              Google Core Web Vitals&apos;da 100 puan. Rakiplerinizden hızlı yüklenin, üst sıralarda görünün.
             </p>
           </div>
 
