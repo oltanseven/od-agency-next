@@ -56,15 +56,19 @@ export default function NeuralBackground() {
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
 
+    // Kenarlardan iç boşluk — dalga efektiyle kesişmesin
+    const padX = isMobile ? 30 : 60
+    const padY = isMobile ? 50 : 80
+
     function createNodes() {
       nodes = []
       const colorKeys: Node['color'][] = ['accent', 'coral', 'white']
       for (let i = 0; i < nodeCount; i++) {
         nodes.push({
-          x: Math.random() * w,
-          y: Math.random() * h,
-          vx: (Math.random() - 0.5) * 0.5,
-          vy: (Math.random() - 0.5) * 0.5,
+          x: padX + Math.random() * (w - padX * 2),
+          y: padY + Math.random() * (h - padY * 2),
+          vx: (Math.random() - 0.5) * 1.0,
+          vy: (Math.random() - 0.5) * 1.0,
           radius: 1.5 + Math.random() * 2.5,
           opacity: 0.4 + Math.random() * 0.6,
           pulseSpeed: 0.02 + Math.random() * 0.03,
@@ -92,10 +96,10 @@ export default function NeuralBackground() {
       for (const node of nodes) {
         node.x += node.vx
         node.y += node.vy
-        if (node.x < -10 || node.x > w + 10) node.vx *= -1
-        if (node.y < -10 || node.y > h + 10) node.vy *= -1
-        node.x = Math.max(-10, Math.min(w + 10, node.x))
-        node.y = Math.max(-10, Math.min(h + 10, node.y))
+        if (node.x < padX || node.x > w - padX) node.vx *= -1
+        if (node.y < padY || node.y > h - padY) node.vy *= -1
+        node.x = Math.max(padX, Math.min(w - padX, node.x))
+        node.y = Math.max(padY, Math.min(h - padY, node.y))
       }
 
       // Bağlantı çizgileri — neon glow
