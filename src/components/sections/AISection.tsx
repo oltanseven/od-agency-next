@@ -108,9 +108,12 @@ export default function AISection() {
           </div>
 
           {/* Connector 2 */}
-          <div className="flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
+          <div className="hidden sm:block flex-none w-[60px] h-[2px] bg-black/[0.09] relative overflow-visible mx-2">
             <div className="absolute -top-[3px] w-2 h-2 rounded-full bg-accent
               shadow-[0_0_6px_rgba(255,82,27,0.6)] animate-[flowDot_2s_linear_infinite_1s]" />
+          </div>
+          <div className="sm:hidden w-[2px] h-8 bg-black/[0.09] relative">
+            <div className="absolute -left-[3px] w-2 h-2 rounded-full bg-accent shadow-[0_0_6px_rgba(255,82,27,0.6)]" />
           </div>
 
           {/* Step 3 */}

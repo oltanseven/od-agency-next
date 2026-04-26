@@ -63,7 +63,7 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section id="surec" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-night relative" style={{ overflowX: 'clip' }}>
+    <section id="surec" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-night relative overflow-hidden">
 
       {/* Glow efektleri — soluk, merkeze yakın */}
       <div aria-hidden className="absolute top-[15%] right-[5%] w-[40%] h-[50%] rounded-full pointer-events-none"
