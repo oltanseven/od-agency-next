@@ -69,10 +69,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {[
                 ['Web Tasarımı', '/#hizmetler'],
-                ['E-Ticaret',    '/#hizmetler'],
-                ['AI Otomasyon', '/#otomasyon'],
-                ['Marka Kimliği','/#hizmetler'],
-                ['Landing Page', '/#hizmetler'],
+                ['E-Ticaret',    '/e-ticaret'],
+                ['AI Otomasyon', '/ai-otomasyon'],
+                ['Marka Kimliği','/marka-kimligi'],
+                ['Landing Page', '/landing-page'],
               ].map(([label, href]) => (
                 <li key={label}>
                   <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
