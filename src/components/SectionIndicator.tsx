@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const sections = [
   { id: 'hero', label: 'Ana Sayfa' },
@@ -12,8 +13,12 @@ const sections = [
 ]
 
 export default function SectionIndicator() {
+  const pathname = usePathname()
   const [current, setCurrent] = useState(0)
   const [show, setShow] = useState(false)
+
+  // Sadece ana sayfada göster
+  if (pathname !== '/') return null
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
   title: 'Landing Page Tasarımı | Dönüşüm Odaklı Tek Sayfa | OD Agency',
@@ -9,36 +10,36 @@ export const metadata: Metadata = {
 }
 
 const includes = [
-  { title: 'Tek Sayfa Tasarım', desc: 'Hedefinize özel, dönüşüm odaklı tek sayfa. Her element bir amaca hizmet eder.' },
-  { title: 'Mobil Uyumlu', desc: 'Müşterilerinizin %70\'i telefondan geliyor. Siteniz her ekranda mükemmel görünsün.' },
-  { title: 'İletişim Formu + WhatsApp', desc: 'Ziyaretçiler size anında ulaşsın. Form doldurma veya direkt WhatsApp ile.' },
-  { title: 'Temel SEO Ayarları', desc: 'Meta etiketler, yapısal veri, hız optimizasyonu. Google\'da görünür olun.' },
-  { title: 'Google Analytics & GSC', desc: 'Kaç kişi geldi, nereden geldi, ne yaptı. Verilerinizi takip edin.' },
-  { title: '2 Revizyon Hakkı', desc: 'Tasarımda değişiklik istediğiniz noktaları 2 tur revizyon ile düzeltiyoruz.' },
+  { title: 'Dönüşüm Odaklı Tasarım', desc: 'Her element bir amaca hizmet eder. Ziyaretçiniz ne yapması gerektiğini net olarak anlar.' },
+  { title: 'Mobil Öncelikli Geliştirme', desc: 'Ziyaretçilerinizin büyük çoğunluğu telefondan geliyor. Siteniz her ekranda kusursuz çalışır.' },
+  { title: 'İletişim Formu & WhatsApp', desc: 'Potansiyel müşterileriniz size anında ulaşabilir. Form veya direkt WhatsApp entegrasyonu.' },
+  { title: 'SEO Altyapısı', desc: 'Meta etiketler, yapısal veri, hız optimizasyonu. Google\'da görünürlüğünüz ilk günden başlar.' },
+  { title: 'Analitik & Takip', desc: 'Google Analytics ve Search Console entegrasyonu. Kim geldi, nereden geldi, ne yaptı.' },
+  { title: 'Revizyon & Destek', desc: '2 tur revizyon hakkı ve 3 ay teknik destek dahil. Teslimattan sonra da yanınızdayız.' },
 ]
 
 export default function LandingPagePage() {
   return (
     <>
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
+        <ServiceHeroBg theme="landing" />
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Landing Page</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             5 günde dijitalde <span className="gradient-text">yerinizi alın</span>
           </h1>
           <p className="text-ink/50 text-[1.05rem] max-w-[540px] leading-[1.75]">
-            İşletmenizi tanıtan, ziyaretçileri müşteriye çeviren tek sayfa site. Hızlı, etkili, uygun fiyatlı.
+            İşletmenizi profesyonel bir şekilde tanıtan, ziyaretçileri aksiyona yönlendiren tek sayfa web sitesi.
           </p>
         </div>
       </div>
 
       <section className="py-16 sm:py-28 bg-cream">
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
-
           <div className="mb-14">
-            <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Neler Dahil?</span>
+            <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Paket Kapsamı</span>
             <h2 className="text-[clamp(1.5rem,3vw,2.2rem)] font-black text-ink">
-              Lansman paketinizde <span className="gradient-text">her şey var</span>
+              Lansman paketinizde <span className="gradient-text">neler var?</span>
             </h2>
           </div>
 
@@ -69,10 +70,9 @@ export default function LandingPagePage() {
             <Link href="/iletisim"
               className="shrink-0 bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
                 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 whitespace-nowrap">
-              Projeni Başlat →
+              Projenizi Anlatın →
             </Link>
           </div>
-
         </div>
       </section>
     </>
