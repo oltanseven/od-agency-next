@@ -4,20 +4,20 @@ const guarantees = [
   {
     icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#22c55e" strokeWidth="1.5" opacity="0.38"/><path d="M9 12l2 2 4-4" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
     iconBg: 'bg-[#D1FAE5]',
-    title: '14 Gün Memnuniyet Garantisi',
-    desc: 'Projeniz teslim edildikten sonra 14 gün içinde memnun kalmazsanız ücretinizi iade ediyoruz. Risk sıfır.',
+    title: '14 Gün Para İade Garantisi',
+    desc: 'Projeniz teslim edildikten sonra memnun kalmazsanız 14 gün içinde ücretinizi iade ediyoruz.',
   },
   {
     icon: <><circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/><path d="M12 7v5l3 3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/></>,
     iconBg: 'bg-accent/10',
-    title: 'Süre Garantisi',
-    desc: 'Teslim tarihini aşarsak her geçen gün için %10 indirim uyguluyoruz. Söz verdiğimiz tarihi tutarız.',
+    title: 'Teslim Tarihi Garantisi',
+    desc: 'Söz verdiğimiz tarihi aşarsak her geçen gün için %10 indirim uyguluyoruz. Yazılı taahhüt.',
   },
   {
     icon: <><rect x="2" y="2" width="20" height="20" rx="6" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M8 12l3 3 5-5" stroke="#e8881a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
     iconBg: 'bg-[rgba(232,136,26,0.1)]',
-    title: 'Şeffaf Süreç',
-    desc: 'Her aşamada ne yapıldığını bilirsiniz. Sürpriz ek ücret, gizli maliyet veya belirsizlik yok.',
+    title: 'Gizli Ücret Yok',
+    desc: 'Başlangıçta anlaştığımız fiyat, son fiyattır. Proje ortasında sürpriz ek maliyet çıkmaz.',
   },
 ]
 
@@ -33,13 +33,13 @@ export default function TestimonialsSection() {
 
         <div className="mb-14">
           <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
-            // Neden Biz?
+            // Neden Güvenilir?
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            Türkiye&apos;de kimsenin vermediği <span className="gradient-text">garantiler</span>
+            Sözümüzü yazılı <span className="gradient-text">garanti ile veriyoruz</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            Sözümüzün arkasındayız. Her projede yazılı garanti veriyoruz. Sadece söz değil, taahhüt.
+            Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.
           </p>
         </div>
 
