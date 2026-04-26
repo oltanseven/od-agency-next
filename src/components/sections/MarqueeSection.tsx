@@ -30,7 +30,8 @@ export default function MarqueeSection() {
         style={{ background: 'radial-gradient(ellipse, rgba(252,158,79,0.10), transparent 65%)' }} />
 
       {/* Döndürülmüş container — eğimli */}
-      <div className="relative flex flex-col gap-3" style={{ transform: 'rotate(-6deg)', margin: '-1.5rem -6rem' }}>
+      <div className="relative flex flex-col gap-3" style={{ transform: 'rotate(-6deg)', margin: '-1rem -3rem' }}>
+        {/* sm+ margin daha geniş — CSS media query ile inline style'da yapılamaz, -3rem mobilde yeterli */}
 
         {/* Satır 1 — sola, parlak */}
         <div className="flex gap-8 w-max animate-[slideLeft_26s_linear_infinite]">

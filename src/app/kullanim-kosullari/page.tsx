@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 export default function KullanimKosullariPage() {
   return (
     <>
-      <div className="pt-36 pb-16 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-16 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">Yasal</span>
           <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-black text-ink">Kullanım Koşulları</h1>
           <p className="text-ink/40 text-[0.82rem] mt-2">Son güncelleme: Nisan 2026</p>
         </div>
       </div>
 
-      <div className="max-w-[760px] mx-auto px-8 py-16">
+      <div className="max-w-[760px] mx-auto px-5 sm:px-8 py-16">
         <p className="text-ink/50 text-[0.95rem] leading-[1.85] mb-8">
           Bu web sitesini ve OD Agency hizmetlerini kullanarak aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız. Lütfen bu koşulları dikkatlice okuyunuz.
         </p>

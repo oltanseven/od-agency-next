@@ -262,7 +262,7 @@ export default function PaketlerPage() {
 
       {/* Nasıl Çalışır (dark strip) */}
       <div style={{ background: '#0D0B1E', padding: '5rem 0' }}>
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="text-center mb-14">
             <span className="block text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3"
               style={{ color: '#fc9e4f' }}>// Süreç</span>
@@ -297,7 +297,7 @@ export default function PaketlerPage() {
 
       {/* FAQ */}
       <section className="py-16 sm:py-28 bg-cream-soft">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="mb-12">
             <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
               // Sıkça Sorulan Sorular
@@ -311,8 +311,8 @@ export default function PaketlerPage() {
       </section>
 
       {/* CTA dark */}
-      <div className="text-center" style={{ background: '#0D0B1E', padding: '7rem 0' }}>
-        <div className="max-w-[1260px] mx-auto px-8">
+      <div className="text-center" style={{ background: '#0D0B1E', padding: '5rem 0' }}>
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <h2 className="text-[clamp(1.8rem,3vw,2.8rem)] font-black text-white mb-4">
             Hangi paket size uygun <span className="gradient-text">emin değil misiniz?</span>
           </h2>

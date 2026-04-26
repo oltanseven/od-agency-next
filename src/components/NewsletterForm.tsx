@@ -42,7 +42,7 @@ export default function NewsletterForm() {
   return (
     <form className="flex gap-2 flex-wrap" onSubmit={handleSubmit}>
       <input type="email" name="email" required placeholder="E-posta adresiniz"
-        className="px-5 rounded-full text-[0.88rem] text-white w-[240px]
+        className="px-5 rounded-full text-[0.88rem] text-white w-full sm:w-[240px]
           outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(255,82,27,0.2)]"
         style={{
           background: 'rgba(255,255,255,0.06)',

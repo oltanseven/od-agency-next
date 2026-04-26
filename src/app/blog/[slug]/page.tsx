@@ -41,8 +41,8 @@ export default async function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <div className="pt-36 pb-16 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[760px] mx-auto px-8">
+      <div className="pt-28 sm:pt-36 pb-16 bg-cream-soft border-b border-black/[0.09]">
+        <div className="max-w-[760px] mx-auto px-5 sm:px-8">
           <Link href="/blog" className="text-accent text-[0.82rem] font-semibold no-underline hover:underline mb-6 inline-block">
             ← Blog&apos;a Dön
           </Link>
@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       {/* Content */}
-      <article className="max-w-[760px] mx-auto px-8 py-16">
+      <article className="max-w-[760px] mx-auto px-5 sm:px-8 py-16">
         <div
           className="prose prose-lg max-w-none
             [&_h2]:text-[1.4rem] [&_h2]:font-black [&_h2]:text-ink [&_h2]:mt-10 [&_h2]:mb-4

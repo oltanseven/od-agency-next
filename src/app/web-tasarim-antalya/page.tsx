@@ -88,7 +88,7 @@ export default function AntalyaPage() {
 
       {/* Hero */}
       <div className="pt-36 pb-20 bg-cream-soft border-b border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="max-w-[720px]">
             <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">
               // Web Tasarım Antalya
@@ -124,7 +124,7 @@ export default function AntalyaPage() {
 
       {/* Hizmetler + Fiyatlar */}
       <section className="py-24 bg-cream">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="mb-12">
             <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Hizmetler & Fiyatlar</span>
             <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
@@ -156,7 +156,7 @@ export default function AntalyaPage() {
 
       {/* Neden Yerel Ajans */}
       <section className="py-24 bg-cream-soft border-t border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Neden OD Agency?</span>
@@ -207,7 +207,7 @@ export default function AntalyaPage() {
 
       {/* FAQ */}
       <section className="py-24 bg-cream border-t border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="max-w-[780px]">
             <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Sıkça Sorulan Sorular</span>
             <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-10">
@@ -227,7 +227,7 @@ export default function AntalyaPage() {
 
       {/* CTA */}
       <section className="py-16 bg-cream-soft border-t border-black/[0.09]">
-        <div className="max-w-[1260px] mx-auto px-8">
+        <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="bg-night rounded-3xl px-12 py-16 text-center relative overflow-hidden border border-white/[0.06]">
             <div aria-hidden className="absolute top-[-80px] right-[-80px] w-[300px] h-[300px] rounded-full pointer-events-none"
               style={{ background: 'radial-gradient(circle,rgba(255,82,27,0.25),transparent 65%)' }} />
