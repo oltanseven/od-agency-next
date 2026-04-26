@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           <Link href="/iletisim"
             className="bg-accent text-white px-8 rounded-full font-bold text-[0.92rem]
-              no-underline hover:bg-coral inline-flex items-center"
+              no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 inline-flex items-center"
             style={{ minHeight: '48px' }}>
             Ücretsiz Keşif Görüşmesi →
           </Link>

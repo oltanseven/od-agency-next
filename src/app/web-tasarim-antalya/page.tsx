@@ -103,7 +103,7 @@ export default function AntalyaPage() {
             <div className="flex gap-4 flex-wrap">
               <Link href="/iletisim"
                 className="bg-accent text-white px-8 rounded-full font-bold text-[0.95rem]
-                  no-underline hover:bg-coral hover:-translate-y-0.5 inline-flex items-center
+                  no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 inline-flex items-center
                   hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)]
                   focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>

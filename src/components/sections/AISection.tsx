@@ -162,7 +162,7 @@ export default function AISection() {
           </div>
           <Link href="/iletisim"
             className="shrink-0 bg-accent text-white px-7 py-3 rounded-full font-bold text-[0.9rem]
-              no-underline hover:bg-coral transition-colors whitespace-nowrap">
+              no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 whitespace-nowrap">
             Ücretsiz Analiz Al →
           </Link>
         </div>

@@ -252,7 +252,7 @@ export default function IletisimPage() {
                   {/* Submit */}
                   <button type="submit" disabled={status === 'loading'}
                     className="w-full bg-accent text-white rounded-full font-bold text-[0.95rem]
-                      hover:opacity-90 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(255,82,27,0.3)]
+                      hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)]
                       disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none
                       focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2
                       cursor-pointer mt-2"

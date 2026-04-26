@@ -96,7 +96,7 @@ export default function ProjelerPage() {
             <p className="text-ink/50 mb-6">Projenizi birlikte hayata geçirelim.</p>
             <Link href="/iletisim"
               className="bg-accent text-white px-10 py-4 rounded-full font-bold no-underline
-                hover:bg-coral transition-colors inline-block">
+                hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 inline-block">
               Ücretsiz Keşif Görüşmesi →
             </Link>
           </div>

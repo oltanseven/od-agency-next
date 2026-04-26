@@ -51,7 +51,7 @@ export default function NewsletterForm() {
         }} />
       <button type="submit" disabled={status === 'loading'}
         className="bg-accent text-white px-6 py-3 rounded-full font-bold text-[0.88rem]
-          hover:opacity-90 transition-opacity cursor-pointer disabled:opacity-50">
+          hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:translate-y-0 disabled:shadow-none">
         {status === 'loading' ? 'Gönderiliyor...' : 'Abone Ol →'}
       </button>
       {status === 'error' && (

@@ -56,7 +56,7 @@ export default function AdminBlogPage() {
             className="od-input mb-4"
           />
           <button type="submit"
-            className="w-full bg-accent text-white rounded-full font-bold text-[0.9rem] cursor-pointer hover:bg-coral"
+            className="w-full bg-accent text-white rounded-full font-bold text-[0.9rem] cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200"
             style={{ minHeight: '44px' }}>
             Giriş Yap
           </button>
@@ -95,7 +95,7 @@ export default function AdminBlogPage() {
                     onClick={() => togglePublish(post.id, 'publish')}
                     disabled={loading}
                     className="shrink-0 bg-[#22c55e] text-white px-5 py-2.5 rounded-full text-sm font-bold
-                      hover:opacity-90 cursor-pointer disabled:opacity-50">
+                      hover:-translate-y-0.5 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:translate-y-0">
                     Yayınla
                   </button>
                 </div>

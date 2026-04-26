@@ -68,8 +68,8 @@ export default function Navbar() {
               no-underline whitespace-nowrap items-center
               focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2
               ${pathname === '/iletisim'
-                ? 'bg-night text-white hover:opacity-90'
-                : 'bg-accent text-white hover:bg-coral hover:-translate-y-px'}`}
+                ? 'bg-night text-white hover:-translate-y-0.5'
+                : 'bg-accent text-white hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)]'}`}
             style={{ minHeight: '44px' }}
           >
             Proje Başlat →
@@ -120,7 +120,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="bg-accent text-white w-full px-6 rounded-full font-bold text-[0.95rem]
               no-underline inline-flex items-center justify-center
-              hover:bg-coral"
+              hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)]"
             style={{ minHeight: '48px' }}
           >
             Proje Başlat →

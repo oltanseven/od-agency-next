@@ -14,7 +14,7 @@ export default function NotFound() {
         <div className="flex gap-3 justify-center flex-wrap">
           <Link href="/"
             className="bg-accent text-white px-7 rounded-full font-bold text-[0.9rem]
-              no-underline hover:bg-coral inline-flex items-center"
+              no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 inline-flex items-center"
             style={{ minHeight: '44px' }}>
             Ana Sayfa →
           </Link>
