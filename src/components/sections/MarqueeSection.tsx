@@ -23,10 +23,10 @@ export default function MarqueeSection() {
   return (
     <div className="relative bg-night overflow-hidden" style={{ padding: '3.5rem 0' }}>
 
-      {/* Glow efektleri */}
-      <div aria-hidden className="absolute top-[-80px] right-[-80px] w-[300px] h-[300px] rounded-full pointer-events-none"
+      {/* Glow efektleri — section içinde */}
+      <div aria-hidden className="absolute top-[20px] right-[20px] w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(255,82,27,0.2), transparent 65%)' }} />
-      <div aria-hidden className="absolute bottom-[-60px] left-[-60px] w-[250px] h-[250px] rounded-full pointer-events-none"
+      <div aria-hidden className="absolute bottom-[20px] left-[20px] w-[250px] h-[250px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(252,158,79,0.15), transparent 65%)' }} />
       <div aria-hidden className="absolute top-[40%] left-[50%] w-[200px] h-[200px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(255,82,27,0.1), transparent 65%)' }} />

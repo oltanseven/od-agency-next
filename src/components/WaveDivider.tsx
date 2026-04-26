@@ -1,10 +1,10 @@
 /**
- * SVG dalga ayırıcı — section geçişlerinde organik akış.
- * Dalga, önceki section'ın içinden başlayıp sonraki section'a akar.
+ * SVG dalga ayırıcı — önceki section'ın içinden başlayıp sonrakine akar.
+ * Negatif margin ile üstteki section'a biner → "devam ediyor" hissi.
  *
- * @param topColor    — üstteki section'ın arka plan rengi
- * @param bottomColor — alttaki section'ın arka plan rengi
- * @param variant     — 'soft' (tek geniş dalga) | 'wide' (asimetrik eğim) | 'tilt' (hafif açılı)
+ * @param topColor    — üstteki section rengi (dalganın fill'i)
+ * @param bottomColor — alttaki section rengi (dalganın arka planı)
+ * @param variant     — 'soft' | 'wide' | 'tilt'
  * @param flip        — yatayda ters çevir
  */
 
@@ -21,33 +21,35 @@ export default function WaveDivider({
   variant = 'soft',
   flip = false,
 }: Props) {
-  /* Tek yumuşak dalga — keskin nokta yok, tamamen oval */
   const paths: Record<string, string> = {
-    /* Geniş tek dalga — sayfanın ortasında yumuşak bir tepe */
-    soft: 'M0,0 L0,50 C360,110 1080,110 1440,50 L1440,0 Z',
-    /* Asimetrik geniş eğim — soldan sağa hafif kayma */
-    wide: 'M0,0 L0,70 C300,100 600,90 900,60 C1100,40 1300,30 1440,40 L1440,0 Z',
-    /* Hafif açılı eğim — minimal, yakın renkler için */
-    tilt: 'M0,0 L0,30 C480,70 960,70 1440,30 L1440,0 Z',
+    /* Geniş tek dalga — ortada yumuşak oval tepe */
+    soft: 'M0,0 L0,80 C360,160 1080,160 1440,80 L1440,0 Z',
+    /* Asimetrik eğim — soldan sağa organik kayma */
+    wide: 'M0,0 L0,100 C300,140 600,120 900,80 C1100,50 1300,40 1440,60 L1440,0 Z',
+    /* Minimal eğim — yakın renkler için ince geçiş */
+    tilt: 'M0,0 L0,40 C480,90 960,90 1440,40 L1440,0 Z',
   }
 
   return (
     <div
-      className="relative w-full overflow-hidden leading-[0]"
+      className="relative w-full leading-[0]"
       style={{
-        /* Negatif margin ile önceki section'ın içine girer */
-        marginTop: '-2px',
+        /* Üstteki section'ın içine girer — dalga oradan başlıyor gibi */
+        marginTop: 'clamp(-60px, -6vw, -40px)',
+        /* Alttaki section'a da hafif biner — boşluk kalmasın */
         marginBottom: '-2px',
         background: bottomColor,
         transform: flip ? 'scaleX(-1)' : undefined,
+        position: 'relative',
+        zIndex: 2,
       }}
       aria-hidden
     >
       <svg
-        viewBox="0 0 1440 120"
+        viewBox="0 0 1440 180"
         preserveAspectRatio="none"
         className="w-full block"
-        style={{ height: 'clamp(50px, 7vw, 90px)' }}
+        style={{ height: 'clamp(60px, 8vw, 120px)' }}
       >
         <path d={paths[variant]} fill={topColor} />
       </svg>

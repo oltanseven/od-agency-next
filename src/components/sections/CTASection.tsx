@@ -7,10 +7,10 @@ export default function CTASection() {
         <div className="relative bg-night rounded-3xl px-6 sm:px-16 py-14 sm:py-20 text-center overflow-hidden
           border border-white/[0.06]">
 
-          {/* Glow efektleri */}
-          <div aria-hidden className="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] rounded-full pointer-events-none"
+          {/* Glow efektleri — section içinde */}
+          <div aria-hidden className="absolute top-[20px] right-[-20px] w-[400px] h-[400px] rounded-full pointer-events-none"
             style={{background:'radial-gradient(circle,rgba(255,82,27,0.25),transparent 65%)'}} />
-          <div aria-hidden className="absolute bottom-[-100px] left-[-100px] w-[350px] h-[350px] rounded-full pointer-events-none"
+          <div aria-hidden className="absolute bottom-[20px] left-[-20px] w-[350px] h-[350px] rounded-full pointer-events-none"
             style={{background:'radial-gradient(circle,rgba(252,158,79,0.18),transparent 65%)'}} />
 
           <div className="relative z-10">
