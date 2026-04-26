@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
+import NeuralBackground from '@/components/NeuralBackground'
 
 export const metadata: Metadata = {
   title: 'AI Otomasyon Hizmetleri | Chatbot, E-posta, CRM | OD Agency',
@@ -51,8 +52,8 @@ const services = [
 export default function AIOtomasyonPage() {
   return (
     <>
-      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
-        <ServiceHeroBg theme="ai" />
+      <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative overflow-hidden">
+        <NeuralBackground />
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// AI Otomasyon</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
