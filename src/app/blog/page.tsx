@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import NewsletterForm from '@/components/NewsletterForm'
+import { getPublishedPosts } from '@/lib/supabase'
 
 export const metadata: Metadata = {
   title: 'Web Tasarım Blog — Fiyatlar, Trendler & Rehberler | OD Agency',
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://odagency.com/blog' },
 }
 
-const thumbs = {
+const thumbs: Record<number, string> = {
   1: 'linear-gradient(135deg,#1e1060,#4338ca,#2d1b69)',
   2: 'linear-gradient(135deg,#0c1a2e,#1e3a5f,#0f4c75)',
   3: 'linear-gradient(135deg,#14532d,#166534,#052e16)',
@@ -20,82 +21,17 @@ const thumbs = {
 }
 
 const catColors: Record<string, string> = {
-  'Web Tasarımı':    'rgba(255,82,27,0.9)',
-  'AI & Otomasyon':  'rgba(232,136,26,0.9)',
-  'SEO':             'rgba(22,163,74,0.9)',
-  'E-Ticaret':       'rgba(37,99,235,0.9)',
+  'Web Tasarımı':   'rgba(255,82,27,0.9)',
+  'AI & Otomasyon': 'rgba(232,136,26,0.9)',
+  'SEO':            'rgba(22,163,74,0.9)',
+  'E-Ticaret':      'rgba(37,99,235,0.9)',
 }
 
-function CatBadge({ cat }: { cat: string }) {
-  return (
-    <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
-      text-white px-3 py-1 rounded-full"
-      style={{ background: catColors[cat] || 'rgba(255,82,27,0.9)' }}>
-      {cat}
-    </span>
-  )
-}
+export default async function BlogPage() {
+  const posts = await getPublishedPosts()
+  const featured = posts[0]
+  const grid = posts.slice(1)
 
-const cats = ['Tümü', 'Web Tasarımı', 'AI & Otomasyon', 'SEO', 'E-Ticaret', 'İpuçları']
-
-const posts = [
-  {
-    slug: 'web-sitesi-maliyeti-2026',
-    cat: 'Web Tasarımı',
-    thumb: 2,
-    title: 'Web Sitesi Kurma Maliyeti 2026: Gerçekçi Fiyat Rehberi',
-    excerpt: 'Basit tanıtım sitesinden kurumsal portala kadar 2026 Türkiye fiyatları. Kim ne kadar alıyor, nelere dikkat etmeli?',
-    date: '22 Nisan 2026',
-    readTime: '7 dk',
-  },
-  {
-    slug: 'freelancer-mi-ajansi-mi',
-    cat: 'Web Tasarımı',
-    thumb: 1,
-    title: 'Freelancer mı, Ajans mı? İkisi Arasındaki Temel Farklar',
-    excerpt: 'Fiyat, hız, garanti ve uzun vadeli destek açısından hangisi sizin için doğru? Dürüst bir karşılaştırma.',
-    date: '18 Nisan 2026',
-    readTime: '5 dk',
-  },
-  {
-    slug: 'eticaret-sitesi-nasil-kurulur',
-    cat: 'E-Ticaret',
-    thumb: 5,
-    title: 'E-Ticaret Sitesi Nasıl Kurulur? 2026 Adım Adım Rehber',
-    excerpt: 'Platform seçiminden ödeme entegrasyonuna, kargo altyapısından SEO kurulumuna kadar eksiksiz rehber.',
-    date: '14 Nisan 2026',
-    readTime: '8 dk',
-  },
-  {
-    slug: 'wordpress-mu-ozel-yazilim-mi',
-    cat: 'Web Tasarımı',
-    thumb: 4,
-    title: 'WordPress mu, Özel Yazılım mı? 2026\'da Doğru Seçim',
-    excerpt: 'Maliyet, esneklik, bakım kolaylığı ve ölçeklenebilirlik açısından hangi platform size uygun?',
-    date: '10 Nisan 2026',
-    readTime: '6 dk',
-  },
-  {
-    slug: 'web-tasarim-ajans-nasil-secilir',
-    cat: 'Web Tasarımı',
-    thumb: 3,
-    title: 'Web Tasarım Ajansı Nasıl Seçilir? 10 Kritik Soru',
-    excerpt: 'Portföy değerlendirmeden sözleşme detaylarına, referans kontrolünden teknik sorulara kadar tam kontrol listesi.',
-    date: '5 Nisan 2026',
-    readTime: '5 dk',
-  },
-  {
-    slug: 'yapay-zeka-web-tasarim-2026',
-    cat: 'AI & Otomasyon',
-    thumb: 7,
-    title: 'Yapay Zeka Web Tasarımı Değiştiriyor mu? 2026 Gerçeği',
-    excerpt: 'AI araçları tasarımcıların yerini almıyor; ama onları kullananlar kullanmayanların önüne geçiyor. İşte farkı.',
-    date: '1 Nisan 2026',
-    readTime: '6 dk',
-  },
-]
-
-export default function BlogPage() {
   return (
     <>
       {/* Hero */}
@@ -114,109 +50,91 @@ export default function BlogPage() {
       <section className="py-28 bg-cream">
         <div className="max-w-[1260px] mx-auto px-8">
 
-          {/* Category filter */}
-          <div className="flex flex-wrap gap-2 mb-14">
-            {cats.map((cat, i) => (
-              <span key={cat}
-                className={`px-4 py-2 rounded-full text-[0.8rem] font-semibold border-[1.5px]
-                  ${i === 0
-                    ? 'bg-accent border-accent text-white'
-                    : 'bg-cream border-black/[0.09] text-ink/50'}`}>
-                {cat}
-              </span>
-            ))}
-          </div>
+          {posts.length === 0 && (
+            <p className="text-ink/50 text-center py-20">Henüz yayınlanmış yazı yok. Yakında burada olacak!</p>
+          )}
 
           {/* Featured post */}
-          <Link href="/blog/web-tasarimi-trendleri-2026"
-            className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] rounded-[18px] overflow-hidden
-              border-[1.5px] border-black/[0.09] mb-8 no-underline text-inherit
-              transition-all duration-300 hover:shadow-[0_24px_60px_rgba(255,82,27,0.1)]
-              hover:border-[rgba(255,82,27,0.25)] group">
-            <div className="relative min-h-[280px] md:min-h-[320px] flex items-center justify-center"
-              style={{ background: thumbs[1] }}>
-              <div className="absolute inset-0 flex items-center justify-center opacity-60">
-                <svg viewBox="0 0 24 24" fill="none" width="64" height="64">
-                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5"/>
-                  <path d="M3 9h18M9 21V9" stroke="rgba(255,255,255,0.6)" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
+          {featured && (
+            <Link href={`/blog/${featured.slug}`}
+              className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] rounded-[18px] overflow-hidden
+                border-[1.5px] border-black/[0.09] mb-8 no-underline text-inherit
+                transition-all duration-300 hover:shadow-[0_24px_60px_rgba(255,82,27,0.1)]
+                hover:border-[rgba(255,82,27,0.25)] group">
+              <div className="relative min-h-[280px] md:min-h-[320px] flex items-center justify-center"
+                style={{ background: thumbs[featured.thumb] || thumbs[1] }}>
+                <div className="absolute inset-0 flex items-center justify-center opacity-60">
+                  <svg viewBox="0 0 24 24" fill="none" width="64" height="64">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5"/>
+                    <path d="M3 9h18M9 21V9" stroke="rgba(255,255,255,0.6)" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>
+                </div>
+                <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
+                  text-white px-3 py-1 rounded-full"
+                  style={{ background: catColors[featured.category] || 'rgba(255,82,27,0.9)' }}>
+                  {featured.category}
+                </span>
               </div>
-              <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
-                text-white px-3 py-1 rounded-full"
-                style={{ background: 'rgba(255,82,27,0.9)' }}>
-                Web Tasarımı
-              </span>
-            </div>
-            <div className="p-10 flex flex-col justify-center bg-cream">
-              <span className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-accent mb-3 block">
-                Öne Çıkan Yazı
-              </span>
-              <h2 className="text-[1.6rem] font-black leading-[1.3] text-ink mb-3
-                group-hover:text-accent transition-colors">
-                2026&apos;da Web Tasarımı: Trendler ve İşletmeniz İçin Anlamı
-              </h2>
-              <p className="text-ink/50 leading-[1.75] mb-6">
-                Glassmorphism, AI destekli tasarım araçları, micro-animasyonlar ve daha fazlası.
-                Bu yıl öne çıkan tasarım trendlerini ve dönüşüm oranlarına etkisini inceliyoruz.
-              </p>
-              <div className="flex items-center gap-4 text-[0.75rem] text-ink/40 mb-5">
-                <span>20 Nisan 2026</span>
-                <span>7 dk okuma</span>
+              <div className="p-10 flex flex-col justify-center bg-cream">
+                <span className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-accent mb-3 block">
+                  Son Yazı
+                </span>
+                <h2 className="text-[1.6rem] font-black leading-[1.3] text-ink mb-3
+                  group-hover:text-accent transition-colors">
+                  {featured.title}
+                </h2>
+                <p className="text-ink/50 leading-[1.75] mb-6">{featured.excerpt}</p>
+                <div className="flex items-center gap-4 text-[0.75rem] text-ink/40 mb-5">
+                  {featured.published_at && (
+                    <span>{new Date(featured.published_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                  )}
+                  <span>{featured.read_time} okuma</span>
+                </div>
+                <span className="text-accent font-bold text-[0.82rem]">Okumaya Devam Et →</span>
               </div>
-              <span className="text-accent font-bold text-[0.82rem]">Okumaya Devam Et →</span>
-            </div>
-          </Link>
+            </Link>
+          )}
 
           {/* Blog grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map(({ slug, cat, thumb, title, excerpt, date, readTime }) => (
-              <Link key={slug} href={`/blog/${slug}`}
-                className="group bg-cream border-[1.5px] border-black/[0.09] rounded-[18px] overflow-hidden
-                  no-underline text-inherit flex flex-col
-                  transition-all duration-300 hover:-translate-y-1
-                  hover:shadow-[0_20px_50px_rgba(255,82,27,0.1)] hover:border-[rgba(255,82,27,0.25)]">
-
-                {/* Thumbnail */}
-                <div className="relative aspect-[16/9]"
-                  style={{ background: thumbs[thumb as keyof typeof thumbs] }}>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-60">
-                    <svg viewBox="0 0 24 24" fill="none" width="48" height="48">
-                      <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.6)" strokeWidth="1.5"/>
-                    </svg>
+          {grid.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {grid.map(post => (
+                <Link key={post.slug} href={`/blog/${post.slug}`}
+                  className="group bg-cream border-[1.5px] border-black/[0.09] rounded-[18px] overflow-hidden
+                    no-underline text-inherit flex flex-col
+                    transition-all duration-300 hover:-translate-y-1
+                    hover:shadow-[0_20px_50px_rgba(255,82,27,0.1)] hover:border-[rgba(255,82,27,0.25)]">
+                  <div className="relative aspect-[16/9]"
+                    style={{ background: thumbs[post.thumb] || thumbs[1] }}>
+                    <div className="absolute inset-0 flex items-center justify-center opacity-60">
+                      <svg viewBox="0 0 24 24" fill="none" width="48" height="48">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.6)" strokeWidth="1.5"/>
+                      </svg>
+                    </div>
+                    <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
+                      text-white px-3 py-1 rounded-full"
+                      style={{ background: catColors[post.category] || 'rgba(255,82,27,0.9)' }}>
+                      {post.category}
+                    </span>
                   </div>
-                  <CatBadge cat={cat} />
-                </div>
-
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-4 mb-3 text-[0.75rem] text-ink/40">
-                    <span>{date}</span>
-                    <span>{readTime}</span>
+                  <div className="p-6 flex flex-col flex-1">
+                    <div className="flex items-center gap-4 mb-3 text-[0.75rem] text-ink/40">
+                      {post.published_at && (
+                        <span>{new Date(post.published_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                      )}
+                      <span>{post.read_time}</span>
+                    </div>
+                    <h3 className="text-[1rem] font-bold text-ink leading-[1.45] mb-2
+                      group-hover:text-accent transition-colors flex-1">
+                      {post.title}
+                    </h3>
+                    <p className="text-ink/50 text-[0.83rem] leading-[1.65] mb-4">{post.excerpt}</p>
+                    <span className="text-accent font-bold text-[0.82rem]">Oku →</span>
                   </div>
-                  <h3 className="text-[1rem] font-bold text-ink leading-[1.45] mb-2
-                    group-hover:text-accent transition-colors flex-1">
-                    {title}
-                  </h3>
-                  <p className="text-ink/50 text-[0.83rem] leading-[1.65] mb-4">{excerpt}</p>
-                  <span className="text-accent font-bold text-[0.82rem]">Oku →</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Pagination */}
-          <div className="flex justify-center gap-2 mt-14">
-            {['1', '2', '3', '→'].map((p, i) => (
-              <span key={p}
-                className={`w-10 h-10 rounded-[10px] border-[1.5px] text-[0.88rem] font-semibold
-                  flex items-center justify-center cursor-pointer
-                  ${i === 0
-                    ? 'bg-accent border-accent text-white'
-                    : 'bg-cream border-black/[0.09] text-ink/50'}`}>
-                {p}
-              </span>
-            ))}
-          </div>
+                </Link>
+              ))}
+            </div>
+          )}
 
           {/* Newsletter */}
           <div className="mt-16 rounded-[20px] px-14 py-14 flex flex-col md:flex-row items-center
