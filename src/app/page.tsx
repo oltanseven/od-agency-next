@@ -28,20 +28,26 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <WaveDivider topColor="#FFFEF8" bottomColor="#0D0B1E" variant="wave" />
+      {/* cream → night: geniş yumuşak dalga */}
+      <WaveDivider topColor="#FFFEF8" bottomColor="#0D0B1E" variant="soft" />
       <MarqueeSection />
-      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="curve" flip />
+      {/* night → cream: ters yönde asimetrik eğim */}
+      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="wide" flip />
       <ServicesSection />
-      {/* Services → AI: çok yakın renkler, slope yeter */}
-      <WaveDivider topColor="#FFFEF8" bottomColor="#F6F2E8" variant="slope" />
+      {/* cream → cream-soft: minimal geçiş */}
+      <WaveDivider topColor="#FFFEF8" bottomColor="#F6F2E8" variant="tilt" />
       <AISection />
-      <WaveDivider topColor="#F6F2E8" bottomColor="#0D0B1E" variant="wave" flip />
+      {/* cream-soft → night: geniş dalga, ters yön */}
+      <WaveDivider topColor="#F6F2E8" bottomColor="#0D0B1E" variant="soft" flip />
       <ProcessSection />
-      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="curve" />
+      {/* night → cream: asimetrik eğim */}
+      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="wide" />
       <PortfolioSection />
-      <WaveDivider topColor="#FFFEF8" bottomColor="#ff521b" variant="wave" flip />
+      {/* cream → accent: geniş dalga */}
+      <WaveDivider topColor="#FFFEF8" bottomColor="#ff521b" variant="soft" flip />
       <StatsSection />
-      <WaveDivider topColor="#ff521b" bottomColor="#FFFEF8" variant="slope" />
+      {/* accent → cream: asimetrik eğim */}
+      <WaveDivider topColor="#ff521b" bottomColor="#FFFEF8" variant="wide" flip />
       <TestimonialsSection />
       <CTASection />
     </>
