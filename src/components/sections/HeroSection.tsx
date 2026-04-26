@@ -33,10 +33,10 @@ const row3 = ['health','law','fin','edu','ecom','port','rest']
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center pt-32 pb-32 sm:pb-36 bg-cream relative overflow-hidden">
+    <section className="min-h-screen flex items-center pt-40 sm:pt-32 pb-40 sm:pb-36 bg-cream relative overflow-hidden">
 
       {/* Kayan kart arka planı */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.15]">
+      <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.25] sm:opacity-[0.15]">
         <div className="flex flex-col gap-4 justify-center h-full">
           {/* Satır 1 — sola */}
           <div className="flex gap-4 w-max animate-[slideLeft_38s_linear_infinite]">
@@ -53,15 +53,15 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Gradient örtü */}
+      {/* Gradient örtü — mobilde daha az kapatma */}
       <div aria-hidden className="absolute inset-0 pointer-events-none"
-        style={{background:'linear-gradient(to bottom,#FFFEF8 0%,transparent 18%,transparent 82%,#FFFEF8 100%), linear-gradient(to right,#FFFEF8 0%,transparent 20%,transparent 80%,#FFFEF8 100%)'}} />
+        style={{background:'linear-gradient(to bottom,#FFFEF8 0%,transparent 10%,transparent 90%,#FFFEF8 100%), linear-gradient(to right,#FFFEF8 0%,transparent 8%,transparent 92%,#FFFEF8 100%)'}} />
 
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* SOL: metin kartı */}
-          <div className="bg-[rgba(255,254,248,0.88)] backdrop-blur-xl border border-black/10
+          <div className="bg-[rgba(255,254,248,0.82)] sm:bg-[rgba(255,254,248,0.88)] backdrop-blur-xl border border-black/10
             shadow-[0_8px_40px_rgba(0,0,0,0.08)] rounded-3xl p-6 sm:p-9 md:p-12">
 
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
