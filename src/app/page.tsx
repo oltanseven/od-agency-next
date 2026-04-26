@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import HeroSection         from '@/components/sections/HeroSection'
 
 export const metadata: Metadata = {
@@ -13,16 +14,18 @@ export const metadata: Metadata = {
   },
 }
 
-
+// Above-fold: direkt import (hero + marquee hemen görünür)
 import MarqueeSection      from '@/components/sections/MarqueeSection'
-import ServicesSection     from '@/components/sections/ServicesSection'
-import AISection           from '@/components/sections/AISection'
-import ProcessSection      from '@/components/sections/ProcessSection'
-import PortfolioSection    from '@/components/sections/PortfolioSection'
-import StatsSection        from '@/components/sections/StatsSection'
-import TestimonialsSection from '@/components/sections/TestimonialsSection'
-import CTASection          from '@/components/sections/CTASection'
 import WaveDivider         from '@/components/WaveDivider'
+
+// Below-fold: lazy load (scroll edince yüklenir)
+const ServicesSection     = dynamic(() => import('@/components/sections/ServicesSection'))
+const AISection           = dynamic(() => import('@/components/sections/AISection'))
+const ProcessSection      = dynamic(() => import('@/components/sections/ProcessSection'))
+const PortfolioSection    = dynamic(() => import('@/components/sections/PortfolioSection'))
+const StatsSection        = dynamic(() => import('@/components/sections/StatsSection'))
+const TestimonialsSection = dynamic(() => import('@/components/sections/TestimonialsSection'))
+const CTASection          = dynamic(() => import('@/components/sections/CTASection'))
 
 export default function Home() {
   return (

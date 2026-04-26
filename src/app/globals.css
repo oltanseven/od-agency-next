@@ -89,9 +89,6 @@ body { overflow-x: hidden; }
   background-clip: text;
 }
 
-.fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
-
 /* ── Animations ── */
 @keyframes blink {
   0%, 100% { opacity: 1; transform: scale(1); }
@@ -99,6 +96,13 @@ body { overflow-x: hidden; }
 }
 @keyframes slideLeft  { from { transform: translateX(0); }    to { transform: translateX(-50%); } }
 @keyframes slideRight { from { transform: translateX(-50%); } to { transform: translateX(0); }    }
+
+/* GPU layer promotion for sliding animations */
+[class*="animate-[slideLeft"],
+[class*="animate-[slideRight"] {
+  will-change: transform;
+  backface-visibility: hidden;
+}
 @keyframes floatA { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-8px) } }
 @keyframes floatB { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-6px) } }
 @keyframes floatC { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-10px) } }
@@ -111,8 +115,4 @@ body { overflow-x: hidden; }
 @keyframes nodePulse {
   0%,100% { box-shadow:0 0 0 0 rgba(255,82,27,0); }
   50%     { box-shadow:0 0 0 8px rgba(255,82,27,0.15); }
-}
-@keyframes fillBar {
-  from { width:0 }
-  to   { width:var(--fill) }
 }
