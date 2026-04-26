@@ -16,11 +16,11 @@ export default function SectionIndicator() {
   const pathname = usePathname()
   const [current, setCurrent] = useState(0)
   const [show, setShow] = useState(false)
-
-  // Sadece ana sayfada göster
-  if (pathname !== '/') return null
+  const isHome = pathname === '/'
 
   useEffect(() => {
+    if (!isHome) return
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -38,7 +38,6 @@ export default function SectionIndicator() {
       if (el) observer.observe(el)
     }
 
-    // Hero'dan sonra göster
     const handleScroll = () => setShow(window.scrollY > 300)
     window.addEventListener('scroll', handleScroll, { passive: true })
     handleScroll()
@@ -47,7 +46,9 @@ export default function SectionIndicator() {
       observer.disconnect()
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [isHome])
+
+  if (!isHome || !show) return null
 
   function scrollToNext() {
     const nextIdx = Math.min(current + 1, sections.length - 1)
@@ -55,11 +56,8 @@ export default function SectionIndicator() {
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
-  if (!show) return null
-
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
-      {/* Section bilgisi */}
       <div className="bg-night/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-2
         flex items-center gap-3 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
         <span className="text-[0.7rem] text-white/40 font-mono">
@@ -70,7 +68,6 @@ export default function SectionIndicator() {
         </span>
       </div>
 
-      {/* Sonraki section ok */}
       {current < sections.length - 1 && (
         <button
           onClick={scrollToNext}
