@@ -45,10 +45,13 @@ const cards = [
   },
 ]
 
+import NeuralBackground from '@/components/NeuralBackground'
+
 export default function AISection() {
   return (
-    <section id="otomasyon" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream-soft">
-      <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
+    <section id="otomasyon" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream-soft relative overflow-hidden">
+      <NeuralBackground />
+      <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
 
         {/* Header — centered */}
         <div className="text-center mb-14">
