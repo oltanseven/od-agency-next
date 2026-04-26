@@ -39,12 +39,12 @@ export default function Footer() {
             </p>
             <div className="flex gap-2">
               {[
-                { icon: <IgIcon />, title: 'Instagram', href: '#' },
-                { icon: <XIcon />,  title: 'Twitter / X', href: '#' },
-                { icon: <LiIcon />, title: 'LinkedIn', href: '#' },
+                { icon: <IgIcon />, title: 'Instagram', href: 'https://instagram.com/odagency' },
+                { icon: <XIcon />,  title: 'Twitter / X', href: 'https://x.com/odagency' },
+                { icon: <LiIcon />, title: 'LinkedIn', href: 'https://linkedin.com/company/odagency' },
               ].map(({ icon, title, href }) => (
                 <a
-                  key={title} href={href} title={title}
+                  key={title} href={href} title={title} target="_blank" rel="noreferrer"
                   className="w-11 h-11 rounded-lg border border-black/[0.09]
                     flex items-center justify-center text-ink/50
                     hover:border-accent hover:text-accent

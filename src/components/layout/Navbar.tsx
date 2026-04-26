@@ -14,12 +14,16 @@ const links = [
 export default function Navbar() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
   }, [])
+
+  // Sayfa değiştiğinde mobil menüyü kapat
+  useEffect(() => { setMobileOpen(false) }, [pathname])
 
   const isActive = (href: string) => {
     if (href.startsWith('/#')) return false
@@ -28,19 +32,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex justify-center
+      className={`fixed top-0 left-0 right-0 z-50
         bg-cream/92 backdrop-blur-xl border-b border-black/[0.09]
         transition-shadow duration-300
         ${scrolled ? 'shadow-[0_4px_30px_rgba(255,82,27,0.08)]' : ''}`}
     >
-      <div className="max-w-[1260px] w-full px-8 py-4 flex items-center justify-between">
+      <div className="max-w-[1260px] w-full mx-auto px-8 py-4 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/" className="text-[1.4rem] font-black tracking-[-0.06em] text-ink no-underline">
           OD<span className="text-accent">.</span>
         </Link>
 
-        {/* Links */}
+        {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 list-none">
           {links.map(({ label, href }) => (
             <li key={href}>
@@ -56,21 +60,73 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA — min 44px touch target */}
-        <Link
-          href="/iletisim"
-          className={`px-[1.4rem] rounded-full text-[0.88rem] font-semibold
-            no-underline whitespace-nowrap inline-flex items-center
-            focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2
-            ${pathname === '/iletisim'
-              ? 'bg-night text-white hover:opacity-90'
-              : 'bg-accent text-white hover:bg-coral hover:-translate-y-px'}`}
-          style={{ minHeight: '44px' }}
-        >
-          Proje Başlat →
-        </Link>
+        <div className="flex items-center gap-3">
+          {/* CTA — min 44px touch target */}
+          <Link
+            href="/iletisim"
+            className={`hidden sm:inline-flex px-[1.4rem] rounded-full text-[0.88rem] font-semibold
+              no-underline whitespace-nowrap items-center
+              focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2
+              ${pathname === '/iletisim'
+                ? 'bg-night text-white hover:opacity-90'
+                : 'bg-accent text-white hover:bg-coral hover:-translate-y-px'}`}
+            style={{ minHeight: '44px' }}
+          >
+            Proje Başlat →
+          </Link>
 
+          {/* Hamburger — mobile only */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden w-11 h-11 flex items-center justify-center rounded-lg
+              border border-black/[0.09] text-ink/60 hover:text-accent hover:border-accent
+              focus-visible:ring-2 focus-visible:ring-accent/50 cursor-pointer"
+            aria-label="Menüyü aç/kapat"
+          >
+            {mobileOpen ? (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            ) : (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                <path d="M4 7h16M4 12h16M4 17h16"/>
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="md:hidden border-t border-black/[0.09] bg-cream/98 backdrop-blur-xl px-8 pb-6 pt-4">
+          <ul className="flex flex-col gap-1 list-none mb-4">
+            {links.map(({ label, href }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block text-[0.95rem] font-medium no-underline px-4 py-3 rounded-xl
+                    ${isActive(href)
+                      ? 'text-accent bg-accent/5'
+                      : 'text-ink/70 hover:text-accent hover:bg-accent/5'}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/iletisim"
+            onClick={() => setMobileOpen(false)}
+            className="bg-accent text-white w-full px-6 rounded-full font-bold text-[0.95rem]
+              no-underline inline-flex items-center justify-center
+              hover:bg-coral"
+            style={{ minHeight: '48px' }}
+          >
+            Proje Başlat →
+          </Link>
+        </div>
+      )}
     </nav>
   )
 }
