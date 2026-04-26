@@ -63,13 +63,13 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section id="surec" className="py-16 sm:py-28 bg-night relative overflow-hidden">
+    <section id="surec" className="py-16 sm:py-28 bg-night relative" style={{ overflowX: 'clip' }}>
 
-      {/* Glow efektleri — section içinde kalacak şekilde konumlandırıldı */}
-      <div aria-hidden className="absolute top-[40px] right-[-40px] w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{background:'radial-gradient(circle,rgba(255,82,27,0.25),transparent 65%)'}} />
-      <div aria-hidden className="absolute bottom-[40px] left-[-40px] w-[350px] h-[350px] rounded-full pointer-events-none"
-        style={{background:'radial-gradient(circle,rgba(252,158,79,0.2),transparent 65%)'}} />
+      {/* Glow efektleri */}
+      <div aria-hidden className="absolute top-[-60px] right-[-80px] w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{background:'radial-gradient(circle,rgba(255,82,27,0.20),transparent 70%)'}} />
+      <div aria-hidden className="absolute bottom-[-60px] left-[-80px] w-[450px] h-[450px] rounded-full pointer-events-none"
+        style={{background:'radial-gradient(circle,rgba(252,158,79,0.15),transparent 70%)'}} />
 
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
 

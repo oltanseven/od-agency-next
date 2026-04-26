@@ -33,7 +33,7 @@ const row3 = ['health','law','fin','edu','ecom','port','rest']
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center pt-32 pb-24 bg-cream relative overflow-hidden">
+    <section className="min-h-screen flex items-center pt-32 pb-24 bg-cream relative" style={{ overflowX: 'clip' }}>
 
       {/* Kayan kart arka planı */}
       <div aria-hidden className="absolute inset-0 pointer-events-none opacity-[0.15] overflow-hidden" style={{ overflowX: 'clip' }}>
