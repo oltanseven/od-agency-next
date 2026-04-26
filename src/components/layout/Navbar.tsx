@@ -39,10 +39,10 @@ export default function Navbar() {
     >
       <div className="max-w-[1260px] w-full mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link href="/" className="text-[1.4rem] font-black tracking-[-0.06em] text-ink no-underline">
+        {/* Logo — ana sayfada hero'ya scroll, başka sayfada / 'ye git */}
+        <a href="/#hero" className="text-[1.4rem] font-black tracking-[-0.06em] text-ink no-underline cursor-pointer">
           OD<span className="text-accent">.</span>
-        </Link>
+        </a>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 list-none">
