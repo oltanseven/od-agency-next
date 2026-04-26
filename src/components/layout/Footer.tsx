@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 
 const WaIcon = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
@@ -28,6 +31,20 @@ const LiIcon = () => (
 )
 
 export default function Footer() {
+  const pathname = usePathname()
+  const router = useRouter()
+
+  function handleHash(e: React.MouseEvent, href: string) {
+    e.preventDefault()
+    const hash = href.split('#')[1]
+    if (pathname === '/') {
+      const el = document.getElementById(hash)
+      if (el) el.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      router.push(href)
+    }
+  }
+
   return (
     <footer className="bg-cream border-t border-black/[0.09] pt-14 sm:pt-20 pb-10">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
@@ -75,9 +92,15 @@ export default function Footer() {
                 ['Landing Page', '/landing-page'],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                    {label}
-                  </Link>
+                  {href.startsWith('/#') ? (
+                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </a>
+                  ) : (
+                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -95,9 +118,15 @@ export default function Footer() {
                 ['İletişim',   '/iletisim'],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                    {label}
-                  </Link>
+                  {href.startsWith('/#') ? (
+                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </a>
+                  ) : (
+                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
