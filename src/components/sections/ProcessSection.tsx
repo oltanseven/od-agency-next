@@ -65,11 +65,11 @@ export default function ProcessSection() {
   return (
     <section id="surec" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-night relative" style={{ overflowX: 'clip' }}>
 
-      {/* Glow efektleri */}
-      <div aria-hidden className="absolute top-[-60px] right-[-80px] w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{background:'radial-gradient(circle,rgba(255,82,27,0.20),transparent 70%)'}} />
-      <div aria-hidden className="absolute bottom-[-60px] left-[-80px] w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{background:'radial-gradient(circle,rgba(252,158,79,0.15),transparent 70%)'}} />
+      {/* Glow efektleri — soluk, merkeze yakın */}
+      <div aria-hidden className="absolute top-[15%] right-[5%] w-[40%] h-[50%] rounded-full pointer-events-none"
+        style={{background:'radial-gradient(ellipse,rgba(255,82,27,0.08),transparent 65%)'}} />
+      <div aria-hidden className="absolute bottom-[15%] left-[5%] w-[35%] h-[45%] rounded-full pointer-events-none"
+        style={{background:'radial-gradient(ellipse,rgba(252,158,79,0.06),transparent 65%)'}} />
 
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
 
