@@ -78,10 +78,10 @@ export default function ProcessSection() {
             // Sürecimiz
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-white">
-            4 adımda <span className="gradient-text">hayalinizdeki site</span>
+            Nasıl <span className="gradient-text">çalışıyoruz?</span>
           </h2>
           <p className="text-white/50 mt-3 max-w-[440px] mx-auto leading-[1.7]">
-            Şeffaf, hızlı ve stressiz. Her adımda ne olduğunu bilirsiniz.
+            Sürpriz yok, gizli ücret yok. Her adımda neler olduğunu bilirsiniz.
           </p>
         </div>
 

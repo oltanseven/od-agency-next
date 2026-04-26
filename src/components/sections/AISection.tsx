@@ -59,10 +59,10 @@ export default function AISection() {
             // AI Otomasyon
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            Siteniz <span className="gradient-text">7/24 çalışsın</span>
+            Gece 3&apos;te bile <span className="gradient-text">müşterinize yanıt verin</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] mx-auto leading-[1.7]">
-            Siz uyurken bile müşterilerinize yanıt verin. AI chatbot, e-posta otomasyonu ve lead yakalama ile satışlarınızı artırın.
+            Siz uyurken chatbot müşteri sorularını yanıtlasın, lead&apos;ler otomatik kayıt olsun, terk sepeti e-postaları gönderilsin.
           </p>
         </div>
 

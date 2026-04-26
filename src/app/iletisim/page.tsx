@@ -45,10 +45,10 @@ export default function IletisimPage() {
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// İletişim</span>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
-            Projenizi <span className="gradient-text">konuşalım</span>
+            Bir adım atın, <span className="gradient-text">gerisini konuşalım</span>
           </h1>
           <p className="text-ink/50 text-[1.05rem] max-w-[540px] leading-[1.75]">
-            Fikir aşamasında olsun veya hemen başlamak isteyin — fark etmez. Anlatalım, birlikte en doğru yolu çizelim.
+            Projenizi anlatın, 2 saat içinde size dönelim. Ücretsiz, bağlayıcı değil.
           </p>
         </div>
       </div>

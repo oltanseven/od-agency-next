@@ -56,10 +56,10 @@ export default function PaketlerPage() {
             2026 Lansman Kampanyası — Sınırlı Kontenjan
           </div>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
-            Şeffaf fiyat,<br /><span className="gradient-text">net hizmet</span>
+            İşletmenize uygun<br /><span className="gradient-text">planı seçin</span>
           </h1>
           <p className="text-ink/50 text-[1.05rem] max-w-[540px] leading-[1.75]">
-            Sürpriz ek ücret yok. Ne alacağınızı baştan bilirsiniz. 14 gün memnuniyet garantisi ile risk sıfır.
+            Ne alacağınızı baştan bilirsiniz. Gizli ücret yok, sürpriz fatura yok. Beğenmezseniz 14 gün içinde paranız iade.
           </p>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function PaketlerPage() {
               </p>
               <div className="mb-7 pb-7 border-b border-black/[0.09]">
                 <div className="text-[2.4rem] font-black tracking-tight text-ink leading-none">
-                  <sup className="text-[1.1rem] font-bold align-super">₺</sup>7.500
+                  7.500<span className="text-[1.1rem] font-bold ml-1">₺</span>
                   <span className="text-[0.75rem] font-medium text-ink/40 ml-1">&apos;den</span>
                 </div>
                 <div className="flex items-center gap-1.5 mt-1.5 text-ink/40 text-[0.75rem]">
@@ -121,7 +121,7 @@ export default function PaketlerPage() {
               </p>
               <div className="mb-7 pb-7 border-b border-black/[0.09]">
                 <div className="text-[2.4rem] font-black tracking-tight text-ink leading-none">
-                  <sup className="text-[1.1rem] font-bold align-super">₺</sup>20.000
+                  20.000<span className="text-[1.1rem] font-bold ml-1">₺</span>
                   <span className="text-[0.75rem] font-medium text-ink/40 ml-1">&apos;den</span>
                 </div>
                 <div className="flex items-center gap-1.5 mt-1.5 text-ink/40 text-[0.75rem]">
@@ -156,7 +156,7 @@ export default function PaketlerPage() {
               </p>
               <div className="mb-7 pb-7 border-b border-black/[0.09]">
                 <div className="text-[2.4rem] font-black tracking-tight text-ink leading-none">
-                  <sup className="text-[1.1rem] font-bold align-super">₺</sup>35.000
+                  35.000<span className="text-[1.1rem] font-bold ml-1">₺</span>
                   <span className="text-[0.75rem] font-medium text-ink/40 ml-1">&apos;den</span>
                 </div>
                 <div className="flex items-center gap-1.5 mt-1.5 text-ink/40 text-[0.75rem]">
@@ -193,7 +193,7 @@ export default function PaketlerPage() {
               </p>
               <div className="mb-7 pb-7" style={{ borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
                 <div className="text-[2.4rem] font-black tracking-tight text-white leading-none">
-                  <sup className="text-[1.1rem] font-bold align-super">₺</sup>15.000
+                  15.000<span className="text-[1.1rem] font-bold ml-1">₺</span>
                   <span className="text-[0.75rem] font-medium ml-1" style={{ color: 'rgba(255,255,255,0.4)' }}>&apos;den</span>
                 </div>
                 <div className="flex items-center gap-1.5 mt-1.5 text-[0.75rem]"
