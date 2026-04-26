@@ -80,19 +80,19 @@ export default function HeroSection() {
               Dönüşüm odaklı web siteleri, e-ticaret altyapıları ve AI otomasyonları ile işletmenizi dijitalde büyütüyoruz. 14 gün memnuniyet garantisi.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex gap-4 flex-wrap">
               <Link href="/iletisim"
-                className="bg-accent text-white px-6 sm:px-8 rounded-full font-bold text-[0.9rem] sm:text-[0.95rem]
+                className="bg-accent text-white px-8 rounded-full font-bold text-[0.95rem]
                   no-underline hover:bg-coral hover:-translate-y-0.5
-                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center justify-center gap-1
+                  hover:shadow-[0_16px_36px_rgba(252,158,79,0.3)] inline-flex items-center gap-1
                   focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>
                 Ücretsiz Web Analizi Al →
               </Link>
               <a href="https://wa.me/905324652031?text=Merhaba%2C%20web%20sitesi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer"
-                className="bg-[#25D366] text-white px-6 sm:px-8 rounded-full font-semibold text-[0.9rem] sm:text-[0.95rem]
+                className="bg-[#25D366] text-white px-8 rounded-full font-semibold text-[0.95rem]
                   no-underline hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(37,211,102,0.3)]
-                  inline-flex items-center justify-center gap-2
+                  inline-flex items-center gap-2
                   focus-visible:ring-2 focus-visible:ring-[#25D366]/50 focus-visible:ring-offset-2"
                 style={{ minHeight: '48px' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
