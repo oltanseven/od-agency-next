@@ -9,6 +9,15 @@ type Node = {
   vy: number
   radius: number
   opacity: number
+  pulseSpeed: number
+  pulsePhase: number
+  color: 'accent' | 'coral' | 'white'
+}
+
+const COLORS = {
+  accent: { r: 255, g: 82, b: 27 },
+  coral: { r: 232, g: 136, b: 26 },
+  white: { r: 255, g: 200, b: 150 },
 }
 
 export default function NeuralBackground() {
@@ -21,7 +30,6 @@ export default function NeuralBackground() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    // Reduced motion kontrolü
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (prefersReduced) return
 
@@ -29,10 +37,11 @@ export default function NeuralBackground() {
     let h = 0
     let nodes: Node[] = []
     let breathPhase = 0
+    let time = 0
 
-    // Mobilde daha az nokta
     const isMobile = window.innerWidth < 768
-    const nodeCount = isMobile ? 30 : 55
+    const nodeCount = isMobile ? 55 : 100
+    const connectionDist = isMobile ? 130 : 170
 
     function resize() {
       const parent = canvas!.parentElement
@@ -49,26 +58,28 @@ export default function NeuralBackground() {
 
     function createNodes() {
       nodes = []
+      const colorKeys: Node['color'][] = ['accent', 'coral', 'white']
       for (let i = 0; i < nodeCount; i++) {
         nodes.push({
           x: Math.random() * w,
           y: Math.random() * h,
-          vx: (Math.random() - 0.5) * 0.4,
-          vy: (Math.random() - 0.5) * 0.4,
-          radius: 1.5 + Math.random() * 2,
-          opacity: 0.3 + Math.random() * 0.5,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          radius: 1.5 + Math.random() * 2.5,
+          opacity: 0.4 + Math.random() * 0.6,
+          pulseSpeed: 0.02 + Math.random() * 0.03,
+          pulsePhase: Math.random() * Math.PI * 2,
+          color: colorKeys[Math.floor(Math.random() * colorKeys.length)],
         })
       }
     }
 
-    const connectionDist = isMobile ? 120 : 160
-
     function draw() {
       ctx!.clearRect(0, 0, w, h)
-
-      // Nefes efekti — yavaş zoom
+      time += 1
       breathPhase += 0.003
-      const breathScale = 1 + Math.sin(breathPhase) * 0.02
+
+      const breathScale = 1 + Math.sin(breathPhase) * 0.025
       const cx = w / 2
       const cy = h / 2
 
@@ -81,17 +92,13 @@ export default function NeuralBackground() {
       for (const node of nodes) {
         node.x += node.vx
         node.y += node.vy
-
-        // Sınırlardan yumuşak sekme
-        if (node.x < 0 || node.x > w) node.vx *= -1
-        if (node.y < 0 || node.y > h) node.vy *= -1
-
-        // Sınır içinde tut
-        node.x = Math.max(0, Math.min(w, node.x))
-        node.y = Math.max(0, Math.min(h, node.y))
+        if (node.x < -10 || node.x > w + 10) node.vx *= -1
+        if (node.y < -10 || node.y > h + 10) node.vy *= -1
+        node.x = Math.max(-10, Math.min(w + 10, node.x))
+        node.y = Math.max(-10, Math.min(h + 10, node.y))
       }
 
-      // Bağlantı çizgileri (sinapslar)
+      // Bağlantı çizgileri — neon glow
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[i].x - nodes[j].x
@@ -99,34 +106,67 @@ export default function NeuralBackground() {
           const dist = Math.sqrt(dx * dx + dy * dy)
 
           if (dist < connectionDist) {
-            const lineOpacity = (1 - dist / connectionDist) * 0.25
+            const strength = 1 - dist / connectionDist
+            const c1 = COLORS[nodes[i].color]
+            const c2 = COLORS[nodes[j].color]
+            const mr = (c1.r + c2.r) / 2
+            const mg = (c1.g + c2.g) / 2
+            const mb = (c1.b + c2.b) / 2
+
+            // Dış neon glow çizgi
             ctx!.beginPath()
             ctx!.moveTo(nodes[i].x, nodes[i].y)
             ctx!.lineTo(nodes[j].x, nodes[j].y)
-            ctx!.strokeStyle = `rgba(255, 82, 27, ${lineOpacity})`
-            ctx!.lineWidth = 0.8
+            ctx!.strokeStyle = `rgba(${mr}, ${mg}, ${mb}, ${strength * 0.12})`
+            ctx!.lineWidth = 4
+            ctx!.stroke()
+
+            // İç parlak çizgi
+            ctx!.beginPath()
+            ctx!.moveTo(nodes[i].x, nodes[i].y)
+            ctx!.lineTo(nodes[j].x, nodes[j].y)
+            ctx!.strokeStyle = `rgba(${mr}, ${mg}, ${mb}, ${strength * 0.4})`
+            ctx!.lineWidth = 1
             ctx!.stroke()
           }
         }
       }
 
-      // Noktalar (nöronlar)
+      // Noktalar — neon glow
       for (const node of nodes) {
-        // Dış glow
+        const pulse = Math.sin(time * node.pulseSpeed + node.pulsePhase)
+        const glowSize = node.radius * (3.5 + pulse * 1.5)
+        const c = COLORS[node.color]
+        const nodeOpacity = node.opacity * (0.7 + pulse * 0.3)
+
+        // Dış büyük neon glow
+        const gradient = ctx!.createRadialGradient(
+          node.x, node.y, 0,
+          node.x, node.y, glowSize
+        )
+        gradient.addColorStop(0, `rgba(${c.r}, ${c.g}, ${c.b}, ${nodeOpacity * 0.35})`)
+        gradient.addColorStop(0.5, `rgba(${c.r}, ${c.g}, ${c.b}, ${nodeOpacity * 0.1})`)
+        gradient.addColorStop(1, `rgba(${c.r}, ${c.g}, ${c.b}, 0)`)
+
         ctx!.beginPath()
-        ctx!.arc(node.x, node.y, node.radius * 3, 0, Math.PI * 2)
-        ctx!.fillStyle = `rgba(255, 82, 27, ${node.opacity * 0.08})`
+        ctx!.arc(node.x, node.y, glowSize, 0, Math.PI * 2)
+        ctx!.fillStyle = gradient
         ctx!.fill()
 
-        // İç nokta
+        // Orta glow
         ctx!.beginPath()
-        ctx!.arc(node.x, node.y, node.radius, 0, Math.PI * 2)
-        ctx!.fillStyle = `rgba(255, 82, 27, ${node.opacity * 0.5})`
+        ctx!.arc(node.x, node.y, node.radius * 1.8, 0, Math.PI * 2)
+        ctx!.fillStyle = `rgba(${c.r}, ${c.g}, ${c.b}, ${nodeOpacity * 0.5})`
+        ctx!.fill()
+
+        // İç parlak çekirdek
+        ctx!.beginPath()
+        ctx!.arc(node.x, node.y, node.radius * 0.8, 0, Math.PI * 2)
+        ctx!.fillStyle = `rgba(255, 255, 255, ${nodeOpacity * 0.7})`
         ctx!.fill()
       }
 
       ctx!.restore()
-
       animRef.current = requestAnimationFrame(draw)
     }
 
@@ -134,14 +174,11 @@ export default function NeuralBackground() {
     createNodes()
     draw()
 
-    window.addEventListener('resize', () => {
-      resize()
-      createNodes()
-    })
-
+    const handleResize = () => { resize(); createNodes() }
+    window.addEventListener('resize', handleResize)
     return () => {
       cancelAnimationFrame(animRef.current)
-      window.removeEventListener('resize', resize)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
@@ -149,7 +186,7 @@ export default function NeuralBackground() {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 w-full h-full pointer-events-none"
-      style={{ opacity: 0.6 }}
+      style={{ opacity: 0.85 }}
       aria-hidden
     />
   )
