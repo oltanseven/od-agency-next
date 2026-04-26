@@ -22,8 +22,8 @@ export default function ServicesSection() {
 
           {/* b1 — büyük turuncu kart (7 kolon) */}
           <div className="col-span-12 lg:col-span-7 bg-accent text-white rounded-[18px] p-9
-            border border-transparent transition-all duration-300
-            hover:-translate-y-1 hover:shadow-[0_24px_50px_rgba(255,82,27,0.4)] cursor-default">
+            border border-transparent transition-all duration-200
+            hover:-translate-y-0.5 hover:shadow-[0_12px_30px_rgba(255,82,27,0.25)] cursor-default">
             <div className="text-[5rem] font-black leading-none tracking-tight opacity-[0.18] mb-3 select-none">01</div>
             <h3 className="text-[1.15rem] font-bold mb-3">Web Tasarımı & Geliştirme</h3>
             <p className="text-white/80 text-[0.9rem] leading-[1.65]">
