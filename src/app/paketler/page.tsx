@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PricingFAQ from '@/components/PricingFAQ'
 
 export const metadata: Metadata = {
-  title: 'Web Sitesi Fiyatları 2026 — Paketler & Ücretler | OD Agency',
+  title: 'Web Sitesi Fiyatları 2026 | Paketler & Ücretler | OD Agency',
   description: '2026 web sitesi fiyatları: Landing page ₺7.500\'den, kurumsal site ₺20.000\'den, e-ticaret ₺35.000\'den başlıyor. Şeffaf paket fiyatları, 14 gün memnuniyet garantisi. Web tasarım fiyatları için hemen inceleyin.',
   keywords: ['web sitesi fiyatları 2026', 'web tasarım fiyatları', 'kurumsal web sitesi fiyatı', 'e-ticaret sitesi kurma maliyeti', 'landing page tasarım fiyatı', 'web sitesi yenileme ücreti', 'profesyonel web sitesi fiyatları'],
   alternates: { canonical: 'https://odagency.com/paketler' },
@@ -53,7 +53,7 @@ export default function PaketlerPage() {
           <span className="block text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-4">// Fiyatlandırma</span>
           <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40 px-4 py-1.5 rounded-full text-accent text-[0.8rem] font-semibold mb-5">
             <span className="w-1.5 h-1.5 bg-accent rounded-full animate-[blink_2s_ease-in-out_infinite]" />
-            2026 Lansman Kampanyası — Sınırlı Kontenjan
+            2026 Lansman Kampanyası
           </div>
           <h1 className="text-[clamp(2.2rem,5vw,4rem)] font-black leading-[1.08] tracking-[-0.03em] text-ink mb-4">
             İşletmenize uygun<br /><span className="gradient-text">planı seçin</span>
@@ -249,11 +249,11 @@ export default function PaketlerPage() {
             </div>
             <div className="flex items-center gap-2 px-4 py-2.5 rounded-full text-[0.8rem] font-semibold text-ink/60 bg-cream border border-black/[0.07]">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="2"/><path d="M12 7v5l3 3" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/></svg>
-              Süre Garantisi — Gecikme = %10 İndirim
+              Süre Garantisi, Gecikme = %10 İndirim
             </div>
             <div className="flex items-center gap-2 px-4 py-2.5 rounded-full text-[0.8rem] font-semibold text-ink/60 bg-cream border border-black/[0.07]">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="#e8881a" strokeWidth="2"/><path d="M8 12l3 3 5-5" stroke="#e8881a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              Next.js — 100 Performance Score
+              Next.js ile 100 Performance Score
             </div>
           </div>
 

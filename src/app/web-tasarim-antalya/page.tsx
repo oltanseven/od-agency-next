@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım Antalya — Profesyonel Web Sitesi Hizmetleri | OD Agency',
+  title: 'Web Tasarım Antalya | Profesyonel Web Sitesi Hizmetleri | OD Agency',
   description: 'Antalya\'da web sitesi yaptırmak mı istiyorsunuz? OD Agency ile kurumsal web tasarım, e-ticaret ve dijital çözümler. Yerel ajans avantajı, Türkiye geneli hizmet. Ücretsiz keşif görüşmesi.',
   keywords: ['web tasarım Antalya', 'Antalya web sitesi yaptır', 'Antalya dijital ajans', 'Antalya web tasarım fiyatları', 'Antalya kurumsal web sitesi', 'web sitesi Antalya'],
   alternates: { canonical: 'https://odagency.com/web-tasarim-antalya' },
@@ -164,7 +164,7 @@ export default function AntalyaPage() {
                 Antalya&apos;yı bilen bir ajansla çalışın
               </h2>
               <p className="text-ink/50 leading-[1.75] mb-8">
-                Antalya&apos;nın turizm, sağlık, gayrimenkul ve restoran sektörlerinin dijital dinamiklerini iyi biliyoruz. Siteniz sadece güzel görünmekle kalmaz — doğru kitleye, doğru mesajla ulaşır.
+                Antalya&apos;nın turizm, sağlık, gayrimenkul ve restoran sektörlerinin dijital dinamiklerini iyi biliyoruz. Siteniz sadece güzel görünmekle kalmaz, doğru kitleye doğru mesajla ulaşır.
               </p>
               <ul className="flex flex-col gap-4">
                 {[

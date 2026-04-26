@@ -13,7 +13,7 @@ export default function ServicesSection() {
             Web siteniz <span className="gradient-text">müşteri getirsin</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            Güzel görünmek yetmez — siteniz her gün yeni müşteri kazandırmalı. İşte tam bunu yapan çözümler:
+            Güzel görünmek yetmez. Siteniz her gün yeni müşteri kazandırmalı. İşte tam bunu yapan çözümler:
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function ServicesSection() {
             </div>
             <h3 className="text-[1.1rem] font-bold text-coral mb-2">E-Ticaret Çözümleri</h3>
             <p className="text-ink/50 text-[0.9rem] leading-[1.65]">
-              Ürünlerinizi online satışa açın — ödeme, stok, kargo tek panelden yönetin. Sepet terk eden müşterilere otomatik hatırlatma gönderilsin.
+              Ürünlerinizi online satışa açın. Ödeme, stok, kargo tek panelden yönetin. Sepet terk eden müşterilere otomatik hatırlatma gönderilsin.
             </p>
             <span className="inline-block mt-5 bg-[rgba(232,136,26,0.1)] text-coral border border-[rgba(232,136,26,0.25)] text-[0.72rem] font-bold px-3 py-1 rounded-full">
               Shopify & WooCommerce

@@ -12,7 +12,7 @@ const cards = [
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M22 6l-10 7L2 6" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
     iconBg: 'bg-[rgba(232,136,26,0.1)]',
     title: 'E-posta Otomasyonu',
-    desc: 'Karşılama, terk sepeti, doğum günü kampanyaları — doğru kişiye doğru anda otomatik gönderilir.',
+    desc: 'Karşılama, terk sepeti, doğum günü kampanyaları. Doğru kişiye doğru anda otomatik gönderilir.',
     tag: 'Dönüşüm Artırır', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
   },
   {

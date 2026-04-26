@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
             Türkiye&apos;de kimsenin vermediği <span className="gradient-text">garantiler</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            Sözümüzün arkasındayız. Her projede yazılı garanti veriyoruz — sadece söz değil, taahhüt.
+            Sözümüzün arkasındayız. Her projede yazılı garanti veriyoruz. Sadece söz değil, taahhüt.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
           flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.05rem] font-bold text-ink mb-1">
-              İlk adımı atın — ücretsiz web sitesi analizi alın
+              İlk adımı atın, ücretsiz web sitesi analizi alın
             </h3>
             <p className="text-ink/50 text-[0.9rem] max-w-[480px]">
               Mevcut sitenizi veya projenizi birlikte değerlendirelim. Taahhüt yok, baskı yok.

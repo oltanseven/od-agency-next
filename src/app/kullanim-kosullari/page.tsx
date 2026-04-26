@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Kullanım Koşulları — OD Agency',
+  title: 'Kullanım Koşulları | OD Agency',
   robots: { index: false },
 }
 

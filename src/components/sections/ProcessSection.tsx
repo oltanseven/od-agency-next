@@ -19,7 +19,7 @@ const steps = [
     icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#fc9e4f" strokeWidth="1.5" opacity="0.38"/><path d="M3 9h18M9 21V9" stroke="#fc9e4f" strokeWidth="2" strokeLinecap="round"/></svg>,
     title: 'UI/UX Tasarım',
     badge: { label: 'İşleniyor', cls: 'bg-[rgba(252,158,79,0.15)] text-coral border border-[rgba(252,158,79,0.4)]', dotCls: 'bg-coral animate-[blink_1s_infinite]' },
-    desc: 'Markanızın kimliğini ve hedef kitlenizin beklentilerini birleştirerek özgün bir arayüz tasarlıyoruz. Wireframe\'den final tasarıma kadar her adımda onayınızı alıyoruz — sürpriz yok, şeffaf süreç.',
+    desc: 'Markanızın kimliğini ve hedef kitlenizin beklentilerini birleştirerek özgün bir arayüz tasarlıyoruz. Wireframe\'den final tasarıma kadar her adımda onayınızı alıyoruz. Sürpriz yok, şeffaf süreç.',
     checks: [
       { done: true,  text: 'Wireframe & kullanıcı akışları' },
       { done: true,  text: 'Renk paleti & tipografi sistemi' },
@@ -34,7 +34,7 @@ const steps = [
     icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 9l-3 3 3 3M16 9l3 3-3 3" stroke="rgba(255,255,255,0.55)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M14.5 6l-5 12" stroke="rgba(255,255,255,0.75)" strokeWidth="2" strokeLinecap="round"/></svg>,
     title: 'Geliştirme',
     badge: { label: 'Kuyrukta', cls: 'bg-white/[0.06] text-white/35 border border-white/10', dotCls: 'bg-white/30' },
-    desc: 'Onaylanan tasarımı temiz, hızlı ve sürdürülebilir koda dönüştürüyoruz. SEO dostu yapı, Google Core Web Vitals optimizasyonu ve güvenlik standartları baştan kurgulanır — sonradan eklenmez.',
+    desc: 'Onaylanan tasarımı temiz, hızlı ve sürdürülebilir koda dönüştürüyoruz. SEO dostu yapı, Google Core Web Vitals optimizasyonu ve güvenlik standartları baştan kurgulanır.',
     checks: [
       { done: false, text: 'Frontend geliştirme & animasyonlar' },
       { done: false, text: 'CMS entegrasyonu & içerik yönetimi' },
@@ -49,7 +49,7 @@ const steps = [
     icon: <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M22 2L2 9l9 4 4 9 7-20z" stroke="#fc9e4f" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M22 2L11 13M11 13l4 9" stroke="#fc9e4f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
     title: 'Yayın & Sürekli Destek',
     badge: { label: 'Canlı', cls: 'bg-[rgba(255,107,53,0.15)] text-[#fb923c] border border-[rgba(255,107,53,0.3)]', dotCls: 'bg-[#fb923c] animate-[blink_1s_infinite]' },
-    desc: 'Siteniz yayına girdiğinde iş bitmez — asıl o zaman başlar. Domain, hosting, SSL kurulumundan sonra size kapsamlı bir kullanım eğitimi veriyoruz. Sonrasında aylık bakım ve teknik destek hizmetimizle her zaman yanınızdayız.',
+    desc: 'Siteniz yayına girdiğinde iş bitmez, asıl o zaman başlar. Domain, hosting, SSL kurulumundan sonra size kapsamlı bir kullanım eğitimi veriyoruz. Sonrasında bakım ve teknik destek hizmetimizle her zaman yanınızdayız.',
     checks: [
       { done: true, text: 'Domain & hosting kurulumu, SSL' },
       { done: true, text: 'Google Analytics & Search Console bağlantısı' },

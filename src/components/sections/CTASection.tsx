@@ -22,7 +22,7 @@ export default function CTASection() {
               Web siteniz <span className="gradient-text">işinizi büyütmeye</span> hazır mı?
             </h2>
             <p className="text-white/60 text-[1.05rem] max-w-[440px] mx-auto leading-[1.75] mb-4">
-              Ücretsiz web analizi alın — sitenizin güçlü ve zayıf yönlerini görelim.
+              Ücretsiz web analizi alın. Sitenizin güçlü ve zayıf yönlerini birlikte görelim.
             </p>
             <p className="text-white/35 text-[0.82rem] mb-10">
               Taahhüt yok, baskı yok, 5 dakikada tamamlanır.

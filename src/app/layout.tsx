@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'OD Agency — Web Tasarım & AI Otomasyon', template: '%s | OD Agency' },
+  title: { default: 'OD Agency | Web Tasarım & AI Otomasyon', template: '%s | OD Agency' },
   description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
   keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'AI otomasyon', 'e-ticaret', 'web tasarım Antalya', 'kurumsal web sitesi'],
   openGraph: {

@@ -67,7 +67,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/40
               px-3 sm:px-4 py-1.5 rounded-full text-accent text-[0.7rem] sm:text-[0.8rem] font-semibold mb-7">
               <span className="w-1.5 h-1.5 bg-accent rounded-full shrink-0 animate-[blink_2s_ease-in-out_infinite]" />
-              Lansman Kampanyası — Sınırlı Kontenjan
+              Lansman Kampanyası
             </div>
 
             <h1 className="text-[clamp(1.8rem,2.8vw,2.8rem)] font-black leading-[1.08] tracking-[-0.03em] mb-4 text-ink">
@@ -77,7 +77,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-ink/50 text-[0.95rem] leading-[1.75] mb-8 max-w-[420px]">
-              Telefondan da mükemmel görünen, Google&apos;da üst sıralarda çıkan web siteniz 2 haftada hazır. Beğenmezseniz 14 gün içinde paranız iade.
+              Telefondan da mükemmel görünen, Google&apos;da üst sıralarda çıkan web siteniz ile dijitalde fark yaratın. Hemen başlayalım.
             </p>
 
             <div className="flex gap-4 flex-wrap">
