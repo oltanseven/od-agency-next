@@ -47,7 +47,7 @@ const cards = [
 
 export default function AISection() {
   return (
-    <section id="otomasyon" className="py-16 sm:py-28 bg-cream-soft">
+    <section id="otomasyon" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream-soft">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         {/* Header — centered */}

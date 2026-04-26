@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function ServicesSection() {
   return (
-    <section id="hizmetler" className="py-16 sm:py-28 bg-cream">
+    <section id="hizmetler" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">

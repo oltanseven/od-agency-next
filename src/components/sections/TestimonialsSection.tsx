@@ -28,7 +28,7 @@ const techBadges = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="yorumlar" className="py-16 sm:py-28 bg-cream">
+    <section id="yorumlar" className="pt-16 sm:pt-28 pb-16 sm:pb-28 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">

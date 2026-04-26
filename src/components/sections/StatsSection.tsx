@@ -7,7 +7,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <div className="bg-accent">
+    <div className="bg-accent pb-10 sm:pb-16">
       <div className="max-w-[1260px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map(({ val, label }, i) => (

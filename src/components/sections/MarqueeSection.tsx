@@ -21,7 +21,7 @@ export default function MarqueeSection() {
   const t3 = [...items3, ...items3, ...items3]
 
   return (
-    <div className="relative bg-night" style={{ padding: '3.5rem 0', overflowX: 'clip' }}>
+    <div className="relative bg-night" style={{ padding: '3.5rem 0 4.5rem', overflowX: 'clip' }}>
 
       {/* Glow efektleri */}
       <div aria-hidden className="absolute top-[-40px] right-[-40px] w-[350px] h-[350px] rounded-full pointer-events-none"

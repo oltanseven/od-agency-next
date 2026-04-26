@@ -21,12 +21,11 @@ export default function WaveDivider({
     <div
       className="relative w-full leading-[0]"
       style={{
-        marginTop: 'clamp(-100px, -10vw, -70px)',
-        marginBottom: '-2px',
+        /* İçeriğe binme yok — sadece anti-alias için -1px */
+        marginTop: '-1px',
+        marginBottom: '-1px',
         background: bottomColor,
         transform: flip ? 'scaleX(-1)' : undefined,
-        position: 'relative',
-        zIndex: 2,
       }}
       aria-hidden
     >

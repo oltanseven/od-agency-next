@@ -26,7 +26,7 @@ function BrowserMock() {
 
 export default function PortfolioSection() {
   return (
-    <section id="referanslar" className="py-16 sm:py-28 bg-cream">
+    <section id="referanslar" className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">
