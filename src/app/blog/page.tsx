@@ -5,10 +5,10 @@ import { getPublishedPosts } from '@/lib/supabase'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım Blog | Fiyatlar, Trendler & Rehberler | OD Agency',
+  title: 'Web Tasarım Blog | Fiyatlar, Trendler & Rehberler | Oder Agency',
   description: 'Web sitesi kurma maliyeti, e-ticaret nasıl kurulur, freelancer mı ajans mı? Web tasarım ve dijital büyüme üzerine pratik rehberler.',
   keywords: ['web sitesi kurma maliyeti', 'web tasarım ajansı nasıl seçilir', 'e-ticaret sitesi nasıl kurulur', 'freelancer mı ajans mı', 'web tasarım blog'],
-  alternates: { canonical: 'https://odagency.com/blog' },
+  alternates: { canonical: 'https://oder.agency/blog' },
 }
 
 const thumbs: Record<number, string> = {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Kullanım Koşulları | OD Agency',
+  title: 'Kullanım Koşulları | Oder Agency',
   robots: { index: false },
 }
 
@@ -19,24 +19,24 @@ export default function KullanimKosullariPage() {
 
       <div className="max-w-[760px] mx-auto px-5 sm:px-8 py-16">
         <p className="text-ink/50 text-[0.95rem] leading-[1.85] mb-8">
-          Bu web sitesini ve OD Agency hizmetlerini kullanarak aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız. Lütfen bu koşulları dikkatlice okuyunuz.
+          Bu web sitesini ve Oder Agency hizmetlerini kullanarak aşağıdaki kullanım koşullarını kabul etmiş sayılırsınız. Lütfen bu koşulları dikkatlice okuyunuz.
         </p>
 
         <div className="mb-8">
           <h2 className="text-[1.3rem] font-bold text-ink mb-3 mt-10">1. Hizmet Kapsamı</h2>
           <p className="text-ink/50 text-[0.95rem] leading-[1.85]">
-            OD Agency; web tasarımı, e-ticaret çözümleri, yapay zeka otomasyonu ve dijital strateji hizmetleri sunan bir ajans olarak faaliyet göstermektedir. Sunulan hizmetler, her proje için ayrı bir sözleşme ile belirlenir.
+            Oder Agency; web tasarımı, e-ticaret çözümleri, yapay zeka otomasyonu ve dijital strateji hizmetleri sunan bir ajans olarak faaliyet göstermektedir. Sunulan hizmetler, her proje için ayrı bir sözleşme ile belirlenir.
           </p>
         </div>
 
         <div className="mb-8">
           <h2 className="text-[1.3rem] font-bold text-ink mb-3 mt-10">2. Fikri Mülkiyet</h2>
           <p className="text-ink/50 text-[0.95rem] leading-[1.85] mb-2">
-            OD Agency tarafından üretilen tüm tasarım, kod ve içerik; ödeme tamamlanana kadar ajansın mülkiyetindedir. Tam ödeme gerçekleştiğinde proje dosyaları müşteriye teslim edilir ve kullanım hakları devredilir.
+            Oder Agency tarafından üretilen tüm tasarım, kod ve içerik; ödeme tamamlanana kadar ajansın mülkiyetindedir. Tam ödeme gerçekleştiğinde proje dosyaları müşteriye teslim edilir ve kullanım hakları devredilir.
           </p>
           <ul className="list-disc pl-6 flex flex-col gap-1.5 text-ink/50 text-[0.95rem] leading-[1.85]">
             <li>Teslimattan önce kaynak dosyalar üçüncü taraflarla paylaşılamaz</li>
-            <li>OD Agency, tamamlanan projeleri portföy olarak kullanma hakkını saklı tutar</li>
+            <li>Oder Agency, tamamlanan projeleri portföy olarak kullanma hakkını saklı tutar</li>
             <li>Müşteri, ajansın kullandığı üçüncü taraf lisanslı bileşenlere ilişkin koşulları kabul eder</li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ export default function KullanimKosullariPage() {
         <div className="mb-8">
           <h2 className="text-[1.3rem] font-bold text-ink mb-3 mt-10">5. Sorumluluk Sınırı</h2>
           <p className="text-ink/50 text-[0.95rem] leading-[1.85]">
-            OD Agency; üçüncü taraf hizmetleri (hosting, domain, ödeme altyapısı vb.) nedeniyle oluşabilecek kesinti ya da kayıplardan sorumlu tutulamaz. Müşteri, kendi altyapı tercihlerine ait riskleri üstlenir.
+            Oder Agency; üçüncü taraf hizmetleri (hosting, domain, ödeme altyapısı vb.) nedeniyle oluşabilecek kesinti ya da kayıplardan sorumlu tutulamaz. Müşteri, kendi altyapı tercihlerine ait riskleri üstlenir.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function KullanimKosullariPage() {
           <h2 className="text-[1.3rem] font-bold text-ink mb-3 mt-10">8. İletişim</h2>
           <p className="text-ink/50 text-[0.95rem] leading-[1.85]">
             Kullanım koşullarına ilişkin sorularınız için{' '}
-            <Link href="mailto:merhaba@odagency.com" className="text-accent no-underline hover:underline">merhaba@odagency.com</Link>{' '}
+            <Link href="mailto:merhaba@oder.agency" className="text-accent no-underline hover:underline">merhaba@oder.agency</Link>{' '}
             adresine veya{' '}
             <Link href="tel:+905324652031" className="text-accent no-underline hover:underline">+90 532 465 20 31</Link>{' '}
             numarasına ulaşabilirsiniz.

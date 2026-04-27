@@ -73,9 +73,9 @@ export default function IletisimPage() {
               <div className="flex flex-col gap-5 mb-10">
                 {[
                   {
-                    href: 'mailto:merhaba@odagency.com',
+                    href: 'mailto:merhaba@oder.agency',
                     label: 'E-posta',
-                    value: 'merhaba@odagency.com',
+                    value: 'merhaba@oder.agency',
                     icon: (
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#ff521b" strokeWidth="1.5" opacity="0.4"/>
@@ -247,7 +247,7 @@ export default function IletisimPage() {
                         <circle cx="12" cy="12" r="9" stroke="#991B1B" strokeWidth="2"/>
                         <path d="M12 8v4M12 16h.01" stroke="#991B1B" strokeWidth="2" strokeLinecap="round"/>
                       </svg>
-                      <span>Bir sorun oluştu. Lütfen <a href="mailto:merhaba@odagency.com" className="font-bold underline">merhaba@odagency.com</a> adresine doğrudan yazın.</span>
+                      <span>Bir sorun oluştu. Lütfen <a href="mailto:merhaba@oder.agency" className="font-bold underline">merhaba@oder.agency</a> adresine doğrudan yazın.</span>
                     </div>
                   )}
 
@@ -282,7 +282,7 @@ export default function IletisimPage() {
         </div>
       </section>
 
-      {/* Neden OD Agency */}
+      {/* Neden Oder Agency */}
       <section className="py-16 sm:py-28 bg-cream-soft border-t border-black/[0.07]">
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="text-center mb-14">

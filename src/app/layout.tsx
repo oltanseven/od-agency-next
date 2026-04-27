@@ -13,28 +13,28 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'OD Agency | Web Tasarım & AI Otomasyon', template: '%s | OD Agency' },
+  title: { default: 'Oder Agency | Web Tasarım & AI Otomasyon', template: '%s | Oder Agency' },
   description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
   keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'AI otomasyon', 'e-ticaret', 'web tasarım Antalya', 'kurumsal web sitesi'],
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    siteName: 'OD Agency',
-    url: 'https://odagency.com',
+    siteName: 'Oder Agency',
+    url: 'https://oder.agency',
   },
   robots: { index: true, follow: true },
   manifest: '/manifest.json',
-  metadataBase: new URL('https://odagency.com'),
+  metadataBase: new URL('https://oder.agency'),
 }
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'OD Agency',
+  name: 'Oder Agency',
   description: 'Antalya merkezli web tasarım, e-ticaret ve AI otomasyon ajansı. Türkiye geneli profesyonel dijital çözümler.',
-  url: 'https://odagency.com',
+  url: 'https://oder.agency',
   telephone: '+905324652031',
-  email: 'merhaba@odagency.com',
+  email: 'merhaba@oder.agency',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Antalya',
@@ -58,8 +58,8 @@ const localBusinessSchema = {
     ],
   },
   sameAs: [
-    'https://www.instagram.com/odagency',
-    'https://www.linkedin.com/company/odagency',
+    'https://www.instagram.com/oder.agency',
+    'https://www.linkedin.com/company/oderagency',
   ],
 }
 

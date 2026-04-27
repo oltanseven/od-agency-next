@@ -3,10 +3,10 @@ import Link from 'next/link'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
-  title: 'E-Ticaret Sitesi Kurma | Online Mağazanızı Açın | OD Agency',
+  title: 'E-Ticaret Sitesi Kurma | Online Mağazanızı Açın | Oder Agency',
   description: 'Ödeme, stok, kargo entegrasyonu dahil e-ticaret sitesi. Terk sepeti otomasyonu dahil. 35.000₺\'den başlayan fiyatlar.',
   keywords: ['e-ticaret sitesi', 'online mağaza', 'e-ticaret kurma', 'shopify', 'woocommerce', 'iyzico entegrasyonu', 'e-ticaret fiyatları'],
-  alternates: { canonical: 'https://odagency.com/e-ticaret' },
+  alternates: { canonical: 'https://oder.agency/e-ticaret' },
 }
 
 const features = [

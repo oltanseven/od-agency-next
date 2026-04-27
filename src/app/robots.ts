@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: 'https://odagency.com/sitemap.xml',
+    sitemap: 'https://oder.agency/sitemap.xml',
   }
 }

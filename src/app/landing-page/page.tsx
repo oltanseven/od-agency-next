@@ -3,10 +3,10 @@ import Link from 'next/link'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
-  title: 'Landing Page Tasarımı | Dönüşüm Odaklı Tek Sayfa | OD Agency',
+  title: 'Landing Page Tasarımı | Dönüşüm Odaklı Tek Sayfa | Oder Agency',
   description: 'Ziyaretçileri müşteriye çeviren landing page. 5 iş gününde teslim, mobil uyumlu, SEO dahil. 7.500₺\'den başlayan fiyatlar.',
   keywords: ['landing page', 'landing page tasarımı', 'tek sayfa site', 'dönüşüm odaklı tasarım', 'landing page fiyatı'],
-  alternates: { canonical: 'https://odagency.com/landing-page' },
+  alternates: { canonical: 'https://oder.agency/landing-page' },
 }
 
 const includes = [

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Gizlilik Politikası | OD Agency',
+  title: 'Gizlilik Politikası | Oder Agency',
   robots: { index: false },
 }
 
@@ -19,7 +19,7 @@ export default function GizlilikPage() {
 
       <div className="max-w-[760px] mx-auto px-5 sm:px-8 py-16">
         <p className="text-ink/50 text-[0.95rem] leading-[1.85] mb-8">
-          OD Agency olarak kişisel verilerinizin güvenliği ve gizliliği bizim için büyük önem taşımaktadır. Bu politika, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda hangi verileri topladığımızı, bu verileri nasıl kullandığımızı ve koruduğumuzu açıklamaktadır.
+          Oder Agency olarak kişisel verilerinizin güvenliği ve gizliliği bizim için büyük önem taşımaktadır. Bu politika, web sitemizi ziyaret ettiğinizde veya hizmetlerimizi kullandığınızda hangi verileri topladığımızı, bu verileri nasıl kullandığımızı ve koruduğumuzu açıklamaktadır.
         </p>
 
         <div className="mb-8">
@@ -81,7 +81,7 @@ export default function GizlilikPage() {
           <h2 className="text-[1.3rem] font-bold text-ink mb-3 mt-10">7. İletişim</h2>
           <p className="text-ink/50 text-[0.95rem] leading-[1.85]">
             Gizlilik politikamıza ilişkin sorularınız için{' '}
-            <Link href="mailto:merhaba@odagency.com" className="text-accent no-underline hover:underline">merhaba@odagency.com</Link>{' '}
+            <Link href="mailto:merhaba@oder.agency" className="text-accent no-underline hover:underline">merhaba@oder.agency</Link>{' '}
             adresine veya{' '}
             <Link href="tel:+905324652031" className="text-accent no-underline hover:underline">+90 532 465 20 31</Link>{' '}
             numarasına ulaşabilirsiniz.

@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <a href="/" onClick={handleLogoClick} className="text-[1.4rem] font-black tracking-[-0.06em] text-ink no-underline cursor-pointer">
-          OD<span className="text-accent">.</span>
+          Oder<span className="text-accent">.</span>
         </a>
 
         {/* Desktop Links */}

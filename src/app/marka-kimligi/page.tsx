@@ -3,10 +3,10 @@ import Link from 'next/link'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
-  title: 'Marka Kimliği Tasarımı | Logo, Renk Paleti, Görsel Dil | OD Agency',
+  title: 'Marka Kimliği Tasarımı | Logo, Renk Paleti, Görsel Dil | Oder Agency',
   description: 'Profesyonel logo, renk paleti, tipografi ve görsel dil tasarımı. Müşterileriniz markanızı bir bakışta tanısın.',
   keywords: ['marka kimliği', 'logo tasarımı', 'kurumsal kimlik', 'marka tasarımı', 'görsel kimlik', 'renk paleti', 'tipografi'],
-  alternates: { canonical: 'https://odagency.com/marka-kimligi' },
+  alternates: { canonical: 'https://oder.agency/marka-kimligi' },
 }
 
 const deliverables = [

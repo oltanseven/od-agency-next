@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'OD Agency - Web Tasarım & AI Otomasyon'
+export const alt = 'Oder Agency - Web Tasarım & AI Otomasyon'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -46,9 +46,8 @@ export default function OGImage() {
             display: 'flex',
           }}
         >
-          OD
+          Oder
           <span style={{ color: '#ff521b' }}>.</span>
-          Agency
         </div>
 
         {/* Title */}

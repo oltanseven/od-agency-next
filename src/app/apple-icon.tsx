@@ -19,10 +19,10 @@ export default function AppleIcon() {
           fontFamily: 'sans-serif',
         }}
       >
-        <span style={{ fontSize: 100, fontWeight: 900, color: '#FFFEF8', letterSpacing: '-0.05em', display: 'flex' }}>
-          OD
+        <span style={{ fontSize: 72, fontWeight: 900, color: '#FFFEF8', letterSpacing: '-0.05em', display: 'flex' }}>
+          Od
         </span>
-        <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#ff521b', marginTop: 50, marginLeft: 2, display: 'flex' }} />
+        <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#ff521b', marginTop: 36, marginLeft: 2, display: 'flex' }} />
       </div>
     ),
     { ...size }

@@ -4,14 +4,14 @@ import PricingFAQ from '@/components/PricingFAQ'
 import ServiceHeroBg from '@/components/ServiceHeroBg'
 
 export const metadata: Metadata = {
-  title: 'Web Sitesi Fiyatları 2026 | Paketler & Ücretler | OD Agency',
+  title: 'Web Sitesi Fiyatları 2026 | Paketler & Ücretler | Oder Agency',
   description: '2026 web sitesi fiyatları: Landing page ₺7.500\'den, kurumsal site ₺20.000\'den, e-ticaret ₺35.000\'den başlıyor. Şeffaf paket fiyatları, 14 gün memnuniyet garantisi. Web tasarım fiyatları için hemen inceleyin.',
   keywords: ['web sitesi fiyatları 2026', 'web tasarım fiyatları', 'kurumsal web sitesi fiyatı', 'e-ticaret sitesi kurma maliyeti', 'landing page tasarım fiyatı', 'web sitesi yenileme ücreti', 'profesyonel web sitesi fiyatları'],
-  alternates: { canonical: 'https://odagency.com/paketler' },
+  alternates: { canonical: 'https://oder.agency/paketler' },
   openGraph: {
-    title: 'Web Sitesi Fiyatları 2026 | OD Agency',
+    title: 'Web Sitesi Fiyatları 2026 | Oder Agency',
     description: 'Landing page ₺7.500\'den, kurumsal site ₺20.000\'den, e-ticaret ₺35.000\'den. 14 gün memnuniyet garantisi.',
-    url: 'https://odagency.com/paketler',
+    url: 'https://oder.agency/paketler',
   },
 }
 

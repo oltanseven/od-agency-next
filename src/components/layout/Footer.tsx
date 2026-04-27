@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="text-[1.4rem] font-black tracking-[-0.05em] mb-3 text-ink">
-              OD<span className="text-accent">.</span>Agency
+              Oder<span className="text-accent">.</span>
             </div>
             <p className="text-ink/50 text-[0.87rem] leading-[1.8] mb-6 max-w-[280px]">
               İşletmenizi dijitalde en güçlü şekilde konumlandırmak için buradayız. Modern, hızlı ve dönüşüm odaklı.
@@ -63,9 +63,9 @@ export default function Footer() {
             <div className="flex gap-2">
               {[
                 { icon: <WaIcon />, title: 'WhatsApp', href: 'https://wa.me/905324652031' },
-                { icon: <IgIcon />, title: 'Instagram', href: 'https://instagram.com/odagency' },
-                { icon: <XIcon />,  title: 'Twitter / X', href: 'https://x.com/odagency' },
-                { icon: <LiIcon />, title: 'LinkedIn', href: 'https://linkedin.com/company/odagency' },
+                { icon: <IgIcon />, title: 'Instagram', href: 'https://instagram.com/oder.agency' },
+                { icon: <XIcon />,  title: 'Twitter / X', href: 'https://x.com/oderagency' },
+                { icon: <LiIcon />, title: 'LinkedIn', href: 'https://linkedin.com/company/oderagency' },
               ].map(({ icon, title, href }) => (
                 <a
                   key={title} href={href} title={title} target="_blank" rel="noreferrer"
@@ -135,8 +135,8 @@ export default function Footer() {
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">İletişim</h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <a href="mailto:merhaba@odagency.com" className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                  merhaba@odagency.com
+                <a href="mailto:merhaba@oder.agency" className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                  merhaba@oder.agency
                 </a>
               </li>
               <li>
@@ -153,7 +153,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-black/[0.09] pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-ink/50 text-[0.82rem]">© 2026 OD Agency. Tüm hakları saklıdır.</p>
+          <p className="text-ink/50 text-[0.82rem]">© 2026 Oder Agency. Tüm hakları saklıdır.</p>
           <p className="text-[0.82rem]">
             <Link href="/gizlilik" className="text-ink/50 no-underline hover:text-accent transition-colors">Gizlilik Politikası</Link>
             <span className="text-ink/30 mx-2">·</span>

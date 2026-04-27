@@ -10,14 +10,14 @@ import CTASection          from '@/components/sections/CTASection'
 import WaveDivider         from '@/components/WaveDivider'
 
 export const metadata: Metadata = {
-  title: 'Web Siteniz Satış Yapsın | Web Tasarım & AI Otomasyon | OD Agency',
+  title: 'Web Siteniz Satış Yapsın | Web Tasarım & AI Otomasyon | Oder Agency',
   description: 'Dönüşüm odaklı web tasarım, e-ticaret ve AI otomasyon çözümleri. 14 gün para iade garantisi. 7.500₺\'den başlayan fiyatlarla profesyonel dijital çözümler.',
   keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'web tasarım ajansı', 'e-ticaret sitesi', 'AI otomasyon', 'web tasarım Antalya', 'profesyonel web sitesi'],
-  alternates: { canonical: 'https://odagency.com' },
+  alternates: { canonical: 'https://oder.agency' },
   openGraph: {
-    title: 'Web Tasarım Ajansı & Dijital Çözümler | OD Agency',
+    title: 'Web Tasarım Ajansı & Dijital Çözümler | Oder Agency',
     description: 'Profesyonel web tasarım, e-ticaret ve AI otomasyon hizmetleri. Antalya merkezli, Türkiye geneli.',
-    url: 'https://odagency.com',
+    url: 'https://oder.agency',
   },
 }
 

@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Web Tasarım Antalya | Profesyonel Web Sitesi Hizmetleri | OD Agency',
-  description: 'Antalya\'da web sitesi yaptırmak mı istiyorsunuz? OD Agency ile kurumsal web tasarım, e-ticaret ve dijital çözümler. Yerel ajans avantajı, Türkiye geneli hizmet. Ücretsiz keşif görüşmesi.',
+  title: 'Web Tasarım Antalya | Profesyonel Web Sitesi Hizmetleri | Oder Agency',
+  description: 'Antalya\'da web sitesi yaptırmak mı istiyorsunuz? Oder Agency ile kurumsal web tasarım, e-ticaret ve dijital çözümler. Yerel ajans avantajı, Türkiye geneli hizmet. Ücretsiz keşif görüşmesi.',
   keywords: ['web tasarım Antalya', 'Antalya web sitesi yaptır', 'Antalya dijital ajans', 'Antalya web tasarım fiyatları', 'Antalya kurumsal web sitesi', 'web sitesi Antalya'],
-  alternates: { canonical: 'https://odagency.com/web-tasarim-antalya' },
+  alternates: { canonical: 'https://oder.agency/web-tasarim-antalya' },
   openGraph: {
-    title: 'Web Tasarım Antalya | OD Agency',
+    title: 'Web Tasarım Antalya | Oder Agency',
     description: 'Antalya\'nın profesyonel web tasarım ajansı. Kurumsal site, e-ticaret ve AI çözümleri.',
-    url: 'https://odagency.com/web-tasarim-antalya',
+    url: 'https://oder.agency/web-tasarim-antalya',
   },
 }
 
@@ -19,14 +19,14 @@ const localPageSchema = {
   name: 'Web Tasarım Antalya',
   provider: {
     '@type': 'LocalBusiness',
-    name: 'OD Agency',
+    name: 'Oder Agency',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Antalya',
       addressCountry: 'TR',
     },
     telephone: '+905324652031',
-    url: 'https://odagency.com',
+    url: 'https://oder.agency',
   },
   areaServed: { '@type': 'City', name: 'Antalya' },
   serviceType: 'Web Tasarım ve Geliştirme',
@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: 'Yerel ajans mı, uzak ajans mı tercih etmeliyim?',
-    a: 'Yerel ajans avantajı: yüz yüze toplantı imkânı, aynı saat dilimi, şehre özel pazara hakimiyet. OD Agency hem Antalya\'daki yerel müşterilere yakın çalışır hem de Türkiye genelinde hizmet verir.',
+    a: 'Yerel ajans avantajı: yüz yüze toplantı imkânı, aynı saat dilimi, şehre özel pazara hakimiyet. Oder Agency hem Antalya\'daki yerel müşterilere yakın çalışır hem de Türkiye genelinde hizmet verir.',
   },
   {
     q: 'Proje ne kadar sürede teslim edilir?',
@@ -98,7 +98,7 @@ export default function AntalyaPage() {
               Web Tasarım Ajansı
             </h1>
             <p className="text-ink/50 text-[1.05rem] max-w-[540px] leading-[1.75] mb-8">
-              Antalya merkezli OD Agency olarak işletmenize özel, hızlı ve dönüşüm odaklı web siteleri tasarlıyoruz. Yerel pazar bilgisi, Türkiye geneli erişim.
+              Antalya merkezli Oder Agency olarak işletmenize özel, hızlı ve dönüşüm odaklı web siteleri tasarlıyoruz. Yerel pazar bilgisi, Türkiye geneli erişim.
             </p>
             <div className="flex gap-4 flex-wrap">
               <Link href="/iletisim"
@@ -159,7 +159,7 @@ export default function AntalyaPage() {
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Neden OD Agency?</span>
+              <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">// Neden Oder Agency?</span>
               <h2 className="text-[clamp(1.8rem,3vw,2.6rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-5">
                 Antalya&apos;yı bilen bir ajansla çalışın
               </h2>

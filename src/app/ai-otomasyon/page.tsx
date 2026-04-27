@@ -4,10 +4,10 @@ import ServiceHeroBg from '@/components/ServiceHeroBg'
 import NeuralBackground from '@/components/NeuralBackground'
 
 export const metadata: Metadata = {
-  title: 'AI Otomasyon Hizmetleri | Chatbot, E-posta, CRM | OD Agency',
+  title: 'AI Otomasyon Hizmetleri | Chatbot, E-posta, CRM | Oder Agency',
   description: '7/24 kesintisiz müşteri iletişimi. AI chatbot, e-posta otomasyonu, WhatsApp botu ve lead yakalama çözümleri. 15.000₺\'den başlayan fiyatlar.',
   keywords: ['AI otomasyon', 'chatbot', 'e-posta otomasyonu', 'whatsapp botu', 'lead yakalama', 'CRM entegrasyonu', 'yapay zeka'],
-  alternates: { canonical: 'https://odagency.com/ai-otomasyon' },
+  alternates: { canonical: 'https://oder.agency/ai-otomasyon' },
 }
 
 const services = [
