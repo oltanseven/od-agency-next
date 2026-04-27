@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     url: 'https://odagency.com',
   },
   robots: { index: true, follow: true },
+  manifest: '/manifest.json',
   metadataBase: new URL('https://odagency.com'),
 }
 

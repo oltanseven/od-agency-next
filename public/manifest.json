@@ -1,0 +1,16 @@
+{
+  "name": "OD Agency",
+  "short_name": "OD Agency",
+  "description": "Web Tasarım & AI Otomasyon Ajansı",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFEF8",
+  "theme_color": "#ff521b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
