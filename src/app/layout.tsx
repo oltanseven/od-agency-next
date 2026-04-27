@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
@@ -66,6 +67,15 @@ const localBusinessSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr" className={montserrat.variable}>
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-HWJK99YCQK" strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HWJK99YCQK');`}
+        </Script>
+      </head>
       <body className="bg-cream text-ink font-sans antialiased">
         <script
           type="application/ld+json"
