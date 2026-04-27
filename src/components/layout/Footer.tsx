@@ -111,8 +111,6 @@ export default function Footer() {
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">Şirket</h4>
             <ul className="flex flex-col gap-3">
               {[
-                ['Referanslar', '/#referanslar'],
-                ['Projeler',   '/projeler'],
                 ['Paketler',   '/paketler'],
                 ['Blog',       '/blog'],
                 ['İletişim',   '/iletisim'],

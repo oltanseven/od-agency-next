@@ -4,7 +4,6 @@ import MarqueeSection      from '@/components/sections/MarqueeSection'
 import ServicesSection     from '@/components/sections/ServicesSection'
 import AISection           from '@/components/sections/AISection'
 import ProcessSection      from '@/components/sections/ProcessSection'
-import PortfolioSection    from '@/components/sections/PortfolioSection'
 import StatsSection        from '@/components/sections/StatsSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
 import CTASection          from '@/components/sections/CTASection'
@@ -34,9 +33,7 @@ export default function Home() {
       <AISection />
       <WaveDivider topColor="#F6F2E8" bottomColor="#0D0B1E" variant="soft" flip />
       <ProcessSection />
-      <WaveDivider topColor="#0D0B1E" bottomColor="#FFFEF8" variant="wide" />
-      <PortfolioSection />
-      <WaveDivider topColor="#FFFEF8" bottomColor="#ff521b" variant="soft" flip />
+      <WaveDivider topColor="#0D0B1E" bottomColor="#ff521b" variant="wide" />
       <StatsSection />
       <WaveDivider topColor="#ff521b" bottomColor="#FFFEF8" variant="wide" flip />
       <TestimonialsSection />
