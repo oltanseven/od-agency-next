@@ -32,8 +32,17 @@ export default function IletisimPage() {
     const data = Object.fromEntries(new FormData(form)) as Record<string, string>
     try {
       const ok = await saveLead({ ...data, created_at: new Date().toISOString() })
+      if (ok) {
+        // Resend ile e-posta gönder
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        })
+        form.reset()
+        setMsgLen(0)
+      }
       setStatus(ok ? 'success' : 'error')
-      if (ok) { form.reset(); setMsgLen(0) }
     } catch {
       setStatus('error')
     }

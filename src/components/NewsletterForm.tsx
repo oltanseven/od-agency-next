@@ -25,6 +25,14 @@ export default function NewsletterForm() {
         },
         body: JSON.stringify({ email, created_at: new Date().toISOString() }),
       })
+      if (res.ok) {
+        // Hoşgeldin e-postası gönder
+        fetch('/api/newsletter', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        })
+      }
       setStatus(res.ok ? 'success' : 'error')
     } catch {
       setStatus('error')
