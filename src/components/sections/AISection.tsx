@@ -5,43 +5,43 @@ const cards = [
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="#ff521b" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M8 10h.01M12 10h.01M16 10h.01" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/></svg>,
     iconBg: 'bg-accent/10',
     title: 'AI Chatbot',
-    desc: 'Ziyaretçilerin sorularını anında yanıtlar, ürün önerir ve potansiyel müşteriyi sıcak tutar. 7/24 aktif.',
-    tag: '7/24 Destek', tagColor: 'text-accent bg-accent/10 border-accent/20',
+    desc: 'Web sitenize entegre edilen chatbot, ziyaretçi sorularını anında yanıtlar, lead bilgilerini toplar ve randevu oluşturur. Yanıt süresini %72 azaltır.',
+    tag: '7/24 Aktif', tagColor: 'text-accent bg-accent/10 border-accent/20',
   },
   {
-    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M22 6l-10 7L2 6" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
-    iconBg: 'bg-[rgba(232,136,26,0.1)]',
-    title: 'E-posta Otomasyonu',
-    desc: 'Karşılama, terk sepeti, doğum günü kampanyaları. Doğru kişiye doğru anda otomatik gönderilir.',
-    tag: 'Dönüşüm Artırır', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2.5" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/><path d="M9 8h6M9 12h4" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-accent/10',
+    title: 'WhatsApp AI Asistan',
+    desc: 'Türkiye\'nin en çok kullanılan mesajlaşma uygulamasında yapay zeka destekli asistan. Otomatik yanıt, sipariş takibi ve randevu alma tek kanalda.',
+    tag: 'Anlık İletişim', tagColor: 'text-accent bg-accent/10 border-accent/20',
   },
   {
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 3H2l8 9.46V19l4 2V12.46z" stroke="#16a34a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M2 3h20" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round"/></svg>,
     iconBg: 'bg-[#D1FAE5]',
     title: 'Lead Yakalama & CRM',
-    desc: 'Form dolduran ziyaretçi anında CRM\'e kaydedilir, otomatik takip e-postası gider, satış ekibine bildirim düşer.',
-    tag: 'Satış Hattı', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
+    desc: 'Form, chatbot veya WhatsApp üzerinden gelen her potansiyel müşteri otomatik olarak CRM\'e kaydedilir. Lead skorlama ve takip anında tetiklenir.',
+    tag: 'Satış Pipeline', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
   },
   {
-    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2.5" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/><path d="M9 8h6M9 12h4" stroke="#ff521b" strokeWidth="2" strokeLinecap="round"/><path d="M15 17l2 2 3-3" stroke="#ff521b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-    iconBg: 'bg-accent/10',
-    title: 'WhatsApp Botu',
-    desc: 'WhatsApp\'tan gelen mesajlara anında AI yanıtı, randevu alma, sipariş takibi ve yönlendirme.',
-    tag: 'Anlık Yanıt', tagColor: 'text-accent bg-accent/10 border-accent/20',
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M22 6l-10 7L2 6" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
+    iconBg: 'bg-[rgba(232,136,26,0.1)]',
+    title: 'E-posta Otomasyonu',
+    desc: 'Hoşgeldin serisi, terk sepeti hatırlatması, takip e-postaları ve kampanya bildirimleri. Doğru kişiye doğru zamanda otomatik ulaşın.',
+    tag: 'Dönüşüm Artışı', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
   },
   {
     icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#e8881a" strokeWidth="1.5" strokeLinejoin="round" opacity="0.38"/><path d="M14 2v6h6M12 13v4M10 15h4" stroke="#e8881a" strokeWidth="2" strokeLinecap="round"/></svg>,
     iconBg: 'bg-[rgba(232,136,26,0.1)]',
-    title: 'SEO İçerik Üretimi',
-    desc: 'Belirlenen anahtar kelimelere göre AI her hafta yeni blog yazısı üretir, sitede yayınlar, Google\'a bildirir.',
+    title: 'AI İçerik Üretimi',
+    desc: 'SEO odaklı blog yazıları, ürün açıklamaları ve sosyal medya içerikleri yapay zeka ile üretilir. Editör onayından sonra otomatik yayınlanır.',
     tag: 'Organik Büyüme', tagColor: 'text-coral bg-[rgba(232,136,26,0.1)] border-[rgba(232,136,26,0.25)]',
   },
   {
-    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" opacity="0.38"/><path d="M3 20h18M6 14l6-6 4 4 5-5" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M18 20V10M12 20V4M6 20v-6" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" opacity="0.38"/><path d="M6 14l6-6 4 4 5-5" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
     iconBg: 'bg-[#D1FAE5]',
-    title: 'Haftalık Analiz Raporu',
-    desc: 'Ziyaretçi, dönüşüm ve gelir verileri her hafta düzenli rapor olarak e-posta ile iletilir. Siz sadece okuyun.',
-    tag: 'Otomatik Raporlama', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
+    title: 'Raporlama Dashboard',
+    desc: 'Ziyaretçi sayısı, dönüşüm oranı, chatbot performansı ve gelir verileri tek panelde toplanır. Haftalık raporlar otomatik iletilir.',
+    tag: 'Veri Odaklı', tagColor: 'text-[#166534] bg-[#D1FAE5] border-[rgba(22,163,74,0.25)]',
   },
 ]
 
@@ -62,7 +62,7 @@ export default function AISection() {
             7/24 kesintisiz <span className="gradient-text">müşteri iletişimi</span>
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] mx-auto leading-[1.7]">
-            AI destekli chatbot müşteri sorularını yanıtlar, lead&apos;ler otomatik kayıt olur, terk sepeti e-postaları iletilir.
+            Chatbot, WhatsApp asistan, e-posta otomasyonu ve CRM entegrasyonu ile rutin görevlerinizin %50-70&apos;ini otomatikleştirin.
           </p>
         </div>
 
