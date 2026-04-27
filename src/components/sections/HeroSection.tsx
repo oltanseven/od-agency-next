@@ -144,7 +144,7 @@ export default function HeroSection() {
                   <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
                 </div>
                 <div className="flex-1 bg-[#E5E5E5] rounded-full h-[22px] px-2.5 flex items-center text-[0.62rem] text-gray-400">
-                  od-agency.com/proje
+                  oder.agency/proje
                 </div>
               </div>
               <div className="p-3.5 bg-[#FAFAFA]">
