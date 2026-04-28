@@ -39,6 +39,10 @@ export default function IletisimPage() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data),
         })
+        // Google Ads dönüşüm takibi
+        if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', { send_to: 'AW-18122299826/la0qCKjx-qMcELKzscFD' })
+        }
         form.reset()
         setMsgLen(0)
       }
