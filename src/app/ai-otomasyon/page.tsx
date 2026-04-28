@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   description: '7/24 kesintisiz müşteri iletişimi. AI chatbot, e-posta otomasyonu, WhatsApp botu ve lead yakalama çözümleri. 15.000₺\'den başlayan fiyatlar.',
   keywords: ['AI otomasyon', 'chatbot', 'e-posta otomasyonu', 'whatsapp botu', 'lead yakalama', 'CRM entegrasyonu', 'yapay zeka'],
   alternates: { canonical: 'https://oder.agency/ai-otomasyon' },
+  openGraph: {
+    title: 'AI Otomasyon Hizmetleri | Chatbot, E-posta, CRM | Oder Agency',
+    description: '7/24 kesintisiz müşteri iletişimi. AI chatbot, e-posta otomasyonu ve lead yakalama. 15.000₺\'den başlayan fiyatlar.',
+    url: 'https://oder.agency/ai-otomasyon',
+  },
 }
 
 const services = [

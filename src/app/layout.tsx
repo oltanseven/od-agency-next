@@ -22,6 +22,13 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     siteName: 'Oder Agency',
     url: 'https://oder.agency',
+    title: 'Oder Agency | Web Tasarım & AI Otomasyon',
+    description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Oder Agency | Web Tasarım & AI Otomasyon',
+    description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
   },
   robots: { index: true, follow: true },
   manifest: '/manifest.json',

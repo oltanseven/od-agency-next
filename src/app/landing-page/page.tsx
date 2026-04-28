@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description: 'Ziyaretçileri müşteriye çeviren landing page. 5 iş gününde teslim, mobil uyumlu, SEO dahil. 7.500₺\'den başlayan fiyatlar.',
   keywords: ['landing page', 'landing page tasarımı', 'tek sayfa site', 'dönüşüm odaklı tasarım', 'landing page fiyatı'],
   alternates: { canonical: 'https://oder.agency/landing-page' },
+  openGraph: {
+    title: 'Landing Page Tasarımı | Dönüşüm Odaklı | Oder Agency',
+    description: 'Ziyaretçileri müşteriye çeviren landing page. 5 iş gününde teslim. 7.500₺\'den başlayan fiyatlar.',
+    url: 'https://oder.agency/landing-page',
+  },
 }
 
 const includes = [

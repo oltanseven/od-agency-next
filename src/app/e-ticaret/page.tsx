@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description: 'Ödeme, stok, kargo entegrasyonu dahil e-ticaret sitesi. Terk sepeti otomasyonu dahil. 35.000₺\'den başlayan fiyatlar.',
   keywords: ['e-ticaret sitesi', 'online mağaza', 'e-ticaret kurma', 'shopify', 'woocommerce', 'iyzico entegrasyonu', 'e-ticaret fiyatları'],
   alternates: { canonical: 'https://oder.agency/e-ticaret' },
+  openGraph: {
+    title: 'E-Ticaret Sitesi Kurma | Online Mağazanızı Açın | Oder Agency',
+    description: 'Ödeme, stok, kargo entegrasyonu dahil e-ticaret sitesi. 35.000₺\'den başlayan fiyatlar.',
+    url: 'https://oder.agency/e-ticaret',
+  },
 }
 
 const features = [

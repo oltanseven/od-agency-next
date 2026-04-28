@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description: 'Profesyonel logo, renk paleti, tipografi ve görsel dil tasarımı. Müşterileriniz markanızı bir bakışta tanısın.',
   keywords: ['marka kimliği', 'logo tasarımı', 'kurumsal kimlik', 'marka tasarımı', 'görsel kimlik', 'renk paleti', 'tipografi'],
   alternates: { canonical: 'https://oder.agency/marka-kimligi' },
+  openGraph: {
+    title: 'Marka Kimliği Tasarımı | Logo, Renk Paleti | Oder Agency',
+    description: 'Profesyonel logo, renk paleti, tipografi ve görsel dil tasarımı.',
+    url: 'https://oder.agency/marka-kimligi',
+  },
 }
 
 const deliverables = [

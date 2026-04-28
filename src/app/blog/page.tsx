@@ -9,16 +9,11 @@ export const metadata: Metadata = {
   description: 'Web sitesi kurma maliyeti, e-ticaret nasıl kurulur, freelancer mı ajans mı? Web tasarım ve dijital büyüme üzerine pratik rehberler.',
   keywords: ['web sitesi kurma maliyeti', 'web tasarım ajansı nasıl seçilir', 'e-ticaret sitesi nasıl kurulur', 'freelancer mı ajans mı', 'web tasarım blog'],
   alternates: { canonical: 'https://oder.agency/blog' },
-}
-
-const thumbs: Record<number, string> = {
-  1: 'linear-gradient(135deg,#1e1060,#4338ca,#2d1b69)',
-  2: 'linear-gradient(135deg,#0c1a2e,#1e3a5f,#0f4c75)',
-  3: 'linear-gradient(135deg,#14532d,#166534,#052e16)',
-  4: 'linear-gradient(135deg,#431407,#7c2d12,#2d0a00)',
-  5: 'linear-gradient(135deg,#1e3a5f,#1e40af,#1e1060)',
-  6: 'linear-gradient(135deg,#064e3b,#065f46,#022c22)',
-  7: 'linear-gradient(135deg,#3b0764,#6b21a8,#2e1065)',
+  openGraph: {
+    title: 'Web Tasarım Blog | Fiyatlar, Trendler & Rehberler | Oder Agency',
+    description: 'Web tasarım ve dijital büyüme üzerine pratik rehberler.',
+    url: 'https://oder.agency/blog',
+  },
 }
 
 const catColors: Record<string, string> = {
@@ -59,27 +54,14 @@ export default async function BlogPage() {
           {/* Featured post */}
           {featured && (
             <Link href={`/blog/${featured.slug}`}
-              className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr] rounded-[18px] overflow-hidden
+              className="rounded-[18px] overflow-hidden
                 border-[1.5px] border-black/[0.09] mb-8 no-underline text-inherit
                 transition-all duration-300 hover:shadow-[0_24px_60px_rgba(255,82,27,0.1)]
-                hover:border-[rgba(255,82,27,0.25)] group">
-              <div className="relative min-h-[280px] md:min-h-[320px] flex items-center justify-center"
-                style={{ background: thumbs[featured.thumb] || thumbs[1] }}>
-                <div className="absolute inset-0 flex items-center justify-center opacity-60">
-                  <svg viewBox="0 0 24 24" fill="none" width="64" height="64">
-                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5"/>
-                    <path d="M3 9h18M9 21V9" stroke="rgba(255,255,255,0.6)" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
-                <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
-                  text-white px-3 py-1 rounded-full"
+                hover:border-[rgba(255,82,27,0.25)] group block">
+              <div className="p-10 flex flex-col justify-center bg-cream">
+                <span className="text-[0.68rem] font-bold uppercase tracking-[0.08em] text-white px-3 py-1 rounded-full inline-block mb-3"
                   style={{ background: catColors[featured.category] || 'rgba(255,82,27,0.9)' }}>
                   {featured.category}
-                </span>
-              </div>
-              <div className="p-10 flex flex-col justify-center bg-cream">
-                <span className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-accent mb-3 block">
-                  Son Yazı
                 </span>
                 <h2 className="text-[1.6rem] font-black leading-[1.3] text-ink mb-3
                   group-hover:text-accent transition-colors">
@@ -106,20 +88,11 @@ export default async function BlogPage() {
                     no-underline text-inherit flex flex-col
                     transition-all duration-300 hover:-translate-y-1
                     hover:shadow-[0_20px_50px_rgba(255,82,27,0.1)] hover:border-[rgba(255,82,27,0.25)]">
-                  <div className="relative aspect-[16/9]"
-                    style={{ background: thumbs[post.thumb] || thumbs[1] }}>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-60">
-                      <svg viewBox="0 0 24 24" fill="none" width="48" height="48">
-                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="rgba(255,255,255,0.6)" strokeWidth="1.5"/>
-                      </svg>
-                    </div>
-                    <span className="absolute top-4 left-4 z-10 text-[0.68rem] font-bold uppercase tracking-[0.08em]
-                      text-white px-3 py-1 rounded-full"
+                  <div className="p-6 flex flex-col flex-1">
+                    <span className="text-[0.68rem] font-bold uppercase tracking-[0.08em] text-white px-3 py-1 rounded-full inline-block mb-3 self-start"
                       style={{ background: catColors[post.category] || 'rgba(255,82,27,0.9)' }}>
                       {post.category}
                     </span>
-                  </div>
-                  <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-4 mb-3 text-[0.75rem] text-ink/40">
                       {post.published_at && (
                         <span>{new Date(post.published_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
