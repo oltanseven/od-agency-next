@@ -73,7 +73,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-HWJK99YCQK');`}
+          gtag('config', 'G-HWJK99YCQK');
+          gtag('config', 'AW-18122299826');`}
         </Script>
       </head>
       <body className="bg-cream text-ink font-sans antialiased">
