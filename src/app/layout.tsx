@@ -86,10 +86,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             var el = e.target.closest('a[href]');
             if (!el) return;
             var href = el.getAttribute('href') || '';
-            if (href.startsWith('tel:')) {
-              gtag('event', 'conversion', { send_to: 'AW-18122299826/phone_click' });
-            } else if (href.indexOf('wa.me') !== -1) {
-              gtag('event', 'conversion', { send_to: 'AW-18122299826/whatsapp_click' });
+            if (href.startsWith('tel:') || href.indexOf('wa.me') !== -1) {
+              gtag('event', 'conversion', { send_to: 'AW-18122299826/FAqNCMW64aUcELKzscFD', value: 1.0, currency: 'TRY' });
             }
           });`}
         </Script>
