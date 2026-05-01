@@ -81,7 +81,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-HWJK99YCQK');
-          gtag('config', 'AW-18122299826');`}
+          gtag('config', 'AW-18122299826');
+          document.addEventListener('click', function(e) {
+            var el = e.target.closest('a[href]');
+            if (!el) return;
+            var href = el.getAttribute('href') || '';
+            if (href.startsWith('tel:')) {
+              gtag('event', 'conversion', { send_to: 'AW-18122299826/phone_click' });
+            } else if (href.indexOf('wa.me') !== -1) {
+              gtag('event', 'conversion', { send_to: 'AW-18122299826/whatsapp_click' });
+            }
+          });`}
         </Script>
       </head>
       <body className="bg-cream text-ink font-sans antialiased">
