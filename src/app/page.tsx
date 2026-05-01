@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     title: 'Web Tasarım Ajansı & Dijital Çözümler | Oder Agency',
     description: 'Profesyonel web tasarım, e-ticaret ve AI otomasyon hizmetleri. Antalya merkezli, Türkiye geneli.',
     url: 'https://oder.agency',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Oder Agency — Web siteniz satış yapsın, siz büyüyün' }],
   },
 }
 
