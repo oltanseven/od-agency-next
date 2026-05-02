@@ -23,6 +23,15 @@ const catColors: Record<string, string> = {
   'E-Ticaret':      'rgba(37,99,235,0.9)',
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://oder.agency/blog' },
+  ],
+}
+
 export default async function BlogPage() {
   const posts = await getPublishedPosts()
   const featured = posts[0]
@@ -30,6 +39,7 @@ export default async function BlogPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
         <ServiceHeroBg theme="blog" />

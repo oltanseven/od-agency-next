@@ -32,24 +32,46 @@ export const metadata: Metadata = {
     description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
     images: ['/og-image.png'],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large' as const,
+    'max-video-preview': -1,
+  },
   manifest: '/manifest.json',
   metadataBase: new URL('https://oder.agency'),
 }
 
-const localBusinessSchema = {
+const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['Organization', 'LocalBusiness'],
+  '@id': 'https://oder.agency/#organization',
   name: 'Oder Agency',
+  legalName: 'Oder Agency',
   description: 'Antalya merkezli web tasarım, e-ticaret ve AI otomasyon ajansı. Türkiye geneli profesyonel dijital çözümler.',
   url: 'https://oder.agency',
+  logo: 'https://oder.agency/og-image.png',
   telephone: '+905324652031',
   email: 'merhaba@oder.agency',
+  foundingDate: '2026',
+  founder: {
+    '@type': 'Person',
+    name: 'Oltan Seven',
+    jobTitle: 'Kurucu & Geliştirici',
+    url: 'https://oder.agency/hakkimizda',
+  },
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Antalya',
     addressRegion: 'Antalya',
     addressCountry: 'TR',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+905324652031',
+    contactType: 'customer service',
+    availableLanguage: ['Turkish', 'English'],
   },
   areaServed: [
     { '@type': 'City', name: 'Antalya' },
@@ -67,6 +89,7 @@ const localBusinessSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landing Page Tasarımı' } },
     ],
   },
+  knowsAbout: ['Web Tasarım', 'E-Ticaret', 'AI Otomasyon', 'SEO', 'Dijital Pazarlama'],
   sameAs: [
     'https://www.instagram.com/oder.agency',
     'https://www.linkedin.com/company/oderagency',
@@ -97,7 +120,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-cream text-ink font-sans antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <Navbar />
         <main>{children}</main>

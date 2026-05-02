@@ -45,9 +45,114 @@ function DimChk() {
   )
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  provider: { '@type': 'Organization', '@id': 'https://oder.agency/#organization', name: 'Oder Agency' },
+  serviceType: 'Web Tasarım & Geliştirme',
+  areaServed: { '@type': 'Country', name: 'Türkiye' },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Web Tasarım Paketleri',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Lansman Paketi',
+        description: 'Dönüşüm odaklı landing page. 5 iş gününde teslim.',
+        price: '7500',
+        priceCurrency: 'TRY',
+        itemOffered: { '@type': 'Service', name: 'Landing Page Tasarımı' },
+      },
+      {
+        '@type': 'Offer',
+        name: 'Profesyonel Paket',
+        description: 'Kurumsal web sitesi. CMS, SEO, blog modülü dahil. 10 iş gününde teslim.',
+        price: '20000',
+        priceCurrency: 'TRY',
+        itemOffered: { '@type': 'Service', name: 'Kurumsal Web Tasarım' },
+      },
+      {
+        '@type': 'Offer',
+        name: 'Mağaza Paketi',
+        description: 'E-ticaret sitesi. Ödeme, stok, kargo entegrasyonu dahil. 15 iş gününde teslim.',
+        price: '35000',
+        priceCurrency: 'TRY',
+        itemOffered: { '@type': 'Service', name: 'E-Ticaret Sitesi' },
+      },
+      {
+        '@type': 'Offer',
+        name: 'AI Pro Paketi',
+        description: 'Web sitesi + AI chatbot, e-posta otomasyonu, WhatsApp botu, CRM entegrasyonu.',
+        price: '15000',
+        priceCurrency: 'TRY',
+        itemOffered: { '@type': 'Service', name: 'AI Otomasyon' },
+      },
+    ],
+  },
+}
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Web Sitesi Nasıl Yaptırılır?',
+  description: 'Oder Agency ile web sitenizi 4 adımda başlatın: teklif, keşif, tasarım, yayın.',
+  totalTime: 'P10D',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Teklif İsteyin', text: 'Formu doldurun, ihtiyaçlarınızı paylaşın. En kısa sürede size dönelim.' },
+    { '@type': 'HowToStep', position: 2, name: 'Keşif Görüşmesi', text: 'Projenizi birlikte konuşalım, en uygun paketi belirleyelim.' },
+    { '@type': 'HowToStep', position: 3, name: 'Tasarım & Geliştirme', text: 'Şeffaf süreçle çalışıyoruz. Her adımda ne olduğunu bilirsiniz.' },
+    { '@type': 'HowToStep', position: 4, name: 'Yayın & Destek', text: 'Siteniz canlıya alınır. Sonrasında da yanınızdayız.' },
+  ],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Fiyatlara KDV dahil mi?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Belirtilen fiyatlar KDV hariçtir. Fatura kesilirken %20 KDV eklenir. Kurumsal faturalarınız için KDV iadesi sürecinizi de destekliyoruz.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Ödeme nasıl yapılır?',
+      acceptedAnswer: { '@type': 'Answer', text: '%50 proje başlangıcında, %50 teslimat ve onayında. Büyük projelerde taksitli ödeme planı da düzenleyebiliriz.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hosting ve domain dahil mi?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Hosting ve domain paket fiyatına dahil değildir ancak kurulum ve bağlantıyı biz yapıyoruz. Size özel en uygun çözümü birlikte belirleriz.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Pakete dahil olmayan özellikler eklenebilir mi?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Evet. Her proje biraz farklıdır. Paket dışı geliştirmeler için ayrı fiyatlandırma yapılır ve önceden onayınız alınır. Sürpriz fatura gönderme prensibimiz yoktur.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Mevcut sitemin yenilenmesi için hangi paketi seçmeliyim?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Mevcut sitenizin içerik aktarımı dahil olmak üzere Profesyonel veya E-Ticaret paketi uygundur. İletişim formundan projenizi anlatın, size özel fiyat çıkaralım.' },
+    },
+  ],
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+    { '@type': 'ListItem', position: 2, name: 'Paketler & Fiyatlar', item: 'https://oder.agency/paketler' },
+  ],
+}
+
 export default function PaketlerPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
         <ServiceHeroBg theme="pricing" />

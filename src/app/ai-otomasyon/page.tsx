@@ -207,9 +207,19 @@ const services = [
   },
 ];
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+    { '@type': 'ListItem', position: 2, name: 'AI Otomasyon', item: 'https://oder.agency/ai-otomasyon' },
+  ],
+}
+
 export default function AIOtomasyonPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative overflow-hidden">
         <NeuralBackground />
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">

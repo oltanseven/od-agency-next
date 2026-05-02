@@ -78,9 +78,19 @@ const faqs = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+    { '@type': 'ListItem', position: 2, name: 'Web Tasarım Antalya', item: 'https://oder.agency/web-tasarim-antalya' },
+  ],
+}
+
 export default function AntalyaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localPageSchema) }}

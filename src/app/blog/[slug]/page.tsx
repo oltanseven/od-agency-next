@@ -38,8 +38,46 @@ export default async function BlogPostPage({ params }: Props) {
     ? new Date(post.published_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })
     : ''
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    url: `https://oder.agency/blog/${post.slug}`,
+    datePublished: post.published_at || undefined,
+    dateModified: post.published_at || undefined,
+    author: {
+      '@type': 'Person',
+      name: 'Oltan Seven',
+      jobTitle: 'Kurucu & Geliştirici',
+      url: 'https://oder.agency/hakkimizda',
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': 'https://oder.agency/#organization',
+      name: 'Oder Agency',
+      url: 'https://oder.agency',
+      logo: { '@type': 'ImageObject', url: 'https://oder.agency/og-image.png' },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://oder.agency/blog/${post.slug}` },
+    articleSection: post.category,
+    inLanguage: 'tr',
+  }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://oder.agency/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://oder.agency/blog/${post.slug}` },
+    ],
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <div className="pt-28 sm:pt-36 pb-16 bg-cream-soft border-b border-black/[0.09]">
         <div className="max-w-[760px] mx-auto px-5 sm:px-8">
@@ -76,8 +114,19 @@ export default async function BlogPostPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {/* Internal Links */}
+        <div className="mt-16 pt-10 border-t border-black/[0.09]">
+          <h3 className="text-[0.95rem] font-bold text-ink/50 mb-4">İlgili Hizmetlerimiz</h3>
+          <div className="flex flex-wrap gap-2 mb-10">
+            <Link href="/paketler" className="px-4 py-2 rounded-full text-[0.82rem] font-semibold text-ink/60 bg-cream-soft border border-black/[0.07] no-underline hover:border-accent hover:text-accent transition-all">Web Sitesi Fiyatları</Link>
+            <Link href="/e-ticaret" className="px-4 py-2 rounded-full text-[0.82rem] font-semibold text-ink/60 bg-cream-soft border border-black/[0.07] no-underline hover:border-accent hover:text-accent transition-all">E-Ticaret Çözümleri</Link>
+            <Link href="/ai-otomasyon" className="px-4 py-2 rounded-full text-[0.82rem] font-semibold text-ink/60 bg-cream-soft border border-black/[0.07] no-underline hover:border-accent hover:text-accent transition-all">AI Otomasyon</Link>
+            <Link href="/web-tasarim-antalya" className="px-4 py-2 rounded-full text-[0.82rem] font-semibold text-ink/60 bg-cream-soft border border-black/[0.07] no-underline hover:border-accent hover:text-accent transition-all">Web Tasarım Antalya</Link>
+          </div>
+        </div>
+
         {/* CTA */}
-        <div className="mt-16 bg-cream-soft border border-black/[0.09] rounded-2xl p-10 text-center">
+        <div className="bg-cream-soft border border-black/[0.09] rounded-2xl p-10 text-center">
           <h3 className="text-[1.3rem] font-black text-ink mb-2">Projenizi konuşalım</h3>
           <p className="text-ink/50 mb-6 text-[0.92rem]">
             Bu yazıda bahsettiğimiz konularda size nasıl yardımcı olabileceğimizi anlatmak isteriz.

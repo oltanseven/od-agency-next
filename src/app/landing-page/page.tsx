@@ -23,9 +23,19 @@ const includes = [
   { title: 'Revizyon & Destek', desc: '2 tur revizyon hakkı ve 3 ay teknik destek dahil. Teslimattan sonra da yanınızdayız.' },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Ana Sayfa', item: 'https://oder.agency' },
+    { '@type': 'ListItem', position: 2, name: 'Landing Page', item: 'https://oder.agency/landing-page' },
+  ],
+}
+
 export default function LandingPagePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="pt-28 sm:pt-36 pb-14 sm:pb-20 bg-cream-soft border-b border-black/[0.09] relative">
         <ServiceHeroBg theme="landing" />
         <div className="max-w-[1260px] mx-auto px-5 sm:px-8 relative z-10">
