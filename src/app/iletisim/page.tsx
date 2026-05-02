@@ -24,14 +24,30 @@ async function saveLead(data: Record<string, string>) {
 export default function IletisimPage() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [msgLen, setMsgLen] = useState(0)
+  const [loadedAt] = useState(() => Date.now())
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('loading')
     const form = e.currentTarget
     const data = Object.fromEntries(new FormData(form)) as Record<string, string>
+
+    // Spam koruması: honeypot
+    if (data.website) { setStatus('success'); return }
+
+    // Spam koruması: 3 saniyeden hızlı = bot
+    if (Date.now() - loadedAt < 3000) { setStatus('success'); return }
+
+    // Spam koruması: minimum uzunluk
+    if (!data.name || data.name.length < 2 || !data.message || data.message.length < 10) {
+      setStatus('error'); return
+    }
+
+    // honeypot alanını Supabase'e gönderme
+    const { website: _, ...cleanData } = data
+
     try {
-      const ok = await saveLead({ ...data, created_at: new Date().toISOString() })
+      const ok = await saveLead({ ...cleanData, created_at: new Date().toISOString() })
       if (ok) {
         // Resend ile e-posta gönder
         fetch('/api/contact', {
@@ -192,6 +208,10 @@ export default function IletisimPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+                  {/* Honeypot — botlar doldurur, kullanıcılar görmez */}
+                  <div className="absolute -left-[9999px]" aria-hidden="true">
+                    <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+                  </div>
 
                   {/* Ad Soyad + Şirket */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
