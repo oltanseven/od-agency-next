@@ -38,9 +38,19 @@ export default function IletisimPage() {
     // Spam koruması: 3 saniyeden hızlı = bot
     if (Date.now() - loadedAt < 3000) { setStatus('success'); return }
 
-    // Spam koruması: minimum uzunluk
+    // Zorunlu alan ve format kontrolu
     if (!data.name || data.name.length < 2 || !data.message || data.message.length < 10) {
       setStatus('error'); return
+    }
+    if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+      setStatus('error'); return
+    }
+    if (!data.service) {
+      setStatus('error'); return
+    }
+    // Spam tespiti: tum alanlar ayni, sadece sayi, veya tekrar karakter
+    if (data.name === data.email || /^(.)\1+$/.test(data.name) || /^[0-9]+$/.test(data.name)) {
+      setStatus('success'); return
     }
 
     // honeypot alanını Supabase'e gönderme
@@ -207,7 +217,7 @@ export default function IletisimPage() {
                   <p className="text-ink/50 text-[0.9rem]">Mesajınız bize ulaştı. En kısa sürede size dönüş yapacağız.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   {/* Honeypot — botlar doldurur, kullanıcılar görmez */}
                   <div className="absolute -left-[9999px]" aria-hidden="true">
                     <input type="text" name="website" tabIndex={-1} autoComplete="off" />
