@@ -1,11 +1,18 @@
-const stats = [
-  { val: '100',    label: 'Performance Score' },
-  { val: '14 gün', label: 'Memnuniyet Garantisi' },
-  { val: '5 gün',  label: 'En Hızlı Teslimat' },
-  { val: 'Next.js', label: 'Premium Teknoloji' },
-]
+'use client'
+
+import { useI18n } from '@/i18n/context'
 
 export default function StatsSection() {
+  const { locale } = useI18n()
+  const en = locale === 'en'
+
+  const stats = [
+    { val: '90%', label: en ? 'Cost Reduction' : 'Maliyet Düşüşü' },
+    { val: '24/7', label: en ? 'Uptime' : 'Kesintisiz Çalışma' },
+    { val: en ? '2 Weeks' : '2 Hafta', label: en ? 'Go Live' : 'Canlıya Geçiş' },
+    { val: 'n8n', label: en ? 'Core Engine' : 'Temel Motor' },
+  ]
+
   return (
     <div className="bg-accent pb-10 sm:pb-16">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">

@@ -1,23 +1,59 @@
-type FitGroup = { title: string; items: string[] }
+'use client'
 
-type Props = {
-  dict: Record<string, unknown>
-}
+import { useI18n } from '@/i18n/context'
 
-export default function FitSection({ dict }: Props) {
-  const good = dict.good as FitGroup
-  const bad = dict.bad as FitGroup
+export default function FitSection() {
+  const { locale } = useI18n()
+  const en = locale === 'en'
+
+  const good = {
+    title: en ? 'Great fit' : 'Tam uyum',
+    items: en
+      ? [
+          'You have a running business with real customers',
+          'You want to grow without proportionally growing your team',
+          'You are ready to invest in systems that pay for themselves',
+          'You value speed and measurable outcomes',
+        ]
+      : [
+          'Gerçek müşterileri olan çalışan bir işletmeniz var',
+          'Ekibinizi orantılı büyütmeden büyümek istiyorsunuz',
+          'Kendini finanse eden sistemlere yatırım yapmaya hazırsınız',
+          'Hız ve ölçülebilir sonuçlara değer veriyorsunuz',
+        ],
+  }
+
+  const bad = {
+    title: en ? 'Not the right fit' : 'Uygun değil',
+    items: en
+      ? [
+          'You are still validating your business idea',
+          'You need a simple website with no automation',
+          'You are looking for the cheapest option available',
+          'You want to micromanage every technical decision',
+        ]
+      : [
+          'Henüz iş fikrinizi doğrulama aşamasındasınız',
+          'Otomasyon olmadan basit bir web sitesi istiyorsunuz',
+          'Mümkün olan en ucuz seçeneği arıyorsunuz',
+          'Her teknik kararı mikro yönetmek istiyorsunuz',
+        ],
+  }
 
   return (
-    <section className="py-24 sm:py-32 bg-cream-soft">
+    <section className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream-soft">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
         <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black text-ink tracking-[-0.02em] mb-14 text-center">
-          {dict.title as string}
+          {en ? (
+            <>Is this <span className="gradient-text">right for you?</span></>
+          ) : (
+            <>Bu sizin için <span className="gradient-text">doğru mu?</span></>
+          )}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto">
           {/* Good fit */}
-          <div className="bg-cream border border-[#22c55e]/15 rounded-2xl p-8">
+          <div className="bg-cream border border-[#22c55e]/15 rounded-[18px] p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-9 h-9 rounded-full bg-[#22c55e]/10 text-[#22c55e] flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
@@ -37,7 +73,7 @@ export default function FitSection({ dict }: Props) {
           </div>
 
           {/* Bad fit */}
-          <div className="bg-cream border border-ink/[0.06] rounded-2xl p-8">
+          <div className="bg-cream border border-black/[0.09] rounded-[18px] p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-9 h-9 rounded-full bg-ink/5 text-ink/40 flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>

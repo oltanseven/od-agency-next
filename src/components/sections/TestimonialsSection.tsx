@@ -1,45 +1,79 @@
+'use client'
+
 import Link from 'next/link'
-
-const guarantees = [
-  {
-    icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#22c55e" strokeWidth="1.5" opacity="0.38"/><path d="M9 12l2 2 4-4" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
-    iconBg: 'bg-[#D1FAE5]',
-    title: '14 Gün Para İade Garantisi',
-    desc: 'Projeniz teslim edildikten sonra memnun kalmazsanız 14 gün içinde ücretinizi iade ediyoruz.',
-  },
-  {
-    icon: <><circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/><path d="M12 7v5l3 3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/></>,
-    iconBg: 'bg-accent/10',
-    title: 'Teslim Tarihi Garantisi',
-    desc: 'Söz verdiğimiz tarihi aşarsak her geçen gün için %10 indirim uyguluyoruz. Yazılı taahhüt.',
-  },
-  {
-    icon: <><rect x="2" y="2" width="20" height="20" rx="6" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/><path d="M8 12l3 3 5-5" stroke="#e8881a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></>,
-    iconBg: 'bg-[rgba(232,136,26,0.1)]',
-    title: 'Gizli Ücret Yok',
-    desc: 'Başlangıçta anlaştığımız fiyat, son fiyattır. Proje ortasında sürpriz ek maliyet çıkmaz.',
-  },
-]
-
-const techBadges = [
-  'Next.js', 'React', 'Tailwind CSS', 'Supabase', 'Vercel', 'TypeScript',
-  'Shopify', 'WooCommerce', 'Google Analytics', 'SEO',
-]
+import { useI18n } from '@/i18n/context'
 
 export default function TestimonialsSection() {
+  const { locale } = useI18n()
+  const en = locale === 'en'
+  const applyHref = en ? '/apply' : '/tr/apply'
+
+  const guarantees = [
+    {
+      icon: (
+        <>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#22c55e" strokeWidth="1.5" opacity="0.38"/>
+          <path d="M9 12l2 2 4-4" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </>
+      ),
+      iconBg: 'bg-[#D1FAE5]',
+      title: en ? 'Outcome-Based Work' : 'Sonuç Odaklı Çalışma',
+      desc: en
+        ? 'If we don\u0027t produce measurable results, you don\u0027t pay. We tie our success to your success.'
+        : 'Ölçülebilir sonuçlar üretmezsek ödeme yapmazsınız. Başarımızı sizin başarınıza bağlıyoruz.',
+    },
+    {
+      icon: (
+        <>
+          <circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
+          <path d="M12 7v5l3 3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
+        </>
+      ),
+      iconBg: 'bg-accent/10',
+      title: en ? 'Direct Access' : 'Doğrudan Erişim',
+      desc: en
+        ? 'You work directly with the founder. No middlemen, no account managers. Fast decisions, real accountability.'
+        : 'Kurucuyla direkt çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
+    },
+    {
+      icon: (
+        <>
+          <rect x="2" y="2" width="20" height="20" rx="6" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/>
+          <path d="M8 12l3 3 5-5" stroke="#e8881a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </>
+      ),
+      iconBg: 'bg-[rgba(232,136,26,0.1)]',
+      title: en ? 'Month-to-Month' : 'Ay Be Ay Çalışma',
+      desc: en
+        ? 'No long-term contracts. If we don\u0027t deliver value each month, you walk. Simple as that.'
+        : 'Uzun vadeli sözleşme yok. Her ay değer üretmezsek gidersiniz. Bu kadar basit.',
+    },
+  ]
+
+  const techBadges = [
+    'Next.js', 'n8n', 'React', 'Supabase', 'Vercel', 'TypeScript',
+    'OpenAI', 'Claude AI', 'Retell', 'Tailwind CSS',
+  ]
+
   return (
     <section id="yorumlar" className="pt-16 sm:pt-28 pb-16 sm:pb-28 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-14">
           <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
-            // Neden Güvenilir?
+            {en ? '// Why Trust Us?' : '// Neden Güvenilir?'}
           </span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            Sözümüzü yazılı <span className="gradient-text">garanti ile veriyoruz</span>
+            {en ? (
+              <>We back our work with <span className="gradient-text">written guarantees</span></>
+            ) : (
+              <>Sözümüzü yazılı <span className="gradient-text">garanti ile veriyoruz</span></>
+            )}
           </h2>
           <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
-            Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.
+            {en
+              ? 'Every engagement comes with these three commitments. We take the risk so you can move forward with confidence.'
+              : 'Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.'}
           </p>
         </div>
 
@@ -60,7 +94,7 @@ export default function TestimonialsSection() {
         {/* Tech Badges */}
         <div className="text-center">
           <span className="text-ink/40 text-[0.78rem] font-semibold tracking-wide uppercase block mb-4">
-            Kullandığımız Teknolojiler
+            {en ? 'Technologies We Use' : 'Kullandığımız Teknolojiler'}
           </span>
           <div className="flex flex-wrap justify-center gap-2">
             {techBadges.map(badge => (
@@ -79,16 +113,18 @@ export default function TestimonialsSection() {
           flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.05rem] font-bold text-ink mb-1">
-              İlk adımı atın, ücretsiz web sitesi analizi alın
+              {en ? 'Take the first step' : 'İlk adımı atın'}
             </h3>
             <p className="text-ink/50 text-[0.9rem] max-w-[480px]">
-              Mevcut sitenizi veya projenizi profesyonelce değerlendirelim. Hiçbir taahhüt gerektirmez.
+              {en
+                ? 'Book a free discovery call. No commitments, no pressure. Just a clear picture of what we can automate for you.'
+                : 'Ücretsiz keşif görüşmesi alın. Taahhüt yok, baskı yok. Sizin için neleri otomatikleştirebileceğimizin net bir resmi.'}
             </p>
           </div>
-          <Link href="/iletisim"
+          <Link href={applyHref}
             className="shrink-0 bg-accent text-white px-7 py-3 rounded-full font-bold text-[0.9rem]
               no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 whitespace-nowrap">
-            Ücretsiz Analiz Al →
+            {en ? 'Get a Free Discovery Call →' : 'Ücretsiz Keşif Görüşmesi Al →'}
           </Link>
         </div>
       </div>
