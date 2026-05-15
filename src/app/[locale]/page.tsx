@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation'
 import HeroSection from '@/components/sections/HeroSection'
 import ProblemSection from '@/components/sections/ProblemSection'
 import SolutionSection from '@/components/sections/SolutionSection'
-import SolutionsGridSection from '@/components/sections/SolutionsGridSection'
 import ProcessSection from '@/components/sections/ProcessSection'
 import WhyUsSection from '@/components/sections/WhyUsSection'
 import FitSection from '@/components/sections/FitSection'
@@ -44,7 +43,6 @@ export default async function HomePage({ params }: Props) {
       <HeroSection dict={dict.hero as Record<string, string>} locale={locale} />
       <ProblemSection dict={dict.problem as Record<string, unknown>} />
       <SolutionSection dict={dict.solution as Record<string, unknown>} />
-      <SolutionsGridSection dict={dict.solutions as Record<string, unknown>} locale={locale} />
       <ProcessSection dict={dict.process as Record<string, unknown>} />
       <WhyUsSection dict={dict.whyUs as Record<string, unknown>} />
       <FitSection dict={dict.fit as Record<string, unknown>} />

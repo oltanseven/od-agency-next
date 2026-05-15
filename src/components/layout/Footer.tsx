@@ -87,17 +87,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Solutions */}
-          <div>
-            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.solutions')}</h4>
-            <ul className="flex flex-col gap-3">
-              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'WhatsApp AI Agent' : 'WhatsApp AI Asistan'}</a></li>
-              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Voice AI Receptionist' : 'Sesli AI Resepsiyonist'}</a></li>
-              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Review Management' : 'Yorum Yönetimi'}</a></li>
-              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Custom AI Workflows' : 'Özel AI İş Akışları'}</a></li>
-            </ul>
-          </div>
-
           {/* Company */}
           <div>
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.company')}</h4>

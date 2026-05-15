@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Oder Agency | AI Destekli Büyüme Ortağınız",
-    "description": "İşletmenizin operasyonlarını yöneten AI sistemleri kuruyoruz — siz büyümeye odaklanın. 7/24 çalışan WhatsApp asistanları, sesli resepsiyonistler ve otomasyon çözümleri.",
+    "description": "İşletmenizin operasyonlarını yöneten AI sistemleri kuruyoruz. 7/24 çalışan WhatsApp asistanları, sesli resepsiyonistler ve otomasyon çözümleri.",
     "keywords": "AI otomasyon, büyüme ortağı, WhatsApp AI asistan, sesli resepsiyonist, iş otomasyonu, AI çözümleri, yapay zeka"
   },
   "nav": {
@@ -15,7 +15,7 @@
   "hero": {
     "eyebrow": "AI Destekli Büyüme Ortağınız",
     "headline": "İşletmenizi yöneten AI sistemleri kuruyoruz",
-    "headlineAccent": "— siz büyümeye odaklanın.",
+    "headlineAccent": "siz büyümeye odaklanın.",
     "subhead": "WhatsApp satış asistanından sesli resepsiyoniste, 7/24 çalışan, %90 daha ucuz ve hiç izin almayan AI çalışanlar deploy ediyoruz.",
     "cta1": "Strateji Görüşmesi",
     "cta2": "Çözümlerimizi İncele",
@@ -29,15 +29,15 @@
     "items": [
       {
         "title": "Mesai dışı kaçan müşteriler",
-        "desc": "Müşteriler gece veya hafta sonu ulaşıyor — kimse cevap vermiyor. Daha hızlı yanıt veren rakiplere kaybediyorsunuz."
+        "desc": "Müşteriler gece veya hafta sonu ulaşıyor ama kimse cevap vermiyor. Onlar da hızlı yanıt veren rakiplere gidiyor."
       },
       {
         "title": "Tekrarlayan işler gününüzü yiyor",
-        "desc": "Ekibiniz takip, randevu ve veri girişiyle saatler harcıyor — yüksek değerli işlere vakit kalmıyor."
+        "desc": "Ekibiniz takip, randevu ve veri girişiyle saatler harcıyor. Asıl işlere vakit kalmıyor."
       },
       {
         "title": "Büyümek = daha fazla eleman",
-        "desc": "Her büyüme adımı daha fazla insan, daha fazla maliyet, daha fazla yönetim demek — marjlar eriyor."
+        "desc": "Her büyüme adımı daha fazla insan, daha fazla maliyet, daha fazla yönetim demek. Marjlar eriyor."
       },
       {
         "title": "Rapor üreten ama sonuç getirmeyen ajanslar",
@@ -47,7 +47,7 @@
   },
   "solution": {
     "title": "İşletmeniz için AI çalışanlar deploy ediyoruz",
-    "subtitle": "Dashboard değil. Rapor değil. İşi gerçekten yapan sistemler — 7/24, sizin dilinizde, maliyetin çok altında.",
+    "subtitle": "Dashboard degil, rapor degil. İşi gerçekten yapan sistemler. 7/24, sizin dilinizde, maliyetin çok altında.",
     "cols": [
       {
         "title": "Otomatikleştir",
@@ -88,7 +88,7 @@
       {
         "slug": "musteri-canlandirma",
         "title": "Müşteri Canlandırma",
-        "desc": "Uykudaki müşteri listenizi randevuya dönüştürün. Sonuç bazlı model — sadece gerçekleşen görüşmeler için ödeme yaparsınız.",
+        "desc": "Uykudaki müşteri listenizi randevuya dönüştürün. Sadece gerçekleşen görüşmeler için ödeme yaparsınız.",
         "tag": "Sonuç Bazlı"
       },
       {
@@ -100,7 +100,7 @@
       {
         "slug": "ozel-ai-workflow",
         "title": "Özel AI İş Akışları",
-        "desc": "n8n üzerine kurulu özel otomasyon hatları — mevcut araçlarınızı akıllı, kendi kendine çalışan iş akışlarına bağlar.",
+        "desc": "n8n üzerine kurulu özel otomasyon hatları. Mevcut araçlarınızı akıllı, kendi kendine çalışan iş akışlarına bağlar.",
         "tag": ""
       }
     ],
@@ -137,7 +137,7 @@
       },
       {
         "title": "Sonuç odaklı",
-        "desc": "Başarıyı alınan randevular, üretilen gelir ve kazanılan saatlerle ölçüyoruz — gösterimlerle değil."
+        "desc": "Başarıyı alınan randevular, üretilen gelir ve kazanılan saatlerle ölçüyoruz. Gösterimlerle değil."
       },
       {
         "title": "Ay be ay",
@@ -145,7 +145,7 @@
       },
       {
         "title": "Kurucu-mühendis",
-        "desc": "Sadece danışmanlık yapmıyoruz — sistemleri bizzat kuruyoruz, deploy ediyoruz ve bakımını yapıyoruz."
+        "desc": "Sadece danışmanlık yapmıyoruz. Sistemleri bizzat kuruyoruz, deploy ediyoruz ve bakımını yapıyoruz."
       }
     ]
   },
@@ -167,7 +167,7 @@
         "Kaliteden bağımsız en ucuz seçeneği arıyorsanız",
         "Tam kapsamlı pazarlama ajansına ihtiyacınız varsa (reklam, sosyal, içerik)",
         "AI eğitimi için operasyonel veri paylaşmak istemiyorsanız",
-        "Bir gecede mucize bekliyorsanız — gerçek sistemlerin kurulumu 2-4 hafta sürer"
+        "Bir gecede mucize bekliyorsanız, gerçek sistemlerin kurulumu 2-4 hafta sürer"
       ]
     }
   },
@@ -200,7 +200,7 @@
       },
       {
         "q": "Bu çalışanlarımın yerini mi alacak?",
-        "a": "AI çalışanlar tekrarlayan, yüksek hacimli görevleri üstlenir — insan ekibinizi ilişki kurma, karmaşık kararlar ve stratejik işlere odaklanmak için serbest bırakır. Bu, değiştirme değil güçlendirmedir."
+        "a": "AI çalışanlar tekrarlayan, yüksek hacimli görevleri üstlenir. İnsan ekibiniz ilişki kurma, karmaşık kararlar ve stratejik işlere odaklanır. Değiştirme değil, güçlendirme."
       }
     ]
   },
@@ -231,7 +231,7 @@
       "email": "E-posta adresiniz",
       "company": "Şirket adı",
       "solution": "Neyi otomatikleştirmek istiyorsunuz?",
-      "solutionOptions": ["WhatsApp AI Asistan", "Sesli AI Resepsiyonist", "Yorum Yönetimi", "Müşteri Canlandırma", "Fatura Otomasyonu", "Özel AI İş Akışları", "Emin değilim — yönlendirme istiyorum"],
+      "solutionOptions": ["Satış otomasyonu", "Müşteri destek otomasyonu", "Operasyon otomasyonu", "Veri ve raporlama", "Özel proje", "Emin değilim, yönlendirme istiyorum"],
       "employees": "Ekip büyüklüğü",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
       "timeline": "Ne zaman başlamak istersiniz?",
@@ -253,14 +253,14 @@
   "about": {
     "eyebrow": "Hakkımızda",
     "headline": "Operatörler tarafından, operatörler için kuruldu.",
-    "story": "Oder Agency, Antalya merkezli geliştirici ve otomasyon uzmanı Oltan Seven tarafından kuruldu. Yıllarca web uygulamaları ve AI araçları geliştirdikten sonra bir kalıp netleşti: işletmelerin daha fazla yazılıma değil — işi gerçekten yapan sistemlere ihtiyacı var.",
-    "story2": "Bu yüzden sadece AI çalışanlar deploy etmeye odaklanıyoruz — satış, destek ve operasyonları otonom olarak yürüten sistemler. Toz toplayan dashboard'lar değil. Kimsenin okumadığı raporlar değil. Ölçülebilir sonuçlar üreten çalışan sistemler.",
+    "story": "Oder Agency, Antalya merkezli geliştirici ve otomasyon uzmanı Oltan Seven tarafından kuruldu. Yıllarca web uygulamaları ve AI araçları geliştirdikten sonra bir şey netleşti: işletmelerin daha fazla yazılıma değil, işi gerçekten yapan sistemlere ihtiyacı var.",
+    "story2": "Bu yüzden sadece AI çalışanlar deploy etmeye odaklanıyoruz. Satış, destek ve operasyonları otonom olarak yürüten sistemler. Toz toplayan dashboard'lar değil. Ölçülebilir sonuçlar üreten, gerçekten çalışan sistemler.",
     "principles": {
       "title": "Nasıl Çalışıyoruz",
       "items": [
         { "title": "Doğrudan erişim", "desc": "Sisteminizi kuran kişiyle konuşursunuz. Katman yok, gecikme yok." },
         { "title": "Önce sonuç", "desc": "Efor için faturalamıyoruz. Sizin sonuçlarınız için optimize ediyoruz." },
-        { "title": "Radikal şeffaflık", "desc": "Her şeyi görürsünüz — maliyetler, performans, neyin çalışıp neyin çalışmadığı." },
+        { "title": "Radikal şeffaflık", "desc": "Her şeyi görürsünüz. Maliyetler, performans, neyin çalışıp neyin çalışmadığı." },
         { "title": "Sürekli iyileştirme", "desc": "AI sistemleri zamanla daha iyi olur. İzliyoruz, ayarlıyoruz ve genişletiyoruz." }
       ]
     },
@@ -272,7 +272,7 @@
   "approach": {
     "eyebrow": "Yaklaşımımız",
     "headline": "Denetle. Kur. Ölçekle.",
-    "subtitle": "Bir teklifle başlamıyoruz. Operasyonlarınızı anlayarak başlıyoruz — sonra zamanla bileşik getiri sağlayan sistemler kuruyoruz.",
+    "subtitle": "Bir teklifle başlamıyoruz. Operasyonlarınızı anlayarak başlıyoruz, sonra zamanla bileşik getiri sağlayan sistemler kuruyoruz.",
     "steps": [
       {
         "num": "01",
@@ -289,14 +289,14 @@
       {
         "num": "03",
         "title": "Ölçekle & Optimize Et",
-        "desc": "İlk sisteminiz canlıya geçip sonuç üretmeye başladığında genişliyoruz. Yeni iş akışları, yeni kanallar, sürekli optimizasyon — AI altyapınız işinizle birlikte büyür.",
+        "desc": "İlk sisteminiz canlıya geçip sonuç üretmeye başladığında genişliyoruz. Yeni iş akışları, yeni kanallar, sürekli optimizasyon. AI altyapınız işinizle birlikte büyür.",
         "details": ["Performans izleme", "Sürekli optimizasyon", "Yeni iş akışı kurulumu", "Çeyreklik değerlendirmeler"]
       }
     ],
     "antiAgency": {
       "title": "Bizi farklı kılan ne",
       "items": [
-        "Retainer satmıyoruz — sonuç satıyoruz. Sistem çalışmazsa ödeme yapmazsınız.",
+        "Retainer satmıyoruz, sonuç satıyoruz. Sistem çalışmazsa ödeme yapmazsınız.",
         "Ajans masrafı yok. Müşteri temsilcisi yok. Sistemlerinizi kuran kişilerle doğrudan çalışırsınız.",
         "Kendi yemeğimizi kendimiz yiyoruz. Önerdiğimiz her aracı kendimiz kullanıyoruz."
       ]

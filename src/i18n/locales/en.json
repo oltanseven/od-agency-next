@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Oder Agency | AI-Powered Growth Partner",
-    "description": "We build AI systems that run your business operations — so you can focus on growth. WhatsApp agents, voice receptionists, and automation that works 24/7.",
+    "description": "We build AI systems that run your business operations. WhatsApp agents, voice receptionists, and automation that works 24/7.",
     "keywords": "AI automation, growth partner, WhatsApp AI agent, voice receptionist, business automation, AI solutions"
   },
   "nav": {
@@ -15,7 +15,7 @@
   "hero": {
     "eyebrow": "AI-Powered Growth Partner",
     "headline": "We build AI systems that run your business operations",
-    "headlineAccent": "— so you can focus on growth.",
+    "headlineAccent": "so you can focus on growth.",
     "subhead": "From WhatsApp sales agents to voice receptionists, we deploy AI employees that work 24/7, cost 90% less, and never call in sick.",
     "cta1": "Book a Strategy Call",
     "cta2": "See Our Solutions",
@@ -29,7 +29,7 @@
     "items": [
       {
         "title": "Missed leads after hours",
-        "desc": "Customers reach out at night or weekends — no one answers. You lose them to competitors who respond faster."
+        "desc": "Customers reach out at night or weekends and no one answers. You lose them to competitors who respond faster."
       },
       {
         "title": "Repetitive tasks eating your day",
@@ -37,7 +37,7 @@
       },
       {
         "title": "Scaling means hiring headcount",
-        "desc": "Every growth step requires more people, more overhead, more management — margins shrink."
+        "desc": "Every growth step requires more people, more overhead, more management. Margins shrink."
       },
       {
         "title": "Agencies that deliver reports, not results",
@@ -47,7 +47,7 @@
   },
   "solution": {
     "title": "We deploy AI employees for your business",
-    "subtitle": "Not dashboards. Not reports. Actual systems that do the work — 24/7, in your language, at a fraction of the cost.",
+    "subtitle": "Not dashboards. Not reports. Actual systems that do the work.24/7, in your language, at a fraction of the cost.",
     "cols": [
       {
         "title": "Automate",
@@ -70,13 +70,13 @@
       {
         "slug": "whatsapp-ai-agent",
         "title": "WhatsApp AI Sales Agent",
-        "desc": "24/7 AI agent that handles inbound sales, qualifies leads, and books appointments on WhatsApp — your customers' preferred channel.",
+        "desc": "24/7 AI agent that handles inbound sales, qualifies leads, and books appointments on WhatsApp. Your customers' preferred channel.",
         "tag": "Most Popular"
       },
       {
         "slug": "voice-ai-receptionist",
         "title": "Voice AI Receptionist",
-        "desc": "Never miss a call again. AI receptionist answers, qualifies, and routes calls in multiple languages — day or night.",
+        "desc": "Never miss a call again. AI receptionist answers, qualifies, and routes calls in multiple languages. Day or night.",
         "tag": "High Impact"
       },
       {
@@ -88,7 +88,7 @@
       {
         "slug": "database-reactivation",
         "title": "Customer Reactivation",
-        "desc": "Turn your dormant customer list into booked appointments. Pay-per-result model — you only pay for meetings that happen.",
+        "desc": "Turn your dormant customer list into booked appointments. You only pay for meetings that actually happen.",
         "tag": "Pay Per Result"
       },
       {
@@ -100,7 +100,7 @@
       {
         "slug": "custom-ai-workflows",
         "title": "Custom AI Workflows",
-        "desc": "Bespoke automation pipelines built on n8n — connecting your existing tools into intelligent, self-running workflows.",
+        "desc": "Custom automation pipelines built on n8n. We connect your existing tools into intelligent, self-running workflows.",
         "tag": ""
       }
     ],
@@ -137,7 +137,7 @@
       },
       {
         "title": "Outcome-based",
-        "desc": "We measure success in appointments booked, revenue generated, and hours saved — not impressions."
+        "desc": "We measure success in appointments booked, revenue generated, and hours saved. Not impressions."
       },
       {
         "title": "Month-to-month",
@@ -145,7 +145,7 @@
       },
       {
         "title": "Builder-first",
-        "desc": "We don't just consult — we build, deploy, and maintain the actual systems. In-house. No outsourcing."
+        "desc": "We don't just consult. We build, deploy, and maintain the actual systems. In-house, no outsourcing."
       }
     ]
   },
@@ -167,7 +167,7 @@
         "Want the cheapest possible option regardless of quality",
         "Need a full marketing agency (ads, social, content)",
         "Aren't willing to share operational data for AI training",
-        "Expect overnight magic — real systems take 2-4 weeks to deploy"
+        "Expect overnight magic, real systems take 2-4 weeks to deploy"
       ]
     }
   },
@@ -200,7 +200,7 @@
       },
       {
         "q": "Will this replace my employees?",
-        "a": "AI employees handle repetitive, high-volume tasks — freeing your human team to focus on relationship building, complex decisions, and strategic work. It's augmentation, not replacement."
+        "a": "AI employees handle repetitive, high-volume tasks. Your human team focuses on relationship building, complex decisions, and strategic work. It's augmentation, not replacement."
       }
     ]
   },
@@ -231,7 +231,7 @@
       "email": "Email address",
       "company": "Company name",
       "solution": "What would you like to automate?",
-      "solutionOptions": ["WhatsApp AI Agent", "Voice AI Receptionist", "Review Management", "Customer Reactivation", "Invoice Automation", "Custom AI Workflows", "Not sure yet — need guidance"],
+      "solutionOptions": ["Sales automation", "Customer support automation", "Operations automation", "Data & reporting", "Custom project", "Not sure yet, need guidance"],
       "employees": "Team size",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
       "timeline": "When would you like to start?",
@@ -253,14 +253,14 @@
   "about": {
     "eyebrow": "About Oder Agency",
     "headline": "Built by operators, for operators.",
-    "story": "Oder Agency was founded by Oltan Seven — a developer and automation specialist based in Antalya, Turkey. After years of building web applications and AI tools, one pattern became clear: businesses don't need more software — they need systems that actually do the work.",
-    "story2": "That's why we focus exclusively on deploying AI employees — systems that handle sales, support, and operations autonomously. No dashboards that gather dust. No reports that nobody reads. Just working systems that deliver measurable results.",
+    "story": "Oder Agency was founded by Oltan Seven, a developer and automation specialist based in Antalya, Turkey. After years of building web applications and AI tools, one thing became clear: businesses don't need more software. They need systems that actually do the work.",
+    "story2": "That's why we focus on deploying AI employees. Systems that handle sales, support, and operations on their own. No dashboards gathering dust. Just working systems that deliver measurable results.",
     "principles": {
       "title": "How We Work",
       "items": [
         { "title": "Direct access", "desc": "You talk to the person building your system. No layers, no delays." },
         { "title": "Outcomes first", "desc": "We don't bill for effort. We optimize for your results." },
-        { "title": "Radical transparency", "desc": "You see everything — costs, performance, what's working and what's not." },
+        { "title": "Radical transparency", "desc": "You see everything. Costs, performance, what's working and what's not." },
         { "title": "Continuous improvement", "desc": "AI systems get better over time. We monitor, tune, and expand." }
       ]
     },
@@ -272,12 +272,12 @@
   "approach": {
     "eyebrow": "Our Approach",
     "headline": "Audit. Build. Scale.",
-    "subtitle": "We don't start with a proposal. We start by understanding your operations — then we build systems that compound over time.",
+    "subtitle": "We don't start with a proposal. We start by understanding your operations, then we build systems that compound over time.",
     "steps": [
       {
         "num": "01",
         "title": "Operations Audit",
-        "desc": "We spend 3-5 days mapping your current workflows, identifying bottlenecks, and ranking automation opportunities by ROI. You get a clear implementation roadmap — even if you don't work with us.",
+        "desc": "We spend 3-5 days mapping your current workflows, identifying bottlenecks, and ranking automation opportunities by ROI. You get a clear implementation roadmap even if you don't work with us.",
         "details": ["Process mapping", "Bottleneck identification", "ROI ranking", "Implementation roadmap"]
       },
       {
@@ -289,14 +289,14 @@
       {
         "num": "03",
         "title": "Scale & Optimize",
-        "desc": "Once your first system is live and delivering results, we expand. New workflows, new channels, continuous optimization — your AI infrastructure grows with your business.",
+        "desc": "Once your first system is live and delivering results, we expand. New workflows, new channels, continuous optimization. Your AI infrastructure grows with your business.",
         "details": ["Performance monitoring", "Continuous optimization", "New workflow deployment", "Quarterly reviews"]
       }
     ],
     "antiAgency": {
       "title": "What makes us different",
       "items": [
-        "We don't sell retainers — we sell outcomes. If the system doesn't work, you don't pay.",
+        "We don't sell retainers, we sell outcomes. If the system doesn't work, you don't pay.",
         "No agency overhead. No account managers. You work directly with the people building your systems.",
         "We eat our own cooking. Every tool we recommend, we use ourselves."
       ]

@@ -16,7 +16,6 @@ export default function Navbar() {
   const prefix = locale === 'en' ? '' : '/tr'
 
   const links = [
-    { label: t('nav.solutions'), href: `${prefix}/#solutions` },
     { label: t('nav.approach'), href: `${prefix}/approach` },
     { label: t('nav.about'), href: `${prefix}/about` },
     { label: t('nav.blog'), href: `${prefix}/blog` },
