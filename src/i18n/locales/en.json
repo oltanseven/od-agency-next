@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "title": "Oder Agency | AI-Powered Growth Partner",
+    "description": "We build AI systems that run your business operations — so you can focus on growth. WhatsApp agents, voice receptionists, and automation that works 24/7.",
+    "keywords": "AI automation, growth partner, WhatsApp AI agent, voice receptionist, business automation, AI solutions"
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "approach": "Approach",
+    "about": "About",
+    "blog": "Blog",
+    "cta": "Get a Quote",
+    "langSwitch": "TR"
+  },
+  "hero": {
+    "eyebrow": "AI-Powered Growth Partner",
+    "headline": "We build AI systems that run your business operations",
+    "headlineAccent": "— so you can focus on growth.",
+    "subhead": "From WhatsApp sales agents to voice receptionists, we deploy AI employees that work 24/7, cost 90% less, and never call in sick.",
+    "cta1": "Book a Strategy Call",
+    "cta2": "See Our Solutions",
+    "trust1": "businesses automated",
+    "trust2": "avg cost reduction",
+    "trust3": "uptime guarantee"
+  },
+  "problem": {
+    "title": "Sound familiar?",
+    "subtitle": "Most businesses we work with face these exact challenges before they find us.",
+    "items": [
+      {
+        "title": "Missed leads after hours",
+        "desc": "Customers reach out at night or weekends — no one answers. You lose them to competitors who respond faster."
+      },
+      {
+        "title": "Repetitive tasks eating your day",
+        "desc": "Your team spends hours on follow-ups, scheduling, and data entry instead of high-value work."
+      },
+      {
+        "title": "Scaling means hiring headcount",
+        "desc": "Every growth step requires more people, more overhead, more management — margins shrink."
+      },
+      {
+        "title": "Agencies that deliver reports, not results",
+        "desc": "You've paid for marketing retainers that produce dashboards but no measurable revenue impact."
+      }
+    ]
+  },
+  "solution": {
+    "title": "We deploy AI employees for your business",
+    "subtitle": "Not dashboards. Not reports. Actual systems that do the work — 24/7, in your language, at a fraction of the cost.",
+    "cols": [
+      {
+        "title": "Automate",
+        "desc": "Replace repetitive manual work with AI agents that handle sales, support, and operations autonomously."
+      },
+      {
+        "title": "Scale",
+        "desc": "Grow your capacity without growing your headcount. AI employees don't need training, breaks, or benefits."
+      },
+      {
+        "title": "Measure",
+        "desc": "Every AI system comes with real-time dashboards showing appointments booked, leads captured, and revenue generated."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": "Purpose-built AI systems for the operations that matter most.",
+    "items": [
+      {
+        "slug": "whatsapp-ai-agent",
+        "title": "WhatsApp AI Sales Agent",
+        "desc": "24/7 AI agent that handles inbound sales, qualifies leads, and books appointments on WhatsApp — your customers' preferred channel.",
+        "tag": "Most Popular"
+      },
+      {
+        "slug": "voice-ai-receptionist",
+        "title": "Voice AI Receptionist",
+        "desc": "Never miss a call again. AI receptionist answers, qualifies, and routes calls in multiple languages — day or night.",
+        "tag": "High Impact"
+      },
+      {
+        "slug": "review-reputation",
+        "title": "Review & Reputation Management",
+        "desc": "Automated review collection, AI-crafted responses, and reputation monitoring across Google, Trustpilot, and marketplace platforms.",
+        "tag": ""
+      },
+      {
+        "slug": "database-reactivation",
+        "title": "Customer Reactivation",
+        "desc": "Turn your dormant customer list into booked appointments. Pay-per-result model — you only pay for meetings that happen.",
+        "tag": "Pay Per Result"
+      },
+      {
+        "slug": "invoice-automation",
+        "title": "Invoice & AP Automation",
+        "desc": "OCR + AI extraction for invoices, automatic classification, GL-coding, and push to your ERP or accountant.",
+        "tag": ""
+      },
+      {
+        "slug": "custom-ai-workflows",
+        "title": "Custom AI Workflows",
+        "desc": "Bespoke automation pipelines built on n8n — connecting your existing tools into intelligent, self-running workflows.",
+        "tag": ""
+      }
+    ],
+    "cta": "Get a Custom Quote"
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "Three steps from first call to live AI system.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Audit",
+        "desc": "We map your operations, identify the highest-impact automation opportunities, and build a clear implementation plan."
+      },
+      {
+        "num": "02",
+        "title": "Build",
+        "desc": "We deploy your AI systems, integrate with your existing tools, and train the models on your business context."
+      },
+      {
+        "num": "03",
+        "title": "Scale",
+        "desc": "We monitor performance, optimize continuously, and expand to new workflows as your business grows."
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Why Oder?",
+    "subtitle": "We're not another agency. We're operators who build and run AI systems.",
+    "items": [
+      {
+        "title": "No account managers",
+        "desc": "You work directly with the founder. No junior handoffs, no communication layers."
+      },
+      {
+        "title": "Outcome-based",
+        "desc": "We measure success in appointments booked, revenue generated, and hours saved — not impressions."
+      },
+      {
+        "title": "Month-to-month",
+        "desc": "No long-term contracts. No lock-in. If we don't deliver, you walk. Simple."
+      },
+      {
+        "title": "Builder-first",
+        "desc": "We don't just consult — we build, deploy, and maintain the actual systems. In-house. No outsourcing."
+      }
+    ]
+  },
+  "fit": {
+    "title": "Is This For You?",
+    "good": {
+      "title": "Great fit if you...",
+      "items": [
+        "Run a service business with 5-200 employees",
+        "Lose leads because your team can't respond fast enough",
+        "Want to scale without proportionally growing headcount",
+        "Value measurable outcomes over marketing fluff",
+        "Are ready to invest in systems, not one-off projects"
+      ]
+    },
+    "bad": {
+      "title": "Not the right fit if you...",
+      "items": [
+        "Want the cheapest possible option regardless of quality",
+        "Need a full marketing agency (ads, social, content)",
+        "Aren't willing to share operational data for AI training",
+        "Expect overnight magic — real systems take 2-4 weeks to deploy"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How long does it take to deploy an AI system?",
+        "a": "Most systems go live within 2-4 weeks. Simple WhatsApp agents can be live in 5-7 days. Complex multi-system deployments take 4-6 weeks."
+      },
+      {
+        "q": "What happens if the AI makes a mistake?",
+        "a": "Every system has human escalation built in. When the AI is uncertain, it routes to your team. We also monitor conversations and continuously improve accuracy."
+      },
+      {
+        "q": "Do I need technical knowledge?",
+        "a": "No. We handle all technical setup, integration, and maintenance. You get a simple dashboard to monitor performance and results."
+      },
+      {
+        "q": "What languages does the AI support?",
+        "a": "Our systems support Turkish, English, Arabic, Russian, and German out of the box. Additional languages can be added on request."
+      },
+      {
+        "q": "Can I cancel anytime?",
+        "a": "Yes. All our engagements are month-to-month. No long-term contracts, no cancellation fees. If we're not delivering value, you shouldn't be paying."
+      },
+      {
+        "q": "How is pricing structured?",
+        "a": "Each solution is priced based on scope and complexity. We offer setup fees plus monthly retainers, and for some services, pay-per-result models. Book a call for a custom quote."
+      },
+      {
+        "q": "Will this replace my employees?",
+        "a": "AI employees handle repetitive, high-volume tasks — freeing your human team to focus on relationship building, complex decisions, and strategic work. It's augmentation, not replacement."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to automate your growth?",
+    "subtitle": "Book a free 20-minute strategy call. No commitment. Walk away with a clear automation plan for your business.",
+    "button": "Book a Strategy Call",
+    "note": "Free consultation. No spam. Reply within 24h."
+  },
+  "footer": {
+    "company": "Company",
+    "solutions": "Solutions",
+    "resources": "Resources",
+    "about": "About",
+    "approach": "Approach",
+    "blog": "Blog",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved.",
+    "location": "Antalya, Turkey"
+  },
+  "apply": {
+    "title": "Get a Custom Quote",
+    "subtitle": "Tell us about your business and what you're looking to automate. We'll get back to you within 24 hours with a tailored proposal.",
+    "fields": {
+      "name": "Your name",
+      "email": "Email address",
+      "company": "Company name",
+      "solution": "What would you like to automate?",
+      "solutionOptions": ["WhatsApp AI Agent", "Voice AI Receptionist", "Review Management", "Customer Reactivation", "Invoice Automation", "Custom AI Workflows", "Not sure yet — need guidance"],
+      "employees": "Team size",
+      "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
+      "timeline": "When would you like to start?",
+      "timelineOptions": ["ASAP", "Within 1 month", "Within 3 months", "Just exploring"],
+      "message": "Anything else we should know?",
+      "submit": "Submit Application",
+      "sending": "Sending..."
+    },
+    "success": {
+      "title": "Application received!",
+      "message": "We'll review your details and get back to you within 24 hours. Check your inbox."
+    },
+    "trust": [
+      "Free consultation",
+      "No commitment",
+      "Reply within 24h"
+    ]
+  },
+  "about": {
+    "eyebrow": "About Oder Agency",
+    "headline": "Built by operators, for operators.",
+    "story": "Oder Agency was founded by Oltan Seven — a developer and automation specialist based in Antalya, Turkey. After years of building web applications and AI tools, one pattern became clear: businesses don't need more software — they need systems that actually do the work.",
+    "story2": "That's why we focus exclusively on deploying AI employees — systems that handle sales, support, and operations autonomously. No dashboards that gather dust. No reports that nobody reads. Just working systems that deliver measurable results.",
+    "principles": {
+      "title": "How We Work",
+      "items": [
+        { "title": "Direct access", "desc": "You talk to the person building your system. No layers, no delays." },
+        { "title": "Outcomes first", "desc": "We don't bill for effort. We optimize for your results." },
+        { "title": "Radical transparency", "desc": "You see everything — costs, performance, what's working and what's not." },
+        { "title": "Continuous improvement", "desc": "AI systems get better over time. We monitor, tune, and expand." }
+      ]
+    },
+    "tech": {
+      "title": "Our Stack",
+      "items": ["Next.js", "n8n", "WhatsApp Business API", "OpenAI GPT-4", "Claude AI", "Retell Voice AI", "Supabase", "Vercel"]
+    }
+  },
+  "approach": {
+    "eyebrow": "Our Approach",
+    "headline": "Audit. Build. Scale.",
+    "subtitle": "We don't start with a proposal. We start by understanding your operations — then we build systems that compound over time.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Operations Audit",
+        "desc": "We spend 3-5 days mapping your current workflows, identifying bottlenecks, and ranking automation opportunities by ROI. You get a clear implementation roadmap — even if you don't work with us.",
+        "details": ["Process mapping", "Bottleneck identification", "ROI ranking", "Implementation roadmap"]
+      },
+      {
+        "num": "02",
+        "title": "System Build",
+        "desc": "We deploy your highest-impact AI systems first. Each system is integrated with your existing tools, trained on your business context, and tested before going live.",
+        "details": ["AI model training", "Tool integration", "Testing & QA", "Team training"]
+      },
+      {
+        "num": "03",
+        "title": "Scale & Optimize",
+        "desc": "Once your first system is live and delivering results, we expand. New workflows, new channels, continuous optimization — your AI infrastructure grows with your business.",
+        "details": ["Performance monitoring", "Continuous optimization", "New workflow deployment", "Quarterly reviews"]
+      }
+    ],
+    "antiAgency": {
+      "title": "What makes us different",
+      "items": [
+        "We don't sell retainers — we sell outcomes. If the system doesn't work, you don't pay.",
+        "No agency overhead. No account managers. You work directly with the people building your systems.",
+        "We eat our own cooking. Every tool we recommend, we use ourselves."
+      ]
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { useI18n, useT } from '@/i18n/context'
 
 const WaIcon = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
@@ -33,11 +34,16 @@ const LiIcon = () => (
 export default function Footer() {
   const pathname = usePathname()
   const router = useRouter()
+  const { locale } = useI18n()
+  const t = useT()
+
+  const prefix = locale === 'en' ? '' : '/tr'
 
   function handleHash(e: React.MouseEvent, href: string) {
     e.preventDefault()
     const hash = href.split('#')[1]
-    if (pathname === '/') {
+    const basePath = locale === 'en' ? '/' : '/tr'
+    if (pathname === basePath || pathname === basePath + '/') {
       const el = document.getElementById(hash)
       if (el) el.scrollIntoView({ behavior: 'smooth' })
     } else {
@@ -49,7 +55,6 @@ export default function Footer() {
     <footer className="bg-cream border-t border-black/[0.09] pt-14 sm:pt-20 pb-10">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
-        {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr] gap-8 sm:gap-12 mb-12">
 
           {/* Brand */}
@@ -58,7 +63,9 @@ export default function Footer() {
               Oder<span className="text-accent">.</span>
             </div>
             <p className="text-ink/50 text-[0.87rem] leading-[1.8] mb-6 max-w-[280px]">
-              İşletmenizi dijitalde en güçlü şekilde konumlandırmak için buradayız. Modern, hızlı ve dönüşüm odaklı.
+              {locale === 'en'
+                ? 'AI-powered growth partner. We build systems that run your business operations.'
+                : 'AI destekli büyüme ortağınız. İşletmenizi yöneten sistemler kuruyoruz.'}
             </p>
             <div className="flex gap-2">
               {[
@@ -80,73 +87,44 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Hizmetler */}
+          {/* Solutions */}
           <div>
-            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">Hizmetler</h4>
+            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.solutions')}</h4>
             <ul className="flex flex-col gap-3">
-              {[
-                ['Web Tasarımı', '/#hizmetler'],
-                ['E-Ticaret',    '/e-ticaret'],
-                ['AI Otomasyon', '/ai-otomasyon'],
-                ['Marka Kimliği','/marka-kimligi'],
-                ['Landing Page', '/landing-page'],
-              ].map(([label, href]) => (
-                <li key={label}>
-                  {href.startsWith('/#') ? (
-                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
-                      {label}
-                    </a>
-                  ) : (
-                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                      {label}
-                    </Link>
-                  )}
-                </li>
-              ))}
+              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'WhatsApp AI Agent' : 'WhatsApp AI Asistan'}</a></li>
+              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Voice AI Receptionist' : 'Sesli AI Resepsiyonist'}</a></li>
+              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Review Management' : 'Yorum Yönetimi'}</a></li>
+              <li><a href={`${prefix}/#solutions`} onClick={(e) => handleHash(e, `${prefix}/#solutions`)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent cursor-pointer">{locale === 'en' ? 'Custom AI Workflows' : 'Özel AI İş Akışları'}</a></li>
             </ul>
           </div>
 
-          {/* Şirket */}
+          {/* Company */}
           <div>
-            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">Şirket</h4>
+            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.company')}</h4>
             <ul className="flex flex-col gap-3">
-              {[
-                ['Hakkımızda', '/hakkimizda'],
-                ['Paketler',   '/paketler'],
-                ['Blog',       '/blog'],
-                ['İletişim',   '/iletisim'],
-              ].map(([label, href]) => (
-                <li key={label}>
-                  {href.startsWith('/#') ? (
-                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
-                      {label}
-                    </a>
-                  ) : (
-                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                      {label}
-                    </Link>
-                  )}
-                </li>
-              ))}
+              <li><Link href={`${prefix}/about`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.about')}</Link></li>
+              <li><Link href={`${prefix}/approach`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.approach')}</Link></li>
+              <li><Link href={`${prefix}/blog`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.blog')}</Link></li>
+              <li><Link href={`${prefix}/apply`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.contact')}</Link></li>
             </ul>
           </div>
 
-          {/* İletişim */}
+          {/* Contact */}
           <div>
-            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">İletişim</h4>
+            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.contact')}</h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <a href="mailto:merhaba@oder.agency" className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
-                  merhaba@oder.agency
+                <a href="mailto:hello@oder.agency" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">
+                  hello@oder.agency
                 </a>
               </li>
               <li>
-                <a href="tel:+905324652031" className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                <a href="tel:+905324652031" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">
                   +90 532 465 20 31
                 </a>
               </li>
               <li>
-                <span className="text-ink2 text-[0.88rem]">Antalya, Türkiye</span>
+                <span className="text-ink2 text-[0.88rem]">{t('footer.location')}</span>
               </li>
             </ul>
           </div>
@@ -154,11 +132,11 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-black/[0.09] pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-ink/50 text-[0.82rem]">© 2026 Oder Agency. Tüm hakları saklıdır.</p>
+          <p className="text-ink/50 text-[0.82rem]">&copy; 2026 Oder Agency. {t('footer.rights')}</p>
           <p className="text-[0.82rem]">
-            <Link href="/gizlilik" className="text-ink/50 no-underline hover:text-accent transition-colors">Gizlilik Politikası</Link>
-            <span className="text-ink/30 mx-2">·</span>
-            <Link href="/kullanim-kosullari" className="text-ink/50 no-underline hover:text-accent transition-colors">Kullanım Koşulları</Link>
+            <Link href={`${prefix}/privacy`} className="text-ink/50 no-underline hover:text-accent transition-colors">{t('footer.privacy')}</Link>
+            <span className="text-ink/30 mx-2">&middot;</span>
+            <Link href={`${prefix}/terms`} className="text-ink/50 no-underline hover:text-accent transition-colors">{t('footer.terms')}</Link>
           </p>
         </div>
 

@@ -2,9 +2,6 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import SectionIndicator from '@/components/SectionIndicator'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -14,22 +11,22 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: { default: 'Oder Agency | Web Tasarım & AI Otomasyon', template: '%s | Oder Agency' },
-  description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
-  keywords: ['web tasarım', 'web sitesi yaptır', 'dijital ajans', 'AI otomasyon', 'e-ticaret', 'web tasarım Antalya', 'kurumsal web sitesi'],
+  title: { default: 'Oder Agency | AI-Powered Growth Partner', template: '%s | Oder Agency' },
+  description: 'We build AI systems that run your business operations — so you can focus on growth. WhatsApp agents, voice receptionists, and automation that works 24/7.',
+  keywords: ['AI automation', 'growth partner', 'WhatsApp AI agent', 'voice receptionist', 'business automation', 'AI solutions'],
   openGraph: {
     type: 'website',
-    locale: 'tr_TR',
+    locale: 'en_US',
     siteName: 'Oder Agency',
     url: 'https://oder.agency',
-    title: 'Oder Agency | Web Tasarım & AI Otomasyon',
-    description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Oder Agency — Web siteniz satış yapsın, siz büyüyün' }],
+    title: 'Oder Agency | AI-Powered Growth Partner',
+    description: 'We build AI systems that run your business operations — so you can focus on growth.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Oder Agency — AI-Powered Growth Partner' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Oder Agency | Web Tasarım & AI Otomasyon',
-    description: 'İşletmenize özel yüksek performanslı web siteleri ve AI otomasyon çözümleri. Antalya merkezli, Türkiye geneli hizmet.',
+    title: 'Oder Agency | AI-Powered Growth Partner',
+    description: 'We build AI systems that run your business operations — so you can focus on growth.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -49,7 +46,7 @@ const organizationSchema = {
   '@id': 'https://oder.agency/#organization',
   name: 'Oder Agency',
   legalName: 'Oder Agency',
-  description: 'Antalya merkezli web tasarım, e-ticaret ve AI otomasyon ajansı. Türkiye geneli profesyonel dijital çözümler.',
+  description: 'AI-powered growth partner. We build AI systems that run business operations — WhatsApp agents, voice receptionists, and automation that works 24/7.',
   url: 'https://oder.agency',
   logo: 'https://oder.agency/og-image.png',
   telephone: '+905324652031',
@@ -58,8 +55,8 @@ const organizationSchema = {
   founder: {
     '@type': 'Person',
     name: 'Oltan Seven',
-    jobTitle: 'Kurucu & Geliştirici',
-    url: 'https://oder.agency/hakkimizda',
+    jobTitle: 'Founder & AI Automation Specialist',
+    url: 'https://oder.agency/about',
   },
   address: {
     '@type': 'PostalAddress',
@@ -75,21 +72,23 @@ const organizationSchema = {
   },
   areaServed: [
     { '@type': 'City', name: 'Antalya' },
-    { '@type': 'City', name: 'İstanbul' },
-    { '@type': 'City', name: 'Ankara' },
     { '@type': 'Country', name: 'Türkiye' },
+    { '@type': 'Country', name: 'United States' },
+    { '@type': 'Country', name: 'United Kingdom' },
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Web Tasarım & Dijital Hizmetler',
+    name: 'AI Automation Solutions',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kurumsal Web Tasarım' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-Ticaret Sitesi' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Otomasyon' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landing Page Tasarımı' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'WhatsApp AI Sales Agent' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Voice AI Receptionist' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Review & Reputation Management' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Customer Reactivation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Invoice & AP Automation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom AI Workflows' } },
     ],
   },
-  knowsAbout: ['Web Tasarım', 'E-Ticaret', 'AI Otomasyon', 'SEO', 'Dijital Pazarlama'],
+  knowsAbout: ['AI Automation', 'WhatsApp Business API', 'Voice AI', 'n8n', 'Business Process Automation', 'Machine Learning'],
   sameAs: [
     'https://www.instagram.com/oder.agency',
     'https://www.linkedin.com/company/oderagency',
@@ -98,7 +97,7 @@ const organizationSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr" className={montserrat.variable}>
+    <html lang="en" className={montserrat.variable}>
       <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-HWJK99YCQK" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
@@ -122,10 +121,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <SectionIndicator />
+        {children}
       </body>
     </html>
   )

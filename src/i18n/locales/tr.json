@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "title": "Oder Agency | AI Destekli Büyüme Ortağınız",
+    "description": "İşletmenizin operasyonlarını yöneten AI sistemleri kuruyoruz — siz büyümeye odaklanın. 7/24 çalışan WhatsApp asistanları, sesli resepsiyonistler ve otomasyon çözümleri.",
+    "keywords": "AI otomasyon, büyüme ortağı, WhatsApp AI asistan, sesli resepsiyonist, iş otomasyonu, AI çözümleri, yapay zeka"
+  },
+  "nav": {
+    "solutions": "Çözümler",
+    "approach": "Yaklaşım",
+    "about": "Hakkımızda",
+    "blog": "Blog",
+    "cta": "Teklif Al",
+    "langSwitch": "EN"
+  },
+  "hero": {
+    "eyebrow": "AI Destekli Büyüme Ortağınız",
+    "headline": "İşletmenizi yöneten AI sistemleri kuruyoruz",
+    "headlineAccent": "— siz büyümeye odaklanın.",
+    "subhead": "WhatsApp satış asistanından sesli resepsiyoniste, 7/24 çalışan, %90 daha ucuz ve hiç izin almayan AI çalışanlar deploy ediyoruz.",
+    "cta1": "Strateji Görüşmesi",
+    "cta2": "Çözümlerimizi İncele",
+    "trust1": "otomasyon kurulumu",
+    "trust2": "ortalama maliyet düşüşü",
+    "trust3": "çalışma süresi garantisi"
+  },
+  "problem": {
+    "title": "Tanıdık geldi mi?",
+    "subtitle": "Birlikte çalıştığımız işletmelerin çoğu bizi bulmadan önce tam olarak bu sorunlarla karşılaşıyordu.",
+    "items": [
+      {
+        "title": "Mesai dışı kaçan müşteriler",
+        "desc": "Müşteriler gece veya hafta sonu ulaşıyor — kimse cevap vermiyor. Daha hızlı yanıt veren rakiplere kaybediyorsunuz."
+      },
+      {
+        "title": "Tekrarlayan işler gününüzü yiyor",
+        "desc": "Ekibiniz takip, randevu ve veri girişiyle saatler harcıyor — yüksek değerli işlere vakit kalmıyor."
+      },
+      {
+        "title": "Büyümek = daha fazla eleman",
+        "desc": "Her büyüme adımı daha fazla insan, daha fazla maliyet, daha fazla yönetim demek — marjlar eriyor."
+      },
+      {
+        "title": "Rapor üreten ama sonuç getirmeyen ajanslar",
+        "desc": "Dashboard üreten ama ölçülebilir gelir etkisi yaratmayan pazarlama retainer'larına ödeme yaptınız."
+      }
+    ]
+  },
+  "solution": {
+    "title": "İşletmeniz için AI çalışanlar deploy ediyoruz",
+    "subtitle": "Dashboard değil. Rapor değil. İşi gerçekten yapan sistemler — 7/24, sizin dilinizde, maliyetin çok altında.",
+    "cols": [
+      {
+        "title": "Otomatikleştir",
+        "desc": "Tekrarlayan manuel işleri, satış, destek ve operasyonları otonom şekilde yürüten AI ajanlarla değiştirin."
+      },
+      {
+        "title": "Ölçekle",
+        "desc": "Ekip sayısını artırmadan kapasitenizi büyütün. AI çalışanların eğitime, molaya veya yan haklara ihtiyacı yok."
+      },
+      {
+        "title": "Ölç",
+        "desc": "Her AI sistemi, alınan randevuları, yakalanan lead'leri ve üretilen geliri gösteren gerçek zamanlı panellerle gelir."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Çözümlerimiz",
+    "subtitle": "En önemli operasyonlarınız için özel olarak tasarlanmış AI sistemleri.",
+    "items": [
+      {
+        "slug": "whatsapp-ai-asistan",
+        "title": "WhatsApp AI Satış Asistanı",
+        "desc": "Müşterilerinizin en çok kullandığı kanalda 7/24 gelen satışları karşılayan, lead'leri nitelendiren ve randevu alan AI asistan.",
+        "tag": "En Popüler"
+      },
+      {
+        "slug": "sesli-ai-resepsiyonist",
+        "title": "Sesli AI Resepsiyonist",
+        "desc": "Hiçbir aramayı kaçırmayın. AI resepsiyonist gece gündüz aramaları karşılar, nitelendirir ve birden fazla dilde yönlendirir.",
+        "tag": "Yüksek Etki"
+      },
+      {
+        "slug": "yorum-yonetimi",
+        "title": "Yorum & İtibar Yönetimi",
+        "desc": "Otomatik yorum toplama, AI destekli yanıtlar ve Google, Trustpilot ve pazar yeri platformlarında itibar takibi.",
+        "tag": ""
+      },
+      {
+        "slug": "musteri-canlandirma",
+        "title": "Müşteri Canlandırma",
+        "desc": "Uykudaki müşteri listenizi randevuya dönüştürün. Sonuç bazlı model — sadece gerçekleşen görüşmeler için ödeme yaparsınız.",
+        "tag": "Sonuç Bazlı"
+      },
+      {
+        "slug": "fatura-otomasyonu",
+        "title": "Fatura & Muhasebe Otomasyonu",
+        "desc": "Faturalar için OCR + AI çıkarımı, otomatik sınıflandırma, muhasebe kodlaması ve ERP veya mali müşavirinize aktarım.",
+        "tag": ""
+      },
+      {
+        "slug": "ozel-ai-workflow",
+        "title": "Özel AI İş Akışları",
+        "desc": "n8n üzerine kurulu özel otomasyon hatları — mevcut araçlarınızı akıllı, kendi kendine çalışan iş akışlarına bağlar.",
+        "tag": ""
+      }
+    ],
+    "cta": "Özel Teklif Al"
+  },
+  "process": {
+    "title": "Nasıl Çalışır?",
+    "subtitle": "İlk görüşmeden canlı AI sistemine üç adım.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Denetim",
+        "desc": "Operasyonlarınızı haritalıyoruz, en yüksek etkili otomasyon fırsatlarını belirliyoruz ve net bir uygulama planı oluşturuyoruz."
+      },
+      {
+        "num": "02",
+        "title": "Kurulum",
+        "desc": "AI sistemlerinizi deploy ediyoruz, mevcut araçlarınızla entegre ediyoruz ve modelleri iş bağlamınıza göre eğitiyoruz."
+      },
+      {
+        "num": "03",
+        "title": "Ölçekleme",
+        "desc": "Performansı izliyoruz, sürekli optimize ediyoruz ve işletmeniz büyüdükçe yeni iş akışlarına genişliyoruz."
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Neden Oder?",
+    "subtitle": "Biz başka bir ajans değiliz. AI sistemleri kuran ve işleten operatörleriz.",
+    "items": [
+      {
+        "title": "Aracı yok",
+        "desc": "Sisteminizi kuran kişiyle doğrudan çalışırsınız. Katman yok, gecikme yok."
+      },
+      {
+        "title": "Sonuç odaklı",
+        "desc": "Başarıyı alınan randevular, üretilen gelir ve kazanılan saatlerle ölçüyoruz — gösterimlerle değil."
+      },
+      {
+        "title": "Ay be ay",
+        "desc": "Uzun vadeli sözleşme yok. Bağlayıcılık yok. Değer üretemiyorsak, gidersiniz. Bu kadar basit."
+      },
+      {
+        "title": "Kurucu-mühendis",
+        "desc": "Sadece danışmanlık yapmıyoruz — sistemleri bizzat kuruyoruz, deploy ediyoruz ve bakımını yapıyoruz."
+      }
+    ]
+  },
+  "fit": {
+    "title": "Bu Sizin İçin mi?",
+    "good": {
+      "title": "Tam size göre eğer...",
+      "items": [
+        "5-200 çalışanlı bir hizmet işletmesi yönetiyorsanız",
+        "Ekibiniz yeterince hızlı yanıt veremediği için lead kaçırıyorsanız",
+        "Ekip sayısını orantılı artırmadan ölçeklenmek istiyorsanız",
+        "Pazarlama süslemesi yerine ölçülebilir sonuçlara değer veriyorsanız",
+        "Tek seferlik projeler yerine sistemlere yatırım yapmaya hazırsanız"
+      ]
+    },
+    "bad": {
+      "title": "Uygun değiliz eğer...",
+      "items": [
+        "Kaliteden bağımsız en ucuz seçeneği arıyorsanız",
+        "Tam kapsamlı pazarlama ajansına ihtiyacınız varsa (reklam, sosyal, içerik)",
+        "AI eğitimi için operasyonel veri paylaşmak istemiyorsanız",
+        "Bir gecede mucize bekliyorsanız — gerçek sistemlerin kurulumu 2-4 hafta sürer"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "items": [
+      {
+        "q": "Bir AI sistemini kurmak ne kadar sürer?",
+        "a": "Çoğu sistem 2-4 hafta içinde canlıya geçer. Basit WhatsApp asistanları 5-7 günde hazır olabilir. Karmaşık çoklu sistem kurulumları 4-6 hafta sürer."
+      },
+      {
+        "q": "AI hata yaparsa ne olur?",
+        "a": "Her sistemde insan yönlendirmesi yerleşiktir. AI emin olmadığında görüşmeyi ekibinize yönlendirir. Ayrıca konuşmaları izleyip doğruluğu sürekli iyileştiriyoruz."
+      },
+      {
+        "q": "Teknik bilgi gerekiyor mu?",
+        "a": "Hayır. Tüm teknik kurulum, entegrasyon ve bakımı biz yapıyoruz. Siz performansı ve sonuçları izlemek için basit bir panel alırsınız."
+      },
+      {
+        "q": "AI hangi dilleri destekliyor?",
+        "a": "Sistemlerimiz Türkçe, İngilizce, Arapça, Rusça ve Almanca'yı hazır destekler. Ek diller talep üzerine eklenebilir."
+      },
+      {
+        "q": "İstediğim zaman iptal edebilir miyim?",
+        "a": "Evet. Tüm çalışmalarımız ay be ay'dır. Uzun vadeli sözleşme yok, iptal ücreti yok. Değer üretemiyorsak, ödeme yapmamalısınız."
+      },
+      {
+        "q": "Fiyatlandırma nasıl çalışıyor?",
+        "a": "Her çözüm kapsam ve karmaşıklığa göre fiyatlandırılır. Kurulum ücreti + aylık retainer sunuyoruz, bazı hizmetlerde sonuç bazlı model de mevcut. Özel teklif için görüşme planlayın."
+      },
+      {
+        "q": "Bu çalışanlarımın yerini mi alacak?",
+        "a": "AI çalışanlar tekrarlayan, yüksek hacimli görevleri üstlenir — insan ekibinizi ilişki kurma, karmaşık kararlar ve stratejik işlere odaklanmak için serbest bırakır. Bu, değiştirme değil güçlendirmedir."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Büyümenizi otomatikleştirmeye hazır mısınız?",
+    "subtitle": "Ücretsiz 20 dakikalık strateji görüşmesi planlayın. Taahhüt yok. İşletmeniz için net bir otomasyon planıyla ayrılın.",
+    "button": "Strateji Görüşmesi Planlayın",
+    "note": "Ücretsiz danışma. Spam yok. 24 saat içinde yanıt."
+  },
+  "footer": {
+    "company": "Şirket",
+    "solutions": "Çözümler",
+    "resources": "Kaynaklar",
+    "about": "Hakkımızda",
+    "approach": "Yaklaşım",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "rights": "Tüm hakları saklıdır.",
+    "location": "Antalya, Türkiye"
+  },
+  "apply": {
+    "title": "Özel Teklif Alın",
+    "subtitle": "İşletmenizi ve neleri otomatikleştirmek istediğinizi anlatın. 24 saat içinde size özel bir teklif ile dönüş yapacağız.",
+    "fields": {
+      "name": "Adınız",
+      "email": "E-posta adresiniz",
+      "company": "Şirket adı",
+      "solution": "Neyi otomatikleştirmek istiyorsunuz?",
+      "solutionOptions": ["WhatsApp AI Asistan", "Sesli AI Resepsiyonist", "Yorum Yönetimi", "Müşteri Canlandırma", "Fatura Otomasyonu", "Özel AI İş Akışları", "Emin değilim — yönlendirme istiyorum"],
+      "employees": "Ekip büyüklüğü",
+      "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
+      "timeline": "Ne zaman başlamak istersiniz?",
+      "timelineOptions": ["Hemen", "1 ay içinde", "3 ay içinde", "Sadece araştırıyorum"],
+      "message": "Bilmemiz gereken başka bir şey var mı?",
+      "submit": "Başvuru Gönder",
+      "sending": "Gönderiliyor..."
+    },
+    "success": {
+      "title": "Başvurunuz alındı!",
+      "message": "Detaylarınızı inceleyip 24 saat içinde dönüş yapacağız. Gelen kutunuzu kontrol edin."
+    },
+    "trust": [
+      "Ücretsiz danışma",
+      "Taahhüt yok",
+      "24 saat içinde yanıt"
+    ]
+  },
+  "about": {
+    "eyebrow": "Hakkımızda",
+    "headline": "Operatörler tarafından, operatörler için kuruldu.",
+    "story": "Oder Agency, Antalya merkezli geliştirici ve otomasyon uzmanı Oltan Seven tarafından kuruldu. Yıllarca web uygulamaları ve AI araçları geliştirdikten sonra bir kalıp netleşti: işletmelerin daha fazla yazılıma değil — işi gerçekten yapan sistemlere ihtiyacı var.",
+    "story2": "Bu yüzden sadece AI çalışanlar deploy etmeye odaklanıyoruz — satış, destek ve operasyonları otonom olarak yürüten sistemler. Toz toplayan dashboard'lar değil. Kimsenin okumadığı raporlar değil. Ölçülebilir sonuçlar üreten çalışan sistemler.",
+    "principles": {
+      "title": "Nasıl Çalışıyoruz",
+      "items": [
+        { "title": "Doğrudan erişim", "desc": "Sisteminizi kuran kişiyle konuşursunuz. Katman yok, gecikme yok." },
+        { "title": "Önce sonuç", "desc": "Efor için faturalamıyoruz. Sizin sonuçlarınız için optimize ediyoruz." },
+        { "title": "Radikal şeffaflık", "desc": "Her şeyi görürsünüz — maliyetler, performans, neyin çalışıp neyin çalışmadığı." },
+        { "title": "Sürekli iyileştirme", "desc": "AI sistemleri zamanla daha iyi olur. İzliyoruz, ayarlıyoruz ve genişletiyoruz." }
+      ]
+    },
+    "tech": {
+      "title": "Teknoloji Yığınımız",
+      "items": ["Next.js", "n8n", "WhatsApp Business API", "OpenAI GPT-4", "Claude AI", "Retell Voice AI", "Supabase", "Vercel"]
+    }
+  },
+  "approach": {
+    "eyebrow": "Yaklaşımımız",
+    "headline": "Denetle. Kur. Ölçekle.",
+    "subtitle": "Bir teklifle başlamıyoruz. Operasyonlarınızı anlayarak başlıyoruz — sonra zamanla bileşik getiri sağlayan sistemler kuruyoruz.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Operasyon Denetimi",
+        "desc": "3-5 gün boyunca mevcut iş akışlarınızı haritalıyor, darboğazları tespit ediyor ve otomasyon fırsatlarını ROI'ye göre sıralıyoruz. Bizimle çalışmasanız bile net bir uygulama yol haritası alırsınız.",
+        "details": ["Süreç haritalama", "Darboğaz tespiti", "ROI sıralaması", "Uygulama yol haritası"]
+      },
+      {
+        "num": "02",
+        "title": "Sistem Kurulumu",
+        "desc": "Önce en yüksek etkili AI sistemlerinizi deploy ediyoruz. Her sistem mevcut araçlarınızla entegre edilir, iş bağlamınıza göre eğitilir ve canlıya geçmeden test edilir.",
+        "details": ["AI model eğitimi", "Araç entegrasyonu", "Test & Kalite Kontrol", "Ekip eğitimi"]
+      },
+      {
+        "num": "03",
+        "title": "Ölçekle & Optimize Et",
+        "desc": "İlk sisteminiz canlıya geçip sonuç üretmeye başladığında genişliyoruz. Yeni iş akışları, yeni kanallar, sürekli optimizasyon — AI altyapınız işinizle birlikte büyür.",
+        "details": ["Performans izleme", "Sürekli optimizasyon", "Yeni iş akışı kurulumu", "Çeyreklik değerlendirmeler"]
+      }
+    ],
+    "antiAgency": {
+      "title": "Bizi farklı kılan ne",
+      "items": [
+        "Retainer satmıyoruz — sonuç satıyoruz. Sistem çalışmazsa ödeme yapmazsınız.",
+        "Ajans masrafı yok. Müşteri temsilcisi yok. Sistemlerinizi kuran kişilerle doğrudan çalışırsınız.",
+        "Kendi yemeğimizi kendimiz yiyoruz. Önerdiğimiz her aracı kendimiz kullanıyoruz."
+      ]
+    }
+  }
+}
