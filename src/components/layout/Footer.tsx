@@ -87,18 +87,42 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Company */}
+          {/* Hizmetler / Services */}
+          <div>
+            <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">
+              {locale === 'en' ? 'Services' : 'Hizmetler'}
+            </h4>
+            <ul className="flex flex-col gap-3">
+              {(locale === 'en'
+                ? [['AI Automation', `${prefix}/#hizmetler`], ['Operations Audit', `${prefix}/approach`], ['Integration', `${prefix}/#hizmetler`], ['Scaling', `${prefix}/#hizmetler`]]
+                : [['AI Otomasyon', `${prefix}/#hizmetler`], ['Süreç Denetimi', `${prefix}/approach`], ['Entegrasyon', `${prefix}/#hizmetler`], ['Ölçekleme', `${prefix}/#hizmetler`]]
+              ).map(([label, href]) => (
+                <li key={label}>
+                  {href.includes('#') ? (
+                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </a>
+                  ) : (
+                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                      {label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Sirket / Company */}
           <div>
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.company')}</h4>
             <ul className="flex flex-col gap-3">
               <li><Link href={`${prefix}/about`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.about')}</Link></li>
-              <li><Link href={`${prefix}/approach`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.approach')}</Link></li>
-              <li><Link href={`${prefix}/blog`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.blog')}</Link></li>
+              <li><Link href="/blog" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.blog')}</Link></li>
               <li><Link href={`${prefix}/apply`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.contact')}</Link></li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Iletisim / Contact */}
           <div>
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.contact')}</h4>
             <ul className="flex flex-col gap-3">

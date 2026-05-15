@@ -18,7 +18,7 @@ export default function Navbar() {
   const links = [
     { label: t('nav.approach'), href: `${prefix}/approach` },
     { label: t('nav.about'), href: `${prefix}/about` },
-    { label: t('nav.blog'), href: `${prefix}/blog` },
+    { label: t('nav.blog'), href: '/blog' },
   ]
 
   useEffect(() => {
