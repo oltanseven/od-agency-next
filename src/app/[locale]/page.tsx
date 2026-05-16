@@ -9,7 +9,6 @@ import ServicesSection from '@/components/sections/ServicesSection'
 import StatsSection from '@/components/sections/StatsSection'
 import ProcessSection from '@/components/sections/ProcessSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
-import FitSection from '@/components/sections/FitSection'
 import FAQSection from '@/components/sections/FAQSection'
 import CTASection from '@/components/sections/CTASection'
 
@@ -49,7 +48,6 @@ export default async function HomePage({ params }: Props) {
       <ProcessSection />
       <ServicesSection />
       <TestimonialsSection />
-      <FitSection />
       <FAQSection />
       <CTASection />
     </>
