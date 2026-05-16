@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { locales, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
@@ -78,18 +79,23 @@ export default async function AboutPage({ params }: Props) {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {([
-              { name: 'Oltan Seven', role: locale === 'en' ? 'Founder & Developer' : 'Kurucu & Geliştirici', initials: 'OS' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'AI Engineer' : 'AI Mühendisi', initials: '?' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', initials: '?' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', initials: '?' },
+              { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'AI Engineer' : 'AI Mühendisi', img: null },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', img: null },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
               <div key={i} className="text-center">
-                <div className={`w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-[1.2rem] font-black
-                  ${i === 0 ? 'bg-accent text-white' : 'bg-ink/5 text-ink/20 border-2 border-dashed border-ink/10'}`}>
-                  {member.initials}
-                </div>
-                <h3 className={`text-[0.95rem] font-bold mb-1 ${i === 0 ? 'text-ink' : 'text-ink/30'}`}>{member.name}</h3>
-                <p className={`text-[0.8rem] ${i === 0 ? 'text-ink/50' : 'text-ink/20'}`}>{member.role}</p>
+                {member.img ? (
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-accent/20">
+                    <Image src={member.img} alt={member.name} width={96} height={96} className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-[1.2rem] font-black bg-ink/5 text-ink/20 border-2 border-dashed border-ink/10">
+                    ?
+                  </div>
+                )}
+                <h3 className={`text-[0.95rem] font-bold mb-1 ${member.img ? 'text-ink' : 'text-ink/30'}`}>{member.name}</h3>
+                <p className={`text-[0.8rem] ${member.img ? 'text-ink/50' : 'text-ink/20'}`}>{member.role}</p>
               </div>
             ))}
           </div>
