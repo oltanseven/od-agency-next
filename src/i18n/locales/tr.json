@@ -154,8 +154,8 @@
         "a": "Yıllık ortaklık modeli ile çalışıyoruz, her çeyrekte değerlendirme yapıyoruz. Bu, sistemlerin olgunlaşıp bileşik getiri üretmesi için yeterli zaman tanır."
       },
       {
-        "q": "Bu ne kadara mal olacak?",
-        "a": "Kapsam ve karmaşıklığa göre değişir. Kurulum ücreti + aylık retainer uyguluyoruz. Bazı hizmetlerde sonuç bazlı model de var. Görüşme ayarlayın, durumunuza özel net rakamları verelim."
+        "q": "Nasıl başlıyoruz?",
+        "a": "Ücretsiz bir keşif görüşmesiyle başlıyoruz. İşletmenizi anlıyor, ihtiyaçlarınızı belirliyoruz ve size özel bir plan sunuyoruz. Her şey bu görüşmede netleşiyor."
       },
       {
         "q": "Çalışanlarımın yerini mi alacak?",
@@ -194,8 +194,8 @@
       "solutionOptions": ["Potansiyel müşterilere cevap verme", "Randevu ve takip", "Müşteri destek", "Veri girişi ve raporlama", "Başka bir şey", "Emin değilim, bir dış göz lazım"],
       "employees": "Ekip büyüklüğü",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
-      "timeline": "Aylık bütçe aralığınız?",
-      "timelineOptions": ["5.000₺ - 15.000₺", "15.000₺ - 30.000₺", "30.000₺ - 60.000₺", "60.000₺+", "Henüz belirlemedim"],
+      "timeline": "Şirketinizin büyüklüğü?",
+      "timelineOptions": ["Startup / Bireysel", "Küçük işletme (2-10 kişi)", "Orta ölçekli (11-50 kişi)", "Büyük ölçekli (50+ kişi)"],
       "message": "Bilmemiz gereken başka bir şey var mı?",
       "submit": "Gönder",
       "sending": "Gönderiliyor..."

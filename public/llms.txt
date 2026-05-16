@@ -1,0 +1,35 @@
+# Oder Agency
+
+> AI-powered growth partner. We build AI systems that grow businesses and shape future goals together.
+
+## About
+
+Oder Agency is an AI growth partner based in Antalya, Turkey. We build AI-powered systems that handle business operations, enabling companies to scale without proportionally growing their teams. We work on annual partnerships with quarterly reviews.
+
+## Services
+
+- AI automation systems for business operations
+- Operations audit and workflow optimization
+- System integration and deployment
+- Continuous optimization and scaling
+
+## Team
+
+- Oltan Seven, Co-Founder & Developer
+- Kerim Embel, Backend Developer
+- Tutku Muriz, R&D Specialist
+
+## Key Pages
+
+- Homepage: https://oder.agency
+- Approach: https://oder.agency/approach
+- About: https://oder.agency/about
+- Apply: https://oder.agency/apply
+- Blog: https://oder.agency/blog
+
+## Contact
+
+- Email: hello@oder.agency
+- Phone: +90 532 465 20 31
+- Location: Antalya, Turkey
+- WhatsApp: https://wa.me/905324652031

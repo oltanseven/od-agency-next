@@ -154,8 +154,8 @@
         "a": "We work on annual partnerships with quarterly reviews. This gives enough time for systems to mature and deliver compounding returns."
       },
       {
-        "q": "How much does this cost?",
-        "a": "It depends on scope and complexity. We charge a setup fee plus a monthly retainer. Some services run on a pay-per-result model. Book a call and we'll give you exact numbers for your situation."
+        "q": "How do we get started?",
+        "a": "We start with a free discovery call. We learn about your business, identify your needs, and present a custom plan. Everything gets clarified in that conversation."
       },
       {
         "q": "Will this replace my team?",
@@ -194,8 +194,8 @@
       "solutionOptions": ["Responding to leads", "Scheduling and follow-ups", "Customer support", "Data entry and reporting", "Something else", "Not sure, need a fresh pair of eyes"],
       "employees": "Team size",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
-      "timeline": "Monthly budget range?",
-      "timelineOptions": ["$500 - $1,500", "$1,500 - $3,000", "$3,000 - $6,000", "$6,000+", "Not decided yet"],
+      "timeline": "Company size?",
+      "timelineOptions": ["Startup / Solo", "Small business (2-10 people)", "Mid-size (11-50 people)", "Enterprise (50+ people)"],
       "message": "Anything else we should know?",
       "submit": "Send",
       "sending": "Sending..."
