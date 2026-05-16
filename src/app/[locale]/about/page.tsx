@@ -78,15 +78,15 @@ export default async function AboutPage({ params }: Props) {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-[1000px] mx-auto">
             {([
-              { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
-              { name: 'Kerim Embel', role: locale === 'en' ? 'Solution Architect' : 'Çözüm Mimarı', img: '/team/kerim-embel.jpg' },
-              { name: 'Tutku Muriz', role: locale === 'en' ? 'R&D Specialist' : 'Ar-Ge Uzmanı', img: '/team/tutku-muriz.jpg' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
+              { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg', scale: true },
+              { name: 'Kerim Embel', role: locale === 'en' ? 'Solution Architect' : 'Çözüm Mimarı', img: '/team/kerim-embel.jpg', scale: false },
+              { name: 'Tutku Muriz', role: locale === 'en' ? 'R&D Specialist' : 'Ar-Ge Uzmanı', img: '/team/tutku-muriz.jpg', scale: true },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null, scale: false },
             ]).map((member, i) => (
               <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
                 {member.img ? (
-                  <div className="aspect-[3/4] relative">
-                    <Image src={member.img} alt={member.name} fill className="object-cover object-center" style={{ objectPosition: 'center 30%' }} />
+                  <div className="aspect-[3/4] relative overflow-hidden bg-[#ff521b]">
+                    <Image src={member.img} alt={member.name} fill className={`object-cover ${member.scale ? 'scale-[0.85] origin-center' : ''}`} style={{ objectPosition: 'center 35%' }} />
                   </div>
                 ) : (
                   <div className="aspect-[3/4] flex items-center justify-center">
