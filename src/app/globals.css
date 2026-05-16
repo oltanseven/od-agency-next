@@ -160,7 +160,8 @@ body { overflow-x: hidden; }
   }
 
   .od-card.cta-strip {
-    background: #F6F2E8;
+    background: #F0ECE0;
+    border-color: rgba(0,0,0,0.08);
   }
 
   html.dark .od-card {
