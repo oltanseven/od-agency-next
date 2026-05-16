@@ -37,41 +37,43 @@ export default function FAQSection() {
       ]
     : [
         {
-          q: 'Canlıya geçmek ne kadar sürer?',
-          a: 'Çoğu proje 2-4 hafta içinde canlıya geçer. Keşif denetimiyle başlar, sistemi tasarlar, kurar ve test eder, ardından yayına alırız. Basit otomasyonlar günler içinde canlı olabilir.',
+          q: 'Canliya gecmek ne kadar surer?',
+          a: 'Cogu proje 2-4 hafta icinde canliya gecer. Kesif denetimiyle baslar, sistemi tasarlar, kurar ve test eder, ardından yayına alırız. Basit otomasyonlar gunler icinde canlı olabilir.',
         },
         {
           q: 'Teknik bilgiye ihtiyacım var mı?',
-          a: 'Kesinlikle hayır. Kurulumdan bakıma kadar her şeyi biz yönetiyoruz. Sonuçları izlemek için basit bir panel alırsınız ve her adımda size rehberlik ederiz.',
+          a: 'Kesinlikle hayır. Kurulumdan bakıma kadar her seyi biz yonetiyoruz. Sonucları izlemek icin basit bir panel alırsınız ve her adımda size rehberlik ederiz.',
         },
         {
-          q: 'Otomasyon beklendiği gibi çalışmazsa ne olur?',
-          a: 'Her sistemi sürekli izliyor ve gerçek verilere göre optimize ediyoruz. Performans düşükse ek ücret almadan düzeltiyoruz. Çalışmamız sonuç odaklıdır.',
+          q: 'Otomasyon beklendigi gibi calısmazsa ne olur?',
+          a: 'Her sistemi surekli izliyor ve gercek verilere gore optimize ediyoruz. Performans dusukse ek ucret almadan duzeltiyoruz. Calısmamız sonuc odaklıdır.',
         },
         {
-          q: 'İstediğim zaman iptal edebilir miyim?',
-          a: 'Evet. Uzun vadeli sözleşme olmadan ay be ay çalışıyoruz. Değer üretemiyorsak istediğiniz zaman ayrılabilirsiniz.',
+          q: 'Istedigim zaman iptal edebilir miyim?',
+          a: 'Evet. Uzun vadeli sozlesme olmadan ay be ay calısıyoruz. Deger uretemiyorsak istediginiz zaman ayrılabilirsiniz.',
         },
         {
-          q: 'Hangi araç ve platformları kullanıyorsunuz?',
-          a: 'n8n, Next.js, Supabase, Vercel ve önde gelen AI modelleri dahil kanıtlanmış altyapı üzerine kuruyoruz. Tam teknoloji yığını ihtiyaçlarınıza bağlıdır.',
+          q: 'Hangi arac ve platformları kullanıyorsunuz?',
+          a: 'n8n, Next.js, Supabase, Vercel ve onde gelen AI modelleri dahil kanıtlanmıs altyapı uzerine kuruyoruz. Tam teknoloji yıgını ihtiyaclarınıza baglıdır.',
         },
         {
           q: 'Maliyeti ne kadar?',
-          a: 'Her proje farklıdır. Ücretsiz keşif görüşmesinden sonra net bir sabit fiyat teklifi sunuyoruz. Gizli ücret yok, sürpriz yok.',
+          a: 'Her proje farklıdır. Ucretsiz kesif gorusmesinden sonra net bir sabit fiyat teklifi sunuyoruz. Gizli ucret yok, surpriz yok.',
         },
       ]
 
   return (
-    <section className="pt-16 sm:pt-28 pb-20 sm:pb-36 bg-cream">
+    <section className="py-28 sm:py-40 bg-white">
       <div className="max-w-[720px] mx-auto px-5 sm:px-8">
-        <div className="text-center mb-12">
-          <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
-            {en ? '// FAQ' : '// SSS'}
+
+        <div className="text-center mb-14">
+          <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
+            {en ? 'FAQ' : 'SSS'}
           </span>
-          <h2 className="text-[clamp(1.6rem,3vw,2.4rem)] font-black text-ink tracking-[-0.02em]">
-            {en ? 'Frequently asked questions' : 'Sıkça sorulan sorular'}
+          <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black text-ink tracking-[-0.02em] mb-4">
+            {en ? 'Frequently asked questions' : 'Sıkca sorulan sorular'}
           </h2>
+          <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
         </div>
 
         <div className="space-y-3">
@@ -80,12 +82,12 @@ export default function FAQSection() {
             return (
               <div
                 key={i}
-                className="border border-black/[0.09] rounded-[18px] overflow-hidden"
+                className="border border-black/[0.08] rounded-2xl overflow-hidden"
               >
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left
-                    bg-cream-soft hover:bg-cream-soft/80 transition-colors cursor-pointer"
+                    bg-white hover:bg-[#f8fafc] transition-colors cursor-pointer"
                 >
                   <span className="text-[0.95rem] font-semibold text-ink">{item.q}</span>
                   <svg
@@ -102,8 +104,8 @@ export default function FAQSection() {
                   </svg>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-5 bg-cream-soft">
-                    <p className="text-ink/50 text-[0.88rem] leading-relaxed">{item.a}</p>
+                  <div className="px-6 pb-5 bg-white">
+                    <p className="text-ink/50 text-[0.92rem] leading-[1.7]">{item.a}</p>
                   </div>
                 )}
               </div>

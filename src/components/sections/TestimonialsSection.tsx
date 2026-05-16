@@ -10,43 +10,22 @@ export default function TestimonialsSection() {
 
   const guarantees = [
     {
-      icon: (
-        <>
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#22c55e" strokeWidth="1.5" opacity="0.38"/>
-          <path d="M9 12l2 2 4-4" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </>
-      ),
-      iconBg: 'bg-[#D1FAE5]',
-      title: en ? 'Outcome-Based Work' : 'Sonuç Odaklı Çalışma',
+      title: en ? 'Outcome-Based Work' : 'Sonuc Odakli Calisma',
       desc: en
         ? 'If we don\u0027t produce measurable results, you don\u0027t pay. We tie our success to your success.'
-        : 'Ölçülebilir sonuçlar üretmezsek ödeme yapmazsınız. Başarımızı sizin başarınıza bağlıyoruz.',
+        : 'Olculebilir sonuclar uretmezsek odeme yapmazsınız. Basarımızı sizin basarınıza baglıyoruz.',
     },
     {
-      icon: (
-        <>
-          <circle cx="12" cy="12" r="9" stroke="#ff521b" strokeWidth="1.5" opacity="0.38"/>
-          <path d="M12 7v5l3 3" stroke="#ff521b" strokeWidth="2.5" strokeLinecap="round"/>
-        </>
-      ),
-      iconBg: 'bg-accent/10',
-      title: en ? 'Direct Access' : 'Doğrudan Erişim',
+      title: en ? 'Direct Access' : 'Dogrudan Erisim',
       desc: en
         ? 'You work directly with the founder. No middlemen, no account managers. Fast decisions, real accountability.'
-        : 'Kurucuyla direkt çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
+        : 'Kurucuyla direkt calısırsınız. Aracı, musteri temsilcisi yok. Hızlı kararlar, gercek sorumluluk.',
     },
     {
-      icon: (
-        <>
-          <rect x="2" y="2" width="20" height="20" rx="6" stroke="#e8881a" strokeWidth="1.5" opacity="0.38"/>
-          <path d="M8 12l3 3 5-5" stroke="#e8881a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </>
-      ),
-      iconBg: 'bg-[rgba(232,136,26,0.1)]',
-      title: en ? 'Month-to-Month' : 'Ay Be Ay Çalışma',
+      title: en ? 'Month-to-Month' : 'Ay Be Ay Calisma',
       desc: en
         ? 'No long-term contracts. If we don\u0027t deliver value each month, you walk. Simple as that.'
-        : 'Uzun vadeli sözleşme yok. Her ay değer üretmezsek gidersiniz. Bu kadar basit.',
+        : 'Uzun vadeli sozlesme yok. Her ay deger uretmezsek gidersiniz. Bu kadar basit.',
     },
   ]
 
@@ -56,75 +35,67 @@ export default function TestimonialsSection() {
   ]
 
   return (
-    <section id="yorumlar" className="pt-16 sm:pt-28 pb-16 sm:pb-28 bg-cream">
+    <section id="yorumlar" className="py-28 sm:py-40 bg-white">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
-        <div className="mb-14">
-          <span className="text-accent text-[0.75rem] font-bold tracking-[0.12em] uppercase mb-3 block">
-            {en ? '// Why Trust Us?' : '// Neden Güvenilir?'}
+        <div className="mb-16">
+          <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
+            {en ? 'Why Trust Us?' : 'Neden Guvenilir?'}
           </span>
-          <h2 className="text-[clamp(1.8rem,3.5vw,2.8rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink">
-            {en ? (
-              <>We back our work with <span className="gradient-text">written guarantees</span></>
-            ) : (
-              <>Sözümüzü yazılı <span className="gradient-text">garanti ile veriyoruz</span></>
-            )}
+          <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
+            {en ? 'We back our work with written guarantees' : 'Sozumuzu yazılı garanti ile veriyoruz'}
           </h2>
-          <p className="text-ink/50 mt-3 max-w-[500px] leading-[1.7]">
+          <div className="w-16 h-1 bg-accent rounded-full mb-5" />
+          <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">
             {en
               ? 'Every engagement comes with these three commitments. We take the risk so you can move forward with confidence.'
-              : 'Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.'}
+              : 'Her projede bu uc taahhüdü yazılı olarak sunuyoruz. Riski biz ustleniyoruz, siz rahat calısın.'}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
-          {guarantees.map(({ icon, iconBg, title, desc }) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {guarantees.map(({ title, desc }) => (
             <div key={title}
-              className="bg-black/[0.025] border border-black/[0.09] rounded-[18px] p-8
-                transition-all duration-300 hover:border-accent/30 hover:shadow-[0_12px_36px_rgba(255,82,27,0.1)]">
-              <div className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-5`}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">{icon}</svg>
-              </div>
-              <h3 className="text-[1.05rem] font-bold text-ink mb-2">{title}</h3>
-              <p className="text-ink/50 text-[0.88rem] leading-[1.65]">{desc}</p>
+              className="bg-white border border-black/[0.08] rounded-2xl p-8 sm:p-10
+                hover:shadow-lg transition-shadow duration-300">
+              <h3 className="text-[1.1rem] font-bold text-ink mb-3">{title}</h3>
+              <p className="text-ink/50 text-[0.92rem] leading-[1.7]">{desc}</p>
             </div>
           ))}
         </div>
 
-        {/* Tech Badges */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <span className="text-ink/40 text-[0.78rem] font-semibold tracking-wide uppercase block mb-4">
-            {en ? 'Technologies We Use' : 'Kullandığımız Teknolojiler'}
+            {en ? 'Technologies We Use' : 'Kullandıgımız Teknolojiler'}
           </span>
           <div className="flex flex-wrap justify-center gap-2">
             {techBadges.map(badge => (
               <span key={badge}
-                className="px-4 py-2 rounded-full text-[0.8rem] font-semibold text-ink/50
-                  bg-cream-soft border border-black/[0.07]
-                  transition-colors hover:border-accent/30 hover:text-accent/70">
+                className="px-4 py-2 rounded-full text-[0.8rem] font-medium text-ink/50
+                  bg-[#f8fafc] border border-black/[0.06]
+                  hover:border-accent/20 hover:text-accent/70 transition-colors">
                 {badge}
               </span>
             ))}
           </div>
         </div>
 
-        {/* CTA strip */}
-        <div className="mt-12 bg-cream-soft border border-black/[0.09] rounded-[20px] px-5 sm:px-10 py-8
-          flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-[#f8fafc] border border-black/[0.08] rounded-2xl p-8 sm:p-10
+          flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h3 className="text-[1.05rem] font-bold text-ink mb-1">
-              {en ? 'Take the first step' : 'İlk adımı atın'}
+            <h3 className="text-[1.1rem] font-bold text-ink mb-1">
+              {en ? 'Take the first step' : 'Ilk adımı atın'}
             </h3>
-            <p className="text-ink/50 text-[0.9rem] max-w-[480px]">
+            <p className="text-ink/50 text-[0.92rem] max-w-[480px] leading-[1.7]">
               {en
                 ? 'Book a free discovery call. No commitments, no pressure. Just a clear picture of what we can automate for you.'
-                : 'Ücretsiz keşif görüşmesi alın. Taahhüt yok, baskı yok. Sizin için neleri otomatikleştirebileceğimizin net bir resmi.'}
+                : 'Ucretsiz kesif gorusmesi alın. Taahhut yok, baskı yok. Sizin icin neleri otomatiklestirebilecegimizin net bir resmi.'}
             </p>
           </div>
           <Link href={applyHref}
-            className="shrink-0 bg-accent text-white px-7 py-3 rounded-full font-bold text-[0.9rem]
-              no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(255,82,27,0.2)] transition-all duration-200 whitespace-nowrap">
-            {en ? 'Get a Free Discovery Call →' : 'Ücretsiz Keşif Görüşmesi Al →'}
+            className="shrink-0 bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
+              no-underline hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 whitespace-nowrap">
+            {en ? 'Get a Free Discovery Call' : 'Ucretsiz Kesif Gorusmesi Al'}
           </Link>
         </div>
       </div>

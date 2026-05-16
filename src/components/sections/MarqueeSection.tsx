@@ -39,50 +39,29 @@ export default function MarqueeSection() {
   const t3 = [...items3, ...items3, ...items3]
 
   return (
-    <div className="relative bg-night overflow-hidden" style={{ padding: '3.5rem 0 4.5rem' }}>
-      <div aria-hidden className="absolute top-[10%] right-[-5%] w-[60%] h-[80%] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(255,82,27,0.15), transparent 65%)' }} />
-      <div aria-hidden className="absolute bottom-[10%] left-[-5%] w-[50%] h-[80%] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(252,158,79,0.10), transparent 65%)' }} />
-
-      <div className="relative flex flex-col gap-3 -mx-8 sm:-mx-12 md:-mx-20" style={{ transform: 'rotate(-6deg)', marginTop: '-1rem', marginBottom: '-1rem' }}>
+    <div className="relative bg-[#0f172a] overflow-hidden py-12 sm:py-16">
+      <div className="flex flex-col gap-4">
         <div className="flex gap-8 w-max animate-[slideLeft_26s_linear_infinite]">
           {t1.map((item, i) => (
             <span key={`a-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-white/80 text-[0.92rem] font-semibold tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-accent text-xs opacity-60">✦</span>
+              <span className="text-white/40 text-[0.85rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
+              <span className="text-accent/40 text-xs">&#x2022;</span>
             </span>
           ))}
         </div>
         <div className="flex gap-8 w-max animate-[slideRight_30s_linear_infinite]">
           {t2.map((item, i) => (
             <span key={`b-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-white/50 text-[0.92rem] font-semibold tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-coral text-xs opacity-40">✦</span>
+              <span className="text-white/25 text-[0.85rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
+              <span className="text-accent/30 text-xs">&#x2022;</span>
             </span>
           ))}
         </div>
         <div className="flex gap-8 w-max animate-[slideLeft_34s_linear_infinite]">
           {t3.map((item, i) => (
             <span key={`c-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-white/30 text-[0.85rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-accent text-xs opacity-20">✦</span>
-            </span>
-          ))}
-        </div>
-        <div className="flex gap-8 w-max animate-[slideRight_28s_linear_infinite]">
-          {t1.map((item, i) => (
-            <span key={`d-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-white/20 text-[0.85rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-coral text-xs opacity-15">✦</span>
-            </span>
-          ))}
-        </div>
-        <div className="flex gap-8 w-max animate-[slideLeft_32s_linear_infinite]">
-          {t2.map((item, i) => (
-            <span key={`e-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-white/[0.12] text-[0.82rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-accent text-xs opacity-10">✦</span>
+              <span className="text-white/15 text-[0.8rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
+              <span className="text-accent/20 text-xs">&#x2022;</span>
             </span>
           ))}
         </div>
