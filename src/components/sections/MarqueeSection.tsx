@@ -14,14 +14,14 @@ const itemsTR = [
 ]
 
 const items2EN = [
-  'WhatsApp Automation', 'Voice AI', 'Lead Capture', 'CRM Integration',
-  'Email Automation', 'Review Management', 'Appointment Booking', 'Analytics Dashboard',
-  'Invoice Processing', 'Workflow Builder',
+  'Lead Generation', 'Customer Support', 'Scheduling', 'CRM Automation',
+  'Data Analytics', 'Email Marketing', 'Reporting', 'Workflow Design',
+  'Process Mapping', 'Performance Tracking',
 ]
 const items2TR = [
-  'WhatsApp Otomasyon', 'Sesli AI', 'Lead Yakalama', 'CRM Entegrasyonu',
-  'E-posta Otomasyonu', 'Yorum Yönetimi', 'Randevu Alma', 'Analitik Dashboard',
-  'Fatura İşleme', 'İş Akışı Kurulumu',
+  'Lead Üretimi', 'Müşteri Destek', 'Randevu Yönetimi', 'CRM Otomasyonu',
+  'Veri Analitiği', 'E-posta Pazarlama', 'Raporlama', 'İş Akışı Tasarımı',
+  'Süreç Haritalama', 'Performans Takibi',
 ]
 
 const items3 = [

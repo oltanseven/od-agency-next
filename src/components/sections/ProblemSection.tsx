@@ -38,7 +38,7 @@ export default function ProblemSection() {
   ]
 
   return (
-    <section className="py-28 sm:py-40 bg-white">
+    <section className="py-28 sm:py-40 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-16">

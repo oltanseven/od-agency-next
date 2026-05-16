@@ -16,15 +16,15 @@ export default function FitSection() {
           'You value speed and measurable outcomes',
         ]
       : [
-          'Gercek musterileri olan calısan bir isletmeniz var',
-          'Ekibinizi orantılı buyutmeden buyumek istiyorsunuz',
+          'Gerçek müşterileri olan çalışan bir işletmeniz var',
+          'Ekibinizi orantılı büyütmeden büyümek istiyorsunuz',
           'Kendini finanse eden sistemlere yatırım yapmaya hazırsınız',
-          'Hız ve olculebilir sonuclara deger veriyorsunuz',
+          'Hız ve ölçülebilir sonuçlara değer veriyorsunuz',
         ],
   }
 
   const bad = {
-    title: en ? 'Not the right fit' : 'Uygun degil',
+    title: en ? 'Not the right fit' : 'Uygun değil',
     items: en
       ? [
           'You are still validating your business idea',
@@ -33,20 +33,20 @@ export default function FitSection() {
           'You want to micromanage every technical decision',
         ]
       : [
-          'Henuz is fikrinizi dogrulama asamasındasınız',
+          'Henüz iş fikrinizi doğrulama aşamasındasınız',
           'Otomasyon olmadan basit bir web sitesi istiyorsunuz',
-          'Mumkun olan en ucuz secenegi arıyorsunuz',
-          'Her teknik kararı mikro yonetmek istiyorsunuz',
+          'Mümkün olan en ucuz seçeneği arıyorsunuz',
+          'Her teknik kararı mikro yönetmek istiyorsunuz',
         ],
   }
 
   return (
-    <section className="py-28 sm:py-40 bg-[#f8fafc]">
+    <section className="py-28 sm:py-40 bg-cream-soft">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="text-center mb-16">
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black text-ink tracking-[-0.02em] mb-4">
-            {en ? 'Is this right for you?' : 'Bu sizin icin dogru mu?'}
+            {en ? 'Is this right for you?' : 'Bu sizin için doğru mu?'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
         </div>

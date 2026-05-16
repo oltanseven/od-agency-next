@@ -10,22 +10,22 @@ export default function TestimonialsSection() {
 
   const guarantees = [
     {
-      title: en ? 'Outcome-Based Work' : 'Sonuc Odakli Calisma',
+      title: en ? 'Outcome-Based Work' : 'Sonuç Odaklı Çalışma',
       desc: en
         ? 'If we don\u0027t produce measurable results, you don\u0027t pay. We tie our success to your success.'
-        : 'Olculebilir sonuclar uretmezsek odeme yapmazsınız. Basarımızı sizin basarınıza baglıyoruz.',
+        : 'Ölçülebilir sonuçlar üretmezsek ödeme yapmazsınız. Başarımızı sizin başarınıza bağlıyoruz.',
     },
     {
-      title: en ? 'Direct Access' : 'Dogrudan Erisim',
+      title: en ? 'Direct Access' : 'Doğrudan Erişim',
       desc: en
         ? 'You work directly with the founder. No middlemen, no account managers. Fast decisions, real accountability.'
-        : 'Kurucuyla direkt calısırsınız. Aracı, musteri temsilcisi yok. Hızlı kararlar, gercek sorumluluk.',
+        : 'Kurucuyla direkt çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
     },
     {
-      title: en ? 'Month-to-Month' : 'Ay Be Ay Calisma',
+      title: en ? 'Month-to-Month' : 'Ay Be Ay Çalışma',
       desc: en
         ? 'No long-term contracts. If we don\u0027t deliver value each month, you walk. Simple as that.'
-        : 'Uzun vadeli sozlesme yok. Her ay deger uretmezsek gidersiniz. Bu kadar basit.',
+        : 'Uzun vadeli sözleşme yok. Her ay değer üretmezsek gidersiniz. Bu kadar basit.',
     },
   ]
 
@@ -35,21 +35,21 @@ export default function TestimonialsSection() {
   ]
 
   return (
-    <section id="yorumlar" className="py-28 sm:py-40 bg-white">
+    <section id="yorumlar" className="py-28 sm:py-40 bg-cream">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-16">
           <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
-            {en ? 'Why Trust Us?' : 'Neden Guvenilir?'}
+            {en ? 'Why Trust Us?' : 'Neden Güvenilir?'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'We back our work with written guarantees' : 'Sozumuzu yazılı garanti ile veriyoruz'}
+            {en ? 'We back our work with written guarantees' : 'Sözümüzü yazılı garanti ile veriyoruz'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">
             {en
               ? 'Every engagement comes with these three commitments. We take the risk so you can move forward with confidence.'
-              : 'Her projede bu uc taahhüdü yazılı olarak sunuyoruz. Riski biz ustleniyoruz, siz rahat calısın.'}
+              : 'Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.'}
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
 
         <div className="text-center mb-12">
           <span className="text-ink/40 text-[0.78rem] font-semibold tracking-wide uppercase block mb-4">
-            {en ? 'Technologies We Use' : 'Kullandıgımız Teknolojiler'}
+            {en ? 'Technologies We Use' : 'Kullandığımız Teknolojiler'}
           </span>
           <div className="flex flex-wrap justify-center gap-2">
             {techBadges.map(badge => (
@@ -84,18 +84,18 @@ export default function TestimonialsSection() {
           flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-1">
-              {en ? 'Take the first step' : 'Ilk adımı atın'}
+              {en ? 'Take the first step' : 'İlk adımı atın'}
             </h3>
             <p className="text-ink/50 text-[0.92rem] max-w-[480px] leading-[1.7]">
               {en
                 ? 'Book a free discovery call. No commitments, no pressure. Just a clear picture of what we can automate for you.'
-                : 'Ucretsiz kesif gorusmesi alın. Taahhut yok, baskı yok. Sizin icin neleri otomatiklestirebilecegimizin net bir resmi.'}
+                : 'Ücretsiz keşif görüşmesi alın. Taahhüt yok, baskı yok. Sizin için neleri otomatikleştirebileceğimizin net bir resmi.'}
             </p>
           </div>
           <Link href={applyHref}
             className="shrink-0 bg-accent text-white px-8 py-3.5 rounded-full font-bold text-[0.95rem]
               no-underline hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 whitespace-nowrap">
-            {en ? 'Get a Free Discovery Call' : 'Ucretsiz Kesif Gorusmesi Al'}
+            {en ? 'Get a Free Discovery Call' : 'Ücretsiz Keşif Görüşmesi Al'}
           </Link>
         </div>
       </div>

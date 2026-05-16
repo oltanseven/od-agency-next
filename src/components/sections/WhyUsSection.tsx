@@ -8,28 +8,28 @@ export default function WhyUsSection() {
 
   const items = [
     {
-      title: en ? 'No middlemen' : 'Araci yok',
+      title: en ? 'No middlemen' : 'Aracı yok',
       desc: en
         ? 'You work directly with the person who builds your systems. No account managers, no ticket queues.'
-        : 'Sistemlerinizi kuran kisiyle direkt calısırsınız. Musteri temsilcisi yok, destek kuyrugu yok.',
+        : 'Sistemlerinizi kuran kişiyle direkt çalışırsınız. Müşteri temsilcisi yok, destek kuyruğu yok.',
     },
     {
-      title: en ? 'Outcome-focused' : 'Sonuc odaklı',
+      title: en ? 'Outcome-focused' : 'Sonuç odaklı',
       desc: en
         ? 'We measure success by your business metrics, not by hours worked or features shipped.'
-        : 'Basarıyı calısılan saat veya teslim edilen ozellikle degil, sizin is metriklerinizle olcuyoruz.',
+        : 'Başarıyı çalışılan saat veya teslim edilen özellikle değil, sizin iş metriklerinizle ölçüyoruz.',
     },
     {
-      title: en ? 'Month-to-month' : 'Aylık calisma',
+      title: en ? 'Month-to-month' : 'Aylık çalışma',
       desc: en
         ? 'No long-term lock-in. We earn your business every month with real results.'
-        : 'Uzun vadeli baglayıcı sozlesme yok. Her ay gercek sonuclarla guveninizi kazanıyoruz.',
+        : 'Uzun vadeli bağlayıcı sözleşme yok. Her ay gerçek sonuçlarla güveninizi kazanıyoruz.',
     },
     {
-      title: en ? 'Builder-first' : 'Once insa eden',
+      title: en ? 'Builder-first' : 'Önce inşa eden',
       desc: en
         ? 'We are engineers, not salespeople. We build real systems with production-grade code and proven tools.'
-        : 'Biz satıscı degil, muhendisiz. Uretim kalitesinde kod ve kanıtlanmıs araclarla gercek sistemler kuruyoruz.',
+        : 'Biz satışçı değil, mühendisiz. Üretim kalitesinde kod ve kanıtlanmış araçlarla gerçek sistemler kuruyoruz.',
     },
   ]
 
@@ -42,13 +42,13 @@ export default function WhyUsSection() {
             {en ? 'Why Us' : 'Neden Biz'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'Built different, on purpose' : 'Bilincli olarak farklı kurulduk'}
+            {en ? 'Built different, on purpose' : 'Bilinçli olarak farklı kurulduk'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[560px] leading-[1.7] text-[1rem]">
             {en
               ? 'We are not a typical agency. Here is how we work and why it matters for your business.'
-              : 'Tipik bir ajans degiliz. Iste nasıl calıstıgımız ve bunun isletmeniz icin neden onemli oldugu.'}
+              : 'Tipik bir ajans değiliz. İşte nasıl çalıştığımız ve bunun işletmeniz için neden önemli olduğu.'}
           </p>
         </div>
 

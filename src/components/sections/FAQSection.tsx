@@ -37,28 +37,28 @@ export default function FAQSection() {
       ]
     : [
         {
-          q: 'Canliya gecmek ne kadar surer?',
-          a: 'Cogu proje 2-4 hafta icinde canliya gecer. Kesif denetimiyle baslar, sistemi tasarlar, kurar ve test eder, ardından yayına alırız. Basit otomasyonlar gunler icinde canlı olabilir.',
+          q: 'Canlıya geçmek ne kadar sürer?',
+          a: 'Çoğu proje 2-4 hafta içinde canlıya geçer. Keşif denetimiyle başlar, sistemi tasarlar, kurar ve test eder, ardından yayına alırız. Basit otomasyonlar günler içinde canlı olabilir.',
         },
         {
           q: 'Teknik bilgiye ihtiyacım var mı?',
-          a: 'Kesinlikle hayır. Kurulumdan bakıma kadar her seyi biz yonetiyoruz. Sonucları izlemek icin basit bir panel alırsınız ve her adımda size rehberlik ederiz.',
+          a: 'Kesinlikle hayır. Kurulumdan bakıma kadar her şeyi biz yönetiyoruz. Sonuçları izlemek için basit bir panel alırsınız ve her adımda size rehberlik ederiz.',
         },
         {
-          q: 'Otomasyon beklendigi gibi calısmazsa ne olur?',
-          a: 'Her sistemi surekli izliyor ve gercek verilere gore optimize ediyoruz. Performans dusukse ek ucret almadan duzeltiyoruz. Calısmamız sonuc odaklıdır.',
+          q: 'Otomasyon beklendiği gibi çalışmazsa ne olur?',
+          a: 'Her sistemi sürekli izliyor ve gerçek verilere göre optimize ediyoruz. Performans düşükse ek ücret almadan düzeltiyoruz. Çalışmamız sonuç odaklıdır.',
         },
         {
-          q: 'Istedigim zaman iptal edebilir miyim?',
-          a: 'Evet. Uzun vadeli sozlesme olmadan ay be ay calısıyoruz. Deger uretemiyorsak istediginiz zaman ayrılabilirsiniz.',
+          q: 'İstediğim zaman iptal edebilir miyim?',
+          a: 'Evet. Uzun vadeli sözleşme olmadan ay be ay çalışıyoruz. Değer üretemiyorsak istediğiniz zaman ayrılabilirsiniz.',
         },
         {
-          q: 'Hangi arac ve platformları kullanıyorsunuz?',
-          a: 'n8n, Next.js, Supabase, Vercel ve onde gelen AI modelleri dahil kanıtlanmıs altyapı uzerine kuruyoruz. Tam teknoloji yıgını ihtiyaclarınıza baglıdır.',
+          q: 'Hangi araç ve platformları kullanıyorsunuz?',
+          a: 'n8n, Next.js, Supabase, Vercel ve önde gelen AI modelleri dahil kanıtlanmış altyapı üzerine kuruyoruz. Tam teknoloji yığını ihtiyaçlarınıza bağlıdır.',
         },
         {
           q: 'Maliyeti ne kadar?',
-          a: 'Her proje farklıdır. Ucretsiz kesif gorusmesinden sonra net bir sabit fiyat teklifi sunuyoruz. Gizli ucret yok, surpriz yok.',
+          a: 'Her proje farklıdır. Ücretsiz keşif görüşmesinden sonra net bir sabit fiyat teklifi sunuyoruz. Gizli ücret yok, sürpriz yok.',
         },
       ]
 
@@ -71,7 +71,7 @@ export default function FAQSection() {
             {en ? 'FAQ' : 'SSS'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black text-ink tracking-[-0.02em] mb-4">
-            {en ? 'Frequently asked questions' : 'Sıkca sorulan sorular'}
+            {en ? 'Frequently asked questions' : 'Sıkça sorulan sorular'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
         </div>

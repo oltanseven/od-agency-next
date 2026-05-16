@@ -14,10 +14,10 @@ export default function ServicesSection() {
       desc: en
         ? 'We deploy AI systems that handle your operations 24/7. From customer communication to internal workflows, your business keeps running while you sleep.'
         : 'Operasyonlarınızı 7/24 yöneten AI sistemleri kuruyoruz. Müşteri iletişiminden iç süreçlere kadar, siz uyurken işletmeniz çalışmaya devam eder.',
-      tag: en ? 'Most Popular' : 'En Populer',
+      tag: en ? 'Most Popular' : 'En Popüler',
     },
     {
-      title: en ? 'Operations Audit' : 'Surec Analizi',
+      title: en ? 'Operations Audit' : 'Süreç Analizi',
       desc: en
         ? 'We map your workflows end to end and find every automation opportunity. You get a clear roadmap before a single line of code is written.'
         : 'İş akışlarınızı uçtan uca haritalıyor ve her otomasyon fırsatını belirliyoruz. Tek satır kod yazılmadan net bir yol haritası elinizde olur.',
@@ -28,12 +28,12 @@ export default function ServicesSection() {
       desc: en
         ? 'We connect your existing tools into one intelligent system. No more switching between apps or copy-pasting data manually.'
         : 'Mevcut araçlarınızı tek bir akıllı sisteme bağlıyoruz. Artık uygulamalar arasında geçiş yapmak veya verileri elle kopyalamak yok.',
-      tag: en ? 'Connectivity' : 'Baglanti',
+      tag: en ? 'Connectivity' : 'Bağlantı',
     },
   ]
 
   return (
-    <section id="hizmetler" className="py-28 sm:py-40 bg-cream">
+    <section id="hizmetler" className="py-28 sm:py-40 bg-white">
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8">
 
         <div className="mb-16">
@@ -41,7 +41,7 @@ export default function ServicesSection() {
             {en ? 'Services' : 'Hizmetler'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'Your business, running on autopilot' : 'Isletmeniz otopilotta calissin'}
+            {en ? 'Your business, running on autopilot' : 'İşletmeniz otopilotta çalışsın'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">

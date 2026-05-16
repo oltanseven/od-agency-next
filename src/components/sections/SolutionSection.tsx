@@ -36,10 +36,10 @@ export default function SolutionSection() {
 
         <div className="text-center mb-16">
           <span className="text-white/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
-            {en ? 'Solution' : 'Cozum'}
+            {en ? 'Solution' : 'Çözüm'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white mb-4">
-            {en ? 'AI that actually works' : 'Gercekten calisan AI'}
+            {en ? 'AI that actually works' : 'Gerçekten çalışan AI'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-5" />
           <p className="text-white/50 max-w-[500px] mx-auto leading-[1.7] text-[1rem]">

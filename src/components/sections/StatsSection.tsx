@@ -7,9 +7,9 @@ export default function StatsSection() {
   const en = locale === 'en'
 
   const stats = [
-    { val: '90%', label: en ? 'Cost Reduction' : 'Maliyet Dususu' },
-    { val: '24/7', label: en ? 'Uptime' : 'Kesintisiz Calisma' },
-    { val: en ? '2 Weeks' : '2 Hafta', label: en ? 'Go Live' : 'Canliya Gecis' },
+    { val: '90%', label: en ? 'Cost Reduction' : 'Maliyet Düşüşü' },
+    { val: '24/7', label: en ? 'Uptime' : 'Kesintisiz Çalışma' },
+    { val: en ? '2 Weeks' : '2 Hafta', label: en ? 'Go Live' : 'Canlıya Geçiş' },
     { val: 'n8n', label: en ? 'Core Engine' : 'Temel Motor' },
   ]
 

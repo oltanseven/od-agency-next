@@ -17,18 +17,18 @@ export default function CTASection() {
 
           <div className="relative z-10">
             <span className="text-white/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
-              {en ? 'Ready?' : 'Hazir misiniz?'}
+              {en ? 'Ready?' : 'Hazır mısınız?'}
             </span>
             <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-white mb-4">
               {en
                 ? 'Ready to automate your business growth?'
-                : 'Isletmenizin buyumesini otomatiklestirmeye hazir misiniz?'}
+                : 'İşletmenizin büyümesini otomatikleştirmeye hazır mısınız?'}
             </h2>
             <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-6" />
             <p className="text-white/50 text-[1rem] leading-[1.7] mb-10 max-w-[560px] mx-auto">
               {en
                 ? 'Get a free discovery call. Let\u0027s figure out which processes we can automate together.'
-                : 'Ucretsiz kesif gorusmesi alin. Hangi sureclerinizi otomatiklestirebilecegimizi birlikte belirleyelim.'}
+                : 'Ücretsiz keşif görüşmesi alın. Hangi süreçlerinizi otomatikleştirebileceğimizi birlikte belirleyelim.'}
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -42,7 +42,7 @@ export default function CTASection() {
                 hello@oder.agency
               </a>
               <a
-                href="https://wa.me/905555555555"
+                href="https://wa.me/905324652031"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 text-white px-10 rounded-full font-bold text-[1rem]
