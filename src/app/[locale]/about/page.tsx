@@ -84,18 +84,20 @@ export default async function AboutPage({ params }: Props) {
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', img: null },
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
-              <div key={i} className="text-center">
+              <div key={i} className={`rounded-2xl overflow-hidden border ${member.img ? 'border-black/[0.08] bg-white' : 'border-dashed border-ink/10 bg-ink/[0.02]'}`}>
                 {member.img ? (
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-accent/20">
-                    <Image src={member.img} alt={member.name} width={96} height={96} className="w-full h-full object-cover" />
+                  <div className="aspect-[3/4] relative">
+                    <Image src={member.img} alt={member.name} fill className="object-cover object-top" />
                   </div>
                 ) : (
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-[1.2rem] font-black bg-ink/5 text-ink/20 border-2 border-dashed border-ink/10">
-                    ?
+                  <div className="aspect-[3/4] flex items-center justify-center">
+                    <span className="text-[2rem] font-black text-ink/10">?</span>
                   </div>
                 )}
-                <h3 className={`text-[0.95rem] font-bold mb-1 ${member.img ? 'text-ink' : 'text-ink/30'}`}>{member.name}</h3>
-                <p className={`text-[0.8rem] ${member.img ? 'text-ink/50' : 'text-ink/20'}`}>{member.role}</p>
+                <div className="p-4 text-center">
+                  <h3 className={`text-[0.95rem] font-bold mb-0.5 ${member.img ? 'text-ink' : 'text-ink/25'}`}>{member.name}</h3>
+                  <p className={`text-[0.78rem] ${member.img ? 'text-ink/50' : 'text-ink/15'}`}>{member.role}</p>
+                </div>
               </div>
             ))}
           </div>
