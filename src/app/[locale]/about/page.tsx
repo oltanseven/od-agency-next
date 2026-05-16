@@ -76,26 +76,19 @@ export default async function AboutPage({ params }: Props) {
             </h2>
             <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-[1000px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-[800px] mx-auto">
             {([
               { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
               { name: 'Kerim Embel', role: locale === 'en' ? 'Solution Architect' : 'Çözüm Mimarı', img: '/team/kerim-embel.jpg' },
               { name: 'Tutku Muriz', role: locale === 'en' ? 'R&D Specialist' : 'Ar-Ge Uzmanı', img: '/team/tutku-muriz.jpg' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
-              <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
-                {member.img ? (
-                  <div className="aspect-[3/4] relative overflow-hidden">
-                    <Image src={member.img} alt={member.name} fill className="object-cover" style={{ objectPosition: 'center 30%' }} />
-                  </div>
-                ) : (
-                  <div className="aspect-[3/4] flex items-center justify-center">
-                    <span className="text-[2rem] font-black text-ink/10">?</span>
-                  </div>
-                )}
+              <div key={i} className="od-card !p-0 overflow-hidden">
+                <div className="aspect-[3/4] relative overflow-hidden">
+                  <Image src={member.img} alt={member.name} fill className="object-cover" style={{ objectPosition: 'center 30%' }} />
+                </div>
                 <div className="p-5 text-center">
-                  <h3 className={`text-[1rem] font-bold mb-1 ${member.img ? 'text-ink' : 'text-ink/25'}`}>{member.name}</h3>
-                  <p className={`text-[0.82rem] ${member.img ? 'text-ink/50' : 'text-ink/15'}`}>{member.role}</p>
+                  <h3 className="text-[1rem] font-bold text-ink mb-1">{member.name}</h3>
+                  <p className="text-[0.82rem] text-ink/50">{member.role}</p>
                 </div>
               </div>
             ))}
