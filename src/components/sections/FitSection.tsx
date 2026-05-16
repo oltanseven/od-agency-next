@@ -52,7 +52,7 @@ export default function FitSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto">
-          <div className="bg-white border border-[#22c55e]/15 rounded-2xl p-8 sm:p-10">
+          <div className="od-card !border-[#22c55e]/15">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-9 h-9 rounded-full bg-[#22c55e]/10 text-[#22c55e] flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
@@ -71,7 +71,7 @@ export default function FitSection() {
             </ul>
           </div>
 
-          <div className="bg-white border border-black/[0.08] rounded-2xl p-8 sm:p-10">
+          <div className="od-card">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-9 h-9 rounded-full bg-ink/5 text-ink/40 flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>

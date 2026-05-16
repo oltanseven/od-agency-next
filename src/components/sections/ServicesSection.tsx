@@ -54,8 +54,7 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {services.map(({ title, desc, tag }) => (
             <div key={title}
-              className="bg-white border border-black/[0.08] rounded-2xl p-8 sm:p-10
-                hover:shadow-lg transition-shadow duration-300">
+              className="od-card">
               <h3 className="text-[1.15rem] font-bold text-ink mb-3">{title}</h3>
               <p className="text-ink/50 text-[0.92rem] leading-[1.7] mb-5">{desc}</p>
               <span className="inline-block text-[0.72rem] font-semibold px-3 py-1 rounded-full
@@ -66,8 +65,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="bg-cream-soft border border-black/[0.08] rounded-2xl p-8 sm:p-10
-          flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="od-card !bg-cream-soft flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-1">
               {en

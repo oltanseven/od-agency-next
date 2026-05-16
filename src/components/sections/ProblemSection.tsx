@@ -59,8 +59,7 @@ export default function ProblemSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item) => (
             <div key={item.num}
-              className="bg-white border border-black/[0.08] rounded-2xl p-8 sm:p-10
-                hover:shadow-lg transition-shadow duration-300">
+              className="od-card">
               <span className="text-accent/30 text-[0.75rem] font-bold tracking-wider mb-4 block">{item.num}</span>
               <h3 className="text-[1.1rem] font-bold text-ink mb-3">{item.title}</h3>
               <p className="text-ink/50 text-[0.92rem] leading-[1.7]">{item.desc}</p>

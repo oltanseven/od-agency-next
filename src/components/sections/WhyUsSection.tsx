@@ -55,8 +55,7 @@ export default function WhyUsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px]">
           {items.map((item, i) => (
             <div key={i}
-              className="bg-white border border-black/[0.08] rounded-2xl p-8 sm:p-10
-                hover:shadow-lg transition-shadow duration-300">
+              className="od-card">
               <h3 className="text-[1.1rem] font-bold text-ink mb-3">{item.title}</h3>
               <p className="text-ink/50 text-[0.92rem] leading-[1.7]">{item.desc}</p>
             </div>

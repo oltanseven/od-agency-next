@@ -82,7 +82,7 @@ export default function FAQSection() {
             return (
               <div
                 key={i}
-                className="border border-black/[0.08] rounded-2xl overflow-hidden"
+                className="od-card !p-0 overflow-hidden"
               >
                 <button
                   onClick={() => setOpenIdx(isOpen ? null : i)}
