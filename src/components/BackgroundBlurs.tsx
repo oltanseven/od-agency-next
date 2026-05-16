@@ -11,7 +11,7 @@ export default function BackgroundBlurs() {
   const dark = mounted && theme === 'dark'
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden>
+    <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden>
       {/* Top right - large warm blob */}
       <div
         className="absolute -top-[200px] right-[-100px] w-[900px] h-[900px] rounded-full animate-[floatA_20s_ease-in-out_infinite]"

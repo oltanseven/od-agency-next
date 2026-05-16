@@ -118,14 +118,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           });`}
         </Script>
       </head>
-      <body className="bg-cream text-ink font-sans antialiased transition-colors duration-300">
+      <body className="text-ink font-sans antialiased transition-colors duration-300">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <ThemeProvider>
           <BackgroundBlurs />
-          {children}
+          <div className="relative z-10">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

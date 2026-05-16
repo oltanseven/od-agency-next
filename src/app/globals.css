@@ -32,7 +32,7 @@ html.dark {
 }
 
 /* Backgrounds */
-html.dark body { background: #0f1117; color: #e8e4dc; }
+html.dark body { color: #e8e4dc; }
 html.dark .bg-cream { background: #0f1117; }
 html.dark .bg-cream-soft { background: #161820; }
 html.dark .bg-white { background: #161820; }
@@ -137,9 +137,9 @@ html.dark section.bg-cream { background: rgba(15,17,23,0.85); }
 html.dark section.bg-cream-soft { background: rgba(22,24,32,0.85); }
 html.dark section.bg-white { background: rgba(22,24,32,0.85); }
 
-/* Keep body and nav opaque */
-body { background: #FFFEF8; }
-html.dark body { background: #0f1117; }
+/* HTML gets the base bg, body is transparent so blurs show */
+html { background: #FFFEF8; }
+html.dark { background: #0f1117; }
 nav { backdrop-filter: blur(20px); }
 
 html { scroll-behavior: smooth; }
