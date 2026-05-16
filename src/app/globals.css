@@ -20,59 +20,108 @@
   --text-muted: rgba(28,18,7,0.5);
 }
 
-/* Dark mode overrides */
+/* ── Dark Mode ── */
 html.dark {
   --color-cream:      #0f1117;
-  --color-cream-soft: #181a20;
-  --color-ink:        #f0ede6;
+  --color-cream-soft: #161820;
+  --color-ink:        #e8e4dc;
   --color-ink2:       #c4a96a;
   --border:           rgba(255,255,255,0.08);
   --bg-card:          rgba(255,255,255,0.04);
-  --text-muted:       rgba(240,237,230,0.5);
+  --text-muted:       rgba(232,228,220,0.5);
 }
 
-html.dark body { background: #0f1117; color: #f0ede6; }
+/* Backgrounds */
+html.dark body { background: #0f1117; color: #e8e4dc; }
 html.dark .bg-cream { background: #0f1117; }
-html.dark .bg-cream-soft { background: #181a20; }
-html.dark .bg-white { background: #181a20; }
+html.dark .bg-cream-soft { background: #161820; }
+html.dark .bg-white { background: #161820; }
 html.dark .bg-accent { background: #ff521b; }
+html.dark .bg-\[\#f8fafc\] { background: #161820; }
+html.dark .bg-transparent { background: transparent; }
 
-html.dark .text-ink { color: #f0ede6; }
-html.dark .text-ink\/50 { color: rgba(240,237,230,0.5); }
-html.dark .text-ink\/45 { color: rgba(240,237,230,0.45); }
-html.dark .text-ink\/40 { color: rgba(240,237,230,0.4); }
-html.dark .text-ink\/30 { color: rgba(240,237,230,0.3); }
-html.dark .text-ink\/25 { color: rgba(240,237,230,0.25); }
-html.dark .text-ink\/20 { color: rgba(240,237,230,0.2); }
-html.dark .text-ink\/15 { color: rgba(240,237,230,0.15); }
-html.dark .text-ink\/12 { color: rgba(240,237,230,0.12); }
-html.dark .text-ink\/10 { color: rgba(240,237,230,0.1); }
+/* Text */
+html.dark .text-ink { color: #e8e4dc; }
+html.dark .text-ink\/50 { color: rgba(232,228,220,0.5); }
+html.dark .text-ink\/45 { color: rgba(232,228,220,0.45); }
+html.dark .text-ink\/40 { color: rgba(232,228,220,0.4); }
+html.dark .text-ink\/30 { color: rgba(232,228,220,0.3); }
+html.dark .text-ink\/25 { color: rgba(232,228,220,0.25); }
+html.dark .text-ink\/20 { color: rgba(232,228,220,0.2); }
+html.dark .text-ink\/15 { color: rgba(232,228,220,0.15); }
+html.dark .text-ink\/12 { color: rgba(232,228,220,0.12); }
+html.dark .text-ink\/10 { color: rgba(232,228,220,0.1); }
 html.dark .text-ink2 { color: #c4a96a; }
+html.dark .text-accent { color: #ff6b3d; }
 
-html.dark .border-black\/\[0\.08\] { border-color: rgba(255,255,255,0.08); }
+/* Borders */
 html.dark .border-black\/\[0\.06\] { border-color: rgba(255,255,255,0.06); }
-html.dark .border-ink\/10 { border-color: rgba(240,237,230,0.1); }
-html.dark .border-y { border-color: rgba(255,255,255,0.06); }
-
-html.dark .bg-ink\/5 { background: rgba(240,237,230,0.05); }
-html.dark .bg-ink\/10 { background: rgba(240,237,230,0.1); }
-html.dark .bg-ink\/\[0\.02\] { background: rgba(240,237,230,0.02); }
-
-html.dark .bg-\[\#f8fafc\] { background: #181a20; }
-
-html.dark .od-input {
-  background: #181a20;
-  border-color: rgba(255,255,255,0.1);
-  color: #f0ede6;
-}
-html.dark .od-input::placeholder { color: rgba(240,237,230,0.25); }
-html.dark .od-input:hover:not(:disabled):not(:focus) { border-color: rgba(255,255,255,0.2); }
-
-html.dark ::-webkit-scrollbar-track { background: #181a20; }
-
-/* Navbar dark */
-html.dark .bg-cream\/92 { background: rgba(15,17,23,0.92); }
+html.dark .border-black\/\[0\.07\] { border-color: rgba(255,255,255,0.07); }
+html.dark .border-black\/\[0\.08\] { border-color: rgba(255,255,255,0.08); }
 html.dark .border-black\/\[0\.09\] { border-color: rgba(255,255,255,0.08); }
+html.dark .border-ink\/10 { border-color: rgba(232,228,220,0.1); }
+html.dark .border-ink\/15 { border-color: rgba(232,228,220,0.15); }
+html.dark .border-2.border-ink\/10 { border-color: rgba(232,228,220,0.1); }
+html.dark .border-y { border-color: rgba(255,255,255,0.06); }
+html.dark .border-t { border-color: rgba(255,255,255,0.06); }
+html.dark .border-b { border-color: rgba(255,255,255,0.06); }
+html.dark .border-accent\/15 { border-color: rgba(255,107,61,0.2); }
+html.dark .border-accent\/20 { border-color: rgba(255,107,61,0.25); }
+html.dark .border-\[\#22c55e\]\/15 { border-color: rgba(34,197,94,0.2); }
+
+/* Background utilities */
+html.dark .bg-ink\/5 { background: rgba(232,228,220,0.05); }
+html.dark .bg-ink\/10 { background: rgba(232,228,220,0.1); }
+html.dark .bg-ink\/\[0\.02\] { background: rgba(232,228,220,0.02); }
+html.dark .bg-accent\/8 { background: rgba(255,82,27,0.12); }
+html.dark .bg-accent\/10 { background: rgba(255,82,27,0.15); }
+html.dark .bg-\[\\#22c55e\]\/10 { background: rgba(34,197,94,0.12); }
+
+/* Navbar */
+html.dark .bg-cream\/92 { background: rgba(15,17,23,0.95); }
+html.dark nav { backdrop-filter: blur(20px); }
+
+/* Inputs */
+html.dark .od-input {
+  background: #1a1c24;
+  border-color: rgba(255,255,255,0.1);
+  color: #e8e4dc;
+}
+html.dark .od-input::placeholder { color: rgba(232,228,220,0.25); }
+html.dark .od-input:hover:not(:disabled):not(:focus) { border-color: rgba(255,255,255,0.2); }
+html.dark .od-input:disabled { background: #161820; }
+
+/* Select dropdowns */
+html.dark select.od-input option { background: #1a1c24; color: #e8e4dc; }
+
+/* Scrollbar */
+html.dark ::-webkit-scrollbar-track { background: #161820; }
+html.dark ::-webkit-scrollbar-thumb { background: #ff521b; }
+
+/* Stats section - white text on accent stays */
+html.dark .bg-accent .text-white { color: white; }
+html.dark .bg-accent .text-white\/70 { color: rgba(255,255,255,0.7); }
+
+/* Footer */
+html.dark footer { background: #0f1117; border-color: rgba(255,255,255,0.06); }
+
+/* Gradient text stays visible in dark */
+html.dark .gradient-text {
+  background: linear-gradient(135deg, #ffb07a 0%, #ff6b3d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* FAQ accordion */
+html.dark .bg-white { background: #161820; }
+
+/* Prose (blog content) */
+html.dark .prose { color: rgba(232,228,220,0.7); }
+html.dark .prose h2, html.dark .prose h3 { color: #e8e4dc; }
+html.dark .prose a { color: #ff6b3d; }
+html.dark .prose strong { color: #e8e4dc; }
+html.dark .prose blockquote { border-color: rgba(255,82,27,0.2); color: rgba(232,228,220,0.5); }
 
 html { scroll-behavior: smooth; }
 body { overflow-x: hidden; }
