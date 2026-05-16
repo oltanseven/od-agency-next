@@ -79,7 +79,7 @@ export default async function AboutPage({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {([
               { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'AI Engineer' : 'AI Mühendisi', img: null },
+              { name: 'Kerim Embel', role: locale === 'en' ? 'Backend Developer' : 'Backend Geliştirici', img: '/team/kerim-embel.jpg' },
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', img: null },
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
