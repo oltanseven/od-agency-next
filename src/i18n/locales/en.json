@@ -194,8 +194,8 @@
       "solutionOptions": ["Responding to leads", "Scheduling and follow-ups", "Customer support", "Data entry and reporting", "Something else", "Not sure, need a fresh pair of eyes"],
       "employees": "Team size",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
-      "timeline": "When do you want to start?",
-      "timelineOptions": ["Yesterday", "Within 1 month", "Within 3 months", "Just exploring"],
+      "timeline": "Monthly budget range?",
+      "timelineOptions": ["$500 - $1,500", "$1,500 - $3,000", "$3,000 - $6,000", "$6,000+", "Not decided yet"],
       "message": "Anything else we should know?",
       "submit": "Send",
       "sending": "Sending..."

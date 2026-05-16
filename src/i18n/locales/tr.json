@@ -194,8 +194,8 @@
       "solutionOptions": ["Lead'lere cevap verme", "Randevu ve takip", "Müşteri destek", "Veri girişi ve raporlama", "Başka bir şey", "Emin değilim, bir dış göz lazım"],
       "employees": "Ekip büyüklüğü",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
-      "timeline": "Ne zaman başlamak istersiniz?",
-      "timelineOptions": ["Dün", "1 ay içinde", "3 ay içinde", "Sadece araştırıyorum"],
+      "timeline": "Aylık bütçe aralığınız?",
+      "timelineOptions": ["5.000₺ - 15.000₺", "15.000₺ - 30.000₺", "30.000₺ - 60.000₺", "60.000₺+", "Henüz belirlemedim"],
       "message": "Bilmemiz gereken başka bir şey var mı?",
       "submit": "Gönder",
       "sending": "Gönderiliyor..."
