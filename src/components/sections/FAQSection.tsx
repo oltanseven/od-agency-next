@@ -23,12 +23,12 @@ export default function FAQSection() {
           a: 'We monitor every system continuously and optimize based on real data. If something is not performing, we fix it at no extra cost. Our work is outcome-based.',
         },
         {
-          q: 'Can I cancel anytime?',
-          a: 'Yes. We work month-to-month with no long-term contracts. If we are not delivering value, you can walk away at any time.',
+          q: 'How does the partnership model work?',
+          a: 'We work on annual partnerships with quarterly reviews. This gives enough time for systems to mature and deliver compounding returns.',
         },
         {
-          q: 'What tools and platforms do you use?',
-          a: 'We build on proven infrastructure including n8n, Next.js, Supabase, Vercel, and leading AI models. The exact stack depends on your needs.',
+          q: 'What does the ongoing relationship look like?',
+          a: 'We monitor, optimize, and expand your systems continuously. You get regular performance reports and quarterly strategy reviews to keep everything aligned with your goals.',
         },
         {
           q: 'How much does it cost?',
@@ -49,12 +49,12 @@ export default function FAQSection() {
           a: 'Her sistemi sürekli izliyor ve gerçek verilere göre optimize ediyoruz. Performans düşükse ek ücret almadan düzeltiyoruz. Çalışmamız sonuç odaklıdır.',
         },
         {
-          q: 'İstediğim zaman iptal edebilir miyim?',
-          a: 'Evet. Uzun vadeli sözleşme olmadan ay be ay çalışıyoruz. Değer üretemiyorsak istediğiniz zaman ayrılabilirsiniz.',
+          q: 'Ortaklık modeli nasıl işliyor?',
+          a: 'Yıllık ortaklık modeli ile çalışıyoruz, her çeyrekte değerlendirme yapıyoruz. Bu, sistemlerin olgunlaşıp bileşik getiri üretmesi için yeterli zaman tanır.',
         },
         {
-          q: 'Hangi araç ve platformları kullanıyorsunuz?',
-          a: 'n8n, Next.js, Supabase, Vercel ve önde gelen AI modelleri dahil kanıtlanmış altyapı üzerine kuruyoruz. Tam teknoloji yığını ihtiyaçlarınıza bağlıdır.',
+          q: 'Devam eden ilişki nasıl görünüyor?',
+          a: 'Sistemlerinizi sürekli izliyor, optimize ediyor ve genişletiyoruz. Düzenli performans raporları ve her çeyrekte strateji değerlendirmesiyle her şeyi hedeflerinizle uyumlu tutuyoruz.',
         },
         {
           q: 'Maliyeti ne kadar?',

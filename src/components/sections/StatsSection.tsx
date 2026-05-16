@@ -10,7 +10,7 @@ export default function StatsSection() {
     { val: '90%', label: en ? 'Cost Reduction' : 'Maliyet Düşüşü' },
     { val: '24/7', label: en ? 'Uptime' : 'Kesintisiz Çalışma' },
     { val: en ? '2 Weeks' : '2 Hafta', label: en ? 'Go Live' : 'Canlıya Geçiş' },
-    { val: 'n8n', label: en ? 'Core Engine' : 'Temel Motor' },
+    { val: '100+', label: en ? 'Workflows Deployed' : 'Kurulan İş Akışı' },
   ]
 
   return (

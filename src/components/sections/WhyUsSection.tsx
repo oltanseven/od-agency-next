@@ -20,10 +20,10 @@ export default function WhyUsSection() {
         : 'Başarıyı çalışılan saat veya teslim edilen özellikle değil, sizin iş metriklerinizle ölçüyoruz.',
     },
     {
-      title: en ? 'Month-to-month' : 'Aylık çalışma',
+      title: en ? 'Annual partnership' : 'Yıllık ortaklık',
       desc: en
-        ? 'No long-term lock-in. We earn your business every month with real results.'
-        : 'Uzun vadeli bağlayıcı sözleşme yok. Her ay gerçek sonuçlarla güveninizi kazanıyoruz.',
+        ? 'We work as your dedicated growth partner. Real systems need time to compound, and quarterly reviews keep us accountable.'
+        : 'Sizin büyüme ortağınız olarak çalışıyoruz. Gerçek sistemlerin bileşik getiri üretmesi zaman alır, çeyreklik değerlendirmelerle hesap verebilirliğimizi koruyoruz.',
     },
     {
       title: en ? 'Builder-first' : 'Önce inşa eden',

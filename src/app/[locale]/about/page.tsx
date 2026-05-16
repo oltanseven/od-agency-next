@@ -29,7 +29,6 @@ export default async function AboutPage({ params }: Props) {
   const dict = await getDictionary(locale as Locale)
   const about = dict.about as Record<string, unknown>
   const principles = about.principles as { title: string; items: PrincipleItem[] }
-  const tech = about.tech as { title: string; items: string[] }
   const prefix = locale === 'en' ? '' : '/tr'
 
   return (
@@ -99,29 +98,6 @@ export default async function AboutPage({ params }: Props) {
                   <p className={`text-[0.78rem] ${member.img ? 'text-ink/50' : 'text-ink/15'}`}>{member.role}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="py-24 bg-cream-soft">
-        <div className="max-w-[700px] mx-auto px-5 sm:px-8 text-center">
-          <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
-            {locale === 'en' ? 'Industries' : 'Sektörler'}
-          </span>
-          <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-4">
-            {locale === 'en' ? 'Industries we serve' : 'Hizmet verdiğimiz sektörler'}
-          </h2>
-          <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-10" />
-          <div className="flex flex-wrap justify-center gap-3">
-            {(locale === 'en'
-              ? ['Healthcare & Clinics', 'Real Estate', 'E-Commerce', 'Legal Firms', 'Education', 'SaaS & Technology', 'Finance', 'Restaurants & Hospitality', 'Logistics', 'B2B Services']
-              : ['Sağlık & Klinikler', 'Gayrimenkul', 'E-Ticaret', 'Hukuk Büroları', 'Eğitim', 'SaaS & Teknoloji', 'Finans', 'Restoran & Konaklama', 'Lojistik', 'B2B Hizmetler']
-            ).map((item) => (
-              <span key={item} className="text-[0.85rem] font-medium text-ink/50 bg-white border border-black/[0.08] px-4 py-2 rounded-full">
-                {item}
-              </span>
             ))}
           </div>
         </div>

@@ -88,7 +88,7 @@ const organizationSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom AI Workflows' } },
     ],
   },
-  knowsAbout: ['AI Automation', 'WhatsApp Business API', 'Voice AI', 'n8n', 'Business Process Automation', 'Machine Learning'],
+  knowsAbout: ['AI Automation', 'Voice AI', 'Business Process Automation', 'Machine Learning', 'Growth Systems'],
   sameAs: [
     'https://www.instagram.com/oder.agency',
     'https://www.linkedin.com/company/oderagency',

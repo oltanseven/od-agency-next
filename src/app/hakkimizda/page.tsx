@@ -114,7 +114,7 @@ export default function HakkimizdaPage() {
               },
               {
                 title: 'Modern Teknoloji',
-                desc: 'Next.js, React, Tailwind CSS ve AI araçları kullanıyoruz. WordPress şablonları değil, özel geliştirme yapıyoruz.',
+                desc: 'En güncel ve performanslı altyapılarla çalışıyoruz. WordPress şablonları değil, özel geliştirme yapıyoruz.',
               },
             ].map(({ title, desc }) => (
               <div key={title}
@@ -149,27 +149,6 @@ export default function HakkimizdaPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      {/* Teknolojiler */}
-      <section className="py-16 sm:py-24" style={{ background: '#0D0B1E' }}>
-        <div className="max-w-[1260px] mx-auto px-5 sm:px-8 text-center">
-          <h2 className="text-[1.6rem] font-black text-white mb-3">
-            Kullandığımız <span className="gradient-text">teknolojiler</span>
-          </h2>
-          <p className="mb-10 text-[0.9rem]" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            En güncel ve performanslı araçlarla çalışıyoruz.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Vercel', 'Figma', 'OpenAI', 'Resend', 'Google Analytics', 'Google Ads'].map((tech) => (
-              <span key={tech}
-                className="px-5 py-2.5 rounded-full text-[0.82rem] font-semibold"
-                style={{ background: 'rgba(255,82,27,0.12)', color: 'rgba(255,255,255,0.8)', border: '1px solid rgba(255,82,27,0.25)' }}>
-                {tech}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 

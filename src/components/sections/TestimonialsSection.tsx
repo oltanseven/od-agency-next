@@ -22,16 +22,11 @@ export default function TestimonialsSection() {
         : 'Kurucuyla direkt çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
     },
     {
-      title: en ? 'Month-to-Month' : 'Ay Be Ay Çalışma',
+      title: en ? 'Annual Partnership' : 'Yıllık Ortaklık',
       desc: en
-        ? 'No long-term contracts. If we don\u0027t deliver value each month, you walk. Simple as that.'
-        : 'Uzun vadeli sözleşme yok. Her ay değer üretmezsek gidersiniz. Bu kadar basit.',
+        ? 'We commit to your growth for the long run. Quarterly reviews keep us aligned, and real systems need time to compound.'
+        : 'Uzun vadeli büyümenize kendimizi adıyoruz. Çeyreklik değerlendirmelerle uyum sağlıyor, gerçek sistemlerin bileşik getiri üretmesi için zaman tanıyoruz.',
     },
-  ]
-
-  const techBadges = [
-    'Next.js', 'n8n', 'React', 'Supabase', 'Vercel', 'TypeScript',
-    'OpenAI', 'Claude AI', 'Retell', 'Tailwind CSS',
   ]
 
   return (
@@ -62,22 +57,6 @@ export default function TestimonialsSection() {
               <p className="text-ink/50 text-[0.92rem] leading-[1.7]">{desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mb-12">
-          <span className="text-ink/40 text-[0.78rem] font-semibold tracking-wide uppercase block mb-4">
-            {en ? 'Technologies We Use' : 'Kullandığımız Teknolojiler'}
-          </span>
-          <div className="flex flex-wrap justify-center gap-2">
-            {techBadges.map(badge => (
-              <span key={badge}
-                className="px-4 py-2 rounded-full text-[0.8rem] font-medium text-ink/50
-                  bg-[#f8fafc] border border-black/[0.06]
-                  hover:border-accent/20 hover:text-accent/70 transition-colors">
-                {badge}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="bg-[#f8fafc] border border-black/[0.08] rounded-2xl p-8 sm:p-10

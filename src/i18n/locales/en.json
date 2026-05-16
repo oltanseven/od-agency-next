@@ -81,7 +81,7 @@
       {
         "num": "02",
         "title": "Build",
-        "desc": "We deploy the highest-impact system first. Integrated with your existing tools, trained on your business context, tested before it touches a real customer."
+        "desc": "We deploy the highest-impact system first. Integrated with your existing workflows, customized for your business, tested before it touches a real customer."
       },
       {
         "num": "03",
@@ -103,12 +103,12 @@
         "desc": "We measure everything in booked appointments, captured leads, and saved hours. Not impressions, not clicks, not vanity metrics."
       },
       {
-        "title": "Month to month",
-        "desc": "No annual contracts. No lock-in. If the system doesn't produce value this month, you stop paying. Simple."
+        "title": "Annual partnership",
+        "desc": "We commit to your growth for the long run because real results compound over time. Quarterly reviews keep us aligned and accountable."
       },
       {
-        "title": "We build it myself",
-        "desc": "We don't consult and hand you a strategy doc. We write the code, connect the APIs, train the models, and keep them running."
+        "title": "We build it ourselves",
+        "desc": "We don't consult and hand you a strategy doc. We design the systems, deploy the automations, and keep them running."
       }
     ]
   },
@@ -150,8 +150,8 @@
         "a": "Not at all. We handle the entire technical side. You get a simple dashboard that shows what's working and what the numbers look like."
       },
       {
-        "q": "Can I cancel whenever I want?",
-        "a": "Yes. Month to month. No cancellation fees. If the system isn't producing value, you shouldn't be paying for it."
+        "q": "How does the partnership model work?",
+        "a": "We work on annual partnerships with quarterly reviews. This gives enough time for systems to mature and deliver compounding returns."
       },
       {
         "q": "How much does this cost?",
@@ -225,8 +225,8 @@
       ]
     },
     "tech": {
-      "title": "Tech We use",
-      "items": ["Next.js", "n8n", "WhatsApp Business API", "OpenAI", "Claude AI", "Retell Voice", "Supabase", "Vercel"]
+      "title": "",
+      "items": []
     }
   },
   "approach": {
@@ -244,7 +244,7 @@
         "num": "02",
         "title": "System Build",
         "desc": "We deploy the highest-impact system first. Integrated with your tools, trained on your context, tested before it touches a real customer.",
-        "details": ["AI training", "Tool integration", "Testing & QA", "Team walkthrough"]
+        "details": ["Custom system design", "Integration with your workflows", "Testing & QA", "Team walkthrough"]
       },
       {
         "num": "03",

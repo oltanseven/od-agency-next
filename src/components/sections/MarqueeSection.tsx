@@ -24,11 +24,6 @@ const items2TR = [
   'Süreç Haritalama', 'Performans Takibi',
 ]
 
-const items3 = [
-  'Next.js', 'React', 'n8n', 'Supabase', 'Vercel',
-  'TypeScript', 'OpenAI', 'Claude AI', 'Retell', 'Tailwind CSS',
-]
-
 export default function MarqueeSection() {
   const { locale } = useI18n()
   const items = locale === 'en' ? itemsEN : itemsTR
@@ -36,7 +31,6 @@ export default function MarqueeSection() {
 
   const t1 = [...items, ...items, ...items]
   const t2 = [...items2, ...items2, ...items2]
-  const t3 = [...items3, ...items3, ...items3]
 
   return (
     <div className="relative bg-cream-soft overflow-hidden py-10 sm:py-14 border-y border-black/[0.06]">
@@ -54,14 +48,6 @@ export default function MarqueeSection() {
             <span key={`b-${i}`} className="flex items-center gap-8 shrink-0">
               <span className="text-ink/20 text-[0.85rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
               <span className="text-accent/20 text-xs">&#x2022;</span>
-            </span>
-          ))}
-        </div>
-        <div className="flex gap-8 w-max animate-[slideLeft_34s_linear_infinite]">
-          {t3.map((item, i) => (
-            <span key={`c-${i}`} className="flex items-center gap-8 shrink-0">
-              <span className="text-ink/12 text-[0.8rem] font-medium tracking-wide whitespace-nowrap">{item}</span>
-              <span className="text-accent/15 text-xs">&#x2022;</span>
             </span>
           ))}
         </div>

@@ -81,7 +81,7 @@
       {
         "num": "02",
         "title": "Kurulum",
-        "desc": "En yüksek etkili sistemi önce kuruyoruz. Mevcut araçlarınızla entegre, iş bağlamınıza göre eğitilmiş, gerçek müşteriye dokunmadan önce test edilmiş."
+        "desc": "En yüksek etkili sistemi önce kuruyoruz. Mevcut iş akışlarınızla entegre, işletmenize özel tasarlanmış, gerçek müşteriye dokunmadan önce test edilmiş."
       },
       {
         "num": "03",
@@ -103,12 +103,12 @@
         "desc": "Her şeyi alınan randevular, yakalanan lead'ler ve kazanılan saatlerle ölçüyoruz. Gösterim veya tıklama değil."
       },
       {
-        "title": "Ay be ay",
-        "desc": "Yıllık sözleşme yok. Bağlayıcılık yok. Bu ay değer üretemiyorsak, ödemeyi kesersiniz. Bu kadar basit."
+        "title": "Yıllık ortaklık",
+        "desc": "Gerçek sonuçlar zamanla katlanarak büyüdüğü için uzun vadeli çalışıyoruz. Her çeyrekte değerlendirme yaparak hedeflere odaklı kalıyoruz."
       },
       {
         "title": "Biz kendimiz kuruyoruz",
-        "desc": "Danışmanlık yapıp strateji dokümanı vermiyoruz. Kodu yazıyoruz, API'leri bağlıyoruz, modelleri eğitiyoruz ve çalışır halde tutuyoruz."
+        "desc": "Danışmanlık yapıp strateji dokümanı vermiyoruz. Sistemleri tasarlıyoruz, otomasyonları kuruyoruz ve çalışır halde tutuyoruz."
       }
     ]
   },
@@ -150,8 +150,8 @@
         "a": "Hiç sorun değil. Teknik tarafın tamamını biz yönetiyoruz. Siz sadece neyin çalıştığını ve rakamların ne gösterdiğini gösteren basit bir panel alırsınız."
       },
       {
-        "q": "İstediğim zaman bırakabilir miyim?",
-        "a": "Evet. Ay be ay çalışıyoruz. İptal ücreti yok. Sistem değer üretmiyorsa ödeme yapmanız gerekmez."
+        "q": "Ortaklık modeli nasıl işliyor?",
+        "a": "Yıllık ortaklık modeli ile çalışıyoruz, her çeyrekte değerlendirme yapıyoruz. Bu, sistemlerin olgunlaşıp bileşik getiri üretmesi için yeterli zaman tanır."
       },
       {
         "q": "Bu ne kadara mal olacak?",
@@ -225,8 +225,8 @@
       ]
     },
     "tech": {
-      "title": "Kullandığımız Teknolojiler",
-      "items": ["Next.js", "n8n", "WhatsApp Business API", "OpenAI", "Claude AI", "Retell Voice", "Supabase", "Vercel"]
+      "title": "",
+      "items": []
     }
   },
   "approach": {
@@ -244,7 +244,7 @@
         "num": "02",
         "title": "Sistem Kurulumu",
         "desc": "En yüksek etkili sistemi önce kuruyoruz. Araçlarınızla entegre, bağlamınıza göre eğitilmiş, gerçek müşteriye dokunmadan test edilmiş.",
-        "details": ["AI eğitimi", "Araç entegrasyonu", "Test & Kalite Kontrol", "Ekip tanıtımı"]
+        "details": ["Özel sistem tasarımı", "İş akışlarınızla entegrasyon", "Test & Kalite Kontrol", "Ekip tanıtımı"]
       },
       {
         "num": "03",
