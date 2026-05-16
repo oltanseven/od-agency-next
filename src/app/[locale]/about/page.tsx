@@ -80,7 +80,7 @@ export default async function AboutPage({ params }: Props) {
             {([
               { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
               { name: 'Kerim Embel', role: locale === 'en' ? 'Backend Developer' : 'Backend Geliştirici', img: '/team/kerim-embel.jpg' },
-              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', img: null },
+              { name: 'Tutku Muriz', role: locale === 'en' ? 'R&D Specialist' : 'Ar-Ge Uzmanı', img: '/team/tutku-muriz.jpg' },
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
               <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
