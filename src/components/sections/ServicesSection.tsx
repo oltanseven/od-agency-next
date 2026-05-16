@@ -65,7 +65,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <div className="od-card !bg-cream-soft flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="od-card cta-strip flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="text-[1.1rem] font-bold text-ink mb-1">
               {en
