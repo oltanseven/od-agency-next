@@ -96,7 +96,7 @@
     "items": [
       {
         "title": "Aracı yok",
-        "desc": "Sisteminizi kuran kişiyle doğrudan konuşursunuz. Müşteri temsilcisi yok, junior devir yok, telefon oyunu yok."
+        "desc": "Sisteminizi kuran ekiple doğrudan çalışırsınız. Müşteri temsilcisi yok, junior devir yok, telefon oyunu yok."
       },
       {
         "title": "Sonuç yoksa ödeme yok",
@@ -166,7 +166,7 @@
   "cta": {
     "title": "Önce neyi otomatikleştireceğimizi birlikte belirleyelim.",
     "subtitle": "20 dakika. Sunum yok. Operasyonlarınıza bakıp, otomatikleştirildiğinde en büyük getiriyi sağlayacak süreci söylüyoruz.",
-    "button": "Görüşme Al Al",
+    "button": "Görüşme Al",
     "note": "Ücretsiz. Taahhüt yok. 24 saat içinde dönüş."
   },
   "footer": {
@@ -213,12 +213,12 @@
   "about": {
     "eyebrow": "Hakkımızda",
     "headline": "Kuruyoruz. İşletiyoruz. Sonucun sahibiyiz.",
-    "story": "Oder Agency, Antalya merkezli geliştirici ve otomasyon uzmanı Oltan Seven tarafından kuruldu. Yıllarca web uygulamaları ve AI araçları geliştirdikten sonra bir şey netleşti: işletmelerin daha fazla yazılıma değil, işi gerçekten yapan sistemlere ihtiyacı var.",
+    "story": "Oder Agency, Antalya merkezli bir AI büyüme ortağıdır. Yıllarca farklı sektörlerde otomasyon ve yazılım projeleri geliştirdikten sonra bir şey netleşti: işletmelerin daha fazla yazılıma değil, işi gerçekten yapan sistemlere ihtiyacı var.",
     "story2": "Tam olarak bunu yapıyoruz. Satış, destek ve operasyonları kendi başına yürüten AI sistemleri kuruyoruz. Toz toplayan panolar değil. Gelir ve kazanılan saatle ölçebileceğiniz, gerçekten çalışan sistemler.",
     "principles": {
       "title": "Nasıl Çalışıyoruz",
       "items": [
-        { "title": "Direkt hat", "desc": "Kodu yazan ve sistemleri bağlayan kişiyle konuşursunuz. Katman yok." },
+        { "title": "Direkt hat", "desc": "Sisteminizi kuran ekiple doğrudan çalışırsınız. Arada katman yok." },
         { "title": "Efor değil sonuç", "desc": "Saat için faturalamıyoruz. Sizin sonuçlarınız için optimize ediyoruz." },
         { "title": "Tam şeffaflık", "desc": "Her şeyi görürsünüz. Maliyetler, performans, neyin çalışıp neyin çalışmadığı." },
         { "title": "Zamanla daha iyi", "desc": "AI sistemleri veriyle gelişir. İzliyoruz, ayarlıyoruz, işiniz büyüdükçe genişletiyoruz." }

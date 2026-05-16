@@ -16,7 +16,7 @@ Oder Agency is an AI growth partner based in Antalya, Turkey. We build AI-powere
 ## Team
 
 - Oltan Seven, Co-Founder & Developer
-- Kerim Embel, Backend Developer
+- Kerim Embel, Solution Architect
 - Tutku Muriz, R&D Specialist
 
 ## Key Pages

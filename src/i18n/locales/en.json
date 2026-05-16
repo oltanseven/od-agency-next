@@ -64,7 +64,7 @@
     ]
   },
   "solutions": {
-    "title": "What I Build",
+    "title": "What We Build",
     "subtitle": "Each system is custom-built for your specific operations.",
     "items": [],
     "cta": "Get a Custom Quote"
@@ -91,12 +91,12 @@
     ]
   },
   "whyUs": {
-    "title": "Why me?",
+    "title": "Why us?",
     "subtitle": "We're not an agency. We're operators who build and run the systems ourselves.",
     "items": [
       {
         "title": "No middlemen",
-        "desc": "You talk to the person who builds your system. No account managers, no junior handoffs, no telephone game."
+        "desc": "You work directly with the team building your systems. No account managers, no junior handoffs, no telephone game."
       },
       {
         "title": "Results or nothing",
@@ -159,13 +159,13 @@
       },
       {
         "q": "Will this replace my team?",
-        "a": "No. AWe handles the repetitive, high-volume stuff. Your people get freed up for the work that actually requires a human brain. It's addition, not subtraction."
+        "a": "No. We handle the repetitive, high-volume stuff. Your people get freed up for the work that actually requires a human brain. It's addition, not subtraction."
       }
     ]
   },
   "cta": {
     "title": "Let's figure out what to automate first.",
-    "subtitle": "20 minutes. No pitch deck. I'll look at your operations and tell you exactly which process would give you the biggest return if automated.",
+    "subtitle": "20 minutes. No pitch deck. We look at your operations and tell you exactly which process would give you the biggest return if automated.",
     "button": "Book a Call",
     "note": "Free. No commitment. We reply within 24 hours."
   },
@@ -184,8 +184,8 @@
     "tagline": "Not an agency. Your growth partner."
   },
   "apply": {
-    "title": "Tell me about your business.",
-    "subtitle": "Fill this out in 2 minutes. I'll review it personally and get back to you within 24 hours with a specific plan.",
+    "title": "Tell us about your business.",
+    "subtitle": "Fill this out in 2 minutes. We'll review it and get back to you within 24 hours with a specific plan.",
     "fields": {
       "name": "Your name",
       "email": "Email address",
@@ -202,7 +202,7 @@
     },
     "success": {
       "title": "Got it.",
-      "message": "I'll review your details and get back within 24 hours. Check your inbox."
+      "message": "We'll review your details and get back within 24 hours. Check your inbox."
     },
     "trust": [
       "Free consultation",
@@ -213,12 +213,12 @@
   "about": {
     "eyebrow": "About",
     "headline": "We build it. We run it. We own the outcome.",
-    "story": "Oder Agency was founded by Oltan Seven, a developer and automation specialist based in Antalya, Turkey. After years of building web applications and AI tools, one thing became obvious: businesses don't need more software. They need systems that actually do the work without someone babysitting them.",
+    "story": "Oder Agency is an AI growth partner based in Antalya, Turkey. After years of building automation systems across different industries, one thing became clear: businesses don't need more software. They need systems that actually do the work without someone babysitting them.",
     "story2": "That's what we do. We build AI systems that handle sales, support, and operations on their own. No dashboards collecting dust. No weekly reports nobody reads. Just working systems that you can measure in revenue and hours saved.",
     "principles": {
       "title": "How we work",
       "items": [
-        { "title": "Direct line", "desc": "You talk to me. The person writing the code and connecting the systems. No layers." },
+        { "title": "Direct line", "desc": "You work directly with the team building your systems. No layers, no handoffs." },
         { "title": "Outcomes over effort", "desc": "We don't bill for hours. We optimize for your results." },
         { "title": "Full transparency", "desc": "You see everything. Costs, performance, what's working and what's not." },
         { "title": "Gets better over time", "desc": "AI systems improve with data. We monitor, tune, and expand as your business grows." }
