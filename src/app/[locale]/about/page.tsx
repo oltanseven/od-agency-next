@@ -76,7 +76,7 @@ export default async function AboutPage({ params }: Props) {
             </h2>
             <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-[1000px] mx-auto">
             {([
               { name: 'Oltan Seven', role: locale === 'en' ? 'Co-Founder & Developer' : 'Kurucu Ortak & Geliştirici', img: '/team/oltan-seven.jpg' },
               { name: 'Kerim Embel', role: locale === 'en' ? 'Solution Architect' : 'Çözüm Mimarı', img: '/team/kerim-embel.jpg' },
@@ -85,17 +85,17 @@ export default async function AboutPage({ params }: Props) {
             ]).map((member, i) => (
               <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
                 {member.img ? (
-                  <div className="aspect-[4/3] relative">
-                    <Image src={member.img} alt={member.name} fill className="object-cover object-[center_25%]" />
+                  <div className="aspect-[3/4] relative">
+                    <Image src={member.img} alt={member.name} fill className="object-cover object-center" style={{ objectPosition: 'center 30%' }} />
                   </div>
                 ) : (
-                  <div className="aspect-[4/3] flex items-center justify-center">
+                  <div className="aspect-[3/4] flex items-center justify-center">
                     <span className="text-[2rem] font-black text-ink/10">?</span>
                   </div>
                 )}
-                <div className="p-4 text-center">
-                  <h3 className={`text-[0.95rem] font-bold mb-0.5 ${member.img ? 'text-ink' : 'text-ink/25'}`}>{member.name}</h3>
-                  <p className={`text-[0.78rem] ${member.img ? 'text-ink/50' : 'text-ink/15'}`}>{member.role}</p>
+                <div className="p-5 text-center">
+                  <h3 className={`text-[1rem] font-bold mb-1 ${member.img ? 'text-ink' : 'text-ink/25'}`}>{member.name}</h3>
+                  <p className={`text-[0.82rem] ${member.img ? 'text-ink/50' : 'text-ink/15'}`}>{member.role}</p>
                 </div>
               </div>
             ))}
