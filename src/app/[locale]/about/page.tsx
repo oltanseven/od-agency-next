@@ -85,11 +85,11 @@ export default async function AboutPage({ params }: Props) {
             ]).map((member, i) => (
               <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
                 {member.img ? (
-                  <div className="aspect-[3/4] relative">
-                    <Image src={member.img} alt={member.name} fill className="object-cover object-top" />
+                  <div className="aspect-[4/3] relative">
+                    <Image src={member.img} alt={member.name} fill className="object-cover object-[center_25%]" />
                   </div>
                 ) : (
-                  <div className="aspect-[3/4] flex items-center justify-center">
+                  <div className="aspect-[4/3] flex items-center justify-center">
                     <span className="text-[2rem] font-black text-ink/10">?</span>
                   </div>
                 )}
