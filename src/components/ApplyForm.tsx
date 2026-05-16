@@ -90,7 +90,7 @@ export default function ApplyForm({ dict }: { dict: Record<string, unknown> }) {
 
       <div>
         <label className="text-[0.8rem] font-semibold text-ink/60 mb-1.5 block">{fields.company}</label>
-        <input name="company" className="od-input" />
+        <input name="company" required className="od-input" />
       </div>
 
       <div>
@@ -106,7 +106,7 @@ export default function ApplyForm({ dict }: { dict: Record<string, unknown> }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="text-[0.8rem] font-semibold text-ink/60 mb-1.5 block">{fields.employees}</label>
-          <select name="employees" className="od-input">
+          <select name="employees" required className="od-input">
             <option value="">—</option>
             {fields.employeeOptions.map((opt) => (
               <option key={opt} value={opt}>{opt}</option>
@@ -115,7 +115,7 @@ export default function ApplyForm({ dict }: { dict: Record<string, unknown> }) {
         </div>
         <div>
           <label className="text-[0.8rem] font-semibold text-ink/60 mb-1.5 block">{fields.timeline}</label>
-          <select name="timeline" className="od-input">
+          <select name="timeline" required className="od-input">
             <option value="">—</option>
             {fields.timelineOptions.map((opt) => (
               <option key={opt} value={opt}>{opt}</option>
@@ -126,7 +126,7 @@ export default function ApplyForm({ dict }: { dict: Record<string, unknown> }) {
 
       <div>
         <label className="text-[0.8rem] font-semibold text-ink/60 mb-1.5 block">{fields.message}</label>
-        <textarea name="message" rows={4} className="od-input resize-y" />
+        <textarea name="message" required minLength={10} rows={4} className="od-input resize-y" />
       </div>
 
       <button
