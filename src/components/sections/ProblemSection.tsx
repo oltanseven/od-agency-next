@@ -46,13 +46,13 @@ export default function ProblemSection() {
             {en ? 'Problem' : 'Problem'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'Sound familiar?' : 'Tanıdık geliyor mu?'}
+            {en ? 'Challenges holding your business back' : 'İşletmenizi geride tutan zorluklar'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">
             {en
-              ? 'Most businesses hit the same walls when they try to grow. Here are the ones we solve every day.'
-              : 'Çoğu işletme büyümeye çalışırken aynı duvarlara çarpar. İşte her gün çözdüklerimiz.'}
+              ? 'Growing businesses face recurring operational bottlenecks. These are the problems we solve.'
+              : 'Büyüyen işletmeler tekrarlayan operasyonel darboğazlarla karşılaşır. Bunlar bizim çözdüğümüz problemler.'}
           </p>
         </div>
 

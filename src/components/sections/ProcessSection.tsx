@@ -42,13 +42,13 @@ export default function ProcessSection() {
             {en ? 'Process' : 'Süreç'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'How we make it happen' : 'Nasıl hayata geçiriyoruz'}
+            {en ? 'Our proven methodology' : 'Kanıtlanmış metodolojimiz'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-5" />
           <p className="text-ink/50 max-w-[500px] mx-auto leading-[1.7] text-[1rem]">
             {en
-              ? 'A proven 3-step framework that takes you from audit to live automation in weeks, not months.'
-              : 'Haftalar içinde sizi denetimden canlı otomasyona taşıyan kanıtlanmış 3 adımlı çerçeve.'}
+              ? 'From discovery to deployment in weeks, not months. A structured approach that delivers predictable results.'
+              : 'Keşiften canlıya geçişe aylar değil haftalar içinde. Öngörülebilir sonuçlar sunan yapılandırılmış bir yaklaşım.'}
           </p>
         </div>
 

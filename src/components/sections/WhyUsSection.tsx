@@ -10,8 +10,8 @@ export default function WhyUsSection() {
     {
       title: en ? 'No middlemen' : 'Aracı yok',
       desc: en
-        ? 'You work directly with the person who builds your systems. No account managers, no ticket queues.'
-        : 'Sistemlerinizi kuran kişiyle direkt çalışırsınız. Müşteri temsilcisi yok, destek kuyruğu yok.',
+        ? 'You work directly with the team building your systems. No account managers, no ticket queues.'
+        : 'Sistemlerinizi kuran ekiple doğrudan çalışırsınız. Müşteri temsilcisi yok, destek kuyruğu yok.',
     },
     {
       title: en ? 'Outcome-focused' : 'Sonuç odaklı',
@@ -42,13 +42,13 @@ export default function WhyUsSection() {
             {en ? 'Why Us' : 'Neden Biz'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'Built different, on purpose' : 'Bilinçli olarak farklı kurulduk'}
+            {en ? 'What sets us apart' : 'Bizi farklı kılan nedir'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[560px] leading-[1.7] text-[1rem]">
             {en
-              ? 'We are not a typical agency. Here is how we work and why it matters for your business.'
-              : 'Tipik bir ajans değiliz. İşte nasıl çalıştığımız ve bunun işletmeniz için neden önemli olduğu.'}
+              ? 'A partnership model built around transparency, accountability, and long-term value.'
+              : 'Şeffaflık, hesap verebilirlik ve uzun vadeli değer üzerine kurulmuş bir ortaklık modeli.'}
           </p>
         </div>
 

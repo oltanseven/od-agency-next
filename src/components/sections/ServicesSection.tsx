@@ -41,13 +41,13 @@ export default function ServicesSection() {
             {en ? 'Services' : 'Hizmetler'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'Your business, running on autopilot' : 'İşletmeniz otopilotta çalışsın'}
+            {en ? 'Solutions that drive growth' : 'Büyümeyi yönlendiren çözümler'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">
             {en
-              ? 'Looking good is not enough. Your systems should generate results every single day. Here are the solutions that make it happen.'
-              : 'Güzel görünmek yetmez. Sistemleriniz her gün sonuç üretmeli. İşte tam bunu yapan çözümler:'}
+              ? 'End-to-end AI solutions designed to streamline your operations and deliver consistent, measurable results.'
+              : 'Operasyonlarınızı düzene sokmak ve tutarlı, ölçülebilir sonuçlar sunmak için tasarlanan uçtan uca AI çözümleri.'}
           </p>
         </div>
 

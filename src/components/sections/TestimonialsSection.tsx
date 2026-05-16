@@ -18,8 +18,8 @@ export default function TestimonialsSection() {
     {
       title: en ? 'Direct Access' : 'Doğrudan Erişim',
       desc: en
-        ? 'You work directly with the founder. No middlemen, no account managers. Fast decisions, real accountability.'
-        : 'Kurucuyla direkt çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
+        ? 'You work directly with our core team. No middlemen, no account managers. Fast decisions, real accountability.'
+        : 'Çekirdek ekibimizle doğrudan çalışırsınız. Aracı, müşteri temsilcisi yok. Hızlı kararlar, gerçek sorumluluk.',
     },
     {
       title: en ? 'Annual Partnership' : 'Yıllık Ortaklık',
@@ -38,13 +38,13 @@ export default function TestimonialsSection() {
             {en ? 'Why Trust Us?' : 'Neden Güvenilir?'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'We back our work with written guarantees' : 'Sözümüzü yazılı garanti ile veriyoruz'}
+            {en ? 'Our commitments to every client' : 'Her müşterimize taahhütlerimiz'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-5" />
           <p className="text-ink/50 max-w-[500px] leading-[1.7] text-[1rem]">
             {en
-              ? 'Every engagement comes with these three commitments. We take the risk so you can move forward with confidence.'
-              : 'Her projede bu üç taahhüdü yazılı olarak sunuyoruz. Riski biz üstleniyoruz, siz rahat çalışın.'}
+              ? 'Every partnership is built on these three pillars. We invest in your success from the very first day.'
+              : 'Her ortaklık bu üç temel üzerine kurulur. İlk günden itibaren başarınıza yatırım yapıyoruz.'}
           </p>
         </div>
 

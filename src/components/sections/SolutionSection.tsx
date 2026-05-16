@@ -39,13 +39,13 @@ export default function SolutionSection() {
             {en ? 'Solution' : 'Çözüm'}
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.1] tracking-[-0.02em] text-ink mb-4">
-            {en ? 'AI that actually works' : 'Gerçekten çalışan AI'}
+            {en ? 'Intelligent systems, real results' : 'Akıllı sistemler, gerçek sonuçlar'}
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-5" />
           <p className="text-ink/50 max-w-[500px] mx-auto leading-[1.7] text-[1rem]">
             {en
-              ? 'We build custom automation systems that integrate into your existing operations and deliver measurable results from day one.'
-              : 'Mevcut operasyonlarınıza entegre olan ve ilk günden ölçülebilir sonuçlar üreten özel otomasyon sistemleri kuruyoruz.'}
+              ? 'Custom AI automation systems that integrate with your existing operations and deliver measurable outcomes from day one.'
+              : 'Mevcut operasyonlarınıza entegre olan ve ilk günden ölçülebilir sonuçlar üreten özel AI otomasyon sistemleri.'}
           </p>
         </div>
 

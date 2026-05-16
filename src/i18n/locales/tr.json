@@ -24,8 +24,8 @@
     "trust3": "kesintisiz çalışma"
   },
   "problem": {
-    "title": "Muhtemelen bu sizin haftanız.",
-    "subtitle": "Ürün çalışıyor. Müşteriler var. Ama büyüme durdu ve sebebini bulamıyorsunuz.",
+    "title": "İşletmenizi geride tutan zorluklar",
+    "subtitle": "Büyüyen işletmeler tekrarlayan operasyonel darboğazlarla karşılaşır. Bunlar bizim çözdüğümüz problemler.",
     "items": [
       {
         "title": "Gece gelen lead'ler kayboluyor",
@@ -70,8 +70,8 @@
     "cta": "Özel Teklif Al"
   },
   "process": {
-    "title": "Nasıl çalışıyor.",
-    "subtitle": "Üç adım. Sürpriz yok. Her aşamada neler olduğunu bilirsiniz.",
+    "title": "Kanıtlanmış metodolojimiz",
+    "subtitle": "Keşiften canlıya geçişe aylar değil haftalar içinde. Öngörülebilir sonuçlar sunan yapılandırılmış bir yaklaşım.",
     "steps": [
       {
         "num": "01",
@@ -164,10 +164,10 @@
     ]
   },
   "cta": {
-    "title": "Önce neyi otomatikleştireceğimizi birlikte belirleyelim.",
-    "subtitle": "20 dakika. Sunum yok. Operasyonlarınıza bakıp, otomatikleştirildiğinde en büyük getiriyi sağlayacak süreci söylüyoruz.",
+    "title": "Operasyonlarınızı optimize etmeye hazır mısınız?",
+    "subtitle": "Ücretsiz bir keşif görüşmesi planlayın. İş akışlarınızı analiz ediyor ve işletmeniz için en yüksek etkili otomasyon fırsatlarını belirliyoruz.",
     "button": "Görüşme Al",
-    "note": "Ücretsiz. Taahhüt yok. 24 saat içinde dönüş."
+    "note": "Ücretsiz danışma. Taahhüt gerektirmez."
   },
   "footer": {
     "company": "Şirket",
@@ -257,8 +257,8 @@
       "title": "Farkımız ne",
       "items": [
         "Retainer satmıyoruz, sonuç satıyoruz. Sistem çalışmazsa ödeme yapmazsınız.",
-        "Ajans masrafı yok. Müşteri temsilcisi yok. Sistemlerinizi kuran kişilerle doğrudan çalışırsınız.",
-        "Önerdiğimiz her aracı kendimiz kullanıyoruz. Her iş akışı, her entegrasyon önce kendi projelerimizde çalışır."
+        "Ajans masrafı yok. Müşteri temsilcisi yok. Sistemlerinizi kuran ekiple doğrudan çalışırsınız.",
+        "Önerdiğimiz her aracı kendimiz kullanıyoruz. Her iş akışı, her entegrasyon önce kendi operasyonlarımızda çalışır."
       ]
     }
   }

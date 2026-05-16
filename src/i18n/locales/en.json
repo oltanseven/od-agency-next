@@ -24,8 +24,8 @@
     "trust3": "always-on uptime"
   },
   "problem": {
-    "title": "This is probably your week.",
-    "subtitle": "Your product works. You have customers. But growth stalled and you can't figure out why.",
+    "title": "Challenges holding your business back",
+    "subtitle": "Growing businesses face recurring operational bottlenecks. These are the problems we solve.",
     "items": [
       {
         "title": "Leads slip through at night",
@@ -70,8 +70,8 @@
     "cta": "Get a Custom Quote"
   },
   "process": {
-    "title": "How it works.",
-    "subtitle": "Three steps. No mystery. You know exactly what's happening at every stage.",
+    "title": "Our proven methodology",
+    "subtitle": "From discovery to deployment in weeks, not months. A structured approach that delivers predictable results.",
     "steps": [
       {
         "num": "01",
@@ -164,10 +164,10 @@
     ]
   },
   "cta": {
-    "title": "Let's figure out what to automate first.",
-    "subtitle": "20 minutes. No pitch deck. We look at your operations and tell you exactly which process would give you the biggest return if automated.",
+    "title": "Ready to streamline your operations?",
+    "subtitle": "Schedule a complimentary discovery call. We analyze your workflows and identify the highest-impact automation opportunities for your business.",
     "button": "Book a Call",
-    "note": "Free. No commitment. We reply within 24 hours."
+    "note": "Complimentary consultation. No commitment required."
   },
   "footer": {
     "company": "Company",
@@ -257,8 +257,8 @@
       "title": "What makes this different",
       "items": [
         "We don't sell retainers. We sell outcomes. If the system doesn't work, you don't pay.",
-        "No agency overhead. No account managers. You work directly with the person building your systems.",
-        "We use everything we recommend. Every tool, every workflow, every integration runs in our own projects first."
+        "No agency overhead. No account managers. You work directly with the team building your systems.",
+        "We use everything we recommend. Every tool, every workflow, every integration runs in our own operations first."
       ]
     }
   }
