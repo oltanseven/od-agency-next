@@ -104,12 +104,21 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Tech Stack */}
+      {/* Industries */}
       <section className="py-24 bg-cream-soft">
         <div className="max-w-[700px] mx-auto px-5 sm:px-8 text-center">
-          <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-10">{tech.title}</h2>
+          <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
+            {locale === 'en' ? 'Industries' : 'Sektörler'}
+          </span>
+          <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-4">
+            {locale === 'en' ? 'Industries we serve' : 'Hizmet verdiğimiz sektörler'}
+          </h2>
+          <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-10" />
           <div className="flex flex-wrap justify-center gap-3">
-            {tech.items.map((item) => (
+            {(locale === 'en'
+              ? ['Healthcare & Clinics', 'Real Estate', 'E-Commerce', 'Legal Firms', 'Education', 'SaaS & Technology', 'Finance', 'Restaurants & Hospitality', 'Logistics', 'B2B Services']
+              : ['Sağlık & Klinikler', 'Gayrimenkul', 'E-Ticaret', 'Hukuk Büroları', 'Eğitim', 'SaaS & Teknoloji', 'Finans', 'Restoran & Konaklama', 'Lojistik', 'B2B Hizmetler']
+            ).map((item) => (
               <span key={item} className="text-[0.85rem] font-medium text-ink/50 bg-white border border-black/[0.08] px-4 py-2 rounded-full">
                 {item}
               </span>
