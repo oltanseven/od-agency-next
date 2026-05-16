@@ -64,13 +64,45 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Team */}
+      <section className="py-24 bg-cream">
+        <div className="max-w-[900px] mx-auto px-5 sm:px-8">
+          <div className="text-center mb-14">
+            <span className="text-ink/40 text-[0.75rem] font-semibold tracking-[0.12em] uppercase mb-4 block">
+              {locale === 'en' ? 'Team' : 'Ekip'}
+            </span>
+            <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-4">
+              {locale === 'en' ? 'The people behind the systems' : 'Sistemlerin arkasındaki insanlar'}
+            </h2>
+            <div className="w-16 h-1 bg-accent rounded-full mx-auto" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {([
+              { name: 'Oltan Seven', role: locale === 'en' ? 'Founder & Developer' : 'Kurucu & Geliştirici', initials: 'OS' },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'AI Engineer' : 'AI Mühendisi', initials: '?' },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', initials: '?' },
+              { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', initials: '?' },
+            ]).map((member, i) => (
+              <div key={i} className="text-center">
+                <div className={`w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-[1.2rem] font-black
+                  ${i === 0 ? 'bg-accent text-white' : 'bg-ink/5 text-ink/20 border-2 border-dashed border-ink/10'}`}>
+                  {member.initials}
+                </div>
+                <h3 className={`text-[0.95rem] font-bold mb-1 ${i === 0 ? 'text-ink' : 'text-ink/30'}`}>{member.name}</h3>
+                <p className={`text-[0.8rem] ${i === 0 ? 'text-ink/50' : 'text-ink/20'}`}>{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Tech Stack */}
-      <section className="py-24 bg-night text-white">
+      <section className="py-24 bg-cream-soft">
         <div className="max-w-[700px] mx-auto px-5 sm:px-8 text-center">
-          <h2 className="text-[1.8rem] font-black tracking-[-0.02em] mb-10">{tech.title}</h2>
+          <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-10">{tech.title}</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {tech.items.map((item) => (
-              <span key={item} className="text-[0.85rem] font-medium text-white/60 bg-white/8 border border-white/10 px-4 py-2 rounded-full">
+              <span key={item} className="text-[0.85rem] font-medium text-ink/50 bg-white border border-black/[0.08] px-4 py-2 rounded-full">
                 {item}
               </span>
             ))}
