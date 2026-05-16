@@ -78,7 +78,7 @@ export default function Footer() {
                   key={title} href={href} title={title} target="_blank" rel="noreferrer"
                   className="w-11 h-11 rounded-lg border border-black/[0.09]
                     flex items-center justify-center text-ink/50
-                    hover:border-accent hover:text-accent
+                    hover:border-accent hover:text-accent transition-colors
                     focus-visible:ring-2 focus-visible:ring-accent/50"
                 >
                   {icon}
@@ -99,11 +99,11 @@ export default function Footer() {
               ).map(([label, href]) => (
                 <li key={label}>
                   {href.includes('#') ? (
-                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
+                    <a href={href} onClick={(e) => handleHash(e, href)} className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors rounded cursor-pointer focus-visible:outline-2 focus-visible:outline-accent/50">
                       {label}
                     </a>
                   ) : (
-                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent rounded focus-visible:outline-2 focus-visible:outline-accent/50">
+                    <Link href={href} className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors rounded focus-visible:outline-2 focus-visible:outline-accent/50">
                       {label}
                     </Link>
                   )}
@@ -116,9 +116,9 @@ export default function Footer() {
           <div>
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.company')}</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href={`${prefix}/about`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.about')}</Link></li>
-              <li><Link href="/blog" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.blog')}</Link></li>
-              <li><Link href={`${prefix}/apply`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent">{t('footer.contact')}</Link></li>
+              <li><Link href={`${prefix}/about`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors">{t('footer.about')}</Link></li>
+              <li><Link href="/blog" className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors">{t('footer.blog')}</Link></li>
+              <li><Link href={`${prefix}/apply`} className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors">{t('footer.contact')}</Link></li>
             </ul>
           </div>
 
@@ -127,12 +127,12 @@ export default function Footer() {
             <h4 className="text-[0.75rem] font-bold tracking-[0.1em] uppercase text-ink/50 mb-5">{t('footer.contact')}</h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <a href="mailto:hello@oder.agency" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">
+                <a href="mailto:hello@oder.agency" className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors">
                   hello@oder.agency
                 </a>
               </li>
               <li>
-                <a href="tel:+905324652031" className="text-ink2 text-[0.88rem] no-underline hover:text-accent">
+                <a href="tel:+905324652031" className="text-ink2 text-[0.88rem] no-underline hover:text-accent transition-colors">
                   +90 532 465 20 31
                 </a>
               </li>

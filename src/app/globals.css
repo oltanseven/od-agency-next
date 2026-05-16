@@ -113,14 +113,12 @@ html.dark .gradient-text {
   background-clip: text;
 }
 
-/* Footer links & social icons */
-html.dark footer .text-ink2 { color: rgba(232,228,220,0.5); }
-html.dark footer .text-ink2:hover { color: #ff6b3d; }
-html.dark footer .text-ink\/50 { color: rgba(232,228,220,0.35); }
-html.dark footer .text-ink\/50:hover { color: #ff6b3d; }
-html.dark footer a.text-ink\/50:hover { color: #ff6b3d; }
-html.dark footer .hover\:border-accent:hover { border-color: #ff6b3d; }
-html.dark footer .hover\:text-accent:hover { color: #ff6b3d; }
+/* Footer dark mode - links, icons, hovers */
+html.dark footer .text-ink2 { color: rgba(232,228,220,0.45); }
+html.dark footer a:hover, html.dark footer button:hover { color: #ff6b3d !important; }
+html.dark footer a:hover { border-color: #ff6b3d; }
+html.dark footer .text-ink\/50 { color: rgba(232,228,220,0.3); }
+html.dark footer h4 { color: rgba(232,228,220,0.5); }
 
 /* Prose (blog content) */
 html.dark .prose { color: rgba(232,228,220,0.7); }
