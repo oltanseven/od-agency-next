@@ -113,8 +113,18 @@ html.dark .gradient-text {
   background-clip: text;
 }
 
-/* FAQ accordion */
-html.dark .bg-white { background: #161820; }
+/* CTA strip cards with !bg overrides */
+html.dark .od-card.\!bg-\[\#f8fafc\] { background: rgba(255,255,255,0.04); }
+html.dark .od-card.\!bg-cream-soft { background: rgba(255,255,255,0.04); }
+
+/* Footer links & social icons */
+html.dark footer .text-ink2 { color: rgba(232,228,220,0.5); }
+html.dark footer .text-ink2:hover { color: #ff6b3d; }
+html.dark footer .text-ink\/50 { color: rgba(232,228,220,0.35); }
+html.dark footer .text-ink\/50:hover { color: #ff6b3d; }
+html.dark footer a.text-ink\/50:hover { color: #ff6b3d; }
+html.dark footer .hover\:border-accent:hover { border-color: #ff6b3d; }
+html.dark footer .hover\:text-accent:hover { color: #ff6b3d; }
 
 /* Prose (blog content) */
 html.dark .prose { color: rgba(232,228,220,0.7); }
