@@ -127,6 +127,7 @@ html.dark .prose a { color: #ff6b3d; }
 html.dark .prose strong { color: #e8e4dc; }
 html.dark .prose blockquote { border-color: rgba(255,82,27,0.2); color: rgba(232,228,220,0.5); }
 
+
 html { scroll-behavior: smooth; }
 body { overflow-x: hidden; }
 
