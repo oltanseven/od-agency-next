@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* CTA */}
-        <div className="bg-cream-soft border border-black/[0.09] rounded-2xl p-10 text-center">
+        <div className="od-card text-center">
           <h3 className="text-[1.3rem] font-black text-ink mb-2">Projenizi konuşalım</h3>
           <p className="text-ink/50 mb-6 text-[0.92rem]">
             Bu yazıda bahsettiğimiz konularda size nasıl yardımcı olabileceğimizi anlatmak isteriz.

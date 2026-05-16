@@ -60,7 +60,7 @@ export default function ApplyForm({ dict }: { dict: Record<string, unknown> }) {
 
   if (sent) {
     return (
-      <div className="bg-cream-soft border border-[#22c55e]/20 rounded-2xl p-10 text-center">
+      <div className="od-card !border-[#22c55e]/20 text-center">
         <div className="w-14 h-14 rounded-full bg-[#22c55e]/10 text-[#22c55e] flex items-center justify-center mx-auto mb-4">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M20 6L9 17l-5-5"/></svg>
         </div>

@@ -55,7 +55,7 @@ export default async function AboutPage({ params }: Props) {
           <h2 className="text-[1.8rem] font-black text-ink tracking-[-0.02em] mb-12 text-center">{principles.title}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {principles.items.map((item, i) => (
-              <div key={i} className="bg-cream border border-black/[0.06] rounded-2xl p-7">
+              <div key={i} className="od-card">
                 <h3 className="text-[1.05rem] font-bold text-ink mb-2">{item.title}</h3>
                 <p className="text-ink/45 text-[0.88rem] leading-relaxed">{item.desc}</p>
               </div>
@@ -83,7 +83,7 @@ export default async function AboutPage({ params }: Props) {
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Growth Strategist' : 'Büyüme Stratejisti', img: null },
               { name: locale === 'en' ? 'Coming Soon' : 'Yakında', role: locale === 'en' ? 'Operations Lead' : 'Operasyon Lideri', img: null },
             ]).map((member, i) => (
-              <div key={i} className={`rounded-2xl overflow-hidden border ${member.img ? 'border-black/[0.08] bg-white' : 'border-dashed border-ink/10 bg-ink/[0.02]'}`}>
+              <div key={i} className={`od-card !p-0 overflow-hidden ${!member.img ? '!border-dashed !border-ink/10' : ''}`}>
                 {member.img ? (
                   <div className="aspect-[3/4] relative">
                     <Image src={member.img} alt={member.name} fill className="object-cover object-top" />
