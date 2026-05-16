@@ -9,7 +9,6 @@ import ServicesSection from '@/components/sections/ServicesSection'
 import StatsSection from '@/components/sections/StatsSection'
 import ProcessSection from '@/components/sections/ProcessSection'
 import TestimonialsSection from '@/components/sections/TestimonialsSection'
-import MarqueeSection from '@/components/sections/MarqueeSection'
 import FitSection from '@/components/sections/FitSection'
 import FAQSection from '@/components/sections/FAQSection'
 import CTASection from '@/components/sections/CTASection'
@@ -44,7 +43,6 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <HeroSection dict={dict.hero as Record<string, string>} locale={locale} />
-      <MarqueeSection />
       <ProblemSection />
       <SolutionSection />
       <StatsSection />

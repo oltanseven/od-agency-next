@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -116,12 +117,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           });`}
         </Script>
       </head>
-      <body className="bg-cream text-ink font-sans antialiased">
+      <body className="bg-cream text-ink font-sans antialiased transition-colors duration-300">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

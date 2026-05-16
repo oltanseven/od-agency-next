@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState, useCallback } from 'react'
+import ThemeToggle from '@/components/ThemeToggle'
 import { useI18n, useT } from '@/i18n/context'
 
 export default function Navbar() {
@@ -110,7 +111,10 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* Language Toggle */}
           <button
             onClick={switchLocale}

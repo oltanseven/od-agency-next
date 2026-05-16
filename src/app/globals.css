@@ -20,6 +20,60 @@
   --text-muted: rgba(28,18,7,0.5);
 }
 
+/* Dark mode overrides */
+html.dark {
+  --color-cream:      #0f1117;
+  --color-cream-soft: #181a20;
+  --color-ink:        #f0ede6;
+  --color-ink2:       #c4a96a;
+  --border:           rgba(255,255,255,0.08);
+  --bg-card:          rgba(255,255,255,0.04);
+  --text-muted:       rgba(240,237,230,0.5);
+}
+
+html.dark body { background: #0f1117; color: #f0ede6; }
+html.dark .bg-cream { background: #0f1117; }
+html.dark .bg-cream-soft { background: #181a20; }
+html.dark .bg-white { background: #181a20; }
+html.dark .bg-accent { background: #ff521b; }
+
+html.dark .text-ink { color: #f0ede6; }
+html.dark .text-ink\/50 { color: rgba(240,237,230,0.5); }
+html.dark .text-ink\/45 { color: rgba(240,237,230,0.45); }
+html.dark .text-ink\/40 { color: rgba(240,237,230,0.4); }
+html.dark .text-ink\/30 { color: rgba(240,237,230,0.3); }
+html.dark .text-ink\/25 { color: rgba(240,237,230,0.25); }
+html.dark .text-ink\/20 { color: rgba(240,237,230,0.2); }
+html.dark .text-ink\/15 { color: rgba(240,237,230,0.15); }
+html.dark .text-ink\/12 { color: rgba(240,237,230,0.12); }
+html.dark .text-ink\/10 { color: rgba(240,237,230,0.1); }
+html.dark .text-ink2 { color: #c4a96a; }
+
+html.dark .border-black\/\[0\.08\] { border-color: rgba(255,255,255,0.08); }
+html.dark .border-black\/\[0\.06\] { border-color: rgba(255,255,255,0.06); }
+html.dark .border-ink\/10 { border-color: rgba(240,237,230,0.1); }
+html.dark .border-y { border-color: rgba(255,255,255,0.06); }
+
+html.dark .bg-ink\/5 { background: rgba(240,237,230,0.05); }
+html.dark .bg-ink\/10 { background: rgba(240,237,230,0.1); }
+html.dark .bg-ink\/\[0\.02\] { background: rgba(240,237,230,0.02); }
+
+html.dark .bg-\[\#f8fafc\] { background: #181a20; }
+
+html.dark .od-input {
+  background: #181a20;
+  border-color: rgba(255,255,255,0.1);
+  color: #f0ede6;
+}
+html.dark .od-input::placeholder { color: rgba(240,237,230,0.25); }
+html.dark .od-input:hover:not(:disabled):not(:focus) { border-color: rgba(255,255,255,0.2); }
+
+html.dark ::-webkit-scrollbar-track { background: #181a20; }
+
+/* Navbar dark */
+html.dark .bg-cream\/92 { background: rgba(15,17,23,0.92); }
+html.dark .border-black\/\[0\.09\] { border-color: rgba(255,255,255,0.08); }
+
 html { scroll-behavior: smooth; }
 body { overflow-x: hidden; }
 
