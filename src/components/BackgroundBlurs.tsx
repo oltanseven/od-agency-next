@@ -12,47 +12,36 @@ export default function BackgroundBlurs() {
 
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden>
-      {/* Top right */}
+      {/* Top right - large warm blob */}
       <div
-        className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full animate-[floatA_20s_ease-in-out_infinite]"
+        className="absolute -top-[200px] right-[-100px] w-[900px] h-[900px] rounded-full animate-[floatA_20s_ease-in-out_infinite]"
         style={{
           background: dark
-            ? 'radial-gradient(circle, rgba(255,82,27,0.08) 0%, transparent 70%)'
-            : 'radial-gradient(circle, rgba(255,82,27,0.06) 0%, transparent 70%)',
-          filter: 'blur(80px)',
+            ? 'radial-gradient(circle, rgba(255,82,27,0.15) 0%, rgba(255,82,27,0.05) 40%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(255,82,27,0.12) 0%, rgba(255,82,27,0.04) 40%, transparent 70%)',
+          filter: 'blur(60px)',
         }}
       />
 
-      {/* Center left */}
+      {/* Left middle - coral glow */}
       <div
-        className="absolute top-[30%] -left-[15%] w-[500px] h-[500px] rounded-full animate-[floatB_25s_ease-in-out_infinite]"
+        className="absolute top-[35%] -left-[200px] w-[800px] h-[800px] rounded-full animate-[floatB_25s_ease-in-out_infinite]"
         style={{
           background: dark
-            ? 'radial-gradient(circle, rgba(255,107,61,0.06) 0%, transparent 70%)'
-            : 'radial-gradient(circle, rgba(232,136,26,0.04) 0%, transparent 70%)',
-          filter: 'blur(100px)',
+            ? 'radial-gradient(circle, rgba(232,136,26,0.12) 0%, rgba(232,136,26,0.04) 40%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(232,136,26,0.08) 0%, rgba(232,136,26,0.03) 40%, transparent 70%)',
+          filter: 'blur(60px)',
         }}
       />
 
-      {/* Right middle */}
+      {/* Bottom right - accent */}
       <div
-        className="absolute top-[55%] right-[5%] w-[450px] h-[450px] rounded-full animate-[floatC_22s_ease-in-out_infinite]"
+        className="absolute bottom-[10%] right-[-50px] w-[700px] h-[700px] rounded-full animate-[floatC_22s_ease-in-out_infinite]"
         style={{
           background: dark
-            ? 'radial-gradient(circle, rgba(255,82,27,0.06) 0%, transparent 70%)'
-            : 'radial-gradient(circle, rgba(255,82,27,0.04) 0%, transparent 70%)',
-          filter: 'blur(90px)',
-        }}
-      />
-
-      {/* Bottom left */}
-      <div
-        className="absolute -bottom-[10%] left-[10%] w-[400px] h-[400px] rounded-full animate-[floatA_28s_ease-in-out_infinite]"
-        style={{
-          background: dark
-            ? 'radial-gradient(circle, rgba(232,136,26,0.05) 0%, transparent 70%)'
-            : 'radial-gradient(circle, rgba(255,82,27,0.03) 0%, transparent 70%)',
-          filter: 'blur(80px)',
+            ? 'radial-gradient(circle, rgba(255,82,27,0.12) 0%, rgba(255,82,27,0.04) 40%, transparent 70%)'
+            : 'radial-gradient(circle, rgba(255,82,27,0.08) 0%, rgba(255,82,27,0.02) 40%, transparent 70%)',
+          filter: 'blur(60px)',
         }}
       />
     </div>
