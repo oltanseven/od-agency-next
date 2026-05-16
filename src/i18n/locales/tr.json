@@ -9,7 +9,7 @@
     "approach": "Yaklaşım",
     "about": "Hakkımızda",
     "blog": "Blog",
-    "cta": "20dk Strateji Görüşmesi",
+    "cta": "Görüşme Al",
     "langSwitch": "EN"
   },
   "hero": {
@@ -17,7 +17,7 @@
     "headline": "Kod yazan, içerik üreten, satış yapan tek büyüme ortağı.",
     "headlineAccent": "Ürün senin. Growth bizim.",
     "subhead": "Çoğu işletme büyüyemiyor çünkü operasyonlar tüm zamanı yiyor. Biz tekrarlayan işleri AI sistemlerine devrediyoruz, ekibiniz asıl işe odaklansın.",
-    "cta1": "20dk Strateji Görüşmesi Al",
+    "cta1": "Görüşme Al Al",
     "cta2": "Nasıl Çalışıyor?",
     "trust1": "otomasyon kurulumu",
     "trust2": "maliyet düşüşü",
@@ -166,7 +166,7 @@
   "cta": {
     "title": "Önce neyi otomatikleştireceğimizi birlikte belirleyelim.",
     "subtitle": "20 dakika. Sunum yok. Operasyonlarınıza bakıp, otomatikleştirildiğinde en büyük getiriyi sağlayacak süreci söylüyoruz.",
-    "button": "20dk Strateji Görüşmesi Al",
+    "button": "Görüşme Al Al",
     "note": "Ücretsiz. Taahhüt yok. 24 saat içinde dönüş."
   },
   "footer": {

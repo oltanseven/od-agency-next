@@ -9,7 +9,7 @@
     "approach": "Approach",
     "about": "About",
     "blog": "Blog",
-    "cta": "Get a 20-min Strategy Call",
+    "cta": "Book a Call",
     "langSwitch": "TR"
   },
   "hero": {
@@ -17,7 +17,7 @@
     "headline": "The only growth partner who codes, writes, and sells.",
     "headlineAccent": "You build the product. We handle the rest.",
     "subhead": "Most businesses hit a ceiling because operations eat all the hours. We build AI systems that take over the repetitive work so your team focuses on what actually moves the needle.",
-    "cta1": "Get a 20-min Strategy Call",
+    "cta1": "Book a Call",
     "cta2": "See How It Works",
     "trust1": "businesses automated",
     "trust2": "avg cost reduction",
@@ -166,7 +166,7 @@
   "cta": {
     "title": "Let's figure out what to automate first.",
     "subtitle": "20 minutes. No pitch deck. I'll look at your operations and tell you exactly which process would give you the biggest return if automated.",
-    "button": "Get a 20-min Strategy Call",
+    "button": "Book a Call",
     "note": "Free. No commitment. We reply within 24 hours."
   },
   "footer": {
