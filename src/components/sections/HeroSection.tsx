@@ -15,12 +15,6 @@ export default function HeroSection({ dict, locale }: Props) {
       <div className="max-w-[1260px] mx-auto px-5 sm:px-8 w-full">
         <div className="max-w-[720px] mx-auto text-center">
 
-          <div className="inline-flex items-center gap-2 bg-accent/8 border border-accent/20
-            px-4 py-1.5 rounded-full text-accent text-[0.78rem] font-semibold mb-8">
-            <span className="w-1.5 h-1.5 bg-accent rounded-full shrink-0" />
-            {dict.eyebrow}
-          </div>
-
           <h1 className="text-[clamp(2rem,4vw,3.2rem)] font-black leading-[1.08] tracking-[-0.03em] mb-6 text-ink">
             {dict.headline}{' '}
             <span className="text-accent">{dict.headlineAccent}</span>

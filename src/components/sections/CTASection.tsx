@@ -39,9 +39,9 @@ export default function CTASection() {
             href="https://wa.me/905324652031"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-ink/5 text-ink px-10 rounded-full font-bold text-[1rem]
-              no-underline hover:-translate-y-0.5 hover:bg-ink/10
-              transition-all duration-200 inline-flex items-center border border-ink/10"
+            className="bg-[#25D366] text-white px-10 rounded-full font-bold text-[1rem]
+              no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(37,211,102,0.25)]
+              transition-all duration-200 inline-flex items-center gap-2"
             style={{ minHeight: '56px' }}
           >
             WhatsApp

@@ -15,7 +15,7 @@
   "hero": {
     "eyebrow": "AI Destekli Büyüme Ortağınız",
     "headline": "Kod yazan, içerik üreten, satış yapan tek büyüme ortağı.",
-    "headlineAccent": "Ürün senin. Growth bizim.",
+    "headlineAccent": "Ürün senin. Büyüme bizim.",
     "subhead": "Çoğu işletme büyüyemiyor çünkü operasyonlar tüm zamanı yiyor. Biz tekrarlayan işleri AI sistemlerine devrediyoruz, ekibiniz asıl işe odaklansın.",
     "cta1": "Görüşme Al",
     "cta2": "Nasıl Çalışıyor?",
@@ -76,7 +76,7 @@
       {
         "num": "01",
         "title": "Denetim",
-        "desc": "3-5 gün operasyonlarınızın içine giriyoruz. Her iş akışını haritalıyoruz, darboğazları buluyoruz, ROI'ye göre sıralıyoruz. Bizimle çalışmasanız bile net bir yol haritası alırsınız."
+        "desc": "3-5 gün operasyonlarınızın içine giriyoruz. Her iş akışını haritalıyoruz, darboğazları buluyoruz, getiri potansiyeline göre sıralıyoruz. Bizimle çalışmasanız bile net bir yol haritası alırsınız."
       },
       {
         "num": "02",
@@ -191,7 +191,7 @@
       "email": "E-posta adresiniz",
       "company": "Şirket adı",
       "solution": "Operasyonlarınızda en çok zaman alan şey ne?",
-      "solutionOptions": ["Lead'lere cevap verme", "Randevu ve takip", "Müşteri destek", "Veri girişi ve raporlama", "Başka bir şey", "Emin değilim, bir dış göz lazım"],
+      "solutionOptions": ["Potansiyel müşterilere cevap verme", "Randevu ve takip", "Müşteri destek", "Veri girişi ve raporlama", "Başka bir şey", "Emin değilim, bir dış göz lazım"],
       "employees": "Ekip büyüklüğü",
       "employeeOptions": ["1-5", "6-20", "21-50", "51-200", "200+"],
       "timeline": "Aylık bütçe aralığınız?",
@@ -214,7 +214,7 @@
     "eyebrow": "Hakkımızda",
     "headline": "Kuruyoruz. İşletiyoruz. Sonucun sahibiyiz.",
     "story": "Oder Agency, Antalya merkezli geliştirici ve otomasyon uzmanı Oltan Seven tarafından kuruldu. Yıllarca web uygulamaları ve AI araçları geliştirdikten sonra bir şey netleşti: işletmelerin daha fazla yazılıma değil, işi gerçekten yapan sistemlere ihtiyacı var.",
-    "story2": "Tam olarak bunu yapıyoruz. Satış, destek ve operasyonları kendi başına yürüten AI sistemleri kuruyoruz. Toz toplayan dashboard'lar değil. Gelir ve kazanılan saatle ölçebileceğiniz, gerçekten çalışan sistemler.",
+    "story2": "Tam olarak bunu yapıyoruz. Satış, destek ve operasyonları kendi başına yürüten AI sistemleri kuruyoruz. Toz toplayan panolar değil. Gelir ve kazanılan saatle ölçebileceğiniz, gerçekten çalışan sistemler.",
     "principles": {
       "title": "Nasıl Çalışıyoruz",
       "items": [
@@ -237,8 +237,8 @@
       {
         "num": "01",
         "title": "Operasyon Denetimi",
-        "desc": "3-5 gün. İş akışlarınızı haritalıyoruz, darboğazları buluyoruz, her otomasyon fırsatını ROI'ye göre sıralıyoruz. Bizimle çalışmasanız bile net bir yol haritasıyla ayrılırsınız.",
-        "details": ["Süreç haritalama", "Darboğaz tespiti", "ROI sıralaması", "Uygulama yol haritası"]
+        "desc": "3-5 gün. İş akışlarınızı haritalıyoruz, darboğazları buluyoruz, her otomasyon fırsatını getiri potansiyeline göre sıralıyoruz. Bizimle çalışmasanız bile net bir yol haritasıyla ayrılırsınız.",
+        "details": ["Süreç haritalama", "Darboğaz tespiti", "Getiri sıralaması", "Uygulama yol haritası"]
       },
       {
         "num": "02",
